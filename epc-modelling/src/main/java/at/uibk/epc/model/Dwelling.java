@@ -1,5 +1,7 @@
 package at.uibk.epc.model;
 
+import java.util.List;
+
 import org.bson.types.ObjectId;
 
 public class Dwelling {
@@ -14,6 +16,8 @@ public class Dwelling {
 	
 	private String identificationNumber;
 	
+	private List<String> parcelNumers;
+	
 	private SpatialData spatialData;
 	
 	private ThermalData thermalData;
@@ -27,10 +31,11 @@ public class Dwelling {
 		//needed by MongoDB
 	}
 	
-	public Dwelling(Address address, int constructionYear, DwellingType type, String identificationNumber, SpatialData spatialData, ThermalData thermalData) {
+	public Dwelling(Address address, int constructionYear, DwellingType type, String identificationNumber, List<String> parcelNumbers, SpatialData spatialData, ThermalData thermalData) {
 		this.address = address;
 		this.type = type;
 		this.constructionYear = constructionYear;
+		this.parcelNumers = parcelNumbers;
 		this.identificationNumber = identificationNumber;
 		this.spatialData = spatialData;
 		this.thermalData = thermalData;
@@ -67,6 +72,14 @@ public class Dwelling {
 	
 	public void setIdentificationNumber(String identificationNumber) {
 		this.identificationNumber = identificationNumber;
+	}
+	
+	public List<String> getParcelNumers() {
+		return parcelNumers;
+	}
+	
+	public void setParcelNumers(List<String> parcelNumers) {
+		this.parcelNumers = parcelNumers;
 	}
 	
 	public DwellingType getType() {
@@ -108,11 +121,13 @@ public class Dwelling {
 	public void setThermalData(ThermalData thermalData) {
 		this.thermalData = thermalData;
 	}
-	
+
 	@Override
 	public String toString() {
 		return "Dwelling [id=" + id + ", address=" + address + ", constructionYear=" + constructionYear + ", type="
-				+ type + ", identificationNumber=" + identificationNumber + ", climateData=" + climateData
-				+ ", spatialData=" + spatialData + ", thermalData=" + thermalData + ", photo=" + photo + "]";
+				+ type + ", identificationNumber=" + identificationNumber + ", parcelNumers=" + parcelNumers
+				+ ", spatialData=" + spatialData + ", thermalData=" + thermalData + ", climateData=" + climateData
+				+ ", photo=" + photo + "]";
 	}
+	
 }

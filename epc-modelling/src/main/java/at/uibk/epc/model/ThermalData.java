@@ -1,39 +1,55 @@
 package at.uibk.epc.model;
 
+/**
+ * Building specific data
+ *
+ */
 public class ThermalData {
+		
+	private Measure uValue;
 	
-	private Temperature idealIndoorTemperature;
+	private Measure heatingDemand;
 	
-	private int heatingDaysPerYear;
+	private Measure carbonFootprint;
 	
 	public ThermalData() {
 		// needed by MongoDB POJO Converter
 	}
 	
-	public ThermalData(Temperature idealIndoorTemperature, int heatingDaysPerYear) {
-		this.idealIndoorTemperature = idealIndoorTemperature;
-		this.heatingDaysPerYear = heatingDaysPerYear;
+	public ThermalData(Measure uValue, Measure heatingDemand, Measure carbonFootprint) {
+		this.uValue = uValue;
+		this.heatingDemand = heatingDemand;
+		this.carbonFootprint = carbonFootprint;
 	}
 
-	public Temperature getIdealIndoorTemperature() {
-		return idealIndoorTemperature;
+	public Measure getUValue() {
+		return uValue;
 	}
 	
-	public void setIdealIndoorTemperature(Temperature idealIndoorTemperature) {
-		this.idealIndoorTemperature = idealIndoorTemperature;
+	public void setUValue(Measure uValue) {
+		this.uValue = uValue;
 	}
 	
-	public int getHeatingDaysPerYear() {
-		return heatingDaysPerYear;
+	public Measure getHeatingDemand() {
+		return heatingDemand;
 	}
 	
-	public void setHeatingDaysPerYear(int heatingDaysPerYear) {
-		this.heatingDaysPerYear = heatingDaysPerYear;
+	public void setHeatingDemand(Measure heatingDemand) {
+		this.heatingDemand = heatingDemand;
+	}
+	
+	public Measure getCarbonFootprint() {
+		return carbonFootprint;
+	}
+	
+	public void setCarbonFootprint(Measure carbonFootprint) {
+		this.carbonFootprint = carbonFootprint;
 	}
 
 	@Override
 	public String toString() {
-		return "ThermalData [idealIndoorTemperature=" + idealIndoorTemperature + ", heatingDaysPerYear="
-				+ heatingDaysPerYear + "]";
+		return "ThermalData [uValue=" + uValue + ", heatingDemand=" + heatingDemand + ", carbonFootprint="
+				+ carbonFootprint + "]";
 	}
+
 }

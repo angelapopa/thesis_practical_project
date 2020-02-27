@@ -13,9 +13,9 @@ public class Assessor extends Person {
 		super();
 	}
 		
-	public Assessor(String surname, String firstname, String authorisationNumber, String identificationNumber,
+	public Assessor(String title, String surname, String firstname, String authorisationNumber, String identificationNumber,
 			Address corporateAddress) {
-		super(surname, firstname);
+		super(title, surname, firstname);
 		this.authorisationNumber = authorisationNumber;
 		this.identificationNumber = identificationNumber;
 		this.corporateAddress = corporateAddress;

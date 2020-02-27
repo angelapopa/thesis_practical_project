@@ -2,7 +2,7 @@ package at.uibk.epc.model;
 
 public class Temperature {
 	
-	private long value;
+	private double value;
 	
 	private TemperatureUnit unit;
 	
@@ -10,7 +10,7 @@ public class Temperature {
 		// needed by MongoDB POJO Converter
 	}
 
-	public Temperature(long value, TemperatureUnit unit) {
+	public Temperature(double value, TemperatureUnit unit) {
 		this.value = value;
 		this.unit = unit;
 	}
@@ -23,11 +23,11 @@ public class Temperature {
 		this.unit = unit;
 	}
 	
-	public long getValue() {
+	public double getValue() {
 		return value;
 	}
 	
-	public void setValue(long value) {
+	public void setValue(double value) {
 		this.value = value;
 	}
 

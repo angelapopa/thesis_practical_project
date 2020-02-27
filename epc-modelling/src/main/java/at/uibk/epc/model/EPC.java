@@ -1,6 +1,5 @@
 package at.uibk.epc.model;
 
-import java.math.BigInteger;
 import java.util.Date;
 
 import org.bson.types.ObjectId;
@@ -15,15 +14,15 @@ public class EPC {
 	
 	private Date validUntil;
 	
+	private Assessor assessor;
+	
 	private Dwelling ratedDwelling;
 	
-	private PurposeType ratingPurpose;
+	private PurposeType purpose;
 	
-	private Rating rating;
+	private Rating awordedRating;
 	
 	private Rating potentialRating;
-
-	private Assessor assessor;
 	
 	private RatingMethodology usedMethodology;
 	
@@ -34,13 +33,14 @@ public class EPC {
 	}
 	
 	public EPC(String identificationNumber, Date creationDate, Date validUntil, Dwelling ratedDwelling,
-			Rating rating, Assessor assessor, String legalReference) {
+			Assessor assessor, Rating awordedRating, RatingMethodology usedMethodology, String legalReference) {
 		this.identificationNumber = identificationNumber;
 		this.creationDate = creationDate;
 		this.validUntil = validUntil;
 		this.ratedDwelling = ratedDwelling;
-		this.rating = rating;
+		this.awordedRating = awordedRating;
 		this.assessor = assessor;
+		this.usedMethodology = usedMethodology;
 		this.legalReference = legalReference;
 	}
 	
@@ -84,12 +84,12 @@ public class EPC {
 		this.assessor = assessor;
 	}
 	
-	public Rating getRating() {
-		return rating;
+	public Rating getAwordedRating() {
+		return awordedRating;
 	}
 	
-	public void setRating(Rating rating) {
-		this.rating = rating;
+	public void setAwordedRating(Rating rating) {
+		this.awordedRating = rating;
 	}
 	
 	public Dwelling getRatedDwelling() {
@@ -116,12 +116,12 @@ public class EPC {
 		this.potentialRating = potentialRating;
 	}
 	
-	public PurposeType getRatingPurpose() {
-		return ratingPurpose;
+	public PurposeType getPurpose() {
+		return purpose;
 	}
 	
-	public void setRatingPurpose(PurposeType ratingPurpose) {
-		this.ratingPurpose = ratingPurpose;
+	public void setPurpose(PurposeType purpose) {
+		this.purpose = purpose;
 	}
 	
 	public RatingMethodology getUsedMethodology() {
@@ -135,10 +135,9 @@ public class EPC {
 	@Override
 	public String toString() {
 		return "EPC [id=" + id + ", identificationNumber=" + identificationNumber + ", creationDate=" + creationDate
-				+ ", validUntil=" + validUntil + ", ratedDwelling=" + ratedDwelling + ", ratingPurpose=" + ratingPurpose
-				+ ", rating=" + rating + ", potentialRating=" + potentialRating + ", assessor=" + assessor
+				+ ", validUntil=" + validUntil + ", assessor=" + assessor + ", ratedDwelling=" + ratedDwelling
+				+ ", purpose=" + purpose + ", awordedRating=" + awordedRating + ", potentialRating=" + potentialRating
 				+ ", usedMethodology=" + usedMethodology + ", legalReference=" + legalReference + "]";
 	}
-	
 	
 }
