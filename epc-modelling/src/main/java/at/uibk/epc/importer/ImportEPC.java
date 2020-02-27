@@ -93,7 +93,7 @@ public class ImportEPC {
 		
 		ThermalData thermalData = new ThermalData();
 		thermalData.setUValue(new Measure(0.90, MeasuringUnit.WATTS_SQUARE_METER_KELVIN));
-		thermalData.setHeatingDemand(new Measure(103.91, MeasuringUnit.KWH_SQUARE_METER_YEAR));
+		thermalData.setEnergyDemand(new Measure(103.91, MeasuringUnit.KWH_SQUARE_METER_YEAR));
 		
 		Dwelling dwelling = new Dwelling(
 				new Address("Pacherstr.", "14", null, null, "6020", "Innsbruck", "Austria"), 
@@ -120,17 +120,83 @@ public class ImportEPC {
 		}
 	}
 
+    // this EPC seems to be outdated, because the grades like E1 are not awarded anymore since 2006
+    // see instead https://www.epbd-ca.eu/outcomes/2011-2015/CA3-2016-National-DENMARK-web.pdf
+    // and http://www.inogate.org/documents/CRV_energy_labelling_DK.pdf
 	private static void addDanischEPC(MongoCollection<EPC> epcCollection) {
-		// TODO Auto-generated method stub
+		// maybe add organisation (name and address)
+		//Firma: Aktuel Energiradgivning
+		//recommendations
+		
+		Calendar creationDate = Calendar.getInstance();
+		creationDate.set(2006, 7, 9, 0, 0);
+		
+		Calendar validUntil = Calendar.getInstance();
+		validUntil.set(2011, 7, 8, 0, 0);
+		
+		Rating awordedRating = new Rating("E1", null);
+		
+		Assessor assessor = new Assessor(null, "Pedersen", "Jens", null, null, corporateAddress);
+		
+		//berechnete Wärmeanforderung: 32.500 kr. (Preis)
+		//5400 liter Öl
+		
+		//The energy-labelling scale runs from A to G, where A is divided into A2020, A2015 and A2010. A2020 covers low energy buildings, which only consume a minimum of energy, while G-labelled buildings consume the most energy.
+		
+		EPC epc = new EPC("122780", creationDate.getTime(), validUntil, ratedDwelling, assessor, awordedRating, null, null);
 	}
 
 	private static void addGermanEPC(MongoCollection<EPC> epcCollection) {
-		// TODO Auto-generated method stub
+		//missing fields in this epc model
+		//Gebäudeteil:Vorderhaus
+		//Baujahr Wärmeerzeuger:1982
+		//nr. of flats: 9
+		//type of main heating source: Erdgas
+		//renewable energy sources
+		//Art der Lüftung: Fensterlüftung
+		//here it is a distinction between Energiebedarfausweis(estimated) and Energieverbrauch (measured)
+		//distinction between Primärenergiebdarf (248 kWh/(m^2a) and Endenergiebedarf (222 kWh/(m^2a)))
+		//Recommendations on renovations
 		
+		Calendar validUntil = Calendar.getInstance();
+		validUntil.set(2024, 5, 23, 0, 0);
+		
+		Calendar creationDate = Calendar.getInstance();
+		creationDate.set(2014, 5, 24, 0, 0);
+		
+		Assessor assessor = new Assessor(null, "Mustermann", "Paul", null, null, new Address("Austeller Musterstraße", "45", null, null, "12345", "Musterstadt", "Deutschland"));
+		
+		SpatialData spatialData = new SpatialData();
+		spatialData.setTotalFloorArea(new Measure(546, MeasuringUnit.SQUARE_METER));
+		
+		ThermalData thermalData = new ThermalData();
+		thermalData.setCarbonFootprint(new Measure(56, MeasuringUnit.KG_SQUARE_METER_YEAR));
+		thermalData.setEnergyDemand(new Measure(222, MeasuringUnit.KWH_SQUARE_METER_YEAR));
+		thermalData.setUValue(new Measure(1.11, MeasuringUnit.WATTS_SQUARE_METER_KELVIN));
+		
+		Dwelling ratedDwelling = new Dwelling(
+				new Address("Musterstr", "123", null, null, "10115", "Musterstadt", "Deutschland"), 
+				1927, 
+				DwellingType.APARTMENT_BUILDING,
+				null,
+				null, 
+				spatialData,
+				thermalData);
+		
+		//estimated rating
+		Rating awordedRating = new Rating("G", null);   //here should be a distinction between estimated and measured rating
+		//maybe add also a scala, to see the possible rating levels.
+	
+		RatingMethodology ratingMethodology = new RatingMethodology();
+		ratingMethodology.setStandardName("DIN V 4108-6 and DIN 4701-10 and Vereinfachungen nach §9 Absatz 2 EnEV"); //consider creating a list
+		
+		EPC epc = new EPC("123456789", creationDate.getTime(), validUntil.getTime(), ratedDwelling, assessor, awordedRating, ratingMethodology, "§§ 16 ff. Energiesparverordnung (EnEV) 18.11.2013");
+		epc.setPurpose(PurposeType.RENTING_OR_SELLING);
 	}
 
 	private static void addRomanianEPC(MongoCollection<EPC> epcCollection) {
-		//missing fields for apa calda de consum
+		//missing fields for 
+		//apa calda de consum
 		//climatisare
 		//ventilare mecanica
 		//iluminat artificial
@@ -146,7 +212,7 @@ public class ImportEPC {
 		
 		ThermalData thermalData = new ThermalData();
 		thermalData.setUValue(new Measure(0.90, MeasuringUnit.WATTS_SQUARE_METER_KELVIN));
-		thermalData.setHeatingDemand(new Measure(150.83, MeasuringUnit.KWH_SQUARE_METER_YEAR));
+		thermalData.setEnergyDemand(new Measure(150.83, MeasuringUnit.KWH_SQUARE_METER_YEAR));
 		thermalData.setCarbonFootprint(new Measure(29.55, MeasuringUnit.KG_SQUARE_METER_YEAR));
 		
 		SpatialData spatialData = new SpatialData();

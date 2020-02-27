@@ -8,7 +8,7 @@ public class ThermalData {
 		
 	private Measure uValue;
 	
-	private Measure heatingDemand;
+	private Measure energyDemand;
 	
 	private Measure carbonFootprint;
 	
@@ -16,9 +16,9 @@ public class ThermalData {
 		// needed by MongoDB POJO Converter
 	}
 	
-	public ThermalData(Measure uValue, Measure heatingDemand, Measure carbonFootprint) {
+	public ThermalData(Measure uValue, Measure energyDemand, Measure carbonFootprint) {
 		this.uValue = uValue;
-		this.heatingDemand = heatingDemand;
+		this.energyDemand = energyDemand;
 		this.carbonFootprint = carbonFootprint;
 	}
 
@@ -30,12 +30,12 @@ public class ThermalData {
 		this.uValue = uValue;
 	}
 	
-	public Measure getHeatingDemand() {
-		return heatingDemand;
+	public Measure getEnergyDemand() {
+		return energyDemand;
 	}
 	
-	public void setHeatingDemand(Measure heatingDemand) {
-		this.heatingDemand = heatingDemand;
+	public void setEnergyDemand(Measure energyDemand) {
+		this.energyDemand = energyDemand;
 	}
 	
 	public Measure getCarbonFootprint() {
@@ -48,7 +48,7 @@ public class ThermalData {
 
 	@Override
 	public String toString() {
-		return "ThermalData [uValue=" + uValue + ", heatingDemand=" + heatingDemand + ", carbonFootprint="
+		return "ThermalData [uValue=" + uValue + ", energyDemand=" + energyDemand + ", carbonFootprint="
 				+ carbonFootprint + "]";
 	}
 
