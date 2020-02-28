@@ -8,14 +8,17 @@ public class Person {
 	
 	private String firstname;
 	
+	private ContactDetails contactDetails;
+	
 	public Person() {
 		// needed by MongoDB POJO Converter
 	}
 	
-	public Person(String title, String surname, String firstname) {
+	public Person(String title, String surname, String firstname, ContactDetails contactDetails) {
 		this.title = title;
 		this.surname = surname;
 		this.firstname = firstname;
+		this.contactDetails = contactDetails;
 	}
 	
 	public String getTitle() {
@@ -29,10 +32,15 @@ public class Person {
 	public String getSurname() {
 		return surname;
 	}
+	
+	public ContactDetails getContactDetails() {
+		return contactDetails;
+	}
 
 	@Override
 	public String toString() {
-		return "Person [title=" + title + ", surname=" + surname + ", firstname=" + firstname + "]";
+		return "Person [title=" + title + ", surname=" + surname + ", firstname=" + firstname + ", contactDetails="
+				+ contactDetails + "]";
 	}
-	
+
 }

@@ -1,35 +1,32 @@
 package at.uibk.epc.importer;
 
+import static org.bson.codecs.configuration.CodecRegistries.fromProviders;
+import static org.bson.codecs.configuration.CodecRegistries.fromRegistries;
+
+import java.util.Arrays;
+import java.util.Calendar;
+import java.util.List;
+
 import org.bson.Document;
 import org.bson.codecs.configuration.CodecRegistry;
 import org.bson.codecs.pojo.PojoCodecProvider;
 
-import com.mongodb.Block;
 import com.mongodb.MongoClientSettings;
-import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 
-import static org.bson.codecs.configuration.CodecRegistries.fromProviders;
-import static org.bson.codecs.configuration.CodecRegistries.fromRegistries;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Calendar;
-import java.util.Collections;
-import java.util.List;
-
 import at.uibk.epc.model.Address;
 import at.uibk.epc.model.Assessor;
 import at.uibk.epc.model.ClimateData;
+import at.uibk.epc.model.ContactDetails;
 import at.uibk.epc.model.Dwelling;
 import at.uibk.epc.model.DwellingType;
 import at.uibk.epc.model.EPC;
 import at.uibk.epc.model.Measure;
 import at.uibk.epc.model.MeasuringUnit;
-import at.uibk.epc.model.Person;
+import at.uibk.epc.model.Organisation;
 import at.uibk.epc.model.PurposeType;
 import at.uibk.epc.model.Rating;
 import at.uibk.epc.model.RatingMethodology;
@@ -59,7 +56,7 @@ public class ImportEPC {
 		addAustrianEPC(epcCollection);
         addRomanianEPC(epcCollection);
         addGermanEPC(epcCollection);
-        addDanischEPC(epcCollection);
+        addDanishEPC(epcCollection);
         
         for (Document doc: database.getCollection("EPC_Collection").find()) {
         	System.out.println(doc.toJson());
@@ -69,9 +66,6 @@ public class ImportEPC {
 	}
 	
     private static void addAustrianEPC(MongoCollection<EPC> epcCollection) {
-    	//particularities: this is a EPC for a building
-    	//fields missing in the model, like "Organisation: Neue Heimat Tirol" - or is it part of the assessors organisation?!,
-    	//or like "Eigentümerin: Neue Heimat Tirol"
     	
 		Calendar creationDate = Calendar.getInstance();
 		creationDate.set(2008, 11, 3, 0, 0);
@@ -79,7 +73,7 @@ public class ImportEPC {
 		Calendar validUntil = Calendar.getInstance();
 		validUntil.set(2018, 11, 3, 0, 0);
 		
-		Assessor assessor = new Assessor("Ing.", "Rutzinger", "Kajetan", null, null, null);
+		Assessor assessor = new Assessor("Ing.", "Rutzinger", "Kajetan", null, null, null, new Organisation("Neue Heimat Tirol", null, null));
 		
 		ClimateData climateData = new ClimateData();
 		climateData.setIdealIndoorTemperature(new Temperature(20.0, TemperatureUnit.CELCIUS));
@@ -119,31 +113,59 @@ public class ImportEPC {
 			System.out.println(epc.toString());
 		}
 	}
-
-    // this EPC seems to be outdated, because the grades like E1 are not awarded anymore since 2006
-    // see instead https://www.epbd-ca.eu/outcomes/2011-2015/CA3-2016-National-DENMARK-web.pdf
-    // and http://www.inogate.org/documents/CRV_energy_labelling_DK.pdf
-	private static void addDanischEPC(MongoCollection<EPC> epcCollection) {
-		// maybe add organisation (name and address)
-		//Firma: Aktuel Energiradgivning
+    
+    //UK
+    //e:\docs\Uni Innsbruck\Masterthesis\building certifications\example_of_building_certificate.pdf
+    
+    //https://docplayer.dk/18645796-Energimaerke-adresse-dr-lassens-gade-7-postnr-by.html    EPC
+	private static void addDanishEPC(MongoCollection<EPC> epcCollection) {
+		//renovation year: 1994
+		//Art der Heizung: fernwärme
+		//list of flats and their size and consumption costs per year
+		//epc Datum der Genehmigung: 10-09-2010
+		//berechnete Wärmeanforderung: 76.091 kr./year (Preis)
 		//recommendations
 		
 		Calendar creationDate = Calendar.getInstance();
-		creationDate.set(2006, 7, 9, 0, 0);
+		creationDate.set(2010, 8, 29, 0, 0);
 		
 		Calendar validUntil = Calendar.getInstance();
-		validUntil.set(2011, 7, 8, 0, 0);
+		validUntil.set(2015, 8, 29, 0, 0);
 		
-		Rating awordedRating = new Rating("E1", null);
+		Organisation organisation = new Organisation("Ingeniorfirmaet Henrij Mogelgaard ApS", 
+				new Address("Hillerødgade","30A", null, null, "2200", "København N", "Denmark"), 
+				new ContactDetails(null, "35360727"));
+		Assessor assessor = new Assessor(null, "Hansen", "Jan Ole", "250611", null, new ContactDetails("joh@hmenergi.dk", null), organisation);
 		
-		Assessor assessor = new Assessor(null, "Pedersen", "Jens", null, null, corporateAddress);
+		Address address = new Address();
+		address.setStreet("Dr. Lassens Gade");
+		address.setStreetNumber("7");
+		address.setPostalCode("8900");
+		address.setCity("Randers C");
 		
-		//berechnete Wärmeanforderung: 32.500 kr. (Preis)
-		//5400 liter Öl
+		RatingMethodology ratingMethodology = new RatingMethodology();
+		ratingMethodology.setSoftwareUsed(new Software("Energy08", "Be06 version 4"));
 		
-		//The energy-labelling scale runs from A to G, where A is divided into A2020, A2015 and A2010. A2020 covers low energy buildings, which only consume a minimum of energy, while G-labelled buildings consume the most energy.
+		//The energy-labelling scale runs from A to G, where A is divided into A2020, A2015 and A2010. A2020 covers low energy buildings, which only consume a minimum of energy, 
+		//while G-labelled buildings consume the most energy.
+		Rating awordedRating = new Rating("D", null);
 		
-		EPC epc = new EPC("122780", creationDate.getTime(), validUntil, ratedDwelling, assessor, awordedRating, null, null);
+		ThermalData thermalData = new ThermalData();
+		thermalData.setEnergyDemand(new Measure(109.509, MeasuringUnit.KWH_YEAR));
+		
+		SpatialData spatialData = new SpatialData();
+		spatialData.setTotalFloorArea(new Measure(880, MeasuringUnit.SQUARE_METER));
+		//beheiztes areal TODO: check with others if volume is refffered to beheiztes volumen
+		spatialData.setTotalVolume(new Measure(880, MeasuringUnit.SQUARE_METER));
+		
+		Dwelling ratedDwelling = new Dwelling(address, 1919, DwellingType.APARTMENT_BUILDING, "730-009955-001", null, spatialData, thermalData);
+		
+		EPC epc = new EPC("200038127", creationDate.getTime(), validUntil.getTime(), ratedDwelling, assessor, awordedRating, null, null);
+		epcCollection.insertOne(epc);
+		
+		for (EPC epcF : epcCollection.find()) {
+			System.out.println(epcF.toString());
+		}
 	}
 
 	private static void addGermanEPC(MongoCollection<EPC> epcCollection) {
@@ -152,7 +174,7 @@ public class ImportEPC {
 		//Baujahr Wärmeerzeuger:1982
 		//nr. of flats: 9
 		//type of main heating source: Erdgas
-		//renewable energy sources
+		//renewable energy sources: yes, no
 		//Art der Lüftung: Fensterlüftung
 		//here it is a distinction between Energiebedarfausweis(estimated) and Energieverbrauch (measured)
 		//distinction between Primärenergiebdarf (248 kWh/(m^2a) and Endenergiebedarf (222 kWh/(m^2a)))
@@ -164,7 +186,8 @@ public class ImportEPC {
 		Calendar creationDate = Calendar.getInstance();
 		creationDate.set(2014, 5, 24, 0, 0);
 		
-		Assessor assessor = new Assessor(null, "Mustermann", "Paul", null, null, new Address("Austeller Musterstraße", "45", null, null, "12345", "Musterstadt", "Deutschland"));
+		Assessor assessor = new Assessor(null, "Mustermann", "Paul", null, null, null,
+				new Organisation("", new Address("Austeller Musterstraße", "45", null, null, "12345", "Musterstadt", "Deutschland"), null));
 		
 		SpatialData spatialData = new SpatialData();
 		spatialData.setTotalFloorArea(new Measure(546, MeasuringUnit.SQUARE_METER));
@@ -192,6 +215,12 @@ public class ImportEPC {
 		
 		EPC epc = new EPC("123456789", creationDate.getTime(), validUntil.getTime(), ratedDwelling, assessor, awordedRating, ratingMethodology, "§§ 16 ff. Energiesparverordnung (EnEV) 18.11.2013");
 		epc.setPurpose(PurposeType.RENTING_OR_SELLING);
+		
+		epcCollection.insertOne(epc);
+		
+		for (EPC epcF : epcCollection.find()) {
+			System.out.println(epcF.toString());
+		}
 	}
 
 	private static void addRomanianEPC(MongoCollection<EPC> epcCollection) {
@@ -220,7 +249,7 @@ public class ImportEPC {
 		spatialData.setTotalVolume(new Measure(121.77, MeasuringUnit.CUBIC_METER));
 		spatialData.setOrientation("SE-SV");
 		
-		Assessor assessor = new Assessor("I-CI", "Rotaru", "Nicolae Mihai", "UA-01579", null, null);
+		Assessor assessor = new Assessor("I-CI", "Rotaru", "Nicolae Mihai", "UA-01579", null, null, null);
 		
 		Dwelling dwelling = new Dwelling(
 				new Address("Stejarului", "60", "1", "13", "407280", "Floresti", "Romania"), 
@@ -240,5 +269,9 @@ public class ImportEPC {
 		epc.setPurpose(PurposeType.RENTING_OR_SELLING);
 		
 		epcCollection.insertOne(epc);
+		
+		for (EPC epcF : epcCollection.find()) {
+			System.out.println(epcF.toString());
+		}
     }
 }

@@ -1,12 +1,12 @@
 package at.uibk.epc.model;
 
 public class Assessor extends Person {
-
+//TODO: should authorisation Numer and identification Number be one field?
 	private String authorisationNumber;
 	
 	private String identificationNumber;
 	
-	private Address corporateAddress;
+	private Organisation organisation;
 	
 	public Assessor() {
 		// needed by MongoDB POJO Converter
@@ -14,11 +14,11 @@ public class Assessor extends Person {
 	}
 		
 	public Assessor(String title, String surname, String firstname, String authorisationNumber, String identificationNumber,
-			Address corporateAddress) {
-		super(title, surname, firstname);
+			ContactDetails contactDetails, Organisation organisation) {
+		super(title, surname, firstname, contactDetails);
 		this.authorisationNumber = authorisationNumber;
 		this.identificationNumber = identificationNumber;
-		this.corporateAddress = corporateAddress;
+		this.organisation = organisation;
 	}
 
 	//getter and setters needed also for MongoDB POJO Converter
@@ -38,18 +38,18 @@ public class Assessor extends Person {
 		this.identificationNumber = identificationNumber;
 	}
 	
-	public Address getCorporateAddress() {
-		return corporateAddress;
+	public Organisation getOrganisation() {
+		return organisation;
 	}
 
-	public void setCorporateAddress(Address corporateAddress) {
-		this.corporateAddress = corporateAddress;
+	public void setOrganisation(Organisation organisation) {
+		this.organisation = organisation;
 	}
 	
 	@Override
 	public String toString() {
 		return "Assessor [authorisationNumber=" + authorisationNumber + ", identificationNumber=" + identificationNumber
-				+ ", corporateAddress=" + corporateAddress + "]";
+				+ ", organisation=" + organisation + "]";
 	}
 	
 }

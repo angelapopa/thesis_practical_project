@@ -8,7 +8,8 @@ public enum MeasuringUnit {
 	CUBIC_METER("m^3", "cubic meters"),
 	WATTS_SQUARE_METER_KELVIN("W/m^2K", "watts per square metre times kelvin"),
 	KWH_SQUARE_METER_YEAR("kWh/m^2/yr","kilowattshour per square meter per year"), 
-	KG_SQUARE_METER_YEAR("kg/m^2/yr", "kilogramms per square meter per year");
+	KG_SQUARE_METER_YEAR("kg/m^2/yr", "kilogramms per square meter per year"), 
+	KWH_YEAR("kWh/yr","kilowatt hour per year");
 	
 	private String unit;
 	
