@@ -2,9 +2,9 @@ package at.uibk.epc.model;
 
 public class ClimateData {
 
-	private Temperature averageOutdoorTemperature;
+	private Measure averageOutdoorTemperature;
 	
-	private Temperature idealIndoorTemperature;
+	private Measure idealIndoorTemperature;
 	
 	private Measure hightAboveSeaLevel;
 	
@@ -22,7 +22,7 @@ public class ClimateData {
 		// needed by MongoDB POJO Converter
 	}
 	
-	public ClimateData(Temperature averageOutdoorTemperature, Temperature idealIndoorTemperature,
+	public ClimateData(Measure averageOutdoorTemperature, Measure idealIndoorTemperature,
 			Measure hightAboveSeaLevel, String region, int climateFactor, int heatingDaysPerYear) {
 		super();
 		this.averageOutdoorTemperature = averageOutdoorTemperature;
@@ -33,19 +33,19 @@ public class ClimateData {
 		this.heatingDaysPerYear = heatingDaysPerYear;
 	}
 
-	public Temperature getAverageOutdoorTemperature() {
+	public Measure getAverageOutdoorTemperature() {
 		return averageOutdoorTemperature;
 	}
 	
-	public void setAverageOutdoorTemperature(Temperature averageOutdoorTemperature) {
+	public void setAverageOutdoorTemperature(Measure averageOutdoorTemperature) {
 		this.averageOutdoorTemperature = averageOutdoorTemperature;
 	}
 	
-	public Temperature getIdealIndoorTemperature() {
+	public Measure getIdealIndoorTemperature() {
 		return idealIndoorTemperature;
 	}
 	
-	public void setIdealIndoorTemperature(Temperature idealIndoorTemperature) {
+	public void setIdealIndoorTemperature(Measure idealIndoorTemperature) {
 		this.idealIndoorTemperature = idealIndoorTemperature;
 	}
 	

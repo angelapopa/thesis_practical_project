@@ -4,7 +4,7 @@
     <eAnnotations xmi:id="_FBw88FrKEeqbvZIBCT16kA" source="http://ns.yatta.de/umllab">
       <contents xmi:type="ecore:EAnnotation" xmi:id="_FBw88VrKEeqbvZIBCT16kA" source="codegen">
         <details xmi:id="_FBw88lrKEeqbvZIBCT16kA" key="codegenDirectory" value="/epc-modelling/src/main/java"/>
-        <details xmi:id="_HqSeYFrKEeqbvZIBCT16kA" key="AssociatedSourceCode" value="/epc-modelling/src/main/java/at/uibk/epc/model/Address.java;3514552836/1;/epc-modelling/src/main/java/at/uibk/epc/model/Assessor.java;247220563/1;/epc-modelling/src/main/java/at/uibk/epc/model/ClimateData.java;2041208046/1;/epc-modelling/src/main/java/at/uibk/epc/model/ContactDetails.java;3810457795/1;/epc-modelling/src/main/java/at/uibk/epc/model/Dwelling.java;2295063763/1;/epc-modelling/src/main/java/at/uibk/epc/model/DwellingType.java;1384626785/1;/epc-modelling/src/main/java/at/uibk/epc/model/EPC.java;2023031596/1;/epc-modelling/src/main/java/at/uibk/epc/model/Measure.java;68195104/1;/epc-modelling/src/main/java/at/uibk/epc/model/MeasuringUnit.java;1233033799/1;/epc-modelling/src/main/java/at/uibk/epc/model/Organisation.java;2029191540/1;/epc-modelling/src/main/java/at/uibk/epc/model/Person.java;1986248752/1;/epc-modelling/src/main/java/at/uibk/epc/model/Photo.java;2670445242/1;/epc-modelling/src/main/java/at/uibk/epc/model/PurposeType.java;177294100/1;/epc-modelling/src/main/java/at/uibk/epc/model/Rating.java;2205323229/1;/epc-modelling/src/main/java/at/uibk/epc/model/RatingMethodology.java;1998396658/1;/epc-modelling/src/main/java/at/uibk/epc/model/Software.java;4287347620/1;/epc-modelling/src/main/java/at/uibk/epc/model/SpatialData.java;1500366160/1;/epc-modelling/src/main/java/at/uibk/epc/model/Temperature.java;1467755030/1;/epc-modelling/src/main/java/at/uibk/epc/model/TemperatureUnit.java;429611246/1;/epc-modelling/src/main/java/at/uibk/epc/model/ThermalData.java;1092657734/1;/epc-modelling/src/main/java/at/uibk/epc/importer/ImportEPC.java;2238349838/1;"/>
+        <details xmi:id="_HqSeYFrKEeqbvZIBCT16kA" key="AssociatedSourceCode" value="/epc-modelling/src/main/java/at/uibk/epc/model/Address.java;3514552836/1;/epc-modelling/src/main/java/at/uibk/epc/model/Assessor.java;247220563/1;/epc-modelling/src/main/java/at/uibk/epc/model/ClimateData.java;1788408871/1;/epc-modelling/src/main/java/at/uibk/epc/model/ContactDetails.java;3810457795/1;/epc-modelling/src/main/java/at/uibk/epc/model/Dwelling.java;2295063763/1;/epc-modelling/src/main/java/at/uibk/epc/model/DwellingType.java;1384626785/1;/epc-modelling/src/main/java/at/uibk/epc/model/EPC.java;2023031596/1;/epc-modelling/src/main/java/at/uibk/epc/model/Measure.java;68195104/1;/epc-modelling/src/main/java/at/uibk/epc/model/MeasuringUnit.java;2435207509/1;/epc-modelling/src/main/java/at/uibk/epc/model/Organisation.java;2029191540/1;/epc-modelling/src/main/java/at/uibk/epc/model/Person.java;1986248752/1;/epc-modelling/src/main/java/at/uibk/epc/model/Photo.java;2670445242/1;/epc-modelling/src/main/java/at/uibk/epc/model/PurposeType.java;177294100/1;/epc-modelling/src/main/java/at/uibk/epc/model/Rating.java;2205323229/1;/epc-modelling/src/main/java/at/uibk/epc/model/RatingMethodology.java;1998396658/1;/epc-modelling/src/main/java/at/uibk/epc/model/Software.java;4287347620/1;/epc-modelling/src/main/java/at/uibk/epc/model/SpatialData.java;1500366160/1;/epc-modelling/src/main/java/at/uibk/epc/model/ThermalData.java;1092657734/1;/epc-modelling/src/main/java/at/uibk/epc/importer/ImportEPC.java;3099107427/1;"/>
       </contents>
     </eAnnotations>
     <elementImport xmi:id="_HQuu4FrKEeqbvZIBCT16kA">
@@ -242,8 +242,8 @@
               </ownedOperation>
             </packagedElement>
             <packagedElement xmi:type="uml:Class" xmi:id="_HRMB4FrKEeqbvZIBCT16kA" name="ClimateData">
-              <ownedAttribute xmi:id="_HZS1AFrKEeqbvZIBCT16kA" name="averageOutdoorTemperature" type="_HTd50FrKEeqbvZIBCT16kA" association="_Ha3iUFrKEeqbvZIBCT16kA"/>
-              <ownedAttribute xmi:id="_HZS1AVrKEeqbvZIBCT16kA" name="idealIndoorTemperature" type="_HTd50FrKEeqbvZIBCT16kA" association="_Ha4JYFrKEeqbvZIBCT16kA"/>
+              <ownedAttribute xmi:id="_HZS1AFrKEeqbvZIBCT16kA" name="averageOutdoorTemperature" type="_HSPx0FrKEeqbvZIBCT16kA" association="_Ha3iUFrKEeqbvZIBCT16kA"/>
+              <ownedAttribute xmi:id="_HZS1AVrKEeqbvZIBCT16kA" name="idealIndoorTemperature" type="_HSPx0FrKEeqbvZIBCT16kA" association="_Ha4JYFrKEeqbvZIBCT16kA"/>
               <ownedAttribute xmi:id="_HZTcEFrKEeqbvZIBCT16kA" name="hightAboveSeaLevel" type="_HSPx0FrKEeqbvZIBCT16kA" association="_Ha4JYlrKEeqbvZIBCT16kA"/>
               <ownedAttribute xmi:id="_HZTcEVrKEeqbvZIBCT16kA" name="region">
                 <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
@@ -262,32 +262,6 @@
                 <body>// needed by MongoDB POJO Converter&#xD;
 	</body>
               </ownedBehavior>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HaUIslrKEeqbvZIBCT16kA" name="ClimateData" specification="_HXoBEFrKEeqbvZIBCT16kA">
-                <ownedParameter xmi:id="_HaUIs1rKEeqbvZIBCT16kA" name="averageOutdoorTemperature" type="_HTd50FrKEeqbvZIBCT16kA"/>
-                <ownedParameter xmi:id="_HaUItFrKEeqbvZIBCT16kA" name="idealIndoorTemperature" type="_HTd50FrKEeqbvZIBCT16kA"/>
-                <ownedParameter xmi:id="_HaUItVrKEeqbvZIBCT16kA" name="hightAboveSeaLevel" type="_HSPx0FrKEeqbvZIBCT16kA"/>
-                <ownedParameter xmi:id="_HaUItlrKEeqbvZIBCT16kA" name="region">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-                </ownedParameter>
-                <ownedParameter xmi:id="_HaUIt1rKEeqbvZIBCT16kA" name="climateFactor">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                </ownedParameter>
-                <ownedParameter xmi:id="_HaUIuFrKEeqbvZIBCT16kA" name="heatingDaysPerYear">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                </ownedParameter>
-                <ownedParameter xmi:id="_HaUIuVrKEeqbvZIBCT16kA" type="_HRMB4FrKEeqbvZIBCT16kA" direction="return">
-                  <name xsi:nil="true"/>
-                </ownedParameter>
-                <language>java</language>
-                <body>super();&#xD;
-		this.averageOutdoorTemperature = averageOutdoorTemperature;&#xD;
-		this.idealIndoorTemperature = idealIndoorTemperature;&#xD;
-		this.hightAboveSeaLevel = hightAboveSeaLevel;&#xD;
-		this.region = region;&#xD;
-		this.climateFactor = climateFactor;&#xD;
-		this.heatingDaysPerYear = heatingDaysPerYear;&#xD;
-	</body>
-              </ownedBehavior>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HaUvwFrKEeqbvZIBCT16kA" name="toString" specification="_HRXBAFrKEeqbvZIBCT16kA">
                 <ownedParameter xmi:id="_HaUvwVrKEeqbvZIBCT16kA" direction="return">
                   <name xsi:nil="true"/>
@@ -297,6 +271,30 @@
                 <body>return &quot;ClimateData [averageOutdoorTemperature=&quot; + averageOutdoorTemperature + &quot;, idealIndoorTemperature=&quot;&#xD;
 				+ idealIndoorTemperature + &quot;, hightAboveSeaLevel=&quot; + hightAboveSeaLevel + &quot;, region=&quot; + region&#xD;
 				+ &quot;, climateFactor=&quot; + climateFactor + &quot;, heatingDaysPerYear=&quot; + heatingDaysPerYear + &quot;]&quot;;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Rd--UFrQEeqbvZIBCT16kA" name="ClimateData" specification="_Rd9wMFrQEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_Rd--UVrQEeqbvZIBCT16kA" name="averageOutdoorTemperature" type="_HSPx0FrKEeqbvZIBCT16kA"/>
+                <ownedParameter xmi:id="_Rd--UlrQEeqbvZIBCT16kA" name="idealIndoorTemperature" type="_HSPx0FrKEeqbvZIBCT16kA"/>
+                <ownedParameter xmi:id="_Rd--U1rQEeqbvZIBCT16kA" name="hightAboveSeaLevel" type="_HSPx0FrKEeqbvZIBCT16kA"/>
+                <ownedParameter xmi:id="_Rd--VFrQEeqbvZIBCT16kA" name="region">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_Rd--VVrQEeqbvZIBCT16kA" name="climateFactor">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_Rd--VlrQEeqbvZIBCT16kA" name="heatingDaysPerYear">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_Rd--V1rQEeqbvZIBCT16kA" type="_HRMB4FrKEeqbvZIBCT16kA" direction="return"/>
+                <language>java</language>
+                <body>super();&#xD;
+		this.averageOutdoorTemperature = averageOutdoorTemperature;&#xD;
+		this.idealIndoorTemperature = idealIndoorTemperature;&#xD;
+		this.hightAboveSeaLevel = hightAboveSeaLevel;&#xD;
+		this.region = region;&#xD;
+		this.climateFactor = climateFactor;&#xD;
+		this.heatingDaysPerYear = heatingDaysPerYear;&#xD;
 	</body>
               </ownedBehavior>
               <ownedOperation xmi:id="_HRPFMFrKEeqbvZIBCT16kA" name="ClimateData" method="_HaUIsFrKEeqbvZIBCT16kA">
@@ -310,23 +308,23 @@
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                 </ownedParameter>
               </ownedOperation>
-              <ownedOperation xmi:id="_HXoBEFrKEeqbvZIBCT16kA" name="ClimateData" method="_HaUIslrKEeqbvZIBCT16kA">
-                <eAnnotations xmi:id="_HXooJVrKEeqbvZIBCT16kA" source="http://www.eclipse.org/uml2/2.0.0/UML">
-                  <details xmi:id="_HXpPMFrKEeqbvZIBCT16kA" key="create"/>
+              <ownedOperation xmi:id="_Rd9wMFrQEeqbvZIBCT16kA" name="ClimateData" method="_Rd--UFrQEeqbvZIBCT16kA">
+                <eAnnotations xmi:id="_Rd-XR1rQEeqbvZIBCT16kA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_Rd-XSFrQEeqbvZIBCT16kA" key="create"/>
                 </eAnnotations>
-                <ownedParameter xmi:id="_HXoBEVrKEeqbvZIBCT16kA" name="averageOutdoorTemperature" type="_HTd50FrKEeqbvZIBCT16kA"/>
-                <ownedParameter xmi:id="_HXooIFrKEeqbvZIBCT16kA" name="idealIndoorTemperature" type="_HTd50FrKEeqbvZIBCT16kA"/>
-                <ownedParameter xmi:id="_HXooIVrKEeqbvZIBCT16kA" name="hightAboveSeaLevel" type="_HSPx0FrKEeqbvZIBCT16kA"/>
-                <ownedParameter xmi:id="_HXooIlrKEeqbvZIBCT16kA" name="region">
+                <ownedParameter xmi:id="_Rd-XQFrQEeqbvZIBCT16kA" name="averageOutdoorTemperature" type="_HSPx0FrKEeqbvZIBCT16kA"/>
+                <ownedParameter xmi:id="_Rd-XQVrQEeqbvZIBCT16kA" name="idealIndoorTemperature" type="_HSPx0FrKEeqbvZIBCT16kA"/>
+                <ownedParameter xmi:id="_Rd-XQlrQEeqbvZIBCT16kA" name="hightAboveSeaLevel" type="_HSPx0FrKEeqbvZIBCT16kA"/>
+                <ownedParameter xmi:id="_Rd-XQ1rQEeqbvZIBCT16kA" name="region">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                 </ownedParameter>
-                <ownedParameter xmi:id="_HXooI1rKEeqbvZIBCT16kA" name="climateFactor">
+                <ownedParameter xmi:id="_Rd-XRFrQEeqbvZIBCT16kA" name="climateFactor">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
                 </ownedParameter>
-                <ownedParameter xmi:id="_HXooJFrKEeqbvZIBCT16kA" name="heatingDaysPerYear">
+                <ownedParameter xmi:id="_Rd-XRVrQEeqbvZIBCT16kA" name="heatingDaysPerYear">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
                 </ownedParameter>
-                <ownedParameter xmi:id="_HXpPMVrKEeqbvZIBCT16kA" type="_HRMB4FrKEeqbvZIBCT16kA" direction="return"/>
+                <ownedParameter xmi:id="_Rd-XRlrQEeqbvZIBCT16kA" type="_HRMB4FrKEeqbvZIBCT16kA" direction="return"/>
               </ownedOperation>
             </packagedElement>
             <packagedElement xmi:type="uml:Class" xmi:id="_HReVwFrKEeqbvZIBCT16kA" name="ContactDetails">
@@ -705,57 +703,69 @@
                 <ownedParameter xmi:id="_HSdNMlrKEeqbvZIBCT16kA" type="_HSXtoFrKEeqbvZIBCT16kA" direction="return"/>
               </ownedOperation>
               <ownedLiteral xmi:id="_HSYUsFrKEeqbvZIBCT16kA" name="FEET">
-                <specification xmi:type="uml:Expression" xmi:id="_F46gAFrNEeqbvZIBCT16kA">
-                  <operand xmi:type="uml:LiteralString" xmi:id="_F6hpk1rNEeqbvZIBCT16kA" value="&quot;ft&quot;"/>
-                  <operand xmi:type="uml:LiteralString" xmi:id="_F6hplFrNEeqbvZIBCT16kA" value="&quot;feet&quot;"/>
+                <specification xmi:type="uml:Expression" xmi:id="_D11GkFrQEeqbvZIBCT16kA">
+                  <operand xmi:type="uml:LiteralString" xmi:id="_D17NMFrQEeqbvZIBCT16kA" value="&quot;ft&quot;"/>
+                  <operand xmi:type="uml:LiteralString" xmi:id="_D17NMVrQEeqbvZIBCT16kA" value="&quot;feet&quot;"/>
                 </specification>
               </ownedLiteral>
               <ownedLiteral xmi:id="_HSYUslrKEeqbvZIBCT16kA" name="METER">
-                <specification xmi:type="uml:Expression" xmi:id="_F47HEFrNEeqbvZIBCT16kA">
-                  <operand xmi:type="uml:LiteralString" xmi:id="_F6iQoFrNEeqbvZIBCT16kA" value="&quot;m&quot;"/>
-                  <operand xmi:type="uml:LiteralString" xmi:id="_F6iQoVrNEeqbvZIBCT16kA" value="&quot;meter&quot;"/>
+                <specification xmi:type="uml:Expression" xmi:id="_D11GkVrQEeqbvZIBCT16kA">
+                  <operand xmi:type="uml:LiteralString" xmi:id="_D17NMlrQEeqbvZIBCT16kA" value="&quot;m&quot;"/>
+                  <operand xmi:type="uml:LiteralString" xmi:id="_D17NM1rQEeqbvZIBCT16kA" value="&quot;meter&quot;"/>
                 </specification>
               </ownedLiteral>
               <ownedLiteral xmi:id="_HSYUtFrKEeqbvZIBCT16kA" name="SQUARE_METER">
-                <specification xmi:type="uml:Expression" xmi:id="_F47HEVrNEeqbvZIBCT16kA">
-                  <operand xmi:type="uml:LiteralString" xmi:id="_F6iQolrNEeqbvZIBCT16kA" value="&quot;m^2&quot;"/>
-                  <operand xmi:type="uml:LiteralString" xmi:id="_F6iQo1rNEeqbvZIBCT16kA" value="&quot;square meters&quot;"/>
+                <specification xmi:type="uml:Expression" xmi:id="_D11GklrQEeqbvZIBCT16kA">
+                  <operand xmi:type="uml:LiteralString" xmi:id="_D17NNFrQEeqbvZIBCT16kA" value="&quot;m^2&quot;"/>
+                  <operand xmi:type="uml:LiteralString" xmi:id="_D17NNVrQEeqbvZIBCT16kA" value="&quot;square meters&quot;"/>
                 </specification>
               </ownedLiteral>
               <ownedLiteral xmi:id="_HSY7wVrKEeqbvZIBCT16kA" name="SQUARE_FEET">
-                <specification xmi:type="uml:Expression" xmi:id="_F47HElrNEeqbvZIBCT16kA">
-                  <operand xmi:type="uml:LiteralString" xmi:id="_F6iQpFrNEeqbvZIBCT16kA" value="&quot;ft^2&quot;"/>
-                  <operand xmi:type="uml:LiteralString" xmi:id="_F6iQpVrNEeqbvZIBCT16kA" value="&quot;square feet&quot;"/>
+                <specification xmi:type="uml:Expression" xmi:id="_D11toFrQEeqbvZIBCT16kA">
+                  <operand xmi:type="uml:LiteralString" xmi:id="_D170QFrQEeqbvZIBCT16kA" value="&quot;ft^2&quot;"/>
+                  <operand xmi:type="uml:LiteralString" xmi:id="_D170QVrQEeqbvZIBCT16kA" value="&quot;square feet&quot;"/>
                 </specification>
               </ownedLiteral>
               <ownedLiteral xmi:id="_HSY7w1rKEeqbvZIBCT16kA" name="CUBIC_METER">
-                <specification xmi:type="uml:Expression" xmi:id="_F47HE1rNEeqbvZIBCT16kA">
-                  <operand xmi:type="uml:LiteralString" xmi:id="_F6iQplrNEeqbvZIBCT16kA" value="&quot;m^3&quot;"/>
-                  <operand xmi:type="uml:LiteralString" xmi:id="_F6iQp1rNEeqbvZIBCT16kA" value="&quot;cubic meters&quot;"/>
+                <specification xmi:type="uml:Expression" xmi:id="_D11toVrQEeqbvZIBCT16kA">
+                  <operand xmi:type="uml:LiteralString" xmi:id="_D170QlrQEeqbvZIBCT16kA" value="&quot;m^3&quot;"/>
+                  <operand xmi:type="uml:LiteralString" xmi:id="_D170Q1rQEeqbvZIBCT16kA" value="&quot;cubic meters&quot;"/>
                 </specification>
               </ownedLiteral>
               <ownedLiteral xmi:id="_HSY7xVrKEeqbvZIBCT16kA" name="WATTS_SQUARE_METER_KELVIN">
-                <specification xmi:type="uml:Expression" xmi:id="_F47uIFrNEeqbvZIBCT16kA">
-                  <operand xmi:type="uml:LiteralString" xmi:id="_F6iQqFrNEeqbvZIBCT16kA" value="&quot;W/m^2K&quot;"/>
-                  <operand xmi:type="uml:LiteralString" xmi:id="_F6i3sFrNEeqbvZIBCT16kA" value="&quot;watts per square metre times kelvin&quot;"/>
+                <specification xmi:type="uml:Expression" xmi:id="_D11tolrQEeqbvZIBCT16kA">
+                  <operand xmi:type="uml:LiteralString" xmi:id="_D170RFrQEeqbvZIBCT16kA" value="&quot;W/m^2K&quot;"/>
+                  <operand xmi:type="uml:LiteralString" xmi:id="_D18bUFrQEeqbvZIBCT16kA" value="&quot;watts per square metre times kelvin&quot;"/>
                 </specification>
               </ownedLiteral>
               <ownedLiteral xmi:id="_HSZi0VrKEeqbvZIBCT16kA" name="KWH_SQUARE_METER_YEAR">
-                <specification xmi:type="uml:Expression" xmi:id="_F47uIVrNEeqbvZIBCT16kA">
-                  <operand xmi:type="uml:LiteralString" xmi:id="_F6i3sVrNEeqbvZIBCT16kA" value="&quot;kWh/m^2/yr&quot;"/>
-                  <operand xmi:type="uml:LiteralString" xmi:id="_F6i3slrNEeqbvZIBCT16kA" value="&quot;kilowattshour per square meter per year&quot;"/>
+                <specification xmi:type="uml:Expression" xmi:id="_D11to1rQEeqbvZIBCT16kA">
+                  <operand xmi:type="uml:LiteralString" xmi:id="_D18bUVrQEeqbvZIBCT16kA" value="&quot;kWh/m^2/yr&quot;"/>
+                  <operand xmi:type="uml:LiteralString" xmi:id="_D18bUlrQEeqbvZIBCT16kA" value="&quot;kilowattshour per square meter per year&quot;"/>
                 </specification>
               </ownedLiteral>
               <ownedLiteral xmi:id="_HSZi01rKEeqbvZIBCT16kA" name="KG_SQUARE_METER_YEAR">
-                <specification xmi:type="uml:Expression" xmi:id="_F48VMFrNEeqbvZIBCT16kA">
-                  <operand xmi:type="uml:LiteralString" xmi:id="_F6i3s1rNEeqbvZIBCT16kA" value="&quot;kg/m^2/yr&quot;"/>
-                  <operand xmi:type="uml:LiteralString" xmi:id="_F6i3tFrNEeqbvZIBCT16kA" value="&quot;kilogramms per square meter per year&quot;"/>
+                <specification xmi:type="uml:Expression" xmi:id="_D12UsFrQEeqbvZIBCT16kA">
+                  <operand xmi:type="uml:LiteralString" xmi:id="_D18bU1rQEeqbvZIBCT16kA" value="&quot;kg/m^2/yr&quot;"/>
+                  <operand xmi:type="uml:LiteralString" xmi:id="_D18bVFrQEeqbvZIBCT16kA" value="&quot;kilogramms per square meter per year&quot;"/>
                 </specification>
               </ownedLiteral>
               <ownedLiteral xmi:id="_HSaJ4FrKEeqbvZIBCT16kA" name="KWH_YEAR">
-                <specification xmi:type="uml:Expression" xmi:id="_F48VMVrNEeqbvZIBCT16kA">
-                  <operand xmi:type="uml:LiteralString" xmi:id="_F6i3tVrNEeqbvZIBCT16kA" value="&quot;kWh/yr&quot;"/>
-                  <operand xmi:type="uml:LiteralString" xmi:id="_F6i3tlrNEeqbvZIBCT16kA" value="&quot;kilowatt hour per year&quot;"/>
+                <specification xmi:type="uml:Expression" xmi:id="_D12UsVrQEeqbvZIBCT16kA">
+                  <operand xmi:type="uml:LiteralString" xmi:id="_D18bVVrQEeqbvZIBCT16kA" value="&quot;kWh/yr&quot;"/>
+                  <operand xmi:type="uml:LiteralString" xmi:id="_D18bVlrQEeqbvZIBCT16kA" value="&quot;kilowatt hour per year&quot;"/>
+                </specification>
+              </ownedLiteral>
+              <ownedLiteral xmi:id="_D13i0FrQEeqbvZIBCT16kA" name="CELCIUS">
+                <specification xmi:type="uml:Expression" xmi:id="_D14J4FrQEeqbvZIBCT16kA">
+                  <operand xmi:type="uml:LiteralString" xmi:id="_D18bV1rQEeqbvZIBCT16kA" value="&quot;C&quot;"/>
+                  <operand xmi:type="uml:LiteralString" xmi:id="_D18bWFrQEeqbvZIBCT16kA" value="&quot;Celcius&quot;"/>
+                </specification>
+              </ownedLiteral>
+              <ownedLiteral xmi:id="_D14w8FrQEeqbvZIBCT16kA" name="FAHRENHEIT">
+                <specification xmi:type="uml:Expression" xmi:id="_D14w8VrQEeqbvZIBCT16kA">
+                  <operand xmi:type="uml:LiteralString" xmi:id="_D18bWVrQEeqbvZIBCT16kA" value="&quot;K&quot;"/>
+                  <operand xmi:type="uml:LiteralString" xmi:id="_D18bWlrQEeqbvZIBCT16kA" value="&quot;Fahrenheit&quot;"/>
                 </specification>
               </ownedLiteral>
             </packagedElement>
@@ -1216,87 +1226,6 @@
                 <ownedParameter xmi:id="_HYY2ElrKEeqbvZIBCT16kA" type="_HTNbIFrKEeqbvZIBCT16kA" direction="return"/>
               </ownedOperation>
             </packagedElement>
-            <packagedElement xmi:type="uml:Class" xmi:id="_HTd50FrKEeqbvZIBCT16kA" name="Temperature">
-              <ownedAttribute xmi:id="_HaEREFrKEeqbvZIBCT16kA" name="value">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_HaE4IFrKEeqbvZIBCT16kA" name="unit" type="_HTkAcFrKEeqbvZIBCT16kA" association="_HbNgkFrKEeqbvZIBCT16kA"/>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HayCwFrKEeqbvZIBCT16kA" name="Temperature" specification="_HTfH8FrKEeqbvZIBCT16kA">
-                <ownedParameter xmi:id="_HayCwVrKEeqbvZIBCT16kA" type="_HTd50FrKEeqbvZIBCT16kA" direction="return">
-                  <name xsi:nil="true"/>
-                </ownedParameter>
-                <language>java</language>
-                <body>// needed by MongoDB POJO Converter&#xD;
-	</body>
-              </ownedBehavior>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Hayp0FrKEeqbvZIBCT16kA" name="Temperature" specification="_HYarQFrKEeqbvZIBCT16kA">
-                <ownedParameter xmi:id="_Hayp0VrKEeqbvZIBCT16kA" name="value">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
-                </ownedParameter>
-                <ownedParameter xmi:id="_Hayp0lrKEeqbvZIBCT16kA" name="unit" type="_HTkAcFrKEeqbvZIBCT16kA"/>
-                <ownedParameter xmi:id="_Hayp01rKEeqbvZIBCT16kA" type="_HTd50FrKEeqbvZIBCT16kA" direction="return">
-                  <name xsi:nil="true"/>
-                </ownedParameter>
-                <language>java</language>
-                <body>this.value = value;&#xD;
-		this.unit = unit;&#xD;
-	</body>
-              </ownedBehavior>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Hayp1FrKEeqbvZIBCT16kA" name="toString" specification="_HTgWEFrKEeqbvZIBCT16kA">
-                <ownedParameter xmi:id="_Hayp1VrKEeqbvZIBCT16kA" direction="return">
-                  <name xsi:nil="true"/>
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-                </ownedParameter>
-                <language>java</language>
-                <body>return &quot;Temperature [value=&quot; + value + &quot;, unit=&quot; + unit + &quot;]&quot;;&#xD;
-	</body>
-              </ownedBehavior>
-              <ownedOperation xmi:id="_HTfH8FrKEeqbvZIBCT16kA" name="Temperature" method="_HayCwFrKEeqbvZIBCT16kA">
-                <eAnnotations xmi:id="_HTfvAFrKEeqbvZIBCT16kA" source="http://www.eclipse.org/uml2/2.0.0/UML">
-                  <details xmi:id="_HTfvAVrKEeqbvZIBCT16kA" key="create"/>
-                </eAnnotations>
-                <ownedParameter xmi:id="_HTfvAlrKEeqbvZIBCT16kA" type="_HTd50FrKEeqbvZIBCT16kA" direction="return"/>
-              </ownedOperation>
-              <ownedOperation xmi:id="_HTgWEFrKEeqbvZIBCT16kA" name="toString" method="_Hayp1FrKEeqbvZIBCT16kA">
-                <ownedParameter xmi:id="_HTgWEVrKEeqbvZIBCT16kA" direction="return">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-                </ownedParameter>
-              </ownedOperation>
-              <ownedOperation xmi:id="_HYarQFrKEeqbvZIBCT16kA" name="Temperature" method="_Hayp0FrKEeqbvZIBCT16kA">
-                <eAnnotations xmi:id="_HYbSUFrKEeqbvZIBCT16kA" source="http://www.eclipse.org/uml2/2.0.0/UML">
-                  <details xmi:id="_HYbSUVrKEeqbvZIBCT16kA" key="create"/>
-                </eAnnotations>
-                <ownedParameter xmi:id="_HYarQVrKEeqbvZIBCT16kA" name="value">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
-                </ownedParameter>
-                <ownedParameter xmi:id="_HYarQlrKEeqbvZIBCT16kA" name="unit" type="_HTkAcFrKEeqbvZIBCT16kA"/>
-                <ownedParameter xmi:id="_HYbSUlrKEeqbvZIBCT16kA" type="_HTd50FrKEeqbvZIBCT16kA" direction="return"/>
-              </ownedOperation>
-            </packagedElement>
-            <packagedElement xmi:type="uml:Enumeration" xmi:id="_HTkAcFrKEeqbvZIBCT16kA" name="TemperatureUnit">
-              <ownedAttribute xmi:id="_HaGGQFrKEeqbvZIBCT16kA" name="unit" visibility="public" isLeaf="true" isReadOnly="true">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-              </ownedAttribute>
-              <ownedOperation xmi:id="_HTmcsFrKEeqbvZIBCT16kA" name="TemperatureUnit" visibility="private" method="_Hayp1lrKEeqbvZIBCT16kA">
-                <eAnnotations xmi:id="_HTnDwVrKEeqbvZIBCT16kA" source="http://www.eclipse.org/uml2/2.0.0/UML">
-                  <details xmi:id="_HTnDwlrKEeqbvZIBCT16kA" key="create"/>
-                </eAnnotations>
-                <ownedParameter xmi:id="_HTnDwFrKEeqbvZIBCT16kA" name="unit">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-                </ownedParameter>
-                <ownedParameter xmi:id="_HTnDw1rKEeqbvZIBCT16kA" type="_HTkAcFrKEeqbvZIBCT16kA" direction="return"/>
-              </ownedOperation>
-              <ownedLiteral xmi:id="_HTkAcVrKEeqbvZIBCT16kA" name="CELCIUS">
-                <specification xmi:type="uml:Expression" xmi:id="_F5UIoFrNEeqbvZIBCT16kA">
-                  <operand xmi:type="uml:LiteralString" xmi:id="_F6kF0FrNEeqbvZIBCT16kA" value="&quot;celcius&quot;"/>
-                </specification>
-              </ownedLiteral>
-              <ownedLiteral xmi:id="_HTkngVrKEeqbvZIBCT16kA" name="FAHRENHEIT">
-                <specification xmi:type="uml:Expression" xmi:id="_F5UIoVrNEeqbvZIBCT16kA">
-                  <operand xmi:type="uml:LiteralString" xmi:id="_F6kF0VrNEeqbvZIBCT16kA" value="&quot;fahrenheit&quot;"/>
-                </specification>
-              </ownedLiteral>
-            </packagedElement>
             <packagedElement xmi:type="uml:Class" xmi:id="_HTrVMFrKEeqbvZIBCT16kA" name="ThermalData">
               <ownedComment xmi:id="_F6kF0lrNEeqbvZIBCT16kA">
                 <body>Building specific data&#xD;
@@ -1441,9 +1370,6 @@
             <packagedElement xmi:type="uml:Association" xmi:id="_HbM5gFrKEeqbvZIBCT16kA" name="" memberEnd="_HaDC8VrKEeqbvZIBCT16kA _HbM5gVrKEeqbvZIBCT16kA">
               <ownedEnd xmi:id="_HbM5gVrKEeqbvZIBCT16kA" name="" type="_HTNbIFrKEeqbvZIBCT16kA" association="_HbM5gFrKEeqbvZIBCT16kA"/>
             </packagedElement>
-            <packagedElement xmi:type="uml:Association" xmi:id="_HbNgkFrKEeqbvZIBCT16kA" name="" memberEnd="_HaE4IFrKEeqbvZIBCT16kA _HbNgkVrKEeqbvZIBCT16kA">
-              <ownedEnd xmi:id="_HbNgkVrKEeqbvZIBCT16kA" name="" type="_HTd50FrKEeqbvZIBCT16kA" association="_HbNgkFrKEeqbvZIBCT16kA"/>
-            </packagedElement>
             <packagedElement xmi:type="uml:Association" xmi:id="_HbRK8FrKEeqbvZIBCT16kA" name="" memberEnd="_HaH7cFrKEeqbvZIBCT16kA _HbRK8VrKEeqbvZIBCT16kA">
               <ownedEnd xmi:id="_HbRK8VrKEeqbvZIBCT16kA" name="" type="_HTrVMFrKEeqbvZIBCT16kA" association="_HbRK8FrKEeqbvZIBCT16kA"/>
             </packagedElement>
@@ -1502,8 +1428,8 @@
 		Assessor assessor = new Assessor(&quot;Ing.&quot;, &quot;Rutzinger&quot;, &quot;Kajetan&quot;, null, null, null, new Organisation(&quot;Neue Heimat Tirol&quot;, null, null));&#xD;
 		&#xD;
 		ClimateData climateData = new ClimateData();&#xD;
-		climateData.setIdealIndoorTemperature(new Temperature(20.0, TemperatureUnit.CELCIUS));&#xD;
-		climateData.setAverageOutdoorTemperature(new Temperature(-11.4, TemperatureUnit.CELCIUS));&#xD;
+		climateData.setIdealIndoorTemperature(new Measure(20.0, MeasuringUnit.CELCIUS));&#xD;
+		climateData.setAverageOutdoorTemperature(new Measure(-11.4, MeasuringUnit.CELCIUS));&#xD;
 		climateData.setHightAboveSeaLevel(new Measure(573, MeasuringUnit.METER));&#xD;
 		climateData.setHeatingDaysPerYear(220); &#xD;
 		&#xD;
@@ -1822,10 +1748,6 @@
   <UMLLabProfile:Annotations xmi:id="_HTRskFrKEeqbvZIBCT16kA" base_Element="_HTQecFrKEeqbvZIBCT16kA">
     <annotations xmi:id="_HTRskVrKEeqbvZIBCT16kA" name="Override"/>
   </UMLLabProfile:Annotations>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_HTg9IFrKEeqbvZIBCT16kA" base_Element="_HTgWEFrKEeqbvZIBCT16kA"/>
-  <UMLLabProfile:Annotations xmi:id="_HThkMFrKEeqbvZIBCT16kA" base_Element="_HTgWEFrKEeqbvZIBCT16kA">
-    <annotations xmi:id="_HThkMVrKEeqbvZIBCT16kA" name="Override"/>
-  </UMLLabProfile:Annotations>
   <UMLLabProfile:LegacyStyledElement xmi:id="_HTuYgVrKEeqbvZIBCT16kA" base_Element="_HTtxcFrKEeqbvZIBCT16kA"/>
   <UMLLabProfile:Annotations xmi:id="_HTu_kFrKEeqbvZIBCT16kA" base_Element="_HTtxcFrKEeqbvZIBCT16kA">
     <annotations xmi:id="_HTu_kVrKEeqbvZIBCT16kA" name="Override"/>
@@ -1840,13 +1762,6 @@
   <UMLLabProfile:LegacyStyledElement xmi:id="_HZ7HIFrKEeqbvZIBCT16kA" base_Element="_HZ6gEFrKEeqbvZIBCT16kA"/>
   <UMLLabProfile:LegacyStyledElement xmi:id="_HZ88UFrKEeqbvZIBCT16kA" base_Element="_HZ7uMFrKEeqbvZIBCT16kA"/>
   <UMLLabProfile:LegacyStyledElement xmi:id="_HZ-KcFrKEeqbvZIBCT16kA" base_Element="_HZ9jYFrKEeqbvZIBCT16kA"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_HaGtUFrKEeqbvZIBCT16kA" base_Element="_HaGGQFrKEeqbvZIBCT16kA">
-    <associatedElement xmi:type="uml:Operation" xmi:id="_F5gV4FrNEeqbvZIBCT16kA" name="getUnit" method="_F6emQFrNEeqbvZIBCT16kA">
-      <ownedParameter xmi:id="_F5sjIFrNEeqbvZIBCT16kA" direction="return">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-      </ownedParameter>
-    </associatedElement>
-  </UMLLabProfile:LegacyStyledElement>
   <uml:OpaqueBehavior xmi:id="_Hag9AFrKEeqbvZIBCT16kA" name="DwellingType" specification="_HR8P0FrKEeqbvZIBCT16kA">
     <ownedParameter xmi:id="_Hag9AVrKEeqbvZIBCT16kA" name="type">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
@@ -1904,11 +1819,11 @@
     <body>this.type = type;&#xD;
 	</body>
   </uml:OpaqueBehavior>
-  <uml:OpaqueBehavior xmi:id="_Hayp1lrKEeqbvZIBCT16kA" name="TemperatureUnit" specification="_HTmcsFrKEeqbvZIBCT16kA">
+  <uml:OpaqueBehavior xmi:id="_Hayp1lrKEeqbvZIBCT16kA" name="TemperatureUnit">
     <ownedParameter xmi:id="_HazQ4FrKEeqbvZIBCT16kA" name="unit">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedParameter>
-    <ownedParameter xmi:id="_HazQ4VrKEeqbvZIBCT16kA" type="_HTkAcFrKEeqbvZIBCT16kA" direction="return">
+    <ownedParameter xmi:id="_HazQ4VrKEeqbvZIBCT16kA" direction="return">
       <name xsi:nil="true"/>
     </ownedParameter>
     <language>java</language>
@@ -1933,7 +1848,7 @@
   <UMLLabProfile:Generics xmi:id="_F6Rx8FrNEeqbvZIBCT16kA" genericsValue="EPC" base_Element="_F6Qj0VrNEeqbvZIBCT16kA"/>
   <UMLLabProfile:Generics xmi:id="_F6SZAFrNEeqbvZIBCT16kA" genericsValue="EPC" base_Element="_F6Rx8lrNEeqbvZIBCT16kA"/>
   <UMLLabProfile:Generics xmi:id="_F6TAEFrNEeqbvZIBCT16kA" genericsValue="EPC" base_Element="_F6SZAlrNEeqbvZIBCT16kA"/>
-  <uml:OpaqueBehavior xmi:id="_F6emQFrNEeqbvZIBCT16kA" name="getUnit" specification="_F5gV4FrNEeqbvZIBCT16kA">
+  <uml:OpaqueBehavior xmi:id="_F6emQFrNEeqbvZIBCT16kA" name="getUnit">
     <ownedParameter xmi:id="_F6emQVrNEeqbvZIBCT16kA" direction="return">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedParameter>

@@ -19,7 +19,7 @@
       <cardinality xmi:id="_Hp6jl1rNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
     </targetRole>
   </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_HrTqsFrNEeqbvZIBCT16kA" sourceAnchor="0.0,83.0" targetAnchor="292.0,95.0" target="_HsD4qFrNEeqbvZIBCT16kA" source="_I0gucFrNEeqbvZIBCT16kA">
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_HrTqsFrNEeqbvZIBCT16kA" sourceAnchor="0.0,83.0" targetAnchor="292.0,95.0" target="_HsD4qFrNEeqbvZIBCT16kA">
     <modelElement href="epc-modelling.uml#_Ha3iUFrKEeqbvZIBCT16kA"/>
     <nameVisual xmi:id="_HrTqsVrNEeqbvZIBCT16kA" text="">
       <visualProperties xmi:id="_Jq_qgFrNEeqbvZIBCT16kA" position="-16.0,2.0"/>
@@ -37,7 +37,7 @@
       <cardinality xmi:id="_HrTqt1rNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
     </targetRole>
   </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_HsBcYFrNEeqbvZIBCT16kA" sourceAnchor="0.0,113.0" targetAnchor="292.0,125.0" target="_HsD4qFrNEeqbvZIBCT16kA" source="_I0gucFrNEeqbvZIBCT16kA">
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_HsBcYFrNEeqbvZIBCT16kA" sourceAnchor="0.0,113.0" targetAnchor="292.0,125.0" target="_HsD4qFrNEeqbvZIBCT16kA">
     <modelElement href="epc-modelling.uml#_Ha4JYFrKEeqbvZIBCT16kA"/>
     <nameVisual xmi:id="_HsBcYVrNEeqbvZIBCT16kA" text="">
       <visualProperties xmi:id="_JrCGwFrNEeqbvZIBCT16kA" position="5.0,-29.0"/>
@@ -55,7 +55,7 @@
       <cardinality xmi:id="_HsBcZ1rNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
     </targetRole>
   </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_HsD4oFrNEeqbvZIBCT16kA" sourceAnchor="210.0,67.0" targetAnchor="102.0,163.0" target="_HsD4qFrNEeqbvZIBCT16kA" source="_H_hAIFrNEeqbvZIBCT16kA">
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_HsD4oFrNEeqbvZIBCT16kA" sourceAnchor="210.0,67.0" targetAnchor="102.0,163.0" target="_HsD4qFrNEeqbvZIBCT16kA">
     <modelElement href="epc-modelling.uml#_Ha4JYlrKEeqbvZIBCT16kA"/>
     <bendpoints xmi:id="_mcj78VrOEeqbvZIBCT16kA" sourceX="240" targetY="348"/>
     <nameVisual xmi:id="_HsD4oVrNEeqbvZIBCT16kA" text="">
@@ -112,7 +112,7 @@
   </edges>
   <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_HyX8AFrNEeqbvZIBCT16kA" sourceAnchor="119.0,0.0" targetAnchor="278.0,109.0" target="_H05rkFrNEeqbvZIBCT16kA" source="_HsD4qFrNEeqbvZIBCT16kA">
     <modelElement href="epc-modelling.uml#_Ha8a0FrKEeqbvZIBCT16kA"/>
-    <bendpoints xmi:id="_NGnK4FrPEeqbvZIBCT16kA" sourceY="-265" targetX="613"/>
+    <bendpoints xmi:id="_8Krt4FrREeqsz5psPFciFQ" sourceY="-265" targetX="613"/>
     <nameVisual xmi:id="_Hzv1AlrNEeqbvZIBCT16kA" text="">
       <visualProperties xmi:id="_JqdfAFrNEeqbvZIBCT16kA" position="-312.0,-29.0"/>
     </nameVisual>
@@ -157,39 +157,39 @@
       <cardinality xmi:id="_H0h4J1rNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
     </targetRole>
   </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_H03PUFrNEeqbvZIBCT16kA" sourceAnchor="59.0,0.0" targetAnchor="109.0,219.0" target="_H05rkFrNEeqbvZIBCT16kA" source="_IplQ0FrNEeqbvZIBCT16kA">
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_H03PUFrNEeqbvZIBCT16kA" sourceAnchor="208.0,0.0" targetAnchor="139.0,219.0" target="_H05rkFrNEeqbvZIBCT16kA" source="_IplQ0FrNEeqbvZIBCT16kA">
     <modelElement href="epc-modelling.uml#_Ha7MsFrKEeqbvZIBCT16kA"/>
     <nameVisual xmi:id="_H03PUVrNEeqbvZIBCT16kA" text="">
-      <visualProperties xmi:id="_Jq-cYFrNEeqbvZIBCT16kA" position="-13.0,30.0"/>
+      <visualProperties xmi:id="_Jq-cYFrNEeqbvZIBCT16kA" position="2.0,19.28571428571422"/>
     </nameVisual>
     <sourceRole xmi:id="_H03PUlrNEeqbvZIBCT16kA" aggregationKind="NONE" name="spatialData" navigable="true">
       <modelElement href="epc-modelling.uml#_HZYUkFrKEeqbvZIBCT16kA"/>
-      <visualProperties xmi:id="_Jq9OQFrNEeqbvZIBCT16kA" position="-146.0,-66.0"/>
+      <visualProperties xmi:id="_Jq9OQFrNEeqbvZIBCT16kA" position="-107.0,-104.33333333333326"/>
       <visibility xmi:id="_H03PU1rNEeqbvZIBCT16kA" label="+"/>
       <cardinality xmi:id="_H03PVFrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
     </sourceRole>
     <targetRole xmi:id="_H03PVVrNEeqbvZIBCT16kA" aggregationKind="NONE" name="">
       <modelElement href="epc-modelling.uml#_Ha7MsVrKEeqbvZIBCT16kA"/>
-      <visualProperties xmi:id="_Jq-cYVrNEeqbvZIBCT16kA" position="-19.0,31.0"/>
+      <visualProperties xmi:id="_Jq-cYVrNEeqbvZIBCT16kA" position="2.0,39.33333333333326"/>
       <visibility xmi:id="_H03PVlrNEeqbvZIBCT16kA" label="+"/>
       <cardinality xmi:id="_H03PV1rNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
     </targetRole>
   </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_H04dcFrNEeqbvZIBCT16kA" sourceAnchor="0.0,36.0" targetAnchor="262.0,219.0" target="_H05rkFrNEeqbvZIBCT16kA" source="_I-Cd4FrNEeqbvZIBCT16kA">
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_H04dcFrNEeqbvZIBCT16kA" sourceAnchor="0.0,81.0" targetAnchor="255.0,219.0" target="_H05rkFrNEeqbvZIBCT16kA" source="_I-Cd4FrNEeqbvZIBCT16kA">
     <modelElement href="epc-modelling.uml#_Ha7zwFrKEeqbvZIBCT16kA"/>
-    <bendpoints xmi:id="_NGmj0FrPEeqbvZIBCT16kA" sourceX="-192" targetY="197"/>
+    <bendpoints xmi:id="_8KtjEFrREeqsz5psPFciFQ" sourceX="-136" targetY="256"/>
     <nameVisual xmi:id="_H04dcVrNEeqbvZIBCT16kA" text="">
-      <visualProperties xmi:id="_JrDU4FrNEeqbvZIBCT16kA" position="1.0,-68.0"/>
+      <visualProperties xmi:id="_JrDU4FrNEeqbvZIBCT16kA" position="2.000000000000057,-142.0"/>
     </nameVisual>
     <sourceRole xmi:id="_H04dclrNEeqbvZIBCT16kA" aggregationKind="NONE" name="thermalData" navigable="true">
       <modelElement href="epc-modelling.uml#_HZY7oFrKEeqbvZIBCT16kA"/>
-      <visualProperties xmi:id="_JrCt0FrNEeqbvZIBCT16kA" position="-151.0,-66.0"/>
+      <visualProperties xmi:id="_JrCt0FrNEeqbvZIBCT16kA" position="-135.0,-106.0"/>
       <visibility xmi:id="_H04dc1rNEeqbvZIBCT16kA" label="+"/>
       <cardinality xmi:id="_H04ddFrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
     </sourceRole>
     <targetRole xmi:id="_H04ddVrNEeqbvZIBCT16kA" aggregationKind="NONE" name="">
       <modelElement href="epc-modelling.uml#_Ha7zwVrKEeqbvZIBCT16kA"/>
-      <visualProperties xmi:id="_JrD78FrNEeqbvZIBCT16kA" position="-19.0,33.0"/>
+      <visualProperties xmi:id="_JrD78FrNEeqbvZIBCT16kA" position="-18.999999999999886,48.0"/>
       <visibility xmi:id="_H04ddlrNEeqbvZIBCT16kA" label="+"/>
       <cardinality xmi:id="_H04dd1rNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
     </targetRole>
@@ -212,39 +212,39 @@
       <cardinality xmi:id="_H05Eh1rNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
     </targetRole>
   </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_H2iqUFrNEeqbvZIBCT16kA" sourceAnchor="265.0,135.0" targetAnchor="84.0,0.0" target="_H7k7UFrNEeqbvZIBCT16kA" source="_HqSXAFrNEeqbvZIBCT16kA">
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_H2iqUFrNEeqbvZIBCT16kA" sourceAnchor="209.0,135.0" targetAnchor="139.0,0.0" target="_H7k7UFrNEeqbvZIBCT16kA" source="_HqSXAFrNEeqbvZIBCT16kA">
     <modelElement href="epc-modelling.uml#_HbAsQFrKEeqbvZIBCT16kA"/>
     <nameVisual xmi:id="_H7ATkFrNEeqbvZIBCT16kA" text="">
-      <visualProperties xmi:id="_JqbCwFrNEeqbvZIBCT16kA" position="2.0,-24.727272727272748"/>
+      <visualProperties xmi:id="_JqbCwFrNEeqbvZIBCT16kA" position="2.0,-13.0"/>
     </nameVisual>
     <sourceRole xmi:id="_H7A6oFrNEeqbvZIBCT16kA" aggregationKind="NONE" name="assessor" navigable="true">
       <modelElement href="epc-modelling.uml#_HZfCQFrKEeqbvZIBCT16kA"/>
-      <visualProperties xmi:id="_JqabsFrNEeqbvZIBCT16kA" position="-86.0,42.799999999999955"/>
+      <visualProperties xmi:id="_JqabsFrNEeqbvZIBCT16kA" position="2.0,41.0"/>
       <visibility xmi:id="_H7FME1rNEeqbvZIBCT16kA" label="+"/>
       <cardinality xmi:id="_H7FMElrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
     </sourceRole>
     <targetRole xmi:id="_H7A6oVrNEeqbvZIBCT16kA" aggregationKind="NONE" name="">
       <modelElement href="epc-modelling.uml#_HbAsQVrKEeqbvZIBCT16kA"/>
-      <visualProperties xmi:id="_Jqbp0FrNEeqbvZIBCT16kA" position="2.0,-107.79999999999995"/>
+      <visualProperties xmi:id="_Jqbp0FrNEeqbvZIBCT16kA" position="2.0,-107.0"/>
       <visibility xmi:id="_H7FMFVrNEeqbvZIBCT16kA" label="+"/>
       <cardinality xmi:id="_H7FMFFrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
     </targetRole>
   </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_H4UzAFrNEeqbvZIBCT16kA" sourceAnchor="274.0,52.0" targetAnchor="120.0,245.0" target="_H7k7UFrNEeqbvZIBCT16kA" source="_H05rkFrNEeqbvZIBCT16kA">
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_H4UzAFrNEeqbvZIBCT16kA" sourceAnchor="277.0,72.0" targetAnchor="102.0,246.0" target="_H7k7UFrNEeqbvZIBCT16kA" source="_H05rkFrNEeqbvZIBCT16kA">
     <modelElement href="epc-modelling.uml#_HbAsQlrKEeqbvZIBCT16kA"/>
-    <bendpoints xmi:id="_Srr9AFrPEeqbvZIBCT16kA" sourceX="400" sourceY="-2" targetX="1" targetY="156"/>
+    <bendpoints xmi:id="_-YoMIFrREeqsz5psPFciFQ" sourceX="138" sourceY="-85" targetX="-129" targetY="99"/>
     <nameVisual xmi:id="_H7BhsFrNEeqbvZIBCT16kA" text="">
-      <visualProperties xmi:id="_JqhJYFrNEeqbvZIBCT16kA" position="186.5,-29.0"/>
+      <visualProperties xmi:id="_JqhJYFrNEeqbvZIBCT16kA" position="85.0,2.0"/>
     </nameVisual>
     <sourceRole xmi:id="_H7BhsVrNEeqbvZIBCT16kA" aggregationKind="NONE" name="ratedDwelling" navigable="true">
       <modelElement href="epc-modelling.uml#_HZfCQVrKEeqbvZIBCT16kA"/>
-      <visualProperties xmi:id="_JqgiUFrNEeqbvZIBCT16kA" position="130.0,-70.25"/>
+      <visualProperties xmi:id="_JqgiUFrNEeqbvZIBCT16kA" position="51.0,-113.0"/>
       <visibility xmi:id="_H7FzIVrNEeqbvZIBCT16kA" label="+"/>
       <cardinality xmi:id="_H7FzIFrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
     </sourceRole>
     <targetRole xmi:id="_H7BhslrNEeqbvZIBCT16kA" aggregationKind="NONE" name="">
       <modelElement href="epc-modelling.uml#_HbAsQ1rKEeqbvZIBCT16kA"/>
-      <visualProperties xmi:id="_JqhJYVrNEeqbvZIBCT16kA" position="-40.8125,-67.0"/>
+      <visualProperties xmi:id="_JqhJYVrNEeqbvZIBCT16kA" position="-33.0,2.0"/>
       <visibility xmi:id="_H7FzI1rNEeqbvZIBCT16kA" label="+"/>
       <cardinality xmi:id="_H7FzIlrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
     </targetRole>
@@ -305,63 +305,63 @@
       <cardinality xmi:id="_H7hQ91rNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
     </targetRole>
   </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_H7ifEFrNEeqbvZIBCT16kA" sourceAnchor="0.0,67.0" targetAnchor="139.0,0.0" target="_H7k7UFrNEeqbvZIBCT16kA" source="_IWR6UFrNEeqbvZIBCT16kA">
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_H7ifEFrNEeqbvZIBCT16kA" sourceAnchor="0.0,67.0" targetAnchor="169.0,0.0" target="_H7k7UFrNEeqbvZIBCT16kA" source="_IWR6UFrNEeqbvZIBCT16kA">
     <modelElement href="epc-modelling.uml#_HbB6YFrKEeqbvZIBCT16kA"/>
-    <bendpoints xmi:id="_NGnx8FrPEeqbvZIBCT16kA" sourceX="-372" targetY="-103"/>
+    <bendpoints xmi:id="_8KsU8FrREeqsz5psPFciFQ" sourceX="-453" targetY="-96"/>
     <nameVisual xmi:id="_H7ifEVrNEeqbvZIBCT16kA" text="">
-      <visualProperties xmi:id="_Jq1ScFrNEeqbvZIBCT16kA" position="1.0,41.5"/>
+      <visualProperties xmi:id="_Jq1ScFrNEeqbvZIBCT16kA" position="1.0,41.0"/>
     </nameVisual>
     <sourceRole xmi:id="_H7ifElrNEeqbvZIBCT16kA" aggregationKind="NONE" name="awordedRating" navigable="true">
       <modelElement href="epc-modelling.uml#_HZfpUVrKEeqbvZIBCT16kA"/>
-      <visualProperties xmi:id="_Jq0EUFrNEeqbvZIBCT16kA" position="-216.33333333333326,-66.5"/>
+      <visualProperties xmi:id="_Jq0EUFrNEeqbvZIBCT16kA" position="-218.0,-67.00000000000011"/>
       <visibility xmi:id="_H7ifE1rNEeqbvZIBCT16kA" label="+"/>
       <cardinality xmi:id="_H7ifFFrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
     </sourceRole>
     <targetRole xmi:id="_H7ifFVrNEeqbvZIBCT16kA" aggregationKind="NONE" name="">
       <modelElement href="epc-modelling.uml#_HbB6YVrKEeqbvZIBCT16kA"/>
-      <visualProperties xmi:id="_Jq1ScVrNEeqbvZIBCT16kA" position="-19.0,-77.83333333333326"/>
+      <visualProperties xmi:id="_Jq1ScVrNEeqbvZIBCT16kA" position="41.0,-95.0"/>
       <visibility xmi:id="_H7ifFlrNEeqbvZIBCT16kA" label="+"/>
       <cardinality xmi:id="_H7ifF1rNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
     </targetRole>
   </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_H7jGIFrNEeqbvZIBCT16kA" sourceAnchor="0.0,97.0" targetAnchor="169.0,0.0" target="_H7k7UFrNEeqbvZIBCT16kA" source="_IWR6UFrNEeqbvZIBCT16kA">
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_H7jGIFrNEeqbvZIBCT16kA" sourceAnchor="109.0,135.0" targetAnchor="278.0,27.0" target="_H7k7UFrNEeqbvZIBCT16kA" source="_IWR6UFrNEeqbvZIBCT16kA">
     <modelElement href="epc-modelling.uml#_HbB6YlrKEeqbvZIBCT16kA"/>
-    <bendpoints xmi:id="_NGnx8VrPEeqbvZIBCT16kA" sourceX="-342" targetY="-73"/>
+    <bendpoints xmi:id="_8KsU8VrREeqsz5psPFciFQ" sourceY="55" targetX="453"/>
     <nameVisual xmi:id="_H7jGIVrNEeqbvZIBCT16kA" text="">
-      <visualProperties xmi:id="_Jq3usFrNEeqbvZIBCT16kA" position="1.0,41.5"/>
+      <visualProperties xmi:id="_Jq3usFrNEeqbvZIBCT16kA" position="-232.0,2.0"/>
     </nameVisual>
     <sourceRole xmi:id="_H7jGIlrNEeqbvZIBCT16kA" aggregationKind="NONE" name="potentialRating" navigable="true">
       <modelElement href="epc-modelling.uml#_HZrPgFrKEeqbvZIBCT16kA"/>
-      <visualProperties xmi:id="_Jq3HoFrNEeqbvZIBCT16kA" position="-206.33333333333326,2.5"/>
+      <visualProperties xmi:id="_Jq3HoFrNEeqbvZIBCT16kA" position="-296.0,-12.0"/>
       <visibility xmi:id="_H7jGI1rNEeqbvZIBCT16kA" label="+"/>
       <cardinality xmi:id="_H7jGJFrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
     </sourceRole>
     <targetRole xmi:id="_H7jGJVrNEeqbvZIBCT16kA" aggregationKind="NONE" name="">
       <modelElement href="epc-modelling.uml#_HbChcFrKEeqbvZIBCT16kA"/>
-      <visualProperties xmi:id="_Jq3usVrNEeqbvZIBCT16kA" position="41.0,-71.5"/>
+      <visualProperties xmi:id="_Jq3usVrNEeqbvZIBCT16kA" position="28.0,2.0"/>
       <visibility xmi:id="_H7jGJlrNEeqbvZIBCT16kA" label="+"/>
       <cardinality xmi:id="_H7jGJ1rNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
     </targetRole>
   </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_H7kUQFrNEeqbvZIBCT16kA" sourceAnchor="0.0,78.0" targetAnchor="278.0,123.0" target="_H7k7UFrNEeqbvZIBCT16kA" source="_IfBmoFrNEeqbvZIBCT16kA">
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_H7kUQFrNEeqbvZIBCT16kA" sourceAnchor="0.0,71.0" targetAnchor="278.0,123.0" target="_H7k7UFrNEeqbvZIBCT16kA" source="_IfBmoFrNEeqbvZIBCT16kA">
     <modelElement href="epc-modelling.uml#_HbChcVrKEeqbvZIBCT16kA"/>
     <nameVisual xmi:id="_H7kUQVrNEeqbvZIBCT16kA" text="">
-      <visualProperties xmi:id="_Jq5j4FrNEeqbvZIBCT16kA" position="-5.0,2.5"/>
+      <visualProperties xmi:id="_Jq5j4FrNEeqbvZIBCT16kA" position="4.0,-29.0"/>
     </nameVisual>
     <sourceRole xmi:id="_H7kUQlrNEeqbvZIBCT16kA" aggregationKind="NONE" name="usedMethodology" navigable="true">
       <modelElement href="epc-modelling.uml#_HZsdoFrKEeqbvZIBCT16kA"/>
-      <visualProperties xmi:id="_Jq4VwFrNEeqbvZIBCT16kA" position="-180.0,-66.5"/>
+      <visualProperties xmi:id="_Jq4VwFrNEeqbvZIBCT16kA" position="-217.0,2.0"/>
       <visibility xmi:id="_H7kUQ1rNEeqbvZIBCT16kA" label="+"/>
       <cardinality xmi:id="_H7kURFrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
     </sourceRole>
     <targetRole xmi:id="_H7kURVrNEeqbvZIBCT16kA" aggregationKind="NONE" name="">
       <modelElement href="epc-modelling.uml#_HbChclrKEeqbvZIBCT16kA"/>
-      <visualProperties xmi:id="_Jq5j4VrNEeqbvZIBCT16kA" position="15.769230769230717,2.5"/>
+      <visualProperties xmi:id="_Jq5j4VrNEeqbvZIBCT16kA" position="16.0,2.0"/>
       <visibility xmi:id="_H7kURlrNEeqbvZIBCT16kA" label="+"/>
       <cardinality xmi:id="_H7kUR1rNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
     </targetRole>
   </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_H9ZgQFrNEeqbvZIBCT16kA" sourceAnchor="0.0,67.0" targetAnchor="98.0,107.0" target="_IplQ0FrNEeqbvZIBCT16kA" source="_H_hAIFrNEeqbvZIBCT16kA">
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_H9ZgQFrNEeqbvZIBCT16kA" sourceAnchor="0.0,67.0" targetAnchor="98.0,107.0" target="_IplQ0FrNEeqbvZIBCT16kA">
     <modelElement href="epc-modelling.uml#_HbMScVrKEeqbvZIBCT16kA"/>
     <bendpoints xmi:id="_mckjAFrOEeqbvZIBCT16kA" sourceX="-276" targetY="400"/>
     <nameVisual xmi:id="_H_bgkFrNEeqbvZIBCT16kA" text="">
@@ -380,7 +380,7 @@
       <cardinality xmi:id="_H_d801rNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
     </targetRole>
   </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_H-xZQFrNEeqbvZIBCT16kA" sourceAnchor="0.0,97.0" targetAnchor="68.0,107.0" target="_IplQ0FrNEeqbvZIBCT16kA" source="_H_hAIFrNEeqbvZIBCT16kA">
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_H-xZQFrNEeqbvZIBCT16kA" sourceAnchor="0.0,97.0" targetAnchor="68.0,107.0" target="_IplQ0FrNEeqbvZIBCT16kA">
     <modelElement href="epc-modelling.uml#_HbM5gFrKEeqbvZIBCT16kA"/>
     <bendpoints xmi:id="_mckjAVrOEeqbvZIBCT16kA" sourceX="-306" targetY="430"/>
     <nameVisual xmi:id="_H_cHoVrNEeqbvZIBCT16kA" text="">
@@ -399,7 +399,7 @@
       <cardinality xmi:id="_H_ej4lrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
     </targetRole>
   </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_H_ZEUFrNEeqbvZIBCT16kA" sourceAnchor="105.0,0.0" targetAnchor="75.0,72.0" target="_I-Cd4FrNEeqbvZIBCT16kA" source="_H_hAIFrNEeqbvZIBCT16kA">
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_H_ZEUFrNEeqbvZIBCT16kA" sourceAnchor="105.0,0.0" targetAnchor="75.0,72.0" target="_I-Cd4FrNEeqbvZIBCT16kA">
     <modelElement href="epc-modelling.uml#_HbRK8FrKEeqbvZIBCT16kA"/>
     <nameVisual xmi:id="_H_cusVrNEeqbvZIBCT16kA" text="">
       <visualProperties xmi:id="_JqoeIFrNEeqbvZIBCT16kA" position="-18.0,-14.0"/>
@@ -417,7 +417,7 @@
       <cardinality xmi:id="_H_ej5lrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
     </targetRole>
   </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_H_ZrYFrNEeqbvZIBCT16kA" sourceAnchor="75.0,0.0" targetAnchor="45.0,72.0" target="_I-Cd4FrNEeqbvZIBCT16kA" source="_H_hAIFrNEeqbvZIBCT16kA">
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_H_ZrYFrNEeqbvZIBCT16kA" sourceAnchor="75.0,0.0" targetAnchor="45.0,72.0" target="_I-Cd4FrNEeqbvZIBCT16kA">
     <modelElement href="epc-modelling.uml#_HbRK8lrKEeqbvZIBCT16kA"/>
     <nameVisual xmi:id="_H_dVwFrNEeqbvZIBCT16kA" text="">
       <visualProperties xmi:id="_Jqq6YFrNEeqbvZIBCT16kA" position="-13.0,-14.0"/>
@@ -435,7 +435,7 @@
       <cardinality xmi:id="_H_fyAFrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
     </targetRole>
   </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_H_aScFrNEeqbvZIBCT16kA" sourceAnchor="135.0,0.0" targetAnchor="105.0,72.0" target="_I-Cd4FrNEeqbvZIBCT16kA" source="_H_hAIFrNEeqbvZIBCT16kA">
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_H_aScFrNEeqbvZIBCT16kA" sourceAnchor="135.0,0.0" targetAnchor="105.0,72.0" target="_I-Cd4FrNEeqbvZIBCT16kA">
     <modelElement href="epc-modelling.uml#_HbRyAVrKEeqbvZIBCT16kA"/>
     <nameVisual xmi:id="_H_dVw1rNEeqbvZIBCT16kA" text="">
       <visualProperties xmi:id="_JqtWoFrNEeqbvZIBCT16kA" position="-18.0,-14.0"/>
@@ -453,7 +453,7 @@
       <cardinality xmi:id="_H_fyBFrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
     </targetRole>
   </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_H_gZEFrNEeqbvZIBCT16kA" target="_H_hAIFrNEeqbvZIBCT16kA">
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_H_gZEFrNEeqbvZIBCT16kA">
     <modelElement href="epc-modelling.uml#_HbE9sFrKEeqbvZIBCT16kA"/>
     <nameVisual xmi:id="_H_gZEVrNEeqbvZIBCT16kA" text=""/>
     <sourceRole xmi:id="_H_gZElrNEeqbvZIBCT16kA" aggregationKind="NONE" name="unit" navigable="true">
@@ -555,20 +555,6 @@
       <cardinality xmi:id="_Il-jMlrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
     </targetRole>
   </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_IwfKEFrNEeqbvZIBCT16kA" target="_I0gucFrNEeqbvZIBCT16kA">
-    <modelElement href="epc-modelling.uml#_HbNgkFrKEeqbvZIBCT16kA"/>
-    <nameVisual xmi:id="_IwfKEVrNEeqbvZIBCT16kA" text=""/>
-    <sourceRole xmi:id="_IwfKElrNEeqbvZIBCT16kA" aggregationKind="NONE" name="unit" navigable="true">
-      <modelElement href="epc-modelling.uml#_HaE4IFrKEeqbvZIBCT16kA"/>
-      <visibility xmi:id="_IwfKE1rNEeqbvZIBCT16kA" label="+"/>
-      <cardinality xmi:id="_IwfKFFrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-    </sourceRole>
-    <targetRole xmi:id="_IwfKFVrNEeqbvZIBCT16kA" aggregationKind="NONE" name="">
-      <modelElement href="epc-modelling.uml#_HbNgkVrKEeqbvZIBCT16kA"/>
-      <visibility xmi:id="_IwfKFlrNEeqbvZIBCT16kA" label="+"/>
-      <cardinality xmi:id="_IwfKF1rNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-    </targetRole>
-  </edges>
   <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_I8wrgFrNEeqbvZIBCT16kA" targetItem="_I-Cd4FrNEeqbvZIBCT16kA" sourceItem="_I4LGcFrNEeqbvZIBCT16kA"/>
   <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_I4LGcFrNEeqbvZIBCT16kA" sourceConnectionVisual="_I8wrgFrNEeqbvZIBCT16kA" text="Building specific data&#xD;&#xA; *" item="_I-Cd4FrNEeqbvZIBCT16kA">
     <modelElement href="epc-modelling.uml#_F6kF0lrNEeqbvZIBCT16kA"/>
@@ -663,74 +649,6 @@
         <cardinality xmi:id="_IERkeVrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
         <type xmi:id="_IERkelrNEeqbvZIBCT16kA" name="ContactDetails">
           <modelElement href="epc-modelling.uml#_HReVwFrKEeqbvZIBCT16kA"/>
-        </type>
-      </parameters>
-    </operations>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_JA49kFrNEeqbvZIBCT16kA" name="ImportEPC">
-    <modelElement href="epc-modelling.uml#_F5iyIFrNEeqbvZIBCT16kA"/>
-    <visualProperties xmi:id="_JA49kVrNEeqbvZIBCT16kA" position="21.0,2972.0" size="-1.0,-1.0" visible="false"/>
-    <visibility xmi:id="_JA49klrNEeqbvZIBCT16kA" label="+"/>
-    <operations xmi:id="_JA49k1rNEeqbvZIBCT16kA" name="main" staticOperation="true">
-      <modelElement href="epc-modelling.uml#_F5kAQFrNEeqbvZIBCT16kA"/>
-      <stereotypes xmi:id="_JA49lFrNEeqbvZIBCT16kA" name="LegacyStyledElement">
-        <modelElement href="epc-modelling.uml#_F5lOYFrNEeqbvZIBCT16kA"/>
-      </stereotypes>
-      <visibility xmi:id="_JA49lVrNEeqbvZIBCT16kA" label="+"/>
-      <cardinality xmi:id="_JA49llrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-      <parameters xmi:id="_JA49l1rNEeqbvZIBCT16kA" name="args">
-        <modelElement href="epc-modelling.uml#_F5kAQVrNEeqbvZIBCT16kA"/>
-        <cardinality xmi:id="_JA49mFrNEeqbvZIBCT16kA" label="1..*" max="-1" min="1"/>
-        <type xmi:id="_JA49mVrNEeqbvZIBCT16kA" name="String">
-          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </type>
-      </parameters>
-    </operations>
-    <operations xmi:id="_JA49mlrNEeqbvZIBCT16kA" name="addAustrianEPC" staticOperation="true">
-      <modelElement href="epc-modelling.uml#_F6PVsFrNEeqbvZIBCT16kA"/>
-      <visibility xmi:id="_JA49m1rNEeqbvZIBCT16kA" label="-"/>
-      <cardinality xmi:id="_JA49nFrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-      <parameters xmi:id="_JA49nVrNEeqbvZIBCT16kA" name="epcCollection">
-        <modelElement href="epc-modelling.uml#_F6PVsVrNEeqbvZIBCT16kA"/>
-        <cardinality xmi:id="_JA49nlrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-        <type xmi:id="_JA49n1rNEeqbvZIBCT16kA" name="MongoCollection">
-          <modelElement href="epc-modelling.uml#_F6JPEVrNEeqbvZIBCT16kA"/>
-        </type>
-      </parameters>
-    </operations>
-    <operations xmi:id="_JA49oFrNEeqbvZIBCT16kA" name="addDanishEPC" staticOperation="true">
-      <modelElement href="epc-modelling.uml#_F6Qj0FrNEeqbvZIBCT16kA"/>
-      <visibility xmi:id="_JA49oVrNEeqbvZIBCT16kA" label="-"/>
-      <cardinality xmi:id="_JA49olrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-      <parameters xmi:id="_JA49o1rNEeqbvZIBCT16kA" name="epcCollection">
-        <modelElement href="epc-modelling.uml#_F6Qj0VrNEeqbvZIBCT16kA"/>
-        <cardinality xmi:id="_JA49pFrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-        <type xmi:id="_JA49pVrNEeqbvZIBCT16kA" name="MongoCollection">
-          <modelElement href="epc-modelling.uml#_F6JPEVrNEeqbvZIBCT16kA"/>
-        </type>
-      </parameters>
-    </operations>
-    <operations xmi:id="_JA49plrNEeqbvZIBCT16kA" name="addGermanEPC" staticOperation="true">
-      <modelElement href="epc-modelling.uml#_F6Rx8VrNEeqbvZIBCT16kA"/>
-      <visibility xmi:id="_JA49p1rNEeqbvZIBCT16kA" label="-"/>
-      <cardinality xmi:id="_JA49qFrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-      <parameters xmi:id="_JA49qVrNEeqbvZIBCT16kA" name="epcCollection">
-        <modelElement href="epc-modelling.uml#_F6Rx8lrNEeqbvZIBCT16kA"/>
-        <cardinality xmi:id="_JA49qlrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-        <type xmi:id="_JA49q1rNEeqbvZIBCT16kA" name="MongoCollection">
-          <modelElement href="epc-modelling.uml#_F6JPEVrNEeqbvZIBCT16kA"/>
-        </type>
-      </parameters>
-    </operations>
-    <operations xmi:id="_JA49rFrNEeqbvZIBCT16kA" name="addRomanianEPC" staticOperation="true">
-      <modelElement href="epc-modelling.uml#_F6SZAVrNEeqbvZIBCT16kA"/>
-      <visibility xmi:id="_JA49rVrNEeqbvZIBCT16kA" label="-"/>
-      <cardinality xmi:id="_JA49rlrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-      <parameters xmi:id="_JA49r1rNEeqbvZIBCT16kA" name="epcCollection">
-        <modelElement href="epc-modelling.uml#_F6SZAlrNEeqbvZIBCT16kA"/>
-        <cardinality xmi:id="_JA49sFrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-        <type xmi:id="_JA49sVrNEeqbvZIBCT16kA" name="MongoCollection">
-          <modelElement href="epc-modelling.uml#_F6JPEVrNEeqbvZIBCT16kA"/>
         </type>
       </parameters>
     </operations>
@@ -1306,633 +1224,6 @@
       </parameters>
     </operations>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_ITZlcFrNEeqbvZIBCT16kA" name="Photo" associationsIn="_IRgvEFrNEeqbvZIBCT16kA" associationsOut="_H05EgFrNEeqbvZIBCT16kA">
-    <modelElement href="epc-modelling.uml#_HSvhEFrKEeqbvZIBCT16kA"/>
-    <visualProperties xmi:id="_ITZlcVrNEeqbvZIBCT16kA" position="617.0,1429.0" size="-1.0,-1.0"/>
-    <visibility xmi:id="_ITZlclrNEeqbvZIBCT16kA" label="+"/>
-    <attributes xmi:id="_ITZlc1rNEeqbvZIBCT16kA" name="name">
-      <modelElement href="epc-modelling.uml#_HZ4q4FrKEeqbvZIBCT16kA"/>
-      <visibility xmi:id="_ITZldFrNEeqbvZIBCT16kA" label="+"/>
-      <cardinality xmi:id="_ITZldVrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-      <type xmi:id="_ITZldlrNEeqbvZIBCT16kA" name="String">
-        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-      </type>
-    </attributes>
-    <attributes xmi:id="_ITZld1rNEeqbvZIBCT16kA" name="image">
-      <modelElement href="epc-modelling.uml#_HZ5R8FrKEeqbvZIBCT16kA"/>
-      <visibility xmi:id="_ITZleFrNEeqbvZIBCT16kA" label="+"/>
-      <cardinality xmi:id="_ITZleVrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-      <type xmi:id="_ITZlelrNEeqbvZIBCT16kA" name="Blob">
-        <modelElement href="epc-modelling.uml#_HYOeAFrKEeqbvZIBCT16kA"/>
-      </type>
-    </attributes>
-    <operations xmi:id="_ITZle1rNEeqbvZIBCT16kA" name="Photo">
-      <modelElement href="epc-modelling.uml#_HSwIIFrKEeqbvZIBCT16kA"/>
-      <keywords xmi:id="_ITZlfFrNEeqbvZIBCT16kA" keyword="create"/>
-      <visibility xmi:id="_ITZlfVrNEeqbvZIBCT16kA" label="+"/>
-      <cardinality xmi:id="_ITZlflrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-      <outParameters xmi:id="_ITZlf1rNEeqbvZIBCT16kA">
-        <modelElement href="epc-modelling.uml#_HSwvMlrKEeqbvZIBCT16kA"/>
-        <type xmi:id="_ITZlgFrNEeqbvZIBCT16kA" name="Photo">
-          <modelElement href="epc-modelling.uml#_HSvhEFrKEeqbvZIBCT16kA"/>
-        </type>
-      </outParameters>
-    </operations>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_IplQ0FrNEeqbvZIBCT16kA" name="SpatialData" associationsIn="_H9ZgQFrNEeqbvZIBCT16kA _H-xZQFrNEeqbvZIBCT16kA" associationsOut="_H03PUFrNEeqbvZIBCT16kA">
-    <modelElement href="epc-modelling.uml#_HTNbIFrKEeqbvZIBCT16kA"/>
-    <visualProperties xmi:id="_IplQ0VrNEeqbvZIBCT16kA" position="187.0,1634.0" size="-1.0,-1.0"/>
-    <visibility xmi:id="_IplQ0lrNEeqbvZIBCT16kA" label="+"/>
-    <attributes xmi:id="_IplQ01rNEeqbvZIBCT16kA" name="totalFloorArea">
-      <modelElement href="epc-modelling.uml#_HaDC8FrKEeqbvZIBCT16kA"/>
-      <visibility xmi:id="_IplQ1FrNEeqbvZIBCT16kA" label="+"/>
-      <cardinality xmi:id="_IplQ1VrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-      <type xmi:id="_IplQ1lrNEeqbvZIBCT16kA" name="Measure">
-        <modelElement href="epc-modelling.uml#_HSPx0FrKEeqbvZIBCT16kA"/>
-      </type>
-    </attributes>
-    <attributes xmi:id="_IplQ11rNEeqbvZIBCT16kA" name="totalVolume">
-      <modelElement href="epc-modelling.uml#_HaDC8VrKEeqbvZIBCT16kA"/>
-      <visibility xmi:id="_IplQ2FrNEeqbvZIBCT16kA" label="+"/>
-      <cardinality xmi:id="_IplQ2VrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-      <type xmi:id="_IplQ2lrNEeqbvZIBCT16kA" name="Measure">
-        <modelElement href="epc-modelling.uml#_HSPx0FrKEeqbvZIBCT16kA"/>
-      </type>
-    </attributes>
-    <attributes xmi:id="_IplQ21rNEeqbvZIBCT16kA" name="orientation">
-      <modelElement href="epc-modelling.uml#_HaDqAFrKEeqbvZIBCT16kA"/>
-      <visibility xmi:id="_IplQ3FrNEeqbvZIBCT16kA" label="+"/>
-      <cardinality xmi:id="_IplQ3VrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-      <type xmi:id="_IplQ3lrNEeqbvZIBCT16kA" name="String">
-        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-      </type>
-    </attributes>
-    <operations xmi:id="_IplQ31rNEeqbvZIBCT16kA" name="SpatialData">
-      <modelElement href="epc-modelling.uml#_HTPQUFrKEeqbvZIBCT16kA"/>
-      <visualProperties xmi:id="_aAX9gFrNEeqbvZIBCT16kA" visible="false"/>
-      <keywords xmi:id="_IplQ4FrNEeqbvZIBCT16kA" keyword="create"/>
-      <visibility xmi:id="_IplQ4VrNEeqbvZIBCT16kA" label="+"/>
-      <cardinality xmi:id="_IplQ4lrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-      <outParameters xmi:id="_IplQ41rNEeqbvZIBCT16kA">
-        <modelElement href="epc-modelling.uml#_HTP3YlrKEeqbvZIBCT16kA"/>
-        <type xmi:id="_IplQ5FrNEeqbvZIBCT16kA" name="SpatialData">
-          <modelElement href="epc-modelling.uml#_HTNbIFrKEeqbvZIBCT16kA"/>
-        </type>
-      </outParameters>
-    </operations>
-    <operations xmi:id="_IplQ5VrNEeqbvZIBCT16kA" name="toString">
-      <modelElement href="epc-modelling.uml#_HTQecFrKEeqbvZIBCT16kA"/>
-      <visualProperties xmi:id="_aAYkkFrNEeqbvZIBCT16kA" visible="false"/>
-      <stereotypes xmi:id="_IplQ5lrNEeqbvZIBCT16kA" name="LegacyStyledElement">
-        <modelElement href="epc-modelling.uml#_HTRFgVrKEeqbvZIBCT16kA"/>
-      </stereotypes>
-      <stereotypes xmi:id="_IplQ51rNEeqbvZIBCT16kA" name="Annotations">
-        <modelElement href="epc-modelling.uml#_HTRskFrKEeqbvZIBCT16kA"/>
-      </stereotypes>
-      <visibility xmi:id="_IplQ6FrNEeqbvZIBCT16kA" label="+"/>
-      <cardinality xmi:id="_IplQ6VrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-      <outParameters xmi:id="_IplQ6lrNEeqbvZIBCT16kA">
-        <modelElement href="epc-modelling.uml#_HTRFgFrKEeqbvZIBCT16kA"/>
-        <type xmi:id="_IplQ61rNEeqbvZIBCT16kA" name="String">
-          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </type>
-      </outParameters>
-    </operations>
-    <operations xmi:id="_IplQ7FrNEeqbvZIBCT16kA" name="SpatialData">
-      <modelElement href="epc-modelling.uml#_HYXn8FrKEeqbvZIBCT16kA"/>
-      <visualProperties xmi:id="_aAYkkVrNEeqbvZIBCT16kA" visible="false"/>
-      <keywords xmi:id="_IplQ7VrNEeqbvZIBCT16kA" keyword="create"/>
-      <visibility xmi:id="_IplQ7lrNEeqbvZIBCT16kA" label="+"/>
-      <cardinality xmi:id="_IplQ71rNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-      <outParameters xmi:id="_IplQ8FrNEeqbvZIBCT16kA">
-        <modelElement href="epc-modelling.uml#_HYY2ElrKEeqbvZIBCT16kA"/>
-        <type xmi:id="_IplQ8VrNEeqbvZIBCT16kA" name="SpatialData">
-          <modelElement href="epc-modelling.uml#_HTNbIFrKEeqbvZIBCT16kA"/>
-        </type>
-      </outParameters>
-      <parameters xmi:id="_IplQ8lrNEeqbvZIBCT16kA" name="totalFloorArea">
-        <modelElement href="epc-modelling.uml#_HYYPAFrKEeqbvZIBCT16kA"/>
-        <cardinality xmi:id="_IplQ81rNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-        <type xmi:id="_IplQ9FrNEeqbvZIBCT16kA" name="Measure">
-          <modelElement href="epc-modelling.uml#_HSPx0FrKEeqbvZIBCT16kA"/>
-        </type>
-      </parameters>
-      <parameters xmi:id="_IplQ9VrNEeqbvZIBCT16kA" name="totalVolume">
-        <modelElement href="epc-modelling.uml#_HYYPAVrKEeqbvZIBCT16kA"/>
-        <cardinality xmi:id="_IplQ9lrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-        <type xmi:id="_IplQ91rNEeqbvZIBCT16kA" name="Measure">
-          <modelElement href="epc-modelling.uml#_HSPx0FrKEeqbvZIBCT16kA"/>
-        </type>
-      </parameters>
-      <parameters xmi:id="_IplQ-FrNEeqbvZIBCT16kA" name="orientation">
-        <modelElement href="epc-modelling.uml#_HYYPAlrKEeqbvZIBCT16kA"/>
-        <cardinality xmi:id="_IplQ-VrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-        <type xmi:id="_IplQ-lrNEeqbvZIBCT16kA" name="String">
-          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </type>
-      </parameters>
-    </operations>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_I-Cd4FrNEeqbvZIBCT16kA" comments="_I4LGcFrNEeqbvZIBCT16kA" targetConnectionVisual="_I8wrgFrNEeqbvZIBCT16kA" name="ThermalData" associationsIn="_H_ZEUFrNEeqbvZIBCT16kA _H_ZrYFrNEeqbvZIBCT16kA _H_aScFrNEeqbvZIBCT16kA" associationsOut="_H04dcFrNEeqbvZIBCT16kA">
-    <modelElement href="epc-modelling.uml#_HTrVMFrKEeqbvZIBCT16kA"/>
-    <visualProperties xmi:id="_I-Cd4VrNEeqbvZIBCT16kA" position="591.0,1636.0" size="-1.0,-1.0"/>
-    <visibility xmi:id="_I-Cd4lrNEeqbvZIBCT16kA" label="+"/>
-    <attributes xmi:id="_I-Cd41rNEeqbvZIBCT16kA" name="uValue">
-      <modelElement href="epc-modelling.uml#_HaH7cFrKEeqbvZIBCT16kA"/>
-      <visibility xmi:id="_I-Cd5FrNEeqbvZIBCT16kA" label="+"/>
-      <cardinality xmi:id="_I-Cd5VrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-      <type xmi:id="_I-Cd5lrNEeqbvZIBCT16kA" name="Measure">
-        <modelElement href="epc-modelling.uml#_HSPx0FrKEeqbvZIBCT16kA"/>
-      </type>
-    </attributes>
-    <attributes xmi:id="_I-Cd51rNEeqbvZIBCT16kA" name="energyDemand">
-      <modelElement href="epc-modelling.uml#_HaIigFrKEeqbvZIBCT16kA"/>
-      <visibility xmi:id="_I-Cd6FrNEeqbvZIBCT16kA" label="+"/>
-      <cardinality xmi:id="_I-Cd6VrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-      <type xmi:id="_I-Cd6lrNEeqbvZIBCT16kA" name="Measure">
-        <modelElement href="epc-modelling.uml#_HSPx0FrKEeqbvZIBCT16kA"/>
-      </type>
-    </attributes>
-    <attributes xmi:id="_I-Cd61rNEeqbvZIBCT16kA" name="carbonFootprint">
-      <modelElement href="epc-modelling.uml#_HaIigVrKEeqbvZIBCT16kA"/>
-      <visibility xmi:id="_I-Cd7FrNEeqbvZIBCT16kA" label="+"/>
-      <cardinality xmi:id="_I-Cd7VrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-      <type xmi:id="_I-Cd7lrNEeqbvZIBCT16kA" name="Measure">
-        <modelElement href="epc-modelling.uml#_HSPx0FrKEeqbvZIBCT16kA"/>
-      </type>
-    </attributes>
-    <operations xmi:id="_I-Cd71rNEeqbvZIBCT16kA" name="ThermalData">
-      <modelElement href="epc-modelling.uml#_HTsjUFrKEeqbvZIBCT16kA"/>
-      <visualProperties xmi:id="_XIIIkFrOEeqbvZIBCT16kA" visible="false"/>
-      <keywords xmi:id="_I-Cd8FrNEeqbvZIBCT16kA" keyword="create"/>
-      <visibility xmi:id="_I-Cd8VrNEeqbvZIBCT16kA" label="+"/>
-      <cardinality xmi:id="_I-Cd8lrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-      <outParameters xmi:id="_I-Cd81rNEeqbvZIBCT16kA">
-        <modelElement href="epc-modelling.uml#_HTsjU1rKEeqbvZIBCT16kA"/>
-        <type xmi:id="_I-Cd9FrNEeqbvZIBCT16kA" name="ThermalData">
-          <modelElement href="epc-modelling.uml#_HTrVMFrKEeqbvZIBCT16kA"/>
-        </type>
-      </outParameters>
-    </operations>
-    <operations xmi:id="_I-Cd9VrNEeqbvZIBCT16kA" name="toString">
-      <modelElement href="epc-modelling.uml#_HTtxcFrKEeqbvZIBCT16kA"/>
-      <visualProperties xmi:id="_XIIIkVrOEeqbvZIBCT16kA" visible="false"/>
-      <stereotypes xmi:id="_I-Cd9lrNEeqbvZIBCT16kA" name="LegacyStyledElement">
-        <modelElement href="epc-modelling.uml#_HTuYgVrKEeqbvZIBCT16kA"/>
-      </stereotypes>
-      <stereotypes xmi:id="_I-Cd91rNEeqbvZIBCT16kA" name="Annotations">
-        <modelElement href="epc-modelling.uml#_HTu_kFrKEeqbvZIBCT16kA"/>
-      </stereotypes>
-      <visibility xmi:id="_I-Cd-FrNEeqbvZIBCT16kA" label="+"/>
-      <cardinality xmi:id="_I-Cd-VrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-      <outParameters xmi:id="_I-Cd-lrNEeqbvZIBCT16kA">
-        <modelElement href="epc-modelling.uml#_HTuYgFrKEeqbvZIBCT16kA"/>
-        <type xmi:id="_I-Cd-1rNEeqbvZIBCT16kA" name="String">
-          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </type>
-      </outParameters>
-    </operations>
-    <operations xmi:id="_I-Cd_FrNEeqbvZIBCT16kA" name="ThermalData">
-      <modelElement href="epc-modelling.uml#_HYeVoFrKEeqbvZIBCT16kA"/>
-      <visualProperties xmi:id="_XIJ9wFrOEeqbvZIBCT16kA" visible="false"/>
-      <keywords xmi:id="_I-Cd_VrNEeqbvZIBCT16kA" keyword="create"/>
-      <visibility xmi:id="_I-Cd_lrNEeqbvZIBCT16kA" label="+"/>
-      <cardinality xmi:id="_I-Cd_1rNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-      <outParameters xmi:id="_I-CeAFrNEeqbvZIBCT16kA">
-        <modelElement href="epc-modelling.uml#_HYeVplrKEeqbvZIBCT16kA"/>
-        <type xmi:id="_I-CeAVrNEeqbvZIBCT16kA" name="ThermalData">
-          <modelElement href="epc-modelling.uml#_HTrVMFrKEeqbvZIBCT16kA"/>
-        </type>
-      </outParameters>
-      <parameters xmi:id="_I-CeAlrNEeqbvZIBCT16kA" name="uValue">
-        <modelElement href="epc-modelling.uml#_HYeVoVrKEeqbvZIBCT16kA"/>
-        <cardinality xmi:id="_I-CeA1rNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-        <type xmi:id="_I-CeBFrNEeqbvZIBCT16kA" name="Measure">
-          <modelElement href="epc-modelling.uml#_HSPx0FrKEeqbvZIBCT16kA"/>
-        </type>
-      </parameters>
-      <parameters xmi:id="_I-CeBVrNEeqbvZIBCT16kA" name="energyDemand">
-        <modelElement href="epc-modelling.uml#_HYeVolrKEeqbvZIBCT16kA"/>
-        <cardinality xmi:id="_I-CeBlrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-        <type xmi:id="_I-CeB1rNEeqbvZIBCT16kA" name="Measure">
-          <modelElement href="epc-modelling.uml#_HSPx0FrKEeqbvZIBCT16kA"/>
-        </type>
-      </parameters>
-      <parameters xmi:id="_I-CeCFrNEeqbvZIBCT16kA" name="carbonFootprint">
-        <modelElement href="epc-modelling.uml#_HYeVo1rKEeqbvZIBCT16kA"/>
-        <cardinality xmi:id="_I-CeCVrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-        <type xmi:id="_I-CeClrNEeqbvZIBCT16kA" name="Measure">
-          <modelElement href="epc-modelling.uml#_HSPx0FrKEeqbvZIBCT16kA"/>
-        </type>
-      </parameters>
-    </operations>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_HsD4qFrNEeqbvZIBCT16kA" name="ClimateData" associationsIn="_HrTqsFrNEeqbvZIBCT16kA _HsBcYFrNEeqbvZIBCT16kA _HsD4oFrNEeqbvZIBCT16kA" associationsOut="_HyX8AFrNEeqbvZIBCT16kA">
-    <modelElement href="epc-modelling.uml#_HRMB4FrKEeqbvZIBCT16kA"/>
-    <visualProperties xmi:id="_HsD4qVrNEeqbvZIBCT16kA" position="909.0,1630.0" size="-1.0,-1.0"/>
-    <visibility xmi:id="_HsD4qlrNEeqbvZIBCT16kA" label="+"/>
-    <attributes xmi:id="_HsD4q1rNEeqbvZIBCT16kA" name="averageOutdoorTemperature">
-      <modelElement href="epc-modelling.uml#_HZS1AFrKEeqbvZIBCT16kA"/>
-      <visibility xmi:id="_HsD4rFrNEeqbvZIBCT16kA" label="+"/>
-      <cardinality xmi:id="_HsD4rVrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-      <type xmi:id="_HsD4rlrNEeqbvZIBCT16kA" name="Temperature">
-        <modelElement href="epc-modelling.uml#_HTd50FrKEeqbvZIBCT16kA"/>
-      </type>
-    </attributes>
-    <attributes xmi:id="_HsD4r1rNEeqbvZIBCT16kA" name="idealIndoorTemperature">
-      <modelElement href="epc-modelling.uml#_HZS1AVrKEeqbvZIBCT16kA"/>
-      <visibility xmi:id="_HsD4sFrNEeqbvZIBCT16kA" label="+"/>
-      <cardinality xmi:id="_HsD4sVrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-      <type xmi:id="_HsD4slrNEeqbvZIBCT16kA" name="Temperature">
-        <modelElement href="epc-modelling.uml#_HTd50FrKEeqbvZIBCT16kA"/>
-      </type>
-    </attributes>
-    <attributes xmi:id="_HsD4s1rNEeqbvZIBCT16kA" name="hightAboveSeaLevel">
-      <modelElement href="epc-modelling.uml#_HZTcEFrKEeqbvZIBCT16kA"/>
-      <visibility xmi:id="_HsD4tFrNEeqbvZIBCT16kA" label="+"/>
-      <cardinality xmi:id="_HsD4tVrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-      <type xmi:id="_HsD4tlrNEeqbvZIBCT16kA" name="Measure">
-        <modelElement href="epc-modelling.uml#_HSPx0FrKEeqbvZIBCT16kA"/>
-      </type>
-    </attributes>
-    <attributes xmi:id="_HsD4t1rNEeqbvZIBCT16kA" name="region">
-      <modelElement href="epc-modelling.uml#_HZTcEVrKEeqbvZIBCT16kA"/>
-      <visibility xmi:id="_HsD4uFrNEeqbvZIBCT16kA" label="+"/>
-      <cardinality xmi:id="_HsD4uVrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-      <type xmi:id="_HsD4ulrNEeqbvZIBCT16kA" name="String">
-        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-      </type>
-    </attributes>
-    <attributes xmi:id="_HsD4u1rNEeqbvZIBCT16kA" name="climateFactor">
-      <modelElement href="epc-modelling.uml#_HZUDIFrKEeqbvZIBCT16kA"/>
-      <visibility xmi:id="_HsD4vFrNEeqbvZIBCT16kA" label="+"/>
-      <cardinality xmi:id="_HsD4vVrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-      <type xmi:id="_HsD4vlrNEeqbvZIBCT16kA" name="int">
-        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-      </type>
-    </attributes>
-    <attributes xmi:id="_HsD4v1rNEeqbvZIBCT16kA" name="heatingDaysPerYear">
-      <modelElement href="epc-modelling.uml#_HZUqMFrKEeqbvZIBCT16kA"/>
-      <visibility xmi:id="_HsD4wFrNEeqbvZIBCT16kA" label="+"/>
-      <cardinality xmi:id="_HsD4wVrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-      <type xmi:id="_HsD4wlrNEeqbvZIBCT16kA" name="int">
-        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-      </type>
-    </attributes>
-    <operations xmi:id="_HsD4w1rNEeqbvZIBCT16kA" name="ClimateData">
-      <modelElement href="epc-modelling.uml#_HRPFMFrKEeqbvZIBCT16kA"/>
-      <visualProperties xmi:id="_bow3oFrNEeqbvZIBCT16kA" visible="false"/>
-      <keywords xmi:id="_HsD4xFrNEeqbvZIBCT16kA" keyword="create"/>
-      <visibility xmi:id="_HsD4xVrNEeqbvZIBCT16kA" label="+"/>
-      <cardinality xmi:id="_HsD4xlrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-      <outParameters xmi:id="_HsD4x1rNEeqbvZIBCT16kA">
-        <modelElement href="epc-modelling.uml#_HRPsQlrKEeqbvZIBCT16kA"/>
-        <type xmi:id="_HsD4yFrNEeqbvZIBCT16kA" name="ClimateData">
-          <modelElement href="epc-modelling.uml#_HRMB4FrKEeqbvZIBCT16kA"/>
-        </type>
-      </outParameters>
-    </operations>
-    <operations xmi:id="_HsD4yVrNEeqbvZIBCT16kA" name="toString">
-      <modelElement href="epc-modelling.uml#_HRXBAFrKEeqbvZIBCT16kA"/>
-      <visualProperties xmi:id="_bow3oVrNEeqbvZIBCT16kA" visible="false"/>
-      <stereotypes xmi:id="_HsD4ylrNEeqbvZIBCT16kA" name="LegacyStyledElement">
-        <modelElement href="epc-modelling.uml#_HRXoEFrKEeqbvZIBCT16kA"/>
-      </stereotypes>
-      <stereotypes xmi:id="_HsD4y1rNEeqbvZIBCT16kA" name="Annotations">
-        <modelElement href="epc-modelling.uml#_HRY2MFrKEeqbvZIBCT16kA"/>
-      </stereotypes>
-      <visibility xmi:id="_HsD4zFrNEeqbvZIBCT16kA" label="+"/>
-      <cardinality xmi:id="_HsD4zVrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-      <outParameters xmi:id="_HsD4zlrNEeqbvZIBCT16kA">
-        <modelElement href="epc-modelling.uml#_HRXBAVrKEeqbvZIBCT16kA"/>
-        <type xmi:id="_HsD4z1rNEeqbvZIBCT16kA" name="String">
-          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </type>
-      </outParameters>
-    </operations>
-    <operations xmi:id="_HsD40FrNEeqbvZIBCT16kA" name="ClimateData">
-      <modelElement href="epc-modelling.uml#_HXoBEFrKEeqbvZIBCT16kA"/>
-      <visualProperties xmi:id="_boxesFrNEeqbvZIBCT16kA" visible="false"/>
-      <keywords xmi:id="_HsD40VrNEeqbvZIBCT16kA" keyword="create"/>
-      <visibility xmi:id="_HsD40lrNEeqbvZIBCT16kA" label="+"/>
-      <cardinality xmi:id="_HsD401rNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-      <outParameters xmi:id="_HsD41FrNEeqbvZIBCT16kA">
-        <modelElement href="epc-modelling.uml#_HXpPMVrKEeqbvZIBCT16kA"/>
-        <type xmi:id="_HsD41VrNEeqbvZIBCT16kA" name="ClimateData">
-          <modelElement href="epc-modelling.uml#_HRMB4FrKEeqbvZIBCT16kA"/>
-        </type>
-      </outParameters>
-      <parameters xmi:id="_HsD41lrNEeqbvZIBCT16kA" name="averageOutdoorTemperature">
-        <modelElement href="epc-modelling.uml#_HXoBEVrKEeqbvZIBCT16kA"/>
-        <cardinality xmi:id="_HsD411rNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-        <type xmi:id="_HsD42FrNEeqbvZIBCT16kA" name="Temperature">
-          <modelElement href="epc-modelling.uml#_HTd50FrKEeqbvZIBCT16kA"/>
-        </type>
-      </parameters>
-      <parameters xmi:id="_HsD42VrNEeqbvZIBCT16kA" name="idealIndoorTemperature">
-        <modelElement href="epc-modelling.uml#_HXooIFrKEeqbvZIBCT16kA"/>
-        <cardinality xmi:id="_HsD42lrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-        <type xmi:id="_HsD421rNEeqbvZIBCT16kA" name="Temperature">
-          <modelElement href="epc-modelling.uml#_HTd50FrKEeqbvZIBCT16kA"/>
-        </type>
-      </parameters>
-      <parameters xmi:id="_HsD43FrNEeqbvZIBCT16kA" name="hightAboveSeaLevel">
-        <modelElement href="epc-modelling.uml#_HXooIVrKEeqbvZIBCT16kA"/>
-        <cardinality xmi:id="_HsFGwFrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-        <type xmi:id="_HsFGwVrNEeqbvZIBCT16kA" name="Measure">
-          <modelElement href="epc-modelling.uml#_HSPx0FrKEeqbvZIBCT16kA"/>
-        </type>
-      </parameters>
-      <parameters xmi:id="_HsFGwlrNEeqbvZIBCT16kA" name="region">
-        <modelElement href="epc-modelling.uml#_HXooIlrKEeqbvZIBCT16kA"/>
-        <cardinality xmi:id="_HsFGw1rNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-        <type xmi:id="_HsFGxFrNEeqbvZIBCT16kA" name="String">
-          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </type>
-      </parameters>
-      <parameters xmi:id="_HsFGxVrNEeqbvZIBCT16kA" name="climateFactor">
-        <modelElement href="epc-modelling.uml#_HXooI1rKEeqbvZIBCT16kA"/>
-        <cardinality xmi:id="_HsFGxlrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-        <type xmi:id="_HsFGx1rNEeqbvZIBCT16kA" name="int">
-          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-        </type>
-      </parameters>
-      <parameters xmi:id="_HsFGyFrNEeqbvZIBCT16kA" name="heatingDaysPerYear">
-        <modelElement href="epc-modelling.uml#_HXooJFrKEeqbvZIBCT16kA"/>
-        <cardinality xmi:id="_HsFGyVrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-        <type xmi:id="_HsFGylrNEeqbvZIBCT16kA" name="int">
-          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-        </type>
-      </parameters>
-    </operations>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_H_hAIFrNEeqbvZIBCT16kA" name="Measure" associationsIn="_H_gZEFrNEeqbvZIBCT16kA" associationsOut="_HsD4oFrNEeqbvZIBCT16kA _H9ZgQFrNEeqbvZIBCT16kA _H-xZQFrNEeqbvZIBCT16kA _H_ZEUFrNEeqbvZIBCT16kA _H_ZrYFrNEeqbvZIBCT16kA _H_aScFrNEeqbvZIBCT16kA">
-    <modelElement href="epc-modelling.uml#_HSPx0FrKEeqbvZIBCT16kA"/>
-    <visualProperties xmi:id="_H_hAIVrNEeqbvZIBCT16kA" position="561.0,2074.0" size="-1.0,-1.0" visible="false"/>
-    <visibility xmi:id="_H_hAIlrNEeqbvZIBCT16kA" label="+"/>
-    <attributes xmi:id="_H_hAI1rNEeqbvZIBCT16kA" name="value">
-      <modelElement href="epc-modelling.uml#_HZtrwFrKEeqbvZIBCT16kA"/>
-      <visibility xmi:id="_H_hAJFrNEeqbvZIBCT16kA" label="+"/>
-      <cardinality xmi:id="_H_hAJVrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-      <type xmi:id="_H_hAJlrNEeqbvZIBCT16kA" name="double">
-        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
-      </type>
-    </attributes>
-    <attributes xmi:id="_H_hAJ1rNEeqbvZIBCT16kA" name="unit">
-      <modelElement href="epc-modelling.uml#_HZvg8FrKEeqbvZIBCT16kA"/>
-      <visibility xmi:id="_H_hAKFrNEeqbvZIBCT16kA" label="+"/>
-      <cardinality xmi:id="_H_hAKVrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-      <type xmi:id="_H_hAKlrNEeqbvZIBCT16kA" name="MeasuringUnit">
-        <modelElement href="epc-modelling.uml#_HSXtoFrKEeqbvZIBCT16kA"/>
-      </type>
-    </attributes>
-    <operations xmi:id="_H_hAK1rNEeqbvZIBCT16kA" name="Measure">
-      <modelElement href="epc-modelling.uml#_HSRnAFrKEeqbvZIBCT16kA"/>
-      <visualProperties xmi:id="_assQ8FrNEeqbvZIBCT16kA" visible="false"/>
-      <keywords xmi:id="_H_hALFrNEeqbvZIBCT16kA" keyword="create"/>
-      <visibility xmi:id="_H_hALVrNEeqbvZIBCT16kA" label="+"/>
-      <cardinality xmi:id="_H_hALlrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-      <outParameters xmi:id="_H_hAL1rNEeqbvZIBCT16kA">
-        <modelElement href="epc-modelling.uml#_HSSOEFrKEeqbvZIBCT16kA"/>
-        <type xmi:id="_H_hAMFrNEeqbvZIBCT16kA" name="Measure">
-          <modelElement href="epc-modelling.uml#_HSPx0FrKEeqbvZIBCT16kA"/>
-        </type>
-      </outParameters>
-    </operations>
-    <operations xmi:id="_H_hAMVrNEeqbvZIBCT16kA" name="toString">
-      <modelElement href="epc-modelling.uml#_HSTcMFrKEeqbvZIBCT16kA"/>
-      <visualProperties xmi:id="_ass4AFrNEeqbvZIBCT16kA" visible="false"/>
-      <stereotypes xmi:id="_H_hAMlrNEeqbvZIBCT16kA" name="LegacyStyledElement">
-        <modelElement href="epc-modelling.uml#_HSUDQVrKEeqbvZIBCT16kA"/>
-      </stereotypes>
-      <stereotypes xmi:id="_H_hAM1rNEeqbvZIBCT16kA" name="Annotations">
-        <modelElement href="epc-modelling.uml#_HSUqUFrKEeqbvZIBCT16kA"/>
-      </stereotypes>
-      <visibility xmi:id="_H_hANFrNEeqbvZIBCT16kA" label="+"/>
-      <cardinality xmi:id="_H_hANVrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-      <outParameters xmi:id="_H_hANlrNEeqbvZIBCT16kA">
-        <modelElement href="epc-modelling.uml#_HSUDQFrKEeqbvZIBCT16kA"/>
-        <type xmi:id="_H_hAN1rNEeqbvZIBCT16kA" name="String">
-          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </type>
-      </outParameters>
-    </operations>
-    <operations xmi:id="_H_hAOFrNEeqbvZIBCT16kA" name="Measure">
-      <modelElement href="epc-modelling.uml#_HYDe4FrKEeqbvZIBCT16kA"/>
-      <visualProperties xmi:id="_astfEFrNEeqbvZIBCT16kA" visible="false"/>
-      <keywords xmi:id="_H_hAOVrNEeqbvZIBCT16kA" keyword="create"/>
-      <visibility xmi:id="_H_hAOlrNEeqbvZIBCT16kA" label="+"/>
-      <cardinality xmi:id="_H_hAO1rNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-      <outParameters xmi:id="_H_hAPFrNEeqbvZIBCT16kA">
-        <modelElement href="epc-modelling.uml#_HYDe5VrKEeqbvZIBCT16kA"/>
-        <type xmi:id="_H_hAPVrNEeqbvZIBCT16kA" name="Measure">
-          <modelElement href="epc-modelling.uml#_HSPx0FrKEeqbvZIBCT16kA"/>
-        </type>
-      </outParameters>
-      <parameters xmi:id="_H_hAPlrNEeqbvZIBCT16kA" name="value">
-        <modelElement href="epc-modelling.uml#_HYDe4VrKEeqbvZIBCT16kA"/>
-        <cardinality xmi:id="_H_hAP1rNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-        <type xmi:id="_H_hAQFrNEeqbvZIBCT16kA" name="double">
-          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
-        </type>
-      </parameters>
-      <parameters xmi:id="_H_hAQVrNEeqbvZIBCT16kA" name="unit">
-        <modelElement href="epc-modelling.uml#_HYDe4lrKEeqbvZIBCT16kA"/>
-        <cardinality xmi:id="_H_hAQlrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-        <type xmi:id="_H_hAQ1rNEeqbvZIBCT16kA" name="MeasuringUnit">
-          <modelElement href="epc-modelling.uml#_HSXtoFrKEeqbvZIBCT16kA"/>
-        </type>
-      </parameters>
-    </operations>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_I0gucFrNEeqbvZIBCT16kA" name="Temperature" associationsIn="_IwfKEFrNEeqbvZIBCT16kA" associationsOut="_HrTqsFrNEeqbvZIBCT16kA _HsBcYFrNEeqbvZIBCT16kA">
-    <modelElement href="epc-modelling.uml#_HTd50FrKEeqbvZIBCT16kA"/>
-    <visualProperties xmi:id="_I0gucVrNEeqbvZIBCT16kA" position="1498.0,1642.0" size="-1.0,-1.0"/>
-    <visibility xmi:id="_I0guclrNEeqbvZIBCT16kA" label="+"/>
-    <attributes xmi:id="_I0guc1rNEeqbvZIBCT16kA" name="value">
-      <modelElement href="epc-modelling.uml#_HaEREFrKEeqbvZIBCT16kA"/>
-      <visibility xmi:id="_I0gudFrNEeqbvZIBCT16kA" label="+"/>
-      <cardinality xmi:id="_I0gudVrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-      <type xmi:id="_I0gudlrNEeqbvZIBCT16kA" name="double">
-        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
-      </type>
-    </attributes>
-    <attributes xmi:id="_I0gud1rNEeqbvZIBCT16kA" name="unit">
-      <modelElement href="epc-modelling.uml#_HaE4IFrKEeqbvZIBCT16kA"/>
-      <visibility xmi:id="_I0gueFrNEeqbvZIBCT16kA" label="+"/>
-      <cardinality xmi:id="_I0gueVrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-      <type xmi:id="_I0guelrNEeqbvZIBCT16kA" name="TemperatureUnit">
-        <modelElement href="epc-modelling.uml#_HTkAcFrKEeqbvZIBCT16kA"/>
-      </type>
-    </attributes>
-    <operations xmi:id="_I0gue1rNEeqbvZIBCT16kA" name="Temperature">
-      <modelElement href="epc-modelling.uml#_HTfH8FrKEeqbvZIBCT16kA"/>
-      <visualProperties xmi:id="_ce2yIFrNEeqbvZIBCT16kA" visible="false"/>
-      <keywords xmi:id="_I0gufFrNEeqbvZIBCT16kA" keyword="create"/>
-      <visibility xmi:id="_I0gufVrNEeqbvZIBCT16kA" label="+"/>
-      <cardinality xmi:id="_I0guflrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-      <outParameters xmi:id="_I0guf1rNEeqbvZIBCT16kA">
-        <modelElement href="epc-modelling.uml#_HTfvAlrKEeqbvZIBCT16kA"/>
-        <type xmi:id="_I0gugFrNEeqbvZIBCT16kA" name="Temperature">
-          <modelElement href="epc-modelling.uml#_HTd50FrKEeqbvZIBCT16kA"/>
-        </type>
-      </outParameters>
-    </operations>
-    <operations xmi:id="_I0gugVrNEeqbvZIBCT16kA" name="toString">
-      <modelElement href="epc-modelling.uml#_HTgWEFrKEeqbvZIBCT16kA"/>
-      <visualProperties xmi:id="_ce2yIVrNEeqbvZIBCT16kA" visible="false"/>
-      <stereotypes xmi:id="_I0guglrNEeqbvZIBCT16kA" name="LegacyStyledElement">
-        <modelElement href="epc-modelling.uml#_HTg9IFrKEeqbvZIBCT16kA"/>
-      </stereotypes>
-      <stereotypes xmi:id="_I0gug1rNEeqbvZIBCT16kA" name="Annotations">
-        <modelElement href="epc-modelling.uml#_HThkMFrKEeqbvZIBCT16kA"/>
-      </stereotypes>
-      <visibility xmi:id="_I0guhFrNEeqbvZIBCT16kA" label="+"/>
-      <cardinality xmi:id="_I0guhVrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-      <outParameters xmi:id="_I0guhlrNEeqbvZIBCT16kA">
-        <modelElement href="epc-modelling.uml#_HTgWEVrKEeqbvZIBCT16kA"/>
-        <type xmi:id="_I0guh1rNEeqbvZIBCT16kA" name="String">
-          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </type>
-      </outParameters>
-    </operations>
-    <operations xmi:id="_I0guiFrNEeqbvZIBCT16kA" name="Temperature">
-      <modelElement href="epc-modelling.uml#_HYarQFrKEeqbvZIBCT16kA"/>
-      <visualProperties xmi:id="_ce3ZMFrNEeqbvZIBCT16kA" visible="false"/>
-      <keywords xmi:id="_I0guiVrNEeqbvZIBCT16kA" keyword="create"/>
-      <visibility xmi:id="_I0guilrNEeqbvZIBCT16kA" label="+"/>
-      <cardinality xmi:id="_I0gui1rNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-      <outParameters xmi:id="_I0gujFrNEeqbvZIBCT16kA">
-        <modelElement href="epc-modelling.uml#_HYbSUlrKEeqbvZIBCT16kA"/>
-        <type xmi:id="_I0gujVrNEeqbvZIBCT16kA" name="Temperature">
-          <modelElement href="epc-modelling.uml#_HTd50FrKEeqbvZIBCT16kA"/>
-        </type>
-      </outParameters>
-      <parameters xmi:id="_I0gujlrNEeqbvZIBCT16kA" name="value">
-        <modelElement href="epc-modelling.uml#_HYarQVrKEeqbvZIBCT16kA"/>
-        <cardinality xmi:id="_I0guj1rNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-        <type xmi:id="_I0gukFrNEeqbvZIBCT16kA" name="double">
-          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
-        </type>
-      </parameters>
-      <parameters xmi:id="_I0gukVrNEeqbvZIBCT16kA" name="unit">
-        <modelElement href="epc-modelling.uml#_HYarQlrKEeqbvZIBCT16kA"/>
-        <cardinality xmi:id="_I0guklrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-        <type xmi:id="_I0guk1rNEeqbvZIBCT16kA" name="TemperatureUnit">
-          <modelElement href="epc-modelling.uml#_HTkAcFrKEeqbvZIBCT16kA"/>
-        </type>
-      </parameters>
-    </operations>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_IWR6UFrNEeqbvZIBCT16kA" name="Rating" associationsOut="_H7ifEFrNEeqbvZIBCT16kA _H7jGIFrNEeqbvZIBCT16kA">
-    <modelElement href="epc-modelling.uml#_HS4rAFrKEeqbvZIBCT16kA"/>
-    <visualProperties xmi:id="_IWR6UVrNEeqbvZIBCT16kA" position="1201.0,735.0" size="-1.0,-1.0"/>
-    <visibility xmi:id="_IWR6UlrNEeqbvZIBCT16kA" label="+"/>
-    <attributes xmi:id="_IWR6U1rNEeqbvZIBCT16kA" name="ratingLevel">
-      <modelElement href="epc-modelling.uml#_HZ7uMFrKEeqbvZIBCT16kA"/>
-      <stereotypes xmi:id="_IWR6VFrNEeqbvZIBCT16kA" name="LegacyStyledElement">
-        <modelElement href="epc-modelling.uml#_HZ88UFrKEeqbvZIBCT16kA"/>
-      </stereotypes>
-      <visibility xmi:id="_IWR6VVrNEeqbvZIBCT16kA" label="+"/>
-      <cardinality xmi:id="_IWR6VlrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-      <type xmi:id="_IWR6V1rNEeqbvZIBCT16kA" name="String">
-        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-      </type>
-    </attributes>
-    <attributes xmi:id="_IWR6WFrNEeqbvZIBCT16kA" name="ratingPoints">
-      <modelElement href="epc-modelling.uml#_HZ9jYFrKEeqbvZIBCT16kA"/>
-      <stereotypes xmi:id="_IWR6WVrNEeqbvZIBCT16kA" name="LegacyStyledElement">
-        <modelElement href="epc-modelling.uml#_HZ-KcFrKEeqbvZIBCT16kA"/>
-      </stereotypes>
-      <visibility xmi:id="_IWR6WlrNEeqbvZIBCT16kA" label="+"/>
-      <cardinality xmi:id="_IWR6W1rNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-      <type xmi:id="_IWR6XFrNEeqbvZIBCT16kA" name="Double">
-        <modelElement href="epc-modelling.uml#_HZAhIVrKEeqbvZIBCT16kA"/>
-      </type>
-    </attributes>
-    <operations xmi:id="_IWR6XVrNEeqbvZIBCT16kA" name="Rating">
-      <modelElement href="epc-modelling.uml#_HS55IFrKEeqbvZIBCT16kA"/>
-      <visualProperties xmi:id="_QVZtAFrNEeqbvZIBCT16kA" visible="false"/>
-      <keywords xmi:id="_IWR6XlrNEeqbvZIBCT16kA" keyword="create"/>
-      <visibility xmi:id="_IWR6X1rNEeqbvZIBCT16kA" label="+"/>
-      <cardinality xmi:id="_IWR6YFrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-      <outParameters xmi:id="_IWR6YVrNEeqbvZIBCT16kA">
-        <modelElement href="epc-modelling.uml#_HS55I1rKEeqbvZIBCT16kA"/>
-        <type xmi:id="_IWR6YlrNEeqbvZIBCT16kA" name="Rating">
-          <modelElement href="epc-modelling.uml#_HS4rAFrKEeqbvZIBCT16kA"/>
-        </type>
-      </outParameters>
-    </operations>
-    <operations xmi:id="_IWR6Y1rNEeqbvZIBCT16kA" name="getRatingLevel">
-      <modelElement href="epc-modelling.uml#_HS7HQFrKEeqbvZIBCT16kA"/>
-      <visualProperties xmi:id="_QVaUEFrNEeqbvZIBCT16kA" visible="false"/>
-      <visibility xmi:id="_IWR6ZFrNEeqbvZIBCT16kA" label="+"/>
-      <cardinality xmi:id="_IWR6ZVrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-      <outParameters xmi:id="_IWR6ZlrNEeqbvZIBCT16kA">
-        <modelElement href="epc-modelling.uml#_HS7uUFrKEeqbvZIBCT16kA"/>
-        <type xmi:id="_IWR6Z1rNEeqbvZIBCT16kA" name="String">
-          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </type>
-      </outParameters>
-    </operations>
-    <operations xmi:id="_IWR6aFrNEeqbvZIBCT16kA" name="getRatingPoints">
-      <modelElement href="epc-modelling.uml#_HS7uUVrKEeqbvZIBCT16kA"/>
-      <visualProperties xmi:id="_QVaUEVrNEeqbvZIBCT16kA" visible="false"/>
-      <visibility xmi:id="_IWR6aVrNEeqbvZIBCT16kA" label="+"/>
-      <cardinality xmi:id="_IWR6alrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-      <outParameters xmi:id="_IWR6a1rNEeqbvZIBCT16kA">
-        <modelElement href="epc-modelling.uml#_HZC9YFrKEeqbvZIBCT16kA"/>
-        <type xmi:id="_IWR6bFrNEeqbvZIBCT16kA" name="Double">
-          <modelElement href="epc-modelling.uml#_HZAhIVrKEeqbvZIBCT16kA"/>
-        </type>
-      </outParameters>
-    </operations>
-    <operations xmi:id="_IWR6bVrNEeqbvZIBCT16kA" name="toString">
-      <modelElement href="epc-modelling.uml#_HS8VYFrKEeqbvZIBCT16kA"/>
-      <visualProperties xmi:id="_QVa7IFrNEeqbvZIBCT16kA" visible="false"/>
-      <stereotypes xmi:id="_IWR6blrNEeqbvZIBCT16kA" name="LegacyStyledElement">
-        <modelElement href="epc-modelling.uml#_HS9jgFrKEeqbvZIBCT16kA"/>
-      </stereotypes>
-      <stereotypes xmi:id="_IWR6b1rNEeqbvZIBCT16kA" name="Annotations">
-        <modelElement href="epc-modelling.uml#_HS-KkFrKEeqbvZIBCT16kA"/>
-      </stereotypes>
-      <visibility xmi:id="_IWR6cFrNEeqbvZIBCT16kA" label="+"/>
-      <cardinality xmi:id="_IWR6cVrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-      <outParameters xmi:id="_IWR6clrNEeqbvZIBCT16kA">
-        <modelElement href="epc-modelling.uml#_HS88cFrKEeqbvZIBCT16kA"/>
-        <type xmi:id="_IWR6c1rNEeqbvZIBCT16kA" name="String">
-          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </type>
-      </outParameters>
-    </operations>
-    <operations xmi:id="_IWR6dFrNEeqbvZIBCT16kA" name="Rating">
-      <modelElement href="epc-modelling.uml#_HZBvQFrKEeqbvZIBCT16kA"/>
-      <visualProperties xmi:id="_QVa7IVrNEeqbvZIBCT16kA" visible="false"/>
-      <keywords xmi:id="_IWR6dVrNEeqbvZIBCT16kA" keyword="create"/>
-      <visibility xmi:id="_IWR6dlrNEeqbvZIBCT16kA" label="+"/>
-      <cardinality xmi:id="_IWR6d1rNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-      <outParameters xmi:id="_IWR6eFrNEeqbvZIBCT16kA">
-        <modelElement href="epc-modelling.uml#_HZCWUlrKEeqbvZIBCT16kA"/>
-        <type xmi:id="_IWR6eVrNEeqbvZIBCT16kA" name="Rating">
-          <modelElement href="epc-modelling.uml#_HS4rAFrKEeqbvZIBCT16kA"/>
-        </type>
-      </outParameters>
-      <parameters xmi:id="_IWR6elrNEeqbvZIBCT16kA" name="ratingLevel">
-        <modelElement href="epc-modelling.uml#_HZBvQVrKEeqbvZIBCT16kA"/>
-        <cardinality xmi:id="_IWR6e1rNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-        <type xmi:id="_IWR6fFrNEeqbvZIBCT16kA" name="String">
-          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </type>
-      </parameters>
-      <parameters xmi:id="_IWR6fVrNEeqbvZIBCT16kA" name="ratingPoints">
-        <modelElement href="epc-modelling.uml#_HZBvQlrKEeqbvZIBCT16kA"/>
-        <cardinality xmi:id="_IWR6flrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
-        <type xmi:id="_IWR6f1rNEeqbvZIBCT16kA" name="Double">
-          <modelElement href="epc-modelling.uml#_HZAhIVrKEeqbvZIBCT16kA"/>
-        </type>
-      </parameters>
-    </operations>
-  </nodes>
   <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_HqSXAFrNEeqbvZIBCT16kA" name="Assessor" associationsIn="_Hp6jkFrNEeqbvZIBCT16kA" associationsOut="_H2iqUFrNEeqbvZIBCT16kA" generalizations="_ILowkFrNEeqbvZIBCT16kA">
     <modelElement href="epc-modelling.uml#_HRCQ4FrKEeqbvZIBCT16kA"/>
     <visualProperties xmi:id="_HqSXAVrNEeqbvZIBCT16kA" position="509.0,494.0" size="-1.0,-1.0"/>
@@ -2164,9 +1455,293 @@
       </parameters>
     </operations>
   </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_HsD4qFrNEeqbvZIBCT16kA" name="ClimateData" associationsIn="_HrTqsFrNEeqbvZIBCT16kA _HsBcYFrNEeqbvZIBCT16kA _HsD4oFrNEeqbvZIBCT16kA" associationsOut="_HyX8AFrNEeqbvZIBCT16kA">
+    <modelElement href="epc-modelling.uml#_HRMB4FrKEeqbvZIBCT16kA"/>
+    <visualProperties xmi:id="_HsD4qVrNEeqbvZIBCT16kA" position="909.0,1630.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_HsD4qlrNEeqbvZIBCT16kA" label="+"/>
+    <attributes xmi:id="_HsD4q1rNEeqbvZIBCT16kA" name="averageOutdoorTemperature">
+      <modelElement href="epc-modelling.uml#_HZS1AFrKEeqbvZIBCT16kA"/>
+      <visibility xmi:id="_HsD4rFrNEeqbvZIBCT16kA" label="+"/>
+      <cardinality xmi:id="_HsD4rVrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
+      <type xmi:id="_RrnxsFrQEeqbvZIBCT16kA" name="Measure">
+        <modelElement href="epc-modelling.uml#_HSPx0FrKEeqbvZIBCT16kA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_HsD4r1rNEeqbvZIBCT16kA" name="idealIndoorTemperature">
+      <modelElement href="epc-modelling.uml#_HZS1AVrKEeqbvZIBCT16kA"/>
+      <visibility xmi:id="_HsD4sFrNEeqbvZIBCT16kA" label="+"/>
+      <cardinality xmi:id="_HsD4sVrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
+      <type xmi:id="_RtEjMFrQEeqbvZIBCT16kA" name="Measure">
+        <modelElement href="epc-modelling.uml#_HSPx0FrKEeqbvZIBCT16kA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_HsD4s1rNEeqbvZIBCT16kA" name="hightAboveSeaLevel">
+      <modelElement href="epc-modelling.uml#_HZTcEFrKEeqbvZIBCT16kA"/>
+      <visibility xmi:id="_HsD4tFrNEeqbvZIBCT16kA" label="+"/>
+      <cardinality xmi:id="_HsD4tVrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
+      <type xmi:id="_HsD4tlrNEeqbvZIBCT16kA" name="Measure">
+        <modelElement href="epc-modelling.uml#_HSPx0FrKEeqbvZIBCT16kA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_HsD4t1rNEeqbvZIBCT16kA" name="region">
+      <modelElement href="epc-modelling.uml#_HZTcEVrKEeqbvZIBCT16kA"/>
+      <visibility xmi:id="_HsD4uFrNEeqbvZIBCT16kA" label="+"/>
+      <cardinality xmi:id="_HsD4uVrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
+      <type xmi:id="_HsD4ulrNEeqbvZIBCT16kA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_HsD4u1rNEeqbvZIBCT16kA" name="climateFactor">
+      <modelElement href="epc-modelling.uml#_HZUDIFrKEeqbvZIBCT16kA"/>
+      <visibility xmi:id="_HsD4vFrNEeqbvZIBCT16kA" label="+"/>
+      <cardinality xmi:id="_HsD4vVrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
+      <type xmi:id="_HsD4vlrNEeqbvZIBCT16kA" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_HsD4v1rNEeqbvZIBCT16kA" name="heatingDaysPerYear">
+      <modelElement href="epc-modelling.uml#_HZUqMFrKEeqbvZIBCT16kA"/>
+      <visibility xmi:id="_HsD4wFrNEeqbvZIBCT16kA" label="+"/>
+      <cardinality xmi:id="_HsD4wVrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
+      <type xmi:id="_HsD4wlrNEeqbvZIBCT16kA" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_HsD4w1rNEeqbvZIBCT16kA" name="ClimateData">
+      <modelElement href="epc-modelling.uml#_HRPFMFrKEeqbvZIBCT16kA"/>
+      <visualProperties xmi:id="_bow3oFrNEeqbvZIBCT16kA" visible="false"/>
+      <keywords xmi:id="_HsD4xFrNEeqbvZIBCT16kA" keyword="create"/>
+      <visibility xmi:id="_HsD4xVrNEeqbvZIBCT16kA" label="+"/>
+      <cardinality xmi:id="_HsD4xlrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_HsD4x1rNEeqbvZIBCT16kA">
+        <modelElement href="epc-modelling.uml#_HRPsQlrKEeqbvZIBCT16kA"/>
+        <type xmi:id="_HsD4yFrNEeqbvZIBCT16kA" name="ClimateData">
+          <modelElement href="epc-modelling.uml#_HRMB4FrKEeqbvZIBCT16kA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_HsD4yVrNEeqbvZIBCT16kA" name="toString">
+      <modelElement href="epc-modelling.uml#_HRXBAFrKEeqbvZIBCT16kA"/>
+      <visualProperties xmi:id="_bow3oVrNEeqbvZIBCT16kA" visible="false"/>
+      <stereotypes xmi:id="_HsD4ylrNEeqbvZIBCT16kA" name="LegacyStyledElement">
+        <modelElement href="epc-modelling.uml#_HRXoEFrKEeqbvZIBCT16kA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_HsD4y1rNEeqbvZIBCT16kA" name="Annotations">
+        <modelElement href="epc-modelling.uml#_HRY2MFrKEeqbvZIBCT16kA"/>
+      </stereotypes>
+      <visibility xmi:id="_HsD4zFrNEeqbvZIBCT16kA" label="+"/>
+      <cardinality xmi:id="_HsD4zVrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_HsD4zlrNEeqbvZIBCT16kA">
+        <modelElement href="epc-modelling.uml#_HRXBAVrKEeqbvZIBCT16kA"/>
+        <type xmi:id="_HsD4z1rNEeqbvZIBCT16kA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_ReD20FrQEeqbvZIBCT16kA" name="ClimateData">
+      <modelElement href="epc-modelling.uml#_Rd9wMFrQEeqbvZIBCT16kA"/>
+      <visualProperties xmi:id="_Xkis4FrQEeqbvZIBCT16kA" visible="false"/>
+      <keywords xmi:id="_ReD20VrQEeqbvZIBCT16kA" keyword="create"/>
+      <visibility xmi:id="_ReEd4FrQEeqbvZIBCT16kA" label="+"/>
+      <cardinality xmi:id="_ReEd4VrQEeqbvZIBCT16kA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_ReEd4lrQEeqbvZIBCT16kA">
+        <modelElement href="epc-modelling.uml#_Rd-XRlrQEeqbvZIBCT16kA"/>
+        <type xmi:id="_ReEd41rQEeqbvZIBCT16kA" name="ClimateData">
+          <modelElement href="epc-modelling.uml#_HRMB4FrKEeqbvZIBCT16kA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_ReEd5FrQEeqbvZIBCT16kA" name="averageOutdoorTemperature">
+        <modelElement href="epc-modelling.uml#_Rd-XQFrQEeqbvZIBCT16kA"/>
+        <cardinality xmi:id="_ReEd5VrQEeqbvZIBCT16kA" label="1" max="1" min="1"/>
+        <type xmi:id="_ReEd5lrQEeqbvZIBCT16kA" name="Measure">
+          <modelElement href="epc-modelling.uml#_HSPx0FrKEeqbvZIBCT16kA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_ReEd51rQEeqbvZIBCT16kA" name="idealIndoorTemperature">
+        <modelElement href="epc-modelling.uml#_Rd-XQVrQEeqbvZIBCT16kA"/>
+        <cardinality xmi:id="_ReEd6FrQEeqbvZIBCT16kA" label="1" max="1" min="1"/>
+        <type xmi:id="_ReEd6VrQEeqbvZIBCT16kA" name="Measure">
+          <modelElement href="epc-modelling.uml#_HSPx0FrKEeqbvZIBCT16kA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_ReEd6lrQEeqbvZIBCT16kA" name="hightAboveSeaLevel">
+        <modelElement href="epc-modelling.uml#_Rd-XQlrQEeqbvZIBCT16kA"/>
+        <cardinality xmi:id="_ReEd61rQEeqbvZIBCT16kA" label="1" max="1" min="1"/>
+        <type xmi:id="_ReEd7FrQEeqbvZIBCT16kA" name="Measure">
+          <modelElement href="epc-modelling.uml#_HSPx0FrKEeqbvZIBCT16kA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_ReEd7VrQEeqbvZIBCT16kA" name="region">
+        <modelElement href="epc-modelling.uml#_Rd-XQ1rQEeqbvZIBCT16kA"/>
+        <cardinality xmi:id="_ReEd7lrQEeqbvZIBCT16kA" label="1" max="1" min="1"/>
+        <type xmi:id="_ReEd71rQEeqbvZIBCT16kA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_ReEd8FrQEeqbvZIBCT16kA" name="climateFactor">
+        <modelElement href="epc-modelling.uml#_Rd-XRFrQEeqbvZIBCT16kA"/>
+        <cardinality xmi:id="_ReEd8VrQEeqbvZIBCT16kA" label="1" max="1" min="1"/>
+        <type xmi:id="_ReEd8lrQEeqbvZIBCT16kA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_ReEd81rQEeqbvZIBCT16kA" name="heatingDaysPerYear">
+        <modelElement href="epc-modelling.uml#_Rd-XRVrQEeqbvZIBCT16kA"/>
+        <cardinality xmi:id="_ReEd9FrQEeqbvZIBCT16kA" label="1" max="1" min="1"/>
+        <type xmi:id="_ReEd9VrQEeqbvZIBCT16kA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_ITZlcFrNEeqbvZIBCT16kA" name="Photo" associationsIn="_IRgvEFrNEeqbvZIBCT16kA" associationsOut="_H05EgFrNEeqbvZIBCT16kA">
+    <modelElement href="epc-modelling.uml#_HSvhEFrKEeqbvZIBCT16kA"/>
+    <visualProperties xmi:id="_ITZlcVrNEeqbvZIBCT16kA" position="617.0,1429.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_ITZlclrNEeqbvZIBCT16kA" label="+"/>
+    <attributes xmi:id="_ITZlc1rNEeqbvZIBCT16kA" name="name">
+      <modelElement href="epc-modelling.uml#_HZ4q4FrKEeqbvZIBCT16kA"/>
+      <visibility xmi:id="_ITZldFrNEeqbvZIBCT16kA" label="+"/>
+      <cardinality xmi:id="_ITZldVrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
+      <type xmi:id="_ITZldlrNEeqbvZIBCT16kA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_ITZld1rNEeqbvZIBCT16kA" name="image">
+      <modelElement href="epc-modelling.uml#_HZ5R8FrKEeqbvZIBCT16kA"/>
+      <visibility xmi:id="_ITZleFrNEeqbvZIBCT16kA" label="+"/>
+      <cardinality xmi:id="_ITZleVrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
+      <type xmi:id="_ITZlelrNEeqbvZIBCT16kA" name="Blob">
+        <modelElement href="epc-modelling.uml#_HYOeAFrKEeqbvZIBCT16kA"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_ITZle1rNEeqbvZIBCT16kA" name="Photo">
+      <modelElement href="epc-modelling.uml#_HSwIIFrKEeqbvZIBCT16kA"/>
+      <visualProperties xmi:id="_sbVVkFrQEeqbvZIBCT16kA" visible="false"/>
+      <keywords xmi:id="_ITZlfFrNEeqbvZIBCT16kA" keyword="create"/>
+      <visibility xmi:id="_ITZlfVrNEeqbvZIBCT16kA" label="+"/>
+      <cardinality xmi:id="_ITZlflrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_ITZlf1rNEeqbvZIBCT16kA">
+        <modelElement href="epc-modelling.uml#_HSwvMlrKEeqbvZIBCT16kA"/>
+        <type xmi:id="_ITZlgFrNEeqbvZIBCT16kA" name="Photo">
+          <modelElement href="epc-modelling.uml#_HSvhEFrKEeqbvZIBCT16kA"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_IWR6UFrNEeqbvZIBCT16kA" name="Rating" associationsOut="_H7ifEFrNEeqbvZIBCT16kA _H7jGIFrNEeqbvZIBCT16kA">
+    <modelElement href="epc-modelling.uml#_HS4rAFrKEeqbvZIBCT16kA"/>
+    <visualProperties xmi:id="_IWR6UVrNEeqbvZIBCT16kA" position="1201.0,735.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_IWR6UlrNEeqbvZIBCT16kA" label="+"/>
+    <attributes xmi:id="_IWR6U1rNEeqbvZIBCT16kA" name="ratingLevel">
+      <modelElement href="epc-modelling.uml#_HZ7uMFrKEeqbvZIBCT16kA"/>
+      <visualProperties xmi:id="_zJUQgFrQEeqbvZIBCT16kA"/>
+      <stereotypes xmi:id="_IWR6VFrNEeqbvZIBCT16kA" name="LegacyStyledElement">
+        <modelElement href="epc-modelling.uml#_HZ88UFrKEeqbvZIBCT16kA"/>
+      </stereotypes>
+      <visibility xmi:id="_IWR6VVrNEeqbvZIBCT16kA" label="+"/>
+      <cardinality xmi:id="_IWR6VlrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
+      <type xmi:id="_IWR6V1rNEeqbvZIBCT16kA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_IWR6WFrNEeqbvZIBCT16kA" name="ratingPoints">
+      <modelElement href="epc-modelling.uml#_HZ9jYFrKEeqbvZIBCT16kA"/>
+      <visualProperties xmi:id="_zJU3kFrQEeqbvZIBCT16kA"/>
+      <stereotypes xmi:id="_IWR6WVrNEeqbvZIBCT16kA" name="LegacyStyledElement">
+        <modelElement href="epc-modelling.uml#_HZ-KcFrKEeqbvZIBCT16kA"/>
+      </stereotypes>
+      <visibility xmi:id="_IWR6WlrNEeqbvZIBCT16kA" label="+"/>
+      <cardinality xmi:id="_IWR6W1rNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
+      <type xmi:id="_IWR6XFrNEeqbvZIBCT16kA" name="Double">
+        <modelElement href="epc-modelling.uml#_HZAhIVrKEeqbvZIBCT16kA"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_IWR6XVrNEeqbvZIBCT16kA" name="Rating">
+      <modelElement href="epc-modelling.uml#_HS55IFrKEeqbvZIBCT16kA"/>
+      <visualProperties xmi:id="_QVZtAFrNEeqbvZIBCT16kA" visible="false"/>
+      <keywords xmi:id="_IWR6XlrNEeqbvZIBCT16kA" keyword="create"/>
+      <visibility xmi:id="_IWR6X1rNEeqbvZIBCT16kA" label="+"/>
+      <cardinality xmi:id="_IWR6YFrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_IWR6YVrNEeqbvZIBCT16kA">
+        <modelElement href="epc-modelling.uml#_HS55I1rKEeqbvZIBCT16kA"/>
+        <type xmi:id="_IWR6YlrNEeqbvZIBCT16kA" name="Rating">
+          <modelElement href="epc-modelling.uml#_HS4rAFrKEeqbvZIBCT16kA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_IWR6Y1rNEeqbvZIBCT16kA" name="getRatingLevel">
+      <modelElement href="epc-modelling.uml#_HS7HQFrKEeqbvZIBCT16kA"/>
+      <visualProperties xmi:id="_QVaUEFrNEeqbvZIBCT16kA" visible="false"/>
+      <visibility xmi:id="_IWR6ZFrNEeqbvZIBCT16kA" label="+"/>
+      <cardinality xmi:id="_IWR6ZVrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_IWR6ZlrNEeqbvZIBCT16kA">
+        <modelElement href="epc-modelling.uml#_HS7uUFrKEeqbvZIBCT16kA"/>
+        <type xmi:id="_IWR6Z1rNEeqbvZIBCT16kA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_IWR6aFrNEeqbvZIBCT16kA" name="getRatingPoints">
+      <modelElement href="epc-modelling.uml#_HS7uUVrKEeqbvZIBCT16kA"/>
+      <visualProperties xmi:id="_QVaUEVrNEeqbvZIBCT16kA" visible="false"/>
+      <visibility xmi:id="_IWR6aVrNEeqbvZIBCT16kA" label="+"/>
+      <cardinality xmi:id="_IWR6alrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_IWR6a1rNEeqbvZIBCT16kA">
+        <modelElement href="epc-modelling.uml#_HZC9YFrKEeqbvZIBCT16kA"/>
+        <type xmi:id="_IWR6bFrNEeqbvZIBCT16kA" name="Double">
+          <modelElement href="epc-modelling.uml#_HZAhIVrKEeqbvZIBCT16kA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_IWR6bVrNEeqbvZIBCT16kA" name="toString">
+      <modelElement href="epc-modelling.uml#_HS8VYFrKEeqbvZIBCT16kA"/>
+      <visualProperties xmi:id="_QVa7IFrNEeqbvZIBCT16kA" visible="false"/>
+      <stereotypes xmi:id="_IWR6blrNEeqbvZIBCT16kA" name="LegacyStyledElement">
+        <modelElement href="epc-modelling.uml#_HS9jgFrKEeqbvZIBCT16kA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_IWR6b1rNEeqbvZIBCT16kA" name="Annotations">
+        <modelElement href="epc-modelling.uml#_HS-KkFrKEeqbvZIBCT16kA"/>
+      </stereotypes>
+      <visibility xmi:id="_IWR6cFrNEeqbvZIBCT16kA" label="+"/>
+      <cardinality xmi:id="_IWR6cVrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_IWR6clrNEeqbvZIBCT16kA">
+        <modelElement href="epc-modelling.uml#_HS88cFrKEeqbvZIBCT16kA"/>
+        <type xmi:id="_IWR6c1rNEeqbvZIBCT16kA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_IWR6dFrNEeqbvZIBCT16kA" name="Rating">
+      <modelElement href="epc-modelling.uml#_HZBvQFrKEeqbvZIBCT16kA"/>
+      <visualProperties xmi:id="_QVa7IVrNEeqbvZIBCT16kA" visible="false"/>
+      <keywords xmi:id="_IWR6dVrNEeqbvZIBCT16kA" keyword="create"/>
+      <visibility xmi:id="_IWR6dlrNEeqbvZIBCT16kA" label="+"/>
+      <cardinality xmi:id="_IWR6d1rNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_IWR6eFrNEeqbvZIBCT16kA">
+        <modelElement href="epc-modelling.uml#_HZCWUlrKEeqbvZIBCT16kA"/>
+        <type xmi:id="_IWR6eVrNEeqbvZIBCT16kA" name="Rating">
+          <modelElement href="epc-modelling.uml#_HS4rAFrKEeqbvZIBCT16kA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_IWR6elrNEeqbvZIBCT16kA" name="ratingLevel">
+        <modelElement href="epc-modelling.uml#_HZBvQVrKEeqbvZIBCT16kA"/>
+        <cardinality xmi:id="_IWR6e1rNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
+        <type xmi:id="_IWR6fFrNEeqbvZIBCT16kA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_IWR6fVrNEeqbvZIBCT16kA" name="ratingPoints">
+        <modelElement href="epc-modelling.uml#_HZBvQlrKEeqbvZIBCT16kA"/>
+        <cardinality xmi:id="_IWR6flrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
+        <type xmi:id="_IWR6f1rNEeqbvZIBCT16kA" name="Double">
+          <modelElement href="epc-modelling.uml#_HZAhIVrKEeqbvZIBCT16kA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
   <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_H7k7UFrNEeqbvZIBCT16kA" name="EPC" associationsIn="_H2iqUFrNEeqbvZIBCT16kA _H4UzAFrNEeqbvZIBCT16kA _H6CqQFrNEeqbvZIBCT16kA _H7HBQFrNEeqbvZIBCT16kA _H7gC0FrNEeqbvZIBCT16kA _H7hQ8FrNEeqbvZIBCT16kA _H7ifEFrNEeqbvZIBCT16kA _H7jGIFrNEeqbvZIBCT16kA _H7kUQFrNEeqbvZIBCT16kA">
     <modelElement href="epc-modelling.uml#_HR_TIFrKEeqbvZIBCT16kA"/>
-    <visualProperties xmi:id="_H7k7UVrNEeqbvZIBCT16kA" position="690.0,905.0" size="-1.0,-1.0"/>
+    <visualProperties xmi:id="_H7k7UVrNEeqbvZIBCT16kA" position="579.0,898.0" size="-1.0,-1.0"/>
     <visibility xmi:id="_H7k7UlrNEeqbvZIBCT16kA" label="+"/>
     <attributes xmi:id="_H7k7U1rNEeqbvZIBCT16kA" name="id">
       <modelElement href="epc-modelling.uml#_HZdNEFrKEeqbvZIBCT16kA"/>
@@ -2353,6 +1928,194 @@
         <cardinality xmi:id="_H7k7qFrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
         <type xmi:id="_H7k7qVrNEeqbvZIBCT16kA" name="String">
           <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_IplQ0FrNEeqbvZIBCT16kA" name="SpatialData" associationsIn="_H9ZgQFrNEeqbvZIBCT16kA _H-xZQFrNEeqbvZIBCT16kA" associationsOut="_H03PUFrNEeqbvZIBCT16kA">
+    <modelElement href="epc-modelling.uml#_HTNbIFrKEeqbvZIBCT16kA"/>
+    <visualProperties xmi:id="_IplQ0VrNEeqbvZIBCT16kA" position="68.0,1657.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_IplQ0lrNEeqbvZIBCT16kA" label="+"/>
+    <attributes xmi:id="_IplQ01rNEeqbvZIBCT16kA" name="totalFloorArea">
+      <modelElement href="epc-modelling.uml#_HaDC8FrKEeqbvZIBCT16kA"/>
+      <visibility xmi:id="_IplQ1FrNEeqbvZIBCT16kA" label="+"/>
+      <cardinality xmi:id="_IplQ1VrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
+      <type xmi:id="_IplQ1lrNEeqbvZIBCT16kA" name="Measure">
+        <modelElement href="epc-modelling.uml#_HSPx0FrKEeqbvZIBCT16kA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_IplQ11rNEeqbvZIBCT16kA" name="totalVolume">
+      <modelElement href="epc-modelling.uml#_HaDC8VrKEeqbvZIBCT16kA"/>
+      <visibility xmi:id="_IplQ2FrNEeqbvZIBCT16kA" label="+"/>
+      <cardinality xmi:id="_IplQ2VrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
+      <type xmi:id="_IplQ2lrNEeqbvZIBCT16kA" name="Measure">
+        <modelElement href="epc-modelling.uml#_HSPx0FrKEeqbvZIBCT16kA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_IplQ21rNEeqbvZIBCT16kA" name="orientation">
+      <modelElement href="epc-modelling.uml#_HaDqAFrKEeqbvZIBCT16kA"/>
+      <visibility xmi:id="_IplQ3FrNEeqbvZIBCT16kA" label="+"/>
+      <cardinality xmi:id="_IplQ3VrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
+      <type xmi:id="_IplQ3lrNEeqbvZIBCT16kA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_IplQ31rNEeqbvZIBCT16kA" name="SpatialData">
+      <modelElement href="epc-modelling.uml#_HTPQUFrKEeqbvZIBCT16kA"/>
+      <visualProperties xmi:id="_aAX9gFrNEeqbvZIBCT16kA" visible="false"/>
+      <keywords xmi:id="_IplQ4FrNEeqbvZIBCT16kA" keyword="create"/>
+      <visibility xmi:id="_IplQ4VrNEeqbvZIBCT16kA" label="+"/>
+      <cardinality xmi:id="_IplQ4lrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_IplQ41rNEeqbvZIBCT16kA">
+        <modelElement href="epc-modelling.uml#_HTP3YlrKEeqbvZIBCT16kA"/>
+        <type xmi:id="_IplQ5FrNEeqbvZIBCT16kA" name="SpatialData">
+          <modelElement href="epc-modelling.uml#_HTNbIFrKEeqbvZIBCT16kA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_IplQ5VrNEeqbvZIBCT16kA" name="toString">
+      <modelElement href="epc-modelling.uml#_HTQecFrKEeqbvZIBCT16kA"/>
+      <visualProperties xmi:id="_aAYkkFrNEeqbvZIBCT16kA" visible="false"/>
+      <stereotypes xmi:id="_IplQ5lrNEeqbvZIBCT16kA" name="LegacyStyledElement">
+        <modelElement href="epc-modelling.uml#_HTRFgVrKEeqbvZIBCT16kA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_IplQ51rNEeqbvZIBCT16kA" name="Annotations">
+        <modelElement href="epc-modelling.uml#_HTRskFrKEeqbvZIBCT16kA"/>
+      </stereotypes>
+      <visibility xmi:id="_IplQ6FrNEeqbvZIBCT16kA" label="+"/>
+      <cardinality xmi:id="_IplQ6VrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_IplQ6lrNEeqbvZIBCT16kA">
+        <modelElement href="epc-modelling.uml#_HTRFgFrKEeqbvZIBCT16kA"/>
+        <type xmi:id="_IplQ61rNEeqbvZIBCT16kA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_IplQ7FrNEeqbvZIBCT16kA" name="SpatialData">
+      <modelElement href="epc-modelling.uml#_HYXn8FrKEeqbvZIBCT16kA"/>
+      <visualProperties xmi:id="_aAYkkVrNEeqbvZIBCT16kA" visible="false"/>
+      <keywords xmi:id="_IplQ7VrNEeqbvZIBCT16kA" keyword="create"/>
+      <visibility xmi:id="_IplQ7lrNEeqbvZIBCT16kA" label="+"/>
+      <cardinality xmi:id="_IplQ71rNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_IplQ8FrNEeqbvZIBCT16kA">
+        <modelElement href="epc-modelling.uml#_HYY2ElrKEeqbvZIBCT16kA"/>
+        <type xmi:id="_IplQ8VrNEeqbvZIBCT16kA" name="SpatialData">
+          <modelElement href="epc-modelling.uml#_HTNbIFrKEeqbvZIBCT16kA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_IplQ8lrNEeqbvZIBCT16kA" name="totalFloorArea">
+        <modelElement href="epc-modelling.uml#_HYYPAFrKEeqbvZIBCT16kA"/>
+        <cardinality xmi:id="_IplQ81rNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
+        <type xmi:id="_IplQ9FrNEeqbvZIBCT16kA" name="Measure">
+          <modelElement href="epc-modelling.uml#_HSPx0FrKEeqbvZIBCT16kA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_IplQ9VrNEeqbvZIBCT16kA" name="totalVolume">
+        <modelElement href="epc-modelling.uml#_HYYPAVrKEeqbvZIBCT16kA"/>
+        <cardinality xmi:id="_IplQ9lrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
+        <type xmi:id="_IplQ91rNEeqbvZIBCT16kA" name="Measure">
+          <modelElement href="epc-modelling.uml#_HSPx0FrKEeqbvZIBCT16kA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_IplQ-FrNEeqbvZIBCT16kA" name="orientation">
+        <modelElement href="epc-modelling.uml#_HYYPAlrKEeqbvZIBCT16kA"/>
+        <cardinality xmi:id="_IplQ-VrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
+        <type xmi:id="_IplQ-lrNEeqbvZIBCT16kA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_I-Cd4FrNEeqbvZIBCT16kA" comments="_I4LGcFrNEeqbvZIBCT16kA" targetConnectionVisual="_I8wrgFrNEeqbvZIBCT16kA" name="ThermalData" associationsIn="_H_ZEUFrNEeqbvZIBCT16kA _H_ZrYFrNEeqbvZIBCT16kA _H_aScFrNEeqbvZIBCT16kA" associationsOut="_H04dcFrNEeqbvZIBCT16kA">
+    <modelElement href="epc-modelling.uml#_HTrVMFrKEeqbvZIBCT16kA"/>
+    <visualProperties xmi:id="_I-Cd4VrNEeqbvZIBCT16kA" position="528.0,1650.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_I-Cd4lrNEeqbvZIBCT16kA" label="+"/>
+    <attributes xmi:id="_I-Cd41rNEeqbvZIBCT16kA" name="uValue">
+      <modelElement href="epc-modelling.uml#_HaH7cFrKEeqbvZIBCT16kA"/>
+      <visibility xmi:id="_I-Cd5FrNEeqbvZIBCT16kA" label="+"/>
+      <cardinality xmi:id="_I-Cd5VrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
+      <type xmi:id="_I-Cd5lrNEeqbvZIBCT16kA" name="Measure">
+        <modelElement href="epc-modelling.uml#_HSPx0FrKEeqbvZIBCT16kA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_I-Cd51rNEeqbvZIBCT16kA" name="energyDemand">
+      <modelElement href="epc-modelling.uml#_HaIigFrKEeqbvZIBCT16kA"/>
+      <visibility xmi:id="_I-Cd6FrNEeqbvZIBCT16kA" label="+"/>
+      <cardinality xmi:id="_I-Cd6VrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
+      <type xmi:id="_I-Cd6lrNEeqbvZIBCT16kA" name="Measure">
+        <modelElement href="epc-modelling.uml#_HSPx0FrKEeqbvZIBCT16kA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_I-Cd61rNEeqbvZIBCT16kA" name="carbonFootprint">
+      <modelElement href="epc-modelling.uml#_HaIigVrKEeqbvZIBCT16kA"/>
+      <visibility xmi:id="_I-Cd7FrNEeqbvZIBCT16kA" label="+"/>
+      <cardinality xmi:id="_I-Cd7VrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
+      <type xmi:id="_I-Cd7lrNEeqbvZIBCT16kA" name="Measure">
+        <modelElement href="epc-modelling.uml#_HSPx0FrKEeqbvZIBCT16kA"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_I-Cd71rNEeqbvZIBCT16kA" name="ThermalData">
+      <modelElement href="epc-modelling.uml#_HTsjUFrKEeqbvZIBCT16kA"/>
+      <visualProperties xmi:id="_XIIIkFrOEeqbvZIBCT16kA" visible="false"/>
+      <keywords xmi:id="_I-Cd8FrNEeqbvZIBCT16kA" keyword="create"/>
+      <visibility xmi:id="_I-Cd8VrNEeqbvZIBCT16kA" label="+"/>
+      <cardinality xmi:id="_I-Cd8lrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_I-Cd81rNEeqbvZIBCT16kA">
+        <modelElement href="epc-modelling.uml#_HTsjU1rKEeqbvZIBCT16kA"/>
+        <type xmi:id="_I-Cd9FrNEeqbvZIBCT16kA" name="ThermalData">
+          <modelElement href="epc-modelling.uml#_HTrVMFrKEeqbvZIBCT16kA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_I-Cd9VrNEeqbvZIBCT16kA" name="toString">
+      <modelElement href="epc-modelling.uml#_HTtxcFrKEeqbvZIBCT16kA"/>
+      <visualProperties xmi:id="_XIIIkVrOEeqbvZIBCT16kA" visible="false"/>
+      <stereotypes xmi:id="_I-Cd9lrNEeqbvZIBCT16kA" name="LegacyStyledElement">
+        <modelElement href="epc-modelling.uml#_HTuYgVrKEeqbvZIBCT16kA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_I-Cd91rNEeqbvZIBCT16kA" name="Annotations">
+        <modelElement href="epc-modelling.uml#_HTu_kFrKEeqbvZIBCT16kA"/>
+      </stereotypes>
+      <visibility xmi:id="_I-Cd-FrNEeqbvZIBCT16kA" label="+"/>
+      <cardinality xmi:id="_I-Cd-VrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_I-Cd-lrNEeqbvZIBCT16kA">
+        <modelElement href="epc-modelling.uml#_HTuYgFrKEeqbvZIBCT16kA"/>
+        <type xmi:id="_I-Cd-1rNEeqbvZIBCT16kA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_I-Cd_FrNEeqbvZIBCT16kA" name="ThermalData">
+      <modelElement href="epc-modelling.uml#_HYeVoFrKEeqbvZIBCT16kA"/>
+      <visualProperties xmi:id="_XIJ9wFrOEeqbvZIBCT16kA" visible="false"/>
+      <keywords xmi:id="_I-Cd_VrNEeqbvZIBCT16kA" keyword="create"/>
+      <visibility xmi:id="_I-Cd_lrNEeqbvZIBCT16kA" label="+"/>
+      <cardinality xmi:id="_I-Cd_1rNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_I-CeAFrNEeqbvZIBCT16kA">
+        <modelElement href="epc-modelling.uml#_HYeVplrKEeqbvZIBCT16kA"/>
+        <type xmi:id="_I-CeAVrNEeqbvZIBCT16kA" name="ThermalData">
+          <modelElement href="epc-modelling.uml#_HTrVMFrKEeqbvZIBCT16kA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_I-CeAlrNEeqbvZIBCT16kA" name="uValue">
+        <modelElement href="epc-modelling.uml#_HYeVoVrKEeqbvZIBCT16kA"/>
+        <cardinality xmi:id="_I-CeA1rNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
+        <type xmi:id="_I-CeBFrNEeqbvZIBCT16kA" name="Measure">
+          <modelElement href="epc-modelling.uml#_HSPx0FrKEeqbvZIBCT16kA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_I-CeBVrNEeqbvZIBCT16kA" name="energyDemand">
+        <modelElement href="epc-modelling.uml#_HYeVolrKEeqbvZIBCT16kA"/>
+        <cardinality xmi:id="_I-CeBlrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
+        <type xmi:id="_I-CeB1rNEeqbvZIBCT16kA" name="Measure">
+          <modelElement href="epc-modelling.uml#_HSPx0FrKEeqbvZIBCT16kA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_I-CeCFrNEeqbvZIBCT16kA" name="carbonFootprint">
+        <modelElement href="epc-modelling.uml#_HYeVo1rKEeqbvZIBCT16kA"/>
+        <cardinality xmi:id="_I-CeCVrNEeqbvZIBCT16kA" label="1" max="1" min="1"/>
+        <type xmi:id="_I-CeClrNEeqbvZIBCT16kA" name="Measure">
+          <modelElement href="epc-modelling.uml#_HSPx0FrKEeqbvZIBCT16kA"/>
         </type>
       </parameters>
     </operations>

@@ -32,8 +32,6 @@ import at.uibk.epc.model.Rating;
 import at.uibk.epc.model.RatingMethodology;
 import at.uibk.epc.model.Software;
 import at.uibk.epc.model.SpatialData;
-import at.uibk.epc.model.Temperature;
-import at.uibk.epc.model.TemperatureUnit;
 import at.uibk.epc.model.ThermalData;
 
 public class ImportEPC {
@@ -76,8 +74,8 @@ public class ImportEPC {
 		Assessor assessor = new Assessor("Ing.", "Rutzinger", "Kajetan", null, null, null, new Organisation("Neue Heimat Tirol", null, null));
 		
 		ClimateData climateData = new ClimateData();
-		climateData.setIdealIndoorTemperature(new Temperature(20.0, TemperatureUnit.CELCIUS));
-		climateData.setAverageOutdoorTemperature(new Temperature(-11.4, TemperatureUnit.CELCIUS));
+		climateData.setIdealIndoorTemperature(new Measure(20.0, MeasuringUnit.CELCIUS));
+		climateData.setAverageOutdoorTemperature(new Measure(-11.4, MeasuringUnit.CELCIUS));
 		climateData.setHightAboveSeaLevel(new Measure(573, MeasuringUnit.METER));
 		climateData.setHeatingDaysPerYear(220); 
 		
