@@ -1,0 +1,1944 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_EfU-QFrKEeqbvZIBCT16kA" name="epc_modelling">
+    <eAnnotations xmi:id="_FBw88FrKEeqbvZIBCT16kA" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_FBw88VrKEeqbvZIBCT16kA" source="codegen">
+        <details xmi:id="_FBw88lrKEeqbvZIBCT16kA" key="codegenDirectory" value="/epc-modelling/src/main/java"/>
+        <details xmi:id="_HqSeYFrKEeqbvZIBCT16kA" key="AssociatedSourceCode" value="/epc-modelling/src/main/java/at/uibk/epc/model/Address.java;3514552836/1;/epc-modelling/src/main/java/at/uibk/epc/model/Assessor.java;247220563/1;/epc-modelling/src/main/java/at/uibk/epc/model/ClimateData.java;2041208046/1;/epc-modelling/src/main/java/at/uibk/epc/model/ContactDetails.java;3810457795/1;/epc-modelling/src/main/java/at/uibk/epc/model/Dwelling.java;2295063763/1;/epc-modelling/src/main/java/at/uibk/epc/model/DwellingType.java;1384626785/1;/epc-modelling/src/main/java/at/uibk/epc/model/EPC.java;2023031596/1;/epc-modelling/src/main/java/at/uibk/epc/model/Measure.java;68195104/1;/epc-modelling/src/main/java/at/uibk/epc/model/MeasuringUnit.java;1233033799/1;/epc-modelling/src/main/java/at/uibk/epc/model/Organisation.java;2029191540/1;/epc-modelling/src/main/java/at/uibk/epc/model/Person.java;1986248752/1;/epc-modelling/src/main/java/at/uibk/epc/model/Photo.java;2670445242/1;/epc-modelling/src/main/java/at/uibk/epc/model/PurposeType.java;177294100/1;/epc-modelling/src/main/java/at/uibk/epc/model/Rating.java;2205323229/1;/epc-modelling/src/main/java/at/uibk/epc/model/RatingMethodology.java;1998396658/1;/epc-modelling/src/main/java/at/uibk/epc/model/Software.java;4287347620/1;/epc-modelling/src/main/java/at/uibk/epc/model/SpatialData.java;1500366160/1;/epc-modelling/src/main/java/at/uibk/epc/model/Temperature.java;1467755030/1;/epc-modelling/src/main/java/at/uibk/epc/model/TemperatureUnit.java;429611246/1;/epc-modelling/src/main/java/at/uibk/epc/model/ThermalData.java;1092657734/1;/epc-modelling/src/main/java/at/uibk/epc/importer/ImportEPC.java;2238349838/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_HQuu4FrKEeqbvZIBCT16kA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_HQvV8FrKEeqbvZIBCT16kA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_HQvV8VrKEeqbvZIBCT16kA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_HQvV8lrKEeqbvZIBCT16kA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_HQvV81rKEeqbvZIBCT16kA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_HQv9AFrKEeqbvZIBCT16kA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_HQv9AVrKEeqbvZIBCT16kA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_HQv9AlrKEeqbvZIBCT16kA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_HQv9A1rKEeqbvZIBCT16kA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_HNDv0FrKEeqbvZIBCT16kA" name="at">
+      <packagedElement xmi:type="uml:Package" xmi:id="_HNDv0VrKEeqbvZIBCT16kA" name="uibk">
+        <packagedElement xmi:type="uml:Package" xmi:id="_HNDv0lrKEeqbvZIBCT16kA" name="epc">
+          <packagedElement xmi:type="uml:Package" xmi:id="_HNLroFrKEeqbvZIBCT16kA" name="model">
+            <packagedElement xmi:type="uml:Class" xmi:id="_HQs5sFrKEeqbvZIBCT16kA" name="Address">
+              <ownedAttribute xmi:id="_HZN8gFrKEeqbvZIBCT16kA" name="street">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_HZOjkFrKEeqbvZIBCT16kA" name="streetNumber">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_HZPKoFrKEeqbvZIBCT16kA" name="stair">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_HZPxsFrKEeqbvZIBCT16kA" name="door">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_HZPxsVrKEeqbvZIBCT16kA" name="postalCode">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_HZQYwFrKEeqbvZIBCT16kA" name="city">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_HZQYwVrKEeqbvZIBCT16kA" name="country">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HaRFYFrKEeqbvZIBCT16kA" name="Address" specification="_HQ0OcFrKEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_HaRFYVrKEeqbvZIBCT16kA" type="_HQs5sFrKEeqbvZIBCT16kA" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>//needed by MongoDB&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HaRscFrKEeqbvZIBCT16kA" name="Address" specification="_HQ2qsFrKEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_F6YfoFrNEeqbvZIBCT16kA" type="_HQs5sFrKEeqbvZIBCT16kA" direction="return"/>
+                <ownedParameter xmi:id="_F6YfoVrNEeqbvZIBCT16kA" name="street">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_F6ZGsFrNEeqbvZIBCT16kA" name="streetNumber">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_F6ZGsVrNEeqbvZIBCT16kA" name="stair">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_F6ZGslrNEeqbvZIBCT16kA" name="door">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_F6ZGs1rNEeqbvZIBCT16kA" name="postalCode">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_F6ZGtFrNEeqbvZIBCT16kA" name="city">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_F6ZGtVrNEeqbvZIBCT16kA" name="country">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>this.street = street;&#xD;
+		this.streetNumber = streetNumber;&#xD;
+		this.stair = stair;&#xD;
+		this.door = door;&#xD;
+		this.postalCode = postalCode;&#xD;
+		this.city = city;&#xD;
+		this.country = country;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HaSTgFrKEeqbvZIBCT16kA" name="toString" specification="_HQ5uAFrKEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_HaSTgVrKEeqbvZIBCT16kA" direction="return">
+                  <name xsi:nil="true"/>
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>return &quot;Address [street=&quot; + street + &quot;, streetNumber=&quot; + streetNumber + &quot;, stair=&quot; + stair + &quot;, door=&quot; + door&#xD;
+				+ &quot;, postalCode=&quot; + postalCode + &quot;, city=&quot; + city + &quot;, country=&quot; + country + &quot;]&quot;;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_HQ0OcFrKEeqbvZIBCT16kA" name="Address" method="_HaRFYFrKEeqbvZIBCT16kA">
+                <eAnnotations xmi:id="_HQ01gFrKEeqbvZIBCT16kA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_HQ01gVrKEeqbvZIBCT16kA" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_HQ01glrKEeqbvZIBCT16kA" type="_HQs5sFrKEeqbvZIBCT16kA" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_HQ2qsFrKEeqbvZIBCT16kA" name="Address" method="_HaRscFrKEeqbvZIBCT16kA">
+                <eAnnotations xmi:id="_HQ3401rKEeqbvZIBCT16kA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_HQ341FrKEeqbvZIBCT16kA" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_HQ341VrKEeqbvZIBCT16kA" type="_HQs5sFrKEeqbvZIBCT16kA" direction="return"/>
+                <ownedParameter xmi:id="_HQ3RwFrKEeqbvZIBCT16kA" name="street">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HQ3RwVrKEeqbvZIBCT16kA" name="streetNumber">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HQ3RwlrKEeqbvZIBCT16kA" name="stair">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HQ3Rw1rKEeqbvZIBCT16kA" name="door">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HQ340FrKEeqbvZIBCT16kA" name="postalCode">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HQ340VrKEeqbvZIBCT16kA" name="city">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HQ340lrKEeqbvZIBCT16kA" name="country">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_HQ5uAFrKEeqbvZIBCT16kA" name="toString" method="_HaSTgFrKEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_HQ5uAVrKEeqbvZIBCT16kA" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_HRCQ4FrKEeqbvZIBCT16kA" name="Assessor">
+              <generalization xmi:id="_HXkWsVrKEeqbvZIBCT16kA" general="_HSozYFrKEeqbvZIBCT16kA"/>
+              <ownedAttribute xmi:id="_HZQ_0FrKEeqbvZIBCT16kA" name="authorisationNumber">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_HZRm4FrKEeqbvZIBCT16kA" name="identificationNumber">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_HZSN8FrKEeqbvZIBCT16kA" name="organisation" type="_HSfpcFrKEeqbvZIBCT16kA" association="_Ha27QFrKEeqbvZIBCT16kA"/>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HaS6kFrKEeqbvZIBCT16kA" name="Assessor" specification="_HREtIFrKEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_HaS6kVrKEeqbvZIBCT16kA" type="_HRCQ4FrKEeqbvZIBCT16kA" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>// needed by MongoDB POJO Converter&#xD;
+		super();&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HaS6klrKEeqbvZIBCT16kA" name="Assessor" specification="_HXjIkFrKEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_HaS6k1rKEeqbvZIBCT16kA" name="title">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HaS6lFrKEeqbvZIBCT16kA" name="surname">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HaS6lVrKEeqbvZIBCT16kA" name="firstname">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HaS6llrKEeqbvZIBCT16kA" name="authorisationNumber">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HaS6l1rKEeqbvZIBCT16kA" name="identificationNumber">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HaS6mFrKEeqbvZIBCT16kA" name="contactDetails" type="_HReVwFrKEeqbvZIBCT16kA"/>
+                <ownedParameter xmi:id="_HaS6mVrKEeqbvZIBCT16kA" name="organisation" type="_HSfpcFrKEeqbvZIBCT16kA"/>
+                <ownedParameter xmi:id="_HaS6mlrKEeqbvZIBCT16kA" type="_HRCQ4FrKEeqbvZIBCT16kA" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>super(title, surname, firstname, contactDetails);&#xD;
+		this.authorisationNumber = authorisationNumber;&#xD;
+		this.identificationNumber = identificationNumber;&#xD;
+		this.organisation = organisation;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HaThoFrKEeqbvZIBCT16kA" name="toString" specification="_HRGiUFrKEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_HaThoVrKEeqbvZIBCT16kA" direction="return">
+                  <name xsi:nil="true"/>
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>return &quot;Assessor [authorisationNumber=&quot; + authorisationNumber + &quot;, identificationNumber=&quot; + identificationNumber&#xD;
+				+ &quot;, organisation=&quot; + organisation + &quot;]&quot;;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_HREtIFrKEeqbvZIBCT16kA" name="Assessor" method="_HaS6kFrKEeqbvZIBCT16kA">
+                <eAnnotations xmi:id="_HREtIVrKEeqbvZIBCT16kA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_HREtIlrKEeqbvZIBCT16kA" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_HREtI1rKEeqbvZIBCT16kA" type="_HRCQ4FrKEeqbvZIBCT16kA" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_HRGiUFrKEeqbvZIBCT16kA" name="toString" method="_HaThoFrKEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_HRHJYFrKEeqbvZIBCT16kA" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_HXjIkFrKEeqbvZIBCT16kA" name="Assessor" method="_HaS6klrKEeqbvZIBCT16kA">
+                <eAnnotations xmi:id="_HXjvpFrKEeqbvZIBCT16kA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_HXjvpVrKEeqbvZIBCT16kA" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_HXjIkVrKEeqbvZIBCT16kA" name="title">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HXjIklrKEeqbvZIBCT16kA" name="surname">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HXjIk1rKEeqbvZIBCT16kA" name="firstname">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HXjvoFrKEeqbvZIBCT16kA" name="authorisationNumber">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HXjvoVrKEeqbvZIBCT16kA" name="identificationNumber">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HXjvolrKEeqbvZIBCT16kA" name="contactDetails" type="_HReVwFrKEeqbvZIBCT16kA"/>
+                <ownedParameter xmi:id="_HXjvo1rKEeqbvZIBCT16kA" name="organisation" type="_HSfpcFrKEeqbvZIBCT16kA"/>
+                <ownedParameter xmi:id="_HXkWsFrKEeqbvZIBCT16kA" type="_HRCQ4FrKEeqbvZIBCT16kA" direction="return"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_HRMB4FrKEeqbvZIBCT16kA" name="ClimateData">
+              <ownedAttribute xmi:id="_HZS1AFrKEeqbvZIBCT16kA" name="averageOutdoorTemperature" type="_HTd50FrKEeqbvZIBCT16kA" association="_Ha3iUFrKEeqbvZIBCT16kA"/>
+              <ownedAttribute xmi:id="_HZS1AVrKEeqbvZIBCT16kA" name="idealIndoorTemperature" type="_HTd50FrKEeqbvZIBCT16kA" association="_Ha4JYFrKEeqbvZIBCT16kA"/>
+              <ownedAttribute xmi:id="_HZTcEFrKEeqbvZIBCT16kA" name="hightAboveSeaLevel" type="_HSPx0FrKEeqbvZIBCT16kA" association="_Ha4JYlrKEeqbvZIBCT16kA"/>
+              <ownedAttribute xmi:id="_HZTcEVrKEeqbvZIBCT16kA" name="region">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_HZUDIFrKEeqbvZIBCT16kA" name="climateFactor">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_HZUqMFrKEeqbvZIBCT16kA" name="heatingDaysPerYear">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedAttribute>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HaUIsFrKEeqbvZIBCT16kA" name="ClimateData" specification="_HRPFMFrKEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_HaUIsVrKEeqbvZIBCT16kA" type="_HRMB4FrKEeqbvZIBCT16kA" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>// needed by MongoDB POJO Converter&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HaUIslrKEeqbvZIBCT16kA" name="ClimateData" specification="_HXoBEFrKEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_HaUIs1rKEeqbvZIBCT16kA" name="averageOutdoorTemperature" type="_HTd50FrKEeqbvZIBCT16kA"/>
+                <ownedParameter xmi:id="_HaUItFrKEeqbvZIBCT16kA" name="idealIndoorTemperature" type="_HTd50FrKEeqbvZIBCT16kA"/>
+                <ownedParameter xmi:id="_HaUItVrKEeqbvZIBCT16kA" name="hightAboveSeaLevel" type="_HSPx0FrKEeqbvZIBCT16kA"/>
+                <ownedParameter xmi:id="_HaUItlrKEeqbvZIBCT16kA" name="region">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HaUIt1rKEeqbvZIBCT16kA" name="climateFactor">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HaUIuFrKEeqbvZIBCT16kA" name="heatingDaysPerYear">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HaUIuVrKEeqbvZIBCT16kA" type="_HRMB4FrKEeqbvZIBCT16kA" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>super();&#xD;
+		this.averageOutdoorTemperature = averageOutdoorTemperature;&#xD;
+		this.idealIndoorTemperature = idealIndoorTemperature;&#xD;
+		this.hightAboveSeaLevel = hightAboveSeaLevel;&#xD;
+		this.region = region;&#xD;
+		this.climateFactor = climateFactor;&#xD;
+		this.heatingDaysPerYear = heatingDaysPerYear;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HaUvwFrKEeqbvZIBCT16kA" name="toString" specification="_HRXBAFrKEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_HaUvwVrKEeqbvZIBCT16kA" direction="return">
+                  <name xsi:nil="true"/>
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>return &quot;ClimateData [averageOutdoorTemperature=&quot; + averageOutdoorTemperature + &quot;, idealIndoorTemperature=&quot;&#xD;
+				+ idealIndoorTemperature + &quot;, hightAboveSeaLevel=&quot; + hightAboveSeaLevel + &quot;, region=&quot; + region&#xD;
+				+ &quot;, climateFactor=&quot; + climateFactor + &quot;, heatingDaysPerYear=&quot; + heatingDaysPerYear + &quot;]&quot;;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_HRPFMFrKEeqbvZIBCT16kA" name="ClimateData" method="_HaUIsFrKEeqbvZIBCT16kA">
+                <eAnnotations xmi:id="_HRPsQFrKEeqbvZIBCT16kA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_HRPsQVrKEeqbvZIBCT16kA" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_HRPsQlrKEeqbvZIBCT16kA" type="_HRMB4FrKEeqbvZIBCT16kA" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_HRXBAFrKEeqbvZIBCT16kA" name="toString" method="_HaUvwFrKEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_HRXBAVrKEeqbvZIBCT16kA" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_HXoBEFrKEeqbvZIBCT16kA" name="ClimateData" method="_HaUIslrKEeqbvZIBCT16kA">
+                <eAnnotations xmi:id="_HXooJVrKEeqbvZIBCT16kA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_HXpPMFrKEeqbvZIBCT16kA" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_HXoBEVrKEeqbvZIBCT16kA" name="averageOutdoorTemperature" type="_HTd50FrKEeqbvZIBCT16kA"/>
+                <ownedParameter xmi:id="_HXooIFrKEeqbvZIBCT16kA" name="idealIndoorTemperature" type="_HTd50FrKEeqbvZIBCT16kA"/>
+                <ownedParameter xmi:id="_HXooIVrKEeqbvZIBCT16kA" name="hightAboveSeaLevel" type="_HSPx0FrKEeqbvZIBCT16kA"/>
+                <ownedParameter xmi:id="_HXooIlrKEeqbvZIBCT16kA" name="region">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HXooI1rKEeqbvZIBCT16kA" name="climateFactor">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HXooJFrKEeqbvZIBCT16kA" name="heatingDaysPerYear">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HXpPMVrKEeqbvZIBCT16kA" type="_HRMB4FrKEeqbvZIBCT16kA" direction="return"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_HReVwFrKEeqbvZIBCT16kA" name="ContactDetails">
+              <ownedAttribute xmi:id="_HZVRQFrKEeqbvZIBCT16kA" name="email">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_HZVRQVrKEeqbvZIBCT16kA" name="phone">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Had5sFrKEeqbvZIBCT16kA" name="ContactDetails" specification="_HRgK8FrKEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_Had5sVrKEeqbvZIBCT16kA" type="_HReVwFrKEeqbvZIBCT16kA" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>// needed for MongoDB POJO Converter&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HaegwFrKEeqbvZIBCT16kA" name="ContactDetails" specification="_HRhZEFrKEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_HaegwVrKEeqbvZIBCT16kA" name="email">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HaegwlrKEeqbvZIBCT16kA" name="phone">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_Haegw1rKEeqbvZIBCT16kA" type="_HReVwFrKEeqbvZIBCT16kA" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>this.email = email;&#xD;
+		this.phone = phone;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HaegxFrKEeqbvZIBCT16kA" name="toString" specification="_HRj1UFrKEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_HaegxVrKEeqbvZIBCT16kA" direction="return">
+                  <name xsi:nil="true"/>
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>return &quot;ContactDetails [email=&quot; + email + &quot;, phone=&quot; + phone + &quot;]&quot;;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_HRgK8FrKEeqbvZIBCT16kA" name="ContactDetails" method="_Had5sFrKEeqbvZIBCT16kA">
+                <eAnnotations xmi:id="_HRgyAFrKEeqbvZIBCT16kA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_HRgyAVrKEeqbvZIBCT16kA" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_HRgyAlrKEeqbvZIBCT16kA" type="_HReVwFrKEeqbvZIBCT16kA" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_HRhZEFrKEeqbvZIBCT16kA" name="ContactDetails" method="_HaegwFrKEeqbvZIBCT16kA">
+                <eAnnotations xmi:id="_HRjOQFrKEeqbvZIBCT16kA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_HRjOQVrKEeqbvZIBCT16kA" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_HRhZEVrKEeqbvZIBCT16kA" name="email">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HRiAIFrKEeqbvZIBCT16kA" name="phone">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HRjOQlrKEeqbvZIBCT16kA" type="_HReVwFrKEeqbvZIBCT16kA" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_HRj1UFrKEeqbvZIBCT16kA" name="toString" method="_HaegxFrKEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_HRlDcFrKEeqbvZIBCT16kA" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_HRot0FrKEeqbvZIBCT16kA" name="Dwelling">
+              <ownedAttribute xmi:id="_HZV4UFrKEeqbvZIBCT16kA" name="id" type="_HXsSgVrKEeqbvZIBCT16kA" association="_Ha4wcVrKEeqbvZIBCT16kA"/>
+              <ownedAttribute xmi:id="_HZWfYFrKEeqbvZIBCT16kA" name="address" type="_HQs5sFrKEeqbvZIBCT16kA" association="_Ha5-kFrKEeqbvZIBCT16kA"/>
+              <ownedAttribute xmi:id="_HZWfYVrKEeqbvZIBCT16kA" name="constructionYear">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_HZXGcFrKEeqbvZIBCT16kA" name="type" type="_HR4lcFrKEeqbvZIBCT16kA" association="_Ha6loFrKEeqbvZIBCT16kA"/>
+              <ownedAttribute xmi:id="_HZXtgFrKEeqbvZIBCT16kA" name="identificationNumber">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_HZXtgVrKEeqbvZIBCT16kA" name="parcelNumers" isOrdered="true">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HZXtglrKEeqbvZIBCT16kA" value="*"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_HZYUkFrKEeqbvZIBCT16kA" name="spatialData" type="_HTNbIFrKEeqbvZIBCT16kA" association="_Ha7MsFrKEeqbvZIBCT16kA"/>
+              <ownedAttribute xmi:id="_HZY7oFrKEeqbvZIBCT16kA" name="thermalData" type="_HTrVMFrKEeqbvZIBCT16kA" association="_Ha7zwFrKEeqbvZIBCT16kA"/>
+              <ownedAttribute xmi:id="_HZY7oVrKEeqbvZIBCT16kA" name="climateData" type="_HRMB4FrKEeqbvZIBCT16kA" association="_Ha8a0FrKEeqbvZIBCT16kA"/>
+              <ownedAttribute xmi:id="_HZZisFrKEeqbvZIBCT16kA" name="photo" type="_HSvhEFrKEeqbvZIBCT16kA" association="_Ha8a0lrKEeqbvZIBCT16kA"/>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HafH0FrKEeqbvZIBCT16kA" name="Dwelling" specification="_HRs_QFrKEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_HafH0VrKEeqbvZIBCT16kA" type="_HRot0FrKEeqbvZIBCT16kA" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>//needed by MongoDB&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Hafu4FrKEeqbvZIBCT16kA" name="Dwelling" specification="_HYwCcFrKEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_Hafu4VrKEeqbvZIBCT16kA" name="address" type="_HQs5sFrKEeqbvZIBCT16kA"/>
+                <ownedParameter xmi:id="_Hafu4lrKEeqbvZIBCT16kA" name="constructionYear">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_Hafu41rKEeqbvZIBCT16kA" name="type" type="_HR4lcFrKEeqbvZIBCT16kA"/>
+                <ownedParameter xmi:id="_Hafu5FrKEeqbvZIBCT16kA" name="identificationNumber">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_Hafu5VrKEeqbvZIBCT16kA" name="parcelNumbers" type="_HXrEYFrKEeqbvZIBCT16kA"/>
+                <ownedParameter xmi:id="_Hafu5lrKEeqbvZIBCT16kA" name="spatialData" type="_HTNbIFrKEeqbvZIBCT16kA"/>
+                <ownedParameter xmi:id="_Hafu51rKEeqbvZIBCT16kA" name="thermalData" type="_HTrVMFrKEeqbvZIBCT16kA"/>
+                <ownedParameter xmi:id="_Hafu6FrKEeqbvZIBCT16kA" type="_HRot0FrKEeqbvZIBCT16kA" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>this.address = address;&#xD;
+		this.type = type;&#xD;
+		this.constructionYear = constructionYear;&#xD;
+		this.parcelNumers = parcelNumbers;&#xD;
+		this.identificationNumber = identificationNumber;&#xD;
+		this.spatialData = spatialData;&#xD;
+		this.thermalData = thermalData;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Hafu6VrKEeqbvZIBCT16kA" name="toString" specification="_HRu0cFrKEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_Hafu6lrKEeqbvZIBCT16kA" direction="return">
+                  <name xsi:nil="true"/>
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>return &quot;Dwelling [id=&quot; + id + &quot;, address=&quot; + address + &quot;, constructionYear=&quot; + constructionYear + &quot;, type=&quot;&#xD;
+				+ type + &quot;, identificationNumber=&quot; + identificationNumber + &quot;, parcelNumers=&quot; + parcelNumers&#xD;
+				+ &quot;, spatialData=&quot; + spatialData + &quot;, thermalData=&quot; + thermalData + &quot;, climateData=&quot; + climateData&#xD;
+				+ &quot;, photo=&quot; + photo + &quot;]&quot;;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_HRs_QFrKEeqbvZIBCT16kA" name="Dwelling" method="_HafH0FrKEeqbvZIBCT16kA">
+                <eAnnotations xmi:id="_HRtmUFrKEeqbvZIBCT16kA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_HRtmUVrKEeqbvZIBCT16kA" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_HRtmUlrKEeqbvZIBCT16kA" type="_HRot0FrKEeqbvZIBCT16kA" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_HRu0cFrKEeqbvZIBCT16kA" name="toString" method="_Hafu6VrKEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_HRwCkFrKEeqbvZIBCT16kA" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_HYwCcFrKEeqbvZIBCT16kA" name="Dwelling" method="_Hafu4FrKEeqbvZIBCT16kA">
+                <eAnnotations xmi:id="_HYzFwFrKEeqbvZIBCT16kA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_HYzs0FrKEeqbvZIBCT16kA" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_HYwCcVrKEeqbvZIBCT16kA" name="address" type="_HQs5sFrKEeqbvZIBCT16kA"/>
+                <ownedParameter xmi:id="_HYwCclrKEeqbvZIBCT16kA" name="constructionYear">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HYwCc1rKEeqbvZIBCT16kA" name="type" type="_HR4lcFrKEeqbvZIBCT16kA"/>
+                <ownedParameter xmi:id="_HYwpgFrKEeqbvZIBCT16kA" name="identificationNumber">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HYwpgVrKEeqbvZIBCT16kA" name="parcelNumbers" type="_HXrEYFrKEeqbvZIBCT16kA"/>
+                <ownedParameter xmi:id="_HYwpglrKEeqbvZIBCT16kA" name="spatialData" type="_HTNbIFrKEeqbvZIBCT16kA"/>
+                <ownedParameter xmi:id="_HYyesFrKEeqbvZIBCT16kA" name="thermalData" type="_HTrVMFrKEeqbvZIBCT16kA"/>
+                <ownedParameter xmi:id="_HYzs0VrKEeqbvZIBCT16kA" type="_HRot0FrKEeqbvZIBCT16kA" direction="return"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Enumeration" xmi:id="_HR4lcFrKEeqbvZIBCT16kA" name="DwellingType">
+              <ownedAttribute xmi:id="_HZbX4FrKEeqbvZIBCT16kA" name="type" visibility="private" isLeaf="true" isReadOnly="true">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <ownedOperation xmi:id="_HR8P0FrKEeqbvZIBCT16kA" name="DwellingType" visibility="package" method="_Hag9AFrKEeqbvZIBCT16kA">
+                <eAnnotations xmi:id="_HR8P0lrKEeqbvZIBCT16kA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_HR8P01rKEeqbvZIBCT16kA" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_HR8P0VrKEeqbvZIBCT16kA" name="type">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HR8P1FrKEeqbvZIBCT16kA" type="_HR4lcFrKEeqbvZIBCT16kA" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_HR9d8FrKEeqbvZIBCT16kA" name="getDwellingType" method="_Hag9A1rKEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_HR9d8VrKEeqbvZIBCT16kA" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedLiteral xmi:id="_HR5MgFrKEeqbvZIBCT16kA" name="BUSINESS_CENTER">
+                <specification xmi:type="uml:Expression" xmi:id="_F41AcFrNEeqbvZIBCT16kA">
+                  <operand xmi:type="uml:LiteralString" xmi:id="_F6hCgFrNEeqbvZIBCT16kA" value="&quot;business-center&quot;"/>
+                </specification>
+              </ownedLiteral>
+              <ownedLiteral xmi:id="_HR5zkFrKEeqbvZIBCT16kA" name="APARTMENT_BUILDING">
+                <specification xmi:type="uml:Expression" xmi:id="_F41ngFrNEeqbvZIBCT16kA">
+                  <operand xmi:type="uml:LiteralString" xmi:id="_F6hpkFrNEeqbvZIBCT16kA" value="&quot;apartment-building&quot;"/>
+                </specification>
+              </ownedLiteral>
+              <ownedLiteral xmi:id="_HR5zklrKEeqbvZIBCT16kA" name="DETACHED_HOUSE">
+                <specification xmi:type="uml:Expression" xmi:id="_F41ngVrNEeqbvZIBCT16kA">
+                  <operand xmi:type="uml:LiteralString" xmi:id="_F6hpkVrNEeqbvZIBCT16kA" value="&quot;detached-house&quot;"/>
+                </specification>
+              </ownedLiteral>
+              <ownedLiteral xmi:id="_HR7BsFrKEeqbvZIBCT16kA" name="FLAT">
+                <specification xmi:type="uml:Expression" xmi:id="_F41nglrNEeqbvZIBCT16kA">
+                  <operand xmi:type="uml:LiteralString" xmi:id="_F6hpklrNEeqbvZIBCT16kA" value="&quot;flat&quot;"/>
+                </specification>
+              </ownedLiteral>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_HR_TIFrKEeqbvZIBCT16kA" name="EPC">
+              <ownedAttribute xmi:id="_HZdNEFrKEeqbvZIBCT16kA" name="id" type="_HXsSgVrKEeqbvZIBCT16kA" association="_Ha-QAFrKEeqbvZIBCT16kA"/>
+              <ownedAttribute xmi:id="_HZd0IFrKEeqbvZIBCT16kA" name="identificationNumber">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_HZebMFrKEeqbvZIBCT16kA" name="creationDate" type="_HX1ccFrKEeqbvZIBCT16kA" association="_Ha-QAlrKEeqbvZIBCT16kA"/>
+              <ownedAttribute xmi:id="_HZebMVrKEeqbvZIBCT16kA" name="validUntil" type="_HX1ccFrKEeqbvZIBCT16kA" association="_Ha_eIFrKEeqbvZIBCT16kA"/>
+              <ownedAttribute xmi:id="_HZfCQFrKEeqbvZIBCT16kA" name="assessor" type="_HRCQ4FrKEeqbvZIBCT16kA" association="_HbAsQFrKEeqbvZIBCT16kA"/>
+              <ownedAttribute xmi:id="_HZfCQVrKEeqbvZIBCT16kA" name="ratedDwelling" type="_HRot0FrKEeqbvZIBCT16kA" association="_HbAsQlrKEeqbvZIBCT16kA">
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Z8ClMFrPEeqbvZIBCT16kA" value="1"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Z8DMQFrPEeqbvZIBCT16kA" value="1"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_HZfpUFrKEeqbvZIBCT16kA" name="purpose" type="_HSx9UFrKEeqbvZIBCT16kA" association="_HbBTUFrKEeqbvZIBCT16kA"/>
+              <ownedAttribute xmi:id="_HZfpUVrKEeqbvZIBCT16kA" name="awordedRating" type="_HS4rAFrKEeqbvZIBCT16kA" association="_HbB6YFrKEeqbvZIBCT16kA"/>
+              <ownedAttribute xmi:id="_HZrPgFrKEeqbvZIBCT16kA" name="potentialRating" type="_HS4rAFrKEeqbvZIBCT16kA" association="_HbB6YlrKEeqbvZIBCT16kA"/>
+              <ownedAttribute xmi:id="_HZsdoFrKEeqbvZIBCT16kA" name="usedMethodology" type="_HTAm0FrKEeqbvZIBCT16kA" association="_HbChcVrKEeqbvZIBCT16kA"/>
+              <ownedAttribute xmi:id="_HZtEsFrKEeqbvZIBCT16kA" name="legalReference">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HahkEFrKEeqbvZIBCT16kA" name="EPC" specification="_HSBvYFrKEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_HahkEVrKEeqbvZIBCT16kA" type="_HR_TIFrKEeqbvZIBCT16kA" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>// needed By MongoSB POJO Converter&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HaiLIFrKEeqbvZIBCT16kA" name="EPC" specification="_HY5zcFrKEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_HaiLIVrKEeqbvZIBCT16kA" name="identificationNumber">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HaiLIlrKEeqbvZIBCT16kA" name="creationDate" type="_HX1ccFrKEeqbvZIBCT16kA"/>
+                <ownedParameter xmi:id="_HaiLI1rKEeqbvZIBCT16kA" name="validUntil" type="_HX1ccFrKEeqbvZIBCT16kA"/>
+                <ownedParameter xmi:id="_HaiLJFrKEeqbvZIBCT16kA" name="ratedDwelling" type="_HRot0FrKEeqbvZIBCT16kA"/>
+                <ownedParameter xmi:id="_HaiLJVrKEeqbvZIBCT16kA" name="assessor" type="_HRCQ4FrKEeqbvZIBCT16kA"/>
+                <ownedParameter xmi:id="_HaiLJlrKEeqbvZIBCT16kA" name="awordedRating" type="_HS4rAFrKEeqbvZIBCT16kA"/>
+                <ownedParameter xmi:id="_HaiLJ1rKEeqbvZIBCT16kA" name="usedMethodology" type="_HTAm0FrKEeqbvZIBCT16kA"/>
+                <ownedParameter xmi:id="_HaiLKFrKEeqbvZIBCT16kA" name="legalReference">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HaiLKVrKEeqbvZIBCT16kA" type="_HR_TIFrKEeqbvZIBCT16kA" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>this.identificationNumber = identificationNumber;&#xD;
+		this.creationDate = creationDate;&#xD;
+		this.validUntil = validUntil;&#xD;
+		this.ratedDwelling = ratedDwelling;&#xD;
+		this.awordedRating = awordedRating;&#xD;
+		this.assessor = assessor;&#xD;
+		this.usedMethodology = usedMethodology;&#xD;
+		this.legalReference = legalReference;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HaiLKlrKEeqbvZIBCT16kA" name="toString" specification="_HSEysFrKEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_HaiLK1rKEeqbvZIBCT16kA" direction="return">
+                  <name xsi:nil="true"/>
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>return &quot;EPC [id=&quot; + id + &quot;, identificationNumber=&quot; + identificationNumber + &quot;, creationDate=&quot; + creationDate&#xD;
+				+ &quot;, validUntil=&quot; + validUntil + &quot;, assessor=&quot; + assessor + &quot;, ratedDwelling=&quot; + ratedDwelling&#xD;
+				+ &quot;, purpose=&quot; + purpose + &quot;, awordedRating=&quot; + awordedRating + &quot;, potentialRating=&quot; + potentialRating&#xD;
+				+ &quot;, usedMethodology=&quot; + usedMethodology + &quot;, legalReference=&quot; + legalReference + &quot;]&quot;;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_HSBvYFrKEeqbvZIBCT16kA" name="EPC" method="_HahkEFrKEeqbvZIBCT16kA">
+                <eAnnotations xmi:id="_HSBvYVrKEeqbvZIBCT16kA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_HSCWcFrKEeqbvZIBCT16kA" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_HSCWcVrKEeqbvZIBCT16kA" type="_HR_TIFrKEeqbvZIBCT16kA" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_HSEysFrKEeqbvZIBCT16kA" name="toString" method="_HaiLKlrKEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_HSFZwFrKEeqbvZIBCT16kA" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_HY5zcFrKEeqbvZIBCT16kA" name="EPC" method="_HaiLIFrKEeqbvZIBCT16kA">
+                <eAnnotations xmi:id="_HY6ah1rKEeqbvZIBCT16kA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_HY7BkFrKEeqbvZIBCT16kA" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_HY5zcVrKEeqbvZIBCT16kA" name="identificationNumber">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HY6agFrKEeqbvZIBCT16kA" name="creationDate" type="_HX1ccFrKEeqbvZIBCT16kA"/>
+                <ownedParameter xmi:id="_HY6agVrKEeqbvZIBCT16kA" name="validUntil" type="_HX1ccFrKEeqbvZIBCT16kA"/>
+                <ownedParameter xmi:id="_HY6aglrKEeqbvZIBCT16kA" name="ratedDwelling" type="_HRot0FrKEeqbvZIBCT16kA"/>
+                <ownedParameter xmi:id="_HY6ag1rKEeqbvZIBCT16kA" name="assessor" type="_HRCQ4FrKEeqbvZIBCT16kA"/>
+                <ownedParameter xmi:id="_HY6ahFrKEeqbvZIBCT16kA" name="awordedRating" type="_HS4rAFrKEeqbvZIBCT16kA"/>
+                <ownedParameter xmi:id="_HY6ahVrKEeqbvZIBCT16kA" name="usedMethodology" type="_HTAm0FrKEeqbvZIBCT16kA"/>
+                <ownedParameter xmi:id="_HY6ahlrKEeqbvZIBCT16kA" name="legalReference">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HY7BkVrKEeqbvZIBCT16kA" type="_HR_TIFrKEeqbvZIBCT16kA" direction="return"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_HSPx0FrKEeqbvZIBCT16kA" name="Measure">
+              <ownedAttribute xmi:id="_HZtrwFrKEeqbvZIBCT16kA" name="value">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_HZvg8FrKEeqbvZIBCT16kA" name="unit" type="_HSXtoFrKEeqbvZIBCT16kA" association="_HbE9sFrKEeqbvZIBCT16kA"/>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HajZQFrKEeqbvZIBCT16kA" name="Measure" specification="_HSRnAFrKEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_HajZQVrKEeqbvZIBCT16kA" type="_HSPx0FrKEeqbvZIBCT16kA" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>//needed by MongoDB&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HajZQlrKEeqbvZIBCT16kA" name="Measure" specification="_HYDe4FrKEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_HajZQ1rKEeqbvZIBCT16kA" name="value">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HajZRFrKEeqbvZIBCT16kA" name="unit" type="_HSXtoFrKEeqbvZIBCT16kA"/>
+                <ownedParameter xmi:id="_HajZRVrKEeqbvZIBCT16kA" type="_HSPx0FrKEeqbvZIBCT16kA" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>this.value = value;&#xD;
+		this.unit = unit;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HakAUFrKEeqbvZIBCT16kA" name="toString" specification="_HSTcMFrKEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_HakAUVrKEeqbvZIBCT16kA" direction="return">
+                  <name xsi:nil="true"/>
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>return &quot;Measure [value=&quot; + value + &quot;, unit=&quot; + unit + &quot;]&quot;;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_HSRnAFrKEeqbvZIBCT16kA" name="Measure" method="_HajZQFrKEeqbvZIBCT16kA">
+                <eAnnotations xmi:id="_HSRnAVrKEeqbvZIBCT16kA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_HSRnAlrKEeqbvZIBCT16kA" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_HSSOEFrKEeqbvZIBCT16kA" type="_HSPx0FrKEeqbvZIBCT16kA" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_HSTcMFrKEeqbvZIBCT16kA" name="toString" method="_HakAUFrKEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_HSUDQFrKEeqbvZIBCT16kA" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_HYDe4FrKEeqbvZIBCT16kA" name="Measure" method="_HajZQlrKEeqbvZIBCT16kA">
+                <eAnnotations xmi:id="_HYDe41rKEeqbvZIBCT16kA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_HYDe5FrKEeqbvZIBCT16kA" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_HYDe4VrKEeqbvZIBCT16kA" name="value">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HYDe4lrKEeqbvZIBCT16kA" name="unit" type="_HSXtoFrKEeqbvZIBCT16kA"/>
+                <ownedParameter xmi:id="_HYDe5VrKEeqbvZIBCT16kA" type="_HSPx0FrKEeqbvZIBCT16kA" direction="return"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Enumeration" xmi:id="_HSXtoFrKEeqbvZIBCT16kA" name="MeasuringUnit">
+              <ownedAttribute xmi:id="_HZwvEFrKEeqbvZIBCT16kA" name="unit" isReadOnly="true">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_HZykQFrKEeqbvZIBCT16kA" name="description" isReadOnly="true">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <ownedOperation xmi:id="_HSbYAFrKEeqbvZIBCT16kA" name="MeasuringUnit" visibility="private" method="_HaknYFrKEeqbvZIBCT16kA">
+                <eAnnotations xmi:id="_HSb_ElrKEeqbvZIBCT16kA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_HSb_E1rKEeqbvZIBCT16kA" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_HSb_EFrKEeqbvZIBCT16kA" name="unit">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HSb_EVrKEeqbvZIBCT16kA" name="description">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HSb_FFrKEeqbvZIBCT16kA" type="_HSXtoFrKEeqbvZIBCT16kA" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_HScmIFrKEeqbvZIBCT16kA" name="MeasuringUnit" visibility="private" method="_HalOcFrKEeqbvZIBCT16kA">
+                <eAnnotations xmi:id="_HSdNMFrKEeqbvZIBCT16kA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_HSdNMVrKEeqbvZIBCT16kA" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_HScmIVrKEeqbvZIBCT16kA" name="unit">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HSdNMlrKEeqbvZIBCT16kA" type="_HSXtoFrKEeqbvZIBCT16kA" direction="return"/>
+              </ownedOperation>
+              <ownedLiteral xmi:id="_HSYUsFrKEeqbvZIBCT16kA" name="FEET">
+                <specification xmi:type="uml:Expression" xmi:id="_F46gAFrNEeqbvZIBCT16kA">
+                  <operand xmi:type="uml:LiteralString" xmi:id="_F6hpk1rNEeqbvZIBCT16kA" value="&quot;ft&quot;"/>
+                  <operand xmi:type="uml:LiteralString" xmi:id="_F6hplFrNEeqbvZIBCT16kA" value="&quot;feet&quot;"/>
+                </specification>
+              </ownedLiteral>
+              <ownedLiteral xmi:id="_HSYUslrKEeqbvZIBCT16kA" name="METER">
+                <specification xmi:type="uml:Expression" xmi:id="_F47HEFrNEeqbvZIBCT16kA">
+                  <operand xmi:type="uml:LiteralString" xmi:id="_F6iQoFrNEeqbvZIBCT16kA" value="&quot;m&quot;"/>
+                  <operand xmi:type="uml:LiteralString" xmi:id="_F6iQoVrNEeqbvZIBCT16kA" value="&quot;meter&quot;"/>
+                </specification>
+              </ownedLiteral>
+              <ownedLiteral xmi:id="_HSYUtFrKEeqbvZIBCT16kA" name="SQUARE_METER">
+                <specification xmi:type="uml:Expression" xmi:id="_F47HEVrNEeqbvZIBCT16kA">
+                  <operand xmi:type="uml:LiteralString" xmi:id="_F6iQolrNEeqbvZIBCT16kA" value="&quot;m^2&quot;"/>
+                  <operand xmi:type="uml:LiteralString" xmi:id="_F6iQo1rNEeqbvZIBCT16kA" value="&quot;square meters&quot;"/>
+                </specification>
+              </ownedLiteral>
+              <ownedLiteral xmi:id="_HSY7wVrKEeqbvZIBCT16kA" name="SQUARE_FEET">
+                <specification xmi:type="uml:Expression" xmi:id="_F47HElrNEeqbvZIBCT16kA">
+                  <operand xmi:type="uml:LiteralString" xmi:id="_F6iQpFrNEeqbvZIBCT16kA" value="&quot;ft^2&quot;"/>
+                  <operand xmi:type="uml:LiteralString" xmi:id="_F6iQpVrNEeqbvZIBCT16kA" value="&quot;square feet&quot;"/>
+                </specification>
+              </ownedLiteral>
+              <ownedLiteral xmi:id="_HSY7w1rKEeqbvZIBCT16kA" name="CUBIC_METER">
+                <specification xmi:type="uml:Expression" xmi:id="_F47HE1rNEeqbvZIBCT16kA">
+                  <operand xmi:type="uml:LiteralString" xmi:id="_F6iQplrNEeqbvZIBCT16kA" value="&quot;m^3&quot;"/>
+                  <operand xmi:type="uml:LiteralString" xmi:id="_F6iQp1rNEeqbvZIBCT16kA" value="&quot;cubic meters&quot;"/>
+                </specification>
+              </ownedLiteral>
+              <ownedLiteral xmi:id="_HSY7xVrKEeqbvZIBCT16kA" name="WATTS_SQUARE_METER_KELVIN">
+                <specification xmi:type="uml:Expression" xmi:id="_F47uIFrNEeqbvZIBCT16kA">
+                  <operand xmi:type="uml:LiteralString" xmi:id="_F6iQqFrNEeqbvZIBCT16kA" value="&quot;W/m^2K&quot;"/>
+                  <operand xmi:type="uml:LiteralString" xmi:id="_F6i3sFrNEeqbvZIBCT16kA" value="&quot;watts per square metre times kelvin&quot;"/>
+                </specification>
+              </ownedLiteral>
+              <ownedLiteral xmi:id="_HSZi0VrKEeqbvZIBCT16kA" name="KWH_SQUARE_METER_YEAR">
+                <specification xmi:type="uml:Expression" xmi:id="_F47uIVrNEeqbvZIBCT16kA">
+                  <operand xmi:type="uml:LiteralString" xmi:id="_F6i3sVrNEeqbvZIBCT16kA" value="&quot;kWh/m^2/yr&quot;"/>
+                  <operand xmi:type="uml:LiteralString" xmi:id="_F6i3slrNEeqbvZIBCT16kA" value="&quot;kilowattshour per square meter per year&quot;"/>
+                </specification>
+              </ownedLiteral>
+              <ownedLiteral xmi:id="_HSZi01rKEeqbvZIBCT16kA" name="KG_SQUARE_METER_YEAR">
+                <specification xmi:type="uml:Expression" xmi:id="_F48VMFrNEeqbvZIBCT16kA">
+                  <operand xmi:type="uml:LiteralString" xmi:id="_F6i3s1rNEeqbvZIBCT16kA" value="&quot;kg/m^2/yr&quot;"/>
+                  <operand xmi:type="uml:LiteralString" xmi:id="_F6i3tFrNEeqbvZIBCT16kA" value="&quot;kilogramms per square meter per year&quot;"/>
+                </specification>
+              </ownedLiteral>
+              <ownedLiteral xmi:id="_HSaJ4FrKEeqbvZIBCT16kA" name="KWH_YEAR">
+                <specification xmi:type="uml:Expression" xmi:id="_F48VMVrNEeqbvZIBCT16kA">
+                  <operand xmi:type="uml:LiteralString" xmi:id="_F6i3tVrNEeqbvZIBCT16kA" value="&quot;kWh/yr&quot;"/>
+                  <operand xmi:type="uml:LiteralString" xmi:id="_F6i3tlrNEeqbvZIBCT16kA" value="&quot;kilowatt hour per year&quot;"/>
+                </specification>
+              </ownedLiteral>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_HSfpcFrKEeqbvZIBCT16kA" name="Organisation">
+              <ownedAttribute xmi:id="_HZzyYFrKEeqbvZIBCT16kA" name="name">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_HZ1AgFrKEeqbvZIBCT16kA" name="address" type="_HQs5sFrKEeqbvZIBCT16kA" association="_HbIoE1rKEeqbvZIBCT16kA"/>
+              <ownedAttribute xmi:id="_HZ1AgVrKEeqbvZIBCT16kA" name="contactDetails" type="_HReVwFrKEeqbvZIBCT16kA" association="_HbJPIFrKEeqbvZIBCT16kA"/>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Hal1gFrKEeqbvZIBCT16kA" name="Organisation" specification="_HSheoFrKEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_Hal1gVrKEeqbvZIBCT16kA" type="_HSfpcFrKEeqbvZIBCT16kA" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>// needed by MongoDB POJO Converter&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Hal1glrKEeqbvZIBCT16kA" name="Organisation" specification="_HYGiMFrKEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_Hal1g1rKEeqbvZIBCT16kA" name="name">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_Hal1hFrKEeqbvZIBCT16kA" name="address" type="_HQs5sFrKEeqbvZIBCT16kA"/>
+                <ownedParameter xmi:id="_Hal1hVrKEeqbvZIBCT16kA" name="contactDetails" type="_HReVwFrKEeqbvZIBCT16kA"/>
+                <ownedParameter xmi:id="_Hal1hlrKEeqbvZIBCT16kA" type="_HSfpcFrKEeqbvZIBCT16kA" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>this.name = name;&#xD;
+		this.address = address;&#xD;
+		this.contactDetails = contactDetails;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HamckFrKEeqbvZIBCT16kA" name="toString" specification="_HSj64FrKEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_HamckVrKEeqbvZIBCT16kA" direction="return">
+                  <name xsi:nil="true"/>
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>return &quot;Organisation [name=&quot; + name + &quot;, address=&quot; + address + &quot;, contactDetails=&quot; + contactDetails + &quot;]&quot;;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_HSheoFrKEeqbvZIBCT16kA" name="Organisation" method="_Hal1gFrKEeqbvZIBCT16kA">
+                <eAnnotations xmi:id="_HSiFsFrKEeqbvZIBCT16kA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_HSiFsVrKEeqbvZIBCT16kA" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_HSiFslrKEeqbvZIBCT16kA" type="_HSfpcFrKEeqbvZIBCT16kA" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_HSj64FrKEeqbvZIBCT16kA" name="toString" method="_HamckFrKEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_HSkh8FrKEeqbvZIBCT16kA" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_HYGiMFrKEeqbvZIBCT16kA" name="Organisation" method="_Hal1glrKEeqbvZIBCT16kA">
+                <eAnnotations xmi:id="_HYHJQFrKEeqbvZIBCT16kA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_HYHJQVrKEeqbvZIBCT16kA" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_HYGiMVrKEeqbvZIBCT16kA" name="name">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HYGiMlrKEeqbvZIBCT16kA" name="address" type="_HQs5sFrKEeqbvZIBCT16kA"/>
+                <ownedParameter xmi:id="_HYGiM1rKEeqbvZIBCT16kA" name="contactDetails" type="_HReVwFrKEeqbvZIBCT16kA"/>
+                <ownedParameter xmi:id="_HYHJQlrKEeqbvZIBCT16kA" type="_HSfpcFrKEeqbvZIBCT16kA" direction="return"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_HSozYFrKEeqbvZIBCT16kA" name="Person">
+              <ownedAttribute xmi:id="_HZ21sFrKEeqbvZIBCT16kA" name="title" isReadOnly="true">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_HZ21sVrKEeqbvZIBCT16kA" name="surname" isReadOnly="true">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_HZ3cwFrKEeqbvZIBCT16kA" name="firstname" isReadOnly="true">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_HZ3cwVrKEeqbvZIBCT16kA" name="contactDetails" type="_HReVwFrKEeqbvZIBCT16kA" isReadOnly="true" association="_HbcKEFrKEeqbvZIBCT16kA"/>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HamcklrKEeqbvZIBCT16kA" name="Person" specification="_HSqokFrKEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_Hamck1rKEeqbvZIBCT16kA" type="_HSozYFrKEeqbvZIBCT16kA" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>// needed by MongoDB POJO Converter&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Hao40FrKEeqbvZIBCT16kA" name="Person" specification="_HYMBwFrKEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_Hao40VrKEeqbvZIBCT16kA" name="title">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_Hao40lrKEeqbvZIBCT16kA" name="surname">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_Hao401rKEeqbvZIBCT16kA" name="firstname">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_Hao41FrKEeqbvZIBCT16kA" name="contactDetails" type="_HReVwFrKEeqbvZIBCT16kA"/>
+                <ownedParameter xmi:id="_Hao41VrKEeqbvZIBCT16kA" type="_HSozYFrKEeqbvZIBCT16kA" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>this.title = title;&#xD;
+		this.surname = surname;&#xD;
+		this.firstname = firstname;&#xD;
+		this.contactDetails = contactDetails;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Hao41lrKEeqbvZIBCT16kA" name="toString" specification="_HSr2sFrKEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_Hao411rKEeqbvZIBCT16kA" direction="return">
+                  <name xsi:nil="true"/>
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>return &quot;Person [title=&quot; + title + &quot;, surname=&quot; + surname + &quot;, firstname=&quot; + firstname + &quot;, contactDetails=&quot;&#xD;
+				+ contactDetails + &quot;]&quot;;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_HSqokFrKEeqbvZIBCT16kA" name="Person" method="_HamcklrKEeqbvZIBCT16kA">
+                <eAnnotations xmi:id="_HSrPoFrKEeqbvZIBCT16kA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_HSrPoVrKEeqbvZIBCT16kA" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_HSrPolrKEeqbvZIBCT16kA" type="_HSozYFrKEeqbvZIBCT16kA" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_HSr2sFrKEeqbvZIBCT16kA" name="toString" method="_Hao41lrKEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_HSsdwFrKEeqbvZIBCT16kA" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_HYMBwFrKEeqbvZIBCT16kA" name="Person" method="_Hao40FrKEeqbvZIBCT16kA">
+                <eAnnotations xmi:id="_HYMBxVrKEeqbvZIBCT16kA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_HYMo0FrKEeqbvZIBCT16kA" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_HYMBwVrKEeqbvZIBCT16kA" name="title">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HYMBwlrKEeqbvZIBCT16kA" name="surname">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HYMBw1rKEeqbvZIBCT16kA" name="firstname">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HYMBxFrKEeqbvZIBCT16kA" name="contactDetails" type="_HReVwFrKEeqbvZIBCT16kA"/>
+                <ownedParameter xmi:id="_HYMo0VrKEeqbvZIBCT16kA" type="_HSozYFrKEeqbvZIBCT16kA" direction="return"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_HSvhEFrKEeqbvZIBCT16kA" name="Photo">
+              <ownedAttribute xmi:id="_HZ4q4FrKEeqbvZIBCT16kA" name="name">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_HZ5R8FrKEeqbvZIBCT16kA" name="image" type="_HYOeAFrKEeqbvZIBCT16kA" association="_HbJ2MFrKEeqbvZIBCT16kA"/>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Hapf4FrKEeqbvZIBCT16kA" name="Photo" specification="_HSwIIFrKEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_Hapf4VrKEeqbvZIBCT16kA" type="_HSvhEFrKEeqbvZIBCT16kA" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>// TODO Auto-generated constructor stub&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_HSwIIFrKEeqbvZIBCT16kA" name="Photo" method="_Hapf4FrKEeqbvZIBCT16kA">
+                <eAnnotations xmi:id="_HSwvMFrKEeqbvZIBCT16kA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_HSwvMVrKEeqbvZIBCT16kA" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_HSwvMlrKEeqbvZIBCT16kA" type="_HSvhEFrKEeqbvZIBCT16kA" direction="return"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Enumeration" xmi:id="_HSx9UFrKEeqbvZIBCT16kA" name="PurposeType">
+              <ownedAttribute xmi:id="_HZ6gEFrKEeqbvZIBCT16kA" name="type" visibility="private" isLeaf="true" isReadOnly="true">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <ownedOperation xmi:id="_HS2OwFrKEeqbvZIBCT16kA" name="PurposeType" visibility="package" method="_HaqG8FrKEeqbvZIBCT16kA">
+                <eAnnotations xmi:id="_HS210FrKEeqbvZIBCT16kA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_HS210VrKEeqbvZIBCT16kA" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_HS2OwVrKEeqbvZIBCT16kA" name="type">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HS210lrKEeqbvZIBCT16kA" type="_HSx9UFrKEeqbvZIBCT16kA" direction="return"/>
+              </ownedOperation>
+              <ownedLiteral xmi:id="_HSykYFrKEeqbvZIBCT16kA" name="RENTING_OR_SELLING">
+                <specification xmi:type="uml:Expression" xmi:id="_F5DC4FrNEeqbvZIBCT16kA">
+                  <operand xmi:type="uml:LiteralString" xmi:id="_F6i3t1rNEeqbvZIBCT16kA" value="&quot;rent/sell&quot;"/>
+                </specification>
+              </ownedLiteral>
+              <ownedLiteral xmi:id="_HSykYlrKEeqbvZIBCT16kA" name="NEW_BUILDNG_COMISSIONING">
+                <specification xmi:type="uml:Expression" xmi:id="_F5Dp8FrNEeqbvZIBCT16kA">
+                  <operand xmi:type="uml:LiteralString" xmi:id="_F6jewFrNEeqbvZIBCT16kA" value="&quot;comissioning of a new building&quot;"/>
+                </specification>
+              </ownedLiteral>
+              <ownedLiteral xmi:id="_HSzLcVrKEeqbvZIBCT16kA" name="RENOVATION">
+                <specification xmi:type="uml:Expression" xmi:id="_F5Dp8VrNEeqbvZIBCT16kA">
+                  <operand xmi:type="uml:LiteralString" xmi:id="_F6jewVrNEeqbvZIBCT16kA" value="&quot;renovation&quot;"/>
+                </specification>
+              </ownedLiteral>
+              <ownedLiteral xmi:id="_HSzLc1rKEeqbvZIBCT16kA" name="VOLUNTARY">
+                <specification xmi:type="uml:Expression" xmi:id="_F5Dp8lrNEeqbvZIBCT16kA">
+                  <operand xmi:type="uml:LiteralString" xmi:id="_F6jewlrNEeqbvZIBCT16kA" value="&quot;voluntary&quot;"/>
+                </specification>
+              </ownedLiteral>
+              <ownedLiteral xmi:id="_HS0ZkFrKEeqbvZIBCT16kA" name="OTHER">
+                <specification xmi:type="uml:Expression" xmi:id="_F5Dp81rNEeqbvZIBCT16kA">
+                  <operand xmi:type="uml:LiteralString" xmi:id="_F6jew1rNEeqbvZIBCT16kA" value="&quot;other&quot;"/>
+                </specification>
+              </ownedLiteral>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_HS4rAFrKEeqbvZIBCT16kA" name="Rating">
+              <ownedAttribute xmi:id="_HZ7uMFrKEeqbvZIBCT16kA" name="ratingLevel">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_HZ9jYFrKEeqbvZIBCT16kA" name="ratingPoints" type="_HZAhIVrKEeqbvZIBCT16kA"/>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HaquAFrKEeqbvZIBCT16kA" name="Rating" specification="_HS55IFrKEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_HaquAVrKEeqbvZIBCT16kA" type="_HS4rAFrKEeqbvZIBCT16kA" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>// needed by MongoDB POJO Converter&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HaquAlrKEeqbvZIBCT16kA" name="Rating" specification="_HZBvQFrKEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_HaquA1rKEeqbvZIBCT16kA" name="ratingLevel">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HaquBFrKEeqbvZIBCT16kA" name="ratingPoints" type="_HZAhIVrKEeqbvZIBCT16kA"/>
+                <ownedParameter xmi:id="_HaquBVrKEeqbvZIBCT16kA" type="_HS4rAFrKEeqbvZIBCT16kA" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>super();&#xD;
+		this.ratingLevel = ratingLevel;&#xD;
+		this.ratingPoints = ratingPoints;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HaquBlrKEeqbvZIBCT16kA" name="getRatingLevel" specification="_HS7HQFrKEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_HaquB1rKEeqbvZIBCT16kA" direction="return">
+                  <name xsi:nil="true"/>
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>return ratingLevel;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HarVEFrKEeqbvZIBCT16kA" name="getRatingPoints" specification="_HS7uUVrKEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_HarVEVrKEeqbvZIBCT16kA" type="_HZAhIVrKEeqbvZIBCT16kA" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>return ratingPoints;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HarVElrKEeqbvZIBCT16kA" name="toString" specification="_HS8VYFrKEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_HarVE1rKEeqbvZIBCT16kA" direction="return">
+                  <name xsi:nil="true"/>
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>return &quot;Rating [ratingLevel=&quot; + ratingLevel + &quot;, ratingPoints=&quot; + ratingPoints + &quot;]&quot;;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_HS55IFrKEeqbvZIBCT16kA" name="Rating" method="_HaquAFrKEeqbvZIBCT16kA">
+                <eAnnotations xmi:id="_HS55IVrKEeqbvZIBCT16kA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_HS55IlrKEeqbvZIBCT16kA" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_HS55I1rKEeqbvZIBCT16kA" type="_HS4rAFrKEeqbvZIBCT16kA" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_HS7HQFrKEeqbvZIBCT16kA" name="getRatingLevel" method="_HaquBlrKEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_HS7uUFrKEeqbvZIBCT16kA" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_HS7uUVrKEeqbvZIBCT16kA" name="getRatingPoints" method="_HarVEFrKEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_HZC9YFrKEeqbvZIBCT16kA" type="_HZAhIVrKEeqbvZIBCT16kA" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_HS8VYFrKEeqbvZIBCT16kA" name="toString" method="_HarVElrKEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_HS88cFrKEeqbvZIBCT16kA" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_HZBvQFrKEeqbvZIBCT16kA" name="Rating" method="_HaquAlrKEeqbvZIBCT16kA">
+                <eAnnotations xmi:id="_HZCWUFrKEeqbvZIBCT16kA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_HZCWUVrKEeqbvZIBCT16kA" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_HZBvQVrKEeqbvZIBCT16kA" name="ratingLevel">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HZBvQlrKEeqbvZIBCT16kA" name="ratingPoints" type="_HZAhIVrKEeqbvZIBCT16kA"/>
+                <ownedParameter xmi:id="_HZCWUlrKEeqbvZIBCT16kA" type="_HS4rAFrKEeqbvZIBCT16kA" direction="return"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_HTAm0FrKEeqbvZIBCT16kA" name="RatingMethodology">
+              <ownedAttribute xmi:id="_HZ-xgFrKEeqbvZIBCT16kA" name="standardName">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_HZ_YkFrKEeqbvZIBCT16kA" name="calculationName">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_HZ__oFrKEeqbvZIBCT16kA" name="calculationMethod">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_HZ__oVrKEeqbvZIBCT16kA" name="softwareUsed" type="_HTGtcFrKEeqbvZIBCT16kA" association="_HbLEVFrKEeqbvZIBCT16kA"/>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Har8IFrKEeqbvZIBCT16kA" name="RatingMethodology" specification="_HTCcAFrKEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_Har8IVrKEeqbvZIBCT16kA" type="_HTAm0FrKEeqbvZIBCT16kA" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>//needed for MongoDB POJO Converter&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HasjMFrKEeqbvZIBCT16kA" name="RatingMethodology" specification="_HYTWgFrKEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_HasjMVrKEeqbvZIBCT16kA" name="standardName">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HasjMlrKEeqbvZIBCT16kA" name="calculationName">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HasjM1rKEeqbvZIBCT16kA" name="calculationMethod">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HasjNFrKEeqbvZIBCT16kA" name="softwareUsed" type="_HTGtcFrKEeqbvZIBCT16kA"/>
+                <ownedParameter xmi:id="_HasjNVrKEeqbvZIBCT16kA" type="_HTAm0FrKEeqbvZIBCT16kA" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>super();&#xD;
+		this.standardName = standardName;&#xD;
+		this.calculationName = calculationName;&#xD;
+		this.calculationMethod = calculationMethod;&#xD;
+		this.softwareUsed = softwareUsed;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_HTCcAFrKEeqbvZIBCT16kA" name="RatingMethodology" method="_Har8IFrKEeqbvZIBCT16kA">
+                <eAnnotations xmi:id="_HTCcAVrKEeqbvZIBCT16kA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_HTDDEFrKEeqbvZIBCT16kA" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_HTDDEVrKEeqbvZIBCT16kA" type="_HTAm0FrKEeqbvZIBCT16kA" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_HYTWgFrKEeqbvZIBCT16kA" name="RatingMethodology" method="_HasjMFrKEeqbvZIBCT16kA">
+                <eAnnotations xmi:id="_HYT9kVrKEeqbvZIBCT16kA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_HYT9klrKEeqbvZIBCT16kA" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_HYTWgVrKEeqbvZIBCT16kA" name="standardName">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HYTWglrKEeqbvZIBCT16kA" name="calculationName">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HYTWg1rKEeqbvZIBCT16kA" name="calculationMethod">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HYT9kFrKEeqbvZIBCT16kA" name="softwareUsed" type="_HTGtcFrKEeqbvZIBCT16kA"/>
+                <ownedParameter xmi:id="_HYT9k1rKEeqbvZIBCT16kA" type="_HTAm0FrKEeqbvZIBCT16kA" direction="return"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_HTGtcFrKEeqbvZIBCT16kA" name="Software">
+              <ownedAttribute xmi:id="_HaAmsFrKEeqbvZIBCT16kA" name="softwareName">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_HaBNwFrKEeqbvZIBCT16kA" name="softwareVersion">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_HaB00FrKEeqbvZIBCT16kA" name="releaseDate" type="_HX1ccFrKEeqbvZIBCT16kA" association="_HbLrYVrKEeqbvZIBCT16kA"/>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HasjNlrKEeqbvZIBCT16kA" name="Software" specification="_HTIioFrKEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_HasjN1rKEeqbvZIBCT16kA" type="_HTGtcFrKEeqbvZIBCT16kA" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>// needed by MongoDB POJO Converter&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HawNkFrKEeqbvZIBCT16kA" name="Software" specification="_HTJwwFrKEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_HawNkVrKEeqbvZIBCT16kA" name="softwareName">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HawNklrKEeqbvZIBCT16kA" name="softwareVersion">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HawNk1rKEeqbvZIBCT16kA" type="_HTGtcFrKEeqbvZIBCT16kA" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>this.softwareName = softwareName;&#xD;
+		this.softwareVersion = softwareVersion;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_HTIioFrKEeqbvZIBCT16kA" name="Software" method="_HasjNlrKEeqbvZIBCT16kA">
+                <eAnnotations xmi:id="_HTJJsFrKEeqbvZIBCT16kA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_HTJJsVrKEeqbvZIBCT16kA" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_HTJJslrKEeqbvZIBCT16kA" type="_HTGtcFrKEeqbvZIBCT16kA" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_HTJwwFrKEeqbvZIBCT16kA" name="Software" method="_HawNkFrKEeqbvZIBCT16kA">
+                <eAnnotations xmi:id="_HTK-4FrKEeqbvZIBCT16kA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_HTK-4VrKEeqbvZIBCT16kA" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_HTJwwVrKEeqbvZIBCT16kA" name="softwareName">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HTJwwlrKEeqbvZIBCT16kA" name="softwareVersion">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HTK-4lrKEeqbvZIBCT16kA" type="_HTGtcFrKEeqbvZIBCT16kA" direction="return"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_HTNbIFrKEeqbvZIBCT16kA" name="SpatialData">
+              <ownedAttribute xmi:id="_HaDC8FrKEeqbvZIBCT16kA" name="totalFloorArea" type="_HSPx0FrKEeqbvZIBCT16kA" association="_HbMScVrKEeqbvZIBCT16kA"/>
+              <ownedAttribute xmi:id="_HaDC8VrKEeqbvZIBCT16kA" name="totalVolume" type="_HSPx0FrKEeqbvZIBCT16kA" association="_HbM5gFrKEeqbvZIBCT16kA"/>
+              <ownedAttribute xmi:id="_HaDqAFrKEeqbvZIBCT16kA" name="orientation">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Haw0oFrKEeqbvZIBCT16kA" name="SpatialData" specification="_HTPQUFrKEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_Haw0oVrKEeqbvZIBCT16kA" type="_HTNbIFrKEeqbvZIBCT16kA" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>//needed by MongoDB&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HaxbsFrKEeqbvZIBCT16kA" name="SpatialData" specification="_HYXn8FrKEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_HaxbsVrKEeqbvZIBCT16kA" name="totalFloorArea" type="_HSPx0FrKEeqbvZIBCT16kA"/>
+                <ownedParameter xmi:id="_HaxbslrKEeqbvZIBCT16kA" name="totalVolume" type="_HSPx0FrKEeqbvZIBCT16kA"/>
+                <ownedParameter xmi:id="_Haxbs1rKEeqbvZIBCT16kA" name="orientation">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HaxbtFrKEeqbvZIBCT16kA" type="_HTNbIFrKEeqbvZIBCT16kA" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>this.totalFloorArea = totalFloorArea;&#xD;
+		this.totalVolume = totalVolume;&#xD;
+		this.orientation = orientation;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HaxbtVrKEeqbvZIBCT16kA" name="toString" specification="_HTQecFrKEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_HaxbtlrKEeqbvZIBCT16kA" direction="return">
+                  <name xsi:nil="true"/>
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>return &quot;SpatialData [totalFloorArea=&quot; + totalFloorArea + &quot;, totalVolume=&quot; + totalVolume + &quot;, orientation=&quot;&#xD;
+				+ orientation + &quot;]&quot;;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_HTPQUFrKEeqbvZIBCT16kA" name="SpatialData" method="_Haw0oFrKEeqbvZIBCT16kA">
+                <eAnnotations xmi:id="_HTP3YFrKEeqbvZIBCT16kA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_HTP3YVrKEeqbvZIBCT16kA" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_HTP3YlrKEeqbvZIBCT16kA" type="_HTNbIFrKEeqbvZIBCT16kA" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_HTQecFrKEeqbvZIBCT16kA" name="toString" method="_HaxbtVrKEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_HTRFgFrKEeqbvZIBCT16kA" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_HYXn8FrKEeqbvZIBCT16kA" name="SpatialData" method="_HaxbsFrKEeqbvZIBCT16kA">
+                <eAnnotations xmi:id="_HYY2EFrKEeqbvZIBCT16kA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_HYY2EVrKEeqbvZIBCT16kA" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_HYYPAFrKEeqbvZIBCT16kA" name="totalFloorArea" type="_HSPx0FrKEeqbvZIBCT16kA"/>
+                <ownedParameter xmi:id="_HYYPAVrKEeqbvZIBCT16kA" name="totalVolume" type="_HSPx0FrKEeqbvZIBCT16kA"/>
+                <ownedParameter xmi:id="_HYYPAlrKEeqbvZIBCT16kA" name="orientation">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HYY2ElrKEeqbvZIBCT16kA" type="_HTNbIFrKEeqbvZIBCT16kA" direction="return"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_HTd50FrKEeqbvZIBCT16kA" name="Temperature">
+              <ownedAttribute xmi:id="_HaEREFrKEeqbvZIBCT16kA" name="value">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_HaE4IFrKEeqbvZIBCT16kA" name="unit" type="_HTkAcFrKEeqbvZIBCT16kA" association="_HbNgkFrKEeqbvZIBCT16kA"/>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HayCwFrKEeqbvZIBCT16kA" name="Temperature" specification="_HTfH8FrKEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_HayCwVrKEeqbvZIBCT16kA" type="_HTd50FrKEeqbvZIBCT16kA" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>// needed by MongoDB POJO Converter&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Hayp0FrKEeqbvZIBCT16kA" name="Temperature" specification="_HYarQFrKEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_Hayp0VrKEeqbvZIBCT16kA" name="value">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_Hayp0lrKEeqbvZIBCT16kA" name="unit" type="_HTkAcFrKEeqbvZIBCT16kA"/>
+                <ownedParameter xmi:id="_Hayp01rKEeqbvZIBCT16kA" type="_HTd50FrKEeqbvZIBCT16kA" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>this.value = value;&#xD;
+		this.unit = unit;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Hayp1FrKEeqbvZIBCT16kA" name="toString" specification="_HTgWEFrKEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_Hayp1VrKEeqbvZIBCT16kA" direction="return">
+                  <name xsi:nil="true"/>
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>return &quot;Temperature [value=&quot; + value + &quot;, unit=&quot; + unit + &quot;]&quot;;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_HTfH8FrKEeqbvZIBCT16kA" name="Temperature" method="_HayCwFrKEeqbvZIBCT16kA">
+                <eAnnotations xmi:id="_HTfvAFrKEeqbvZIBCT16kA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_HTfvAVrKEeqbvZIBCT16kA" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_HTfvAlrKEeqbvZIBCT16kA" type="_HTd50FrKEeqbvZIBCT16kA" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_HTgWEFrKEeqbvZIBCT16kA" name="toString" method="_Hayp1FrKEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_HTgWEVrKEeqbvZIBCT16kA" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_HYarQFrKEeqbvZIBCT16kA" name="Temperature" method="_Hayp0FrKEeqbvZIBCT16kA">
+                <eAnnotations xmi:id="_HYbSUFrKEeqbvZIBCT16kA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_HYbSUVrKEeqbvZIBCT16kA" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_HYarQVrKEeqbvZIBCT16kA" name="value">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HYarQlrKEeqbvZIBCT16kA" name="unit" type="_HTkAcFrKEeqbvZIBCT16kA"/>
+                <ownedParameter xmi:id="_HYbSUlrKEeqbvZIBCT16kA" type="_HTd50FrKEeqbvZIBCT16kA" direction="return"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Enumeration" xmi:id="_HTkAcFrKEeqbvZIBCT16kA" name="TemperatureUnit">
+              <ownedAttribute xmi:id="_HaGGQFrKEeqbvZIBCT16kA" name="unit" visibility="public" isLeaf="true" isReadOnly="true">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <ownedOperation xmi:id="_HTmcsFrKEeqbvZIBCT16kA" name="TemperatureUnit" visibility="private" method="_Hayp1lrKEeqbvZIBCT16kA">
+                <eAnnotations xmi:id="_HTnDwVrKEeqbvZIBCT16kA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_HTnDwlrKEeqbvZIBCT16kA" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_HTnDwFrKEeqbvZIBCT16kA" name="unit">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HTnDw1rKEeqbvZIBCT16kA" type="_HTkAcFrKEeqbvZIBCT16kA" direction="return"/>
+              </ownedOperation>
+              <ownedLiteral xmi:id="_HTkAcVrKEeqbvZIBCT16kA" name="CELCIUS">
+                <specification xmi:type="uml:Expression" xmi:id="_F5UIoFrNEeqbvZIBCT16kA">
+                  <operand xmi:type="uml:LiteralString" xmi:id="_F6kF0FrNEeqbvZIBCT16kA" value="&quot;celcius&quot;"/>
+                </specification>
+              </ownedLiteral>
+              <ownedLiteral xmi:id="_HTkngVrKEeqbvZIBCT16kA" name="FAHRENHEIT">
+                <specification xmi:type="uml:Expression" xmi:id="_F5UIoVrNEeqbvZIBCT16kA">
+                  <operand xmi:type="uml:LiteralString" xmi:id="_F6kF0VrNEeqbvZIBCT16kA" value="&quot;fahrenheit&quot;"/>
+                </specification>
+              </ownedLiteral>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_HTrVMFrKEeqbvZIBCT16kA" name="ThermalData">
+              <ownedComment xmi:id="_F6kF0lrNEeqbvZIBCT16kA">
+                <body>Building specific data&#xD;
+ *</body>
+              </ownedComment>
+              <ownedAttribute xmi:id="_HaH7cFrKEeqbvZIBCT16kA" name="uValue" type="_HSPx0FrKEeqbvZIBCT16kA" association="_HbRK8FrKEeqbvZIBCT16kA"/>
+              <ownedAttribute xmi:id="_HaIigFrKEeqbvZIBCT16kA" name="energyDemand" type="_HSPx0FrKEeqbvZIBCT16kA" association="_HbRK8lrKEeqbvZIBCT16kA"/>
+              <ownedAttribute xmi:id="_HaIigVrKEeqbvZIBCT16kA" name="carbonFootprint" type="_HSPx0FrKEeqbvZIBCT16kA" association="_HbRyAVrKEeqbvZIBCT16kA"/>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Haz38FrKEeqbvZIBCT16kA" name="ThermalData" specification="_HTsjUFrKEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_Haz38VrKEeqbvZIBCT16kA" type="_HTrVMFrKEeqbvZIBCT16kA" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>// needed by MongoDB POJO Converter&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Haz38lrKEeqbvZIBCT16kA" name="ThermalData" specification="_HYeVoFrKEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_Haz381rKEeqbvZIBCT16kA" name="uValue" type="_HSPx0FrKEeqbvZIBCT16kA"/>
+                <ownedParameter xmi:id="_Haz39FrKEeqbvZIBCT16kA" name="energyDemand" type="_HSPx0FrKEeqbvZIBCT16kA"/>
+                <ownedParameter xmi:id="_Haz39VrKEeqbvZIBCT16kA" name="carbonFootprint" type="_HSPx0FrKEeqbvZIBCT16kA"/>
+                <ownedParameter xmi:id="_Haz39lrKEeqbvZIBCT16kA" type="_HTrVMFrKEeqbvZIBCT16kA" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>this.uValue = uValue;&#xD;
+		this.energyDemand = energyDemand;&#xD;
+		this.carbonFootprint = carbonFootprint;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Haz391rKEeqbvZIBCT16kA" name="toString" specification="_HTtxcFrKEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_Haz3-FrKEeqbvZIBCT16kA" direction="return">
+                  <name xsi:nil="true"/>
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>return &quot;ThermalData [uValue=&quot; + uValue + &quot;, energyDemand=&quot; + energyDemand + &quot;, carbonFootprint=&quot;&#xD;
+				+ carbonFootprint + &quot;]&quot;;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_HTsjUFrKEeqbvZIBCT16kA" name="ThermalData" method="_Haz38FrKEeqbvZIBCT16kA">
+                <eAnnotations xmi:id="_HTsjUVrKEeqbvZIBCT16kA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_HTsjUlrKEeqbvZIBCT16kA" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_HTsjU1rKEeqbvZIBCT16kA" type="_HTrVMFrKEeqbvZIBCT16kA" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_HTtxcFrKEeqbvZIBCT16kA" name="toString" method="_Haz391rKEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_HTuYgFrKEeqbvZIBCT16kA" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_HYeVoFrKEeqbvZIBCT16kA" name="ThermalData" method="_Haz38lrKEeqbvZIBCT16kA">
+                <eAnnotations xmi:id="_HYeVpFrKEeqbvZIBCT16kA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_HYeVpVrKEeqbvZIBCT16kA" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_HYeVoVrKEeqbvZIBCT16kA" name="uValue" type="_HSPx0FrKEeqbvZIBCT16kA"/>
+                <ownedParameter xmi:id="_HYeVolrKEeqbvZIBCT16kA" name="energyDemand" type="_HSPx0FrKEeqbvZIBCT16kA"/>
+                <ownedParameter xmi:id="_HYeVo1rKEeqbvZIBCT16kA" name="carbonFootprint" type="_HSPx0FrKEeqbvZIBCT16kA"/>
+                <ownedParameter xmi:id="_HYeVplrKEeqbvZIBCT16kA" type="_HTrVMFrKEeqbvZIBCT16kA" direction="return"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_Ha27QFrKEeqbvZIBCT16kA" name="" memberEnd="_HZSN8FrKEeqbvZIBCT16kA _Ha27QVrKEeqbvZIBCT16kA">
+              <ownedEnd xmi:id="_Ha27QVrKEeqbvZIBCT16kA" name="" type="_HRCQ4FrKEeqbvZIBCT16kA" association="_Ha27QFrKEeqbvZIBCT16kA"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_Ha3iUFrKEeqbvZIBCT16kA" name="" memberEnd="_HZS1AFrKEeqbvZIBCT16kA _Ha3iUVrKEeqbvZIBCT16kA">
+              <ownedEnd xmi:id="_Ha3iUVrKEeqbvZIBCT16kA" name="" type="_HRMB4FrKEeqbvZIBCT16kA" association="_Ha3iUFrKEeqbvZIBCT16kA"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_Ha4JYFrKEeqbvZIBCT16kA" name="" memberEnd="_HZS1AVrKEeqbvZIBCT16kA _Ha4JYVrKEeqbvZIBCT16kA">
+              <ownedEnd xmi:id="_Ha4JYVrKEeqbvZIBCT16kA" name="" type="_HRMB4FrKEeqbvZIBCT16kA" association="_Ha4JYFrKEeqbvZIBCT16kA"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_Ha4JYlrKEeqbvZIBCT16kA" name="" memberEnd="_HZTcEFrKEeqbvZIBCT16kA _Ha4wcFrKEeqbvZIBCT16kA">
+              <ownedEnd xmi:id="_Ha4wcFrKEeqbvZIBCT16kA" name="" type="_HRMB4FrKEeqbvZIBCT16kA" association="_Ha4JYlrKEeqbvZIBCT16kA"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_Ha4wcVrKEeqbvZIBCT16kA" name="" memberEnd="_HZV4UFrKEeqbvZIBCT16kA _Ha5XgFrKEeqbvZIBCT16kA">
+              <ownedEnd xmi:id="_Ha5XgFrKEeqbvZIBCT16kA" name="" type="_HRot0FrKEeqbvZIBCT16kA" association="_Ha4wcVrKEeqbvZIBCT16kA"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_Ha5-kFrKEeqbvZIBCT16kA" name="" memberEnd="_HZWfYFrKEeqbvZIBCT16kA _Ha5-kVrKEeqbvZIBCT16kA">
+              <ownedEnd xmi:id="_Ha5-kVrKEeqbvZIBCT16kA" name="" type="_HRot0FrKEeqbvZIBCT16kA" association="_Ha5-kFrKEeqbvZIBCT16kA"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_Ha6loFrKEeqbvZIBCT16kA" name="" memberEnd="_HZXGcFrKEeqbvZIBCT16kA _Ha6loVrKEeqbvZIBCT16kA">
+              <ownedEnd xmi:id="_Ha6loVrKEeqbvZIBCT16kA" name="" type="_HRot0FrKEeqbvZIBCT16kA" association="_Ha6loFrKEeqbvZIBCT16kA"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_Ha7MsFrKEeqbvZIBCT16kA" name="" memberEnd="_HZYUkFrKEeqbvZIBCT16kA _Ha7MsVrKEeqbvZIBCT16kA">
+              <ownedEnd xmi:id="_Ha7MsVrKEeqbvZIBCT16kA" name="" type="_HRot0FrKEeqbvZIBCT16kA" association="_Ha7MsFrKEeqbvZIBCT16kA"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_Ha7zwFrKEeqbvZIBCT16kA" name="" memberEnd="_HZY7oFrKEeqbvZIBCT16kA _Ha7zwVrKEeqbvZIBCT16kA">
+              <ownedEnd xmi:id="_Ha7zwVrKEeqbvZIBCT16kA" name="" type="_HRot0FrKEeqbvZIBCT16kA" association="_Ha7zwFrKEeqbvZIBCT16kA"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_Ha8a0FrKEeqbvZIBCT16kA" name="" memberEnd="_HZY7oVrKEeqbvZIBCT16kA _Ha8a0VrKEeqbvZIBCT16kA">
+              <ownedEnd xmi:id="_Ha8a0VrKEeqbvZIBCT16kA" name="" type="_HRot0FrKEeqbvZIBCT16kA" association="_Ha8a0FrKEeqbvZIBCT16kA"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_Ha8a0lrKEeqbvZIBCT16kA" name="" memberEnd="_HZZisFrKEeqbvZIBCT16kA _Ha9B4FrKEeqbvZIBCT16kA">
+              <ownedEnd xmi:id="_Ha9B4FrKEeqbvZIBCT16kA" name="" type="_HRot0FrKEeqbvZIBCT16kA" association="_Ha8a0lrKEeqbvZIBCT16kA"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_Ha-QAFrKEeqbvZIBCT16kA" name="" memberEnd="_HZdNEFrKEeqbvZIBCT16kA _Ha-QAVrKEeqbvZIBCT16kA">
+              <ownedEnd xmi:id="_Ha-QAVrKEeqbvZIBCT16kA" name="" type="_HR_TIFrKEeqbvZIBCT16kA" association="_Ha-QAFrKEeqbvZIBCT16kA"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_Ha-QAlrKEeqbvZIBCT16kA" name="" memberEnd="_HZebMFrKEeqbvZIBCT16kA _Ha-3EFrKEeqbvZIBCT16kA">
+              <ownedEnd xmi:id="_Ha-3EFrKEeqbvZIBCT16kA" name="" type="_HR_TIFrKEeqbvZIBCT16kA" association="_Ha-QAlrKEeqbvZIBCT16kA"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_Ha_eIFrKEeqbvZIBCT16kA" name="" memberEnd="_HZebMVrKEeqbvZIBCT16kA _HbAFMFrKEeqbvZIBCT16kA">
+              <ownedEnd xmi:id="_HbAFMFrKEeqbvZIBCT16kA" name="" type="_HR_TIFrKEeqbvZIBCT16kA" association="_Ha_eIFrKEeqbvZIBCT16kA"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_HbAsQFrKEeqbvZIBCT16kA" name="" memberEnd="_HZfCQFrKEeqbvZIBCT16kA _HbAsQVrKEeqbvZIBCT16kA">
+              <ownedEnd xmi:id="_HbAsQVrKEeqbvZIBCT16kA" name="" type="_HR_TIFrKEeqbvZIBCT16kA" association="_HbAsQFrKEeqbvZIBCT16kA"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_HbAsQlrKEeqbvZIBCT16kA" name="" memberEnd="_HZfCQVrKEeqbvZIBCT16kA _HbAsQ1rKEeqbvZIBCT16kA">
+              <ownedEnd xmi:id="_HbAsQ1rKEeqbvZIBCT16kA" name="" type="_HR_TIFrKEeqbvZIBCT16kA" association="_HbAsQlrKEeqbvZIBCT16kA"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_HbBTUFrKEeqbvZIBCT16kA" name="" memberEnd="_HZfpUFrKEeqbvZIBCT16kA _HbBTUVrKEeqbvZIBCT16kA">
+              <ownedEnd xmi:id="_HbBTUVrKEeqbvZIBCT16kA" name="" type="_HR_TIFrKEeqbvZIBCT16kA" association="_HbBTUFrKEeqbvZIBCT16kA"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_HbB6YFrKEeqbvZIBCT16kA" name="" memberEnd="_HZfpUVrKEeqbvZIBCT16kA _HbB6YVrKEeqbvZIBCT16kA">
+              <ownedEnd xmi:id="_HbB6YVrKEeqbvZIBCT16kA" name="" type="_HR_TIFrKEeqbvZIBCT16kA" association="_HbB6YFrKEeqbvZIBCT16kA"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_HbB6YlrKEeqbvZIBCT16kA" name="" memberEnd="_HZrPgFrKEeqbvZIBCT16kA _HbChcFrKEeqbvZIBCT16kA">
+              <ownedEnd xmi:id="_HbChcFrKEeqbvZIBCT16kA" name="" type="_HR_TIFrKEeqbvZIBCT16kA" association="_HbB6YlrKEeqbvZIBCT16kA"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_HbChcVrKEeqbvZIBCT16kA" name="" memberEnd="_HZsdoFrKEeqbvZIBCT16kA _HbChclrKEeqbvZIBCT16kA">
+              <ownedEnd xmi:id="_HbChclrKEeqbvZIBCT16kA" name="" type="_HR_TIFrKEeqbvZIBCT16kA" association="_HbChcVrKEeqbvZIBCT16kA"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_HbE9sFrKEeqbvZIBCT16kA" name="" memberEnd="_HZvg8FrKEeqbvZIBCT16kA _HbE9sVrKEeqbvZIBCT16kA">
+              <ownedEnd xmi:id="_HbE9sVrKEeqbvZIBCT16kA" name="" type="_HSPx0FrKEeqbvZIBCT16kA" association="_HbE9sFrKEeqbvZIBCT16kA"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_HbIoE1rKEeqbvZIBCT16kA" name="" memberEnd="_HZ1AgFrKEeqbvZIBCT16kA _HbIoFFrKEeqbvZIBCT16kA">
+              <ownedEnd xmi:id="_HbIoFFrKEeqbvZIBCT16kA" name="" type="_HSfpcFrKEeqbvZIBCT16kA" association="_HbIoE1rKEeqbvZIBCT16kA"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_HbJPIFrKEeqbvZIBCT16kA" name="" memberEnd="_HZ1AgVrKEeqbvZIBCT16kA _HbJPIVrKEeqbvZIBCT16kA">
+              <ownedEnd xmi:id="_HbJPIVrKEeqbvZIBCT16kA" name="" type="_HSfpcFrKEeqbvZIBCT16kA" association="_HbJPIFrKEeqbvZIBCT16kA"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_HbJ2MFrKEeqbvZIBCT16kA" name="" memberEnd="_HZ5R8FrKEeqbvZIBCT16kA _HbKdQFrKEeqbvZIBCT16kA">
+              <ownedEnd xmi:id="_HbKdQFrKEeqbvZIBCT16kA" name="" type="_HSvhEFrKEeqbvZIBCT16kA" association="_HbJ2MFrKEeqbvZIBCT16kA"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_HbLEVFrKEeqbvZIBCT16kA" name="" memberEnd="_HZ__oVrKEeqbvZIBCT16kA _HbLrYFrKEeqbvZIBCT16kA">
+              <ownedEnd xmi:id="_HbLrYFrKEeqbvZIBCT16kA" name="" type="_HTAm0FrKEeqbvZIBCT16kA" association="_HbLEVFrKEeqbvZIBCT16kA"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_HbLrYVrKEeqbvZIBCT16kA" name="" memberEnd="_HaB00FrKEeqbvZIBCT16kA _HbMScFrKEeqbvZIBCT16kA">
+              <ownedEnd xmi:id="_HbMScFrKEeqbvZIBCT16kA" name="" type="_HTGtcFrKEeqbvZIBCT16kA" association="_HbLrYVrKEeqbvZIBCT16kA"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_HbMScVrKEeqbvZIBCT16kA" name="" memberEnd="_HaDC8FrKEeqbvZIBCT16kA _HbMSclrKEeqbvZIBCT16kA">
+              <ownedEnd xmi:id="_HbMSclrKEeqbvZIBCT16kA" name="" type="_HTNbIFrKEeqbvZIBCT16kA" association="_HbMScVrKEeqbvZIBCT16kA"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_HbM5gFrKEeqbvZIBCT16kA" name="" memberEnd="_HaDC8VrKEeqbvZIBCT16kA _HbM5gVrKEeqbvZIBCT16kA">
+              <ownedEnd xmi:id="_HbM5gVrKEeqbvZIBCT16kA" name="" type="_HTNbIFrKEeqbvZIBCT16kA" association="_HbM5gFrKEeqbvZIBCT16kA"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_HbNgkFrKEeqbvZIBCT16kA" name="" memberEnd="_HaE4IFrKEeqbvZIBCT16kA _HbNgkVrKEeqbvZIBCT16kA">
+              <ownedEnd xmi:id="_HbNgkVrKEeqbvZIBCT16kA" name="" type="_HTd50FrKEeqbvZIBCT16kA" association="_HbNgkFrKEeqbvZIBCT16kA"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_HbRK8FrKEeqbvZIBCT16kA" name="" memberEnd="_HaH7cFrKEeqbvZIBCT16kA _HbRK8VrKEeqbvZIBCT16kA">
+              <ownedEnd xmi:id="_HbRK8VrKEeqbvZIBCT16kA" name="" type="_HTrVMFrKEeqbvZIBCT16kA" association="_HbRK8FrKEeqbvZIBCT16kA"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_HbRK8lrKEeqbvZIBCT16kA" name="" memberEnd="_HaIigFrKEeqbvZIBCT16kA _HbRyAFrKEeqbvZIBCT16kA">
+              <ownedEnd xmi:id="_HbRyAFrKEeqbvZIBCT16kA" name="" type="_HTrVMFrKEeqbvZIBCT16kA" association="_HbRK8lrKEeqbvZIBCT16kA"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_HbRyAVrKEeqbvZIBCT16kA" name="" memberEnd="_HaIigVrKEeqbvZIBCT16kA _HbRyAlrKEeqbvZIBCT16kA">
+              <ownedEnd xmi:id="_HbRyAlrKEeqbvZIBCT16kA" name="" type="_HTrVMFrKEeqbvZIBCT16kA" association="_HbRyAVrKEeqbvZIBCT16kA"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_HbcKEFrKEeqbvZIBCT16kA" name="" memberEnd="_HbcKEVrKEeqbvZIBCT16kA _HZ3cwVrKEeqbvZIBCT16kA">
+              <ownedEnd xmi:id="_HbcKEVrKEeqbvZIBCT16kA" name="" type="_HSozYFrKEeqbvZIBCT16kA" association="_HbcKEFrKEeqbvZIBCT16kA"/>
+            </packagedElement>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_F4ozMFrNEeqbvZIBCT16kA" name="importer">
+            <packagedElement xmi:type="uml:Class" xmi:id="_F5iyIFrNEeqbvZIBCT16kA" name="ImportEPC">
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_F6WqcFrNEeqbvZIBCT16kA" name="main" specification="_F5kAQFrNEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_F6WqcVrNEeqbvZIBCT16kA" name="args">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_F6WqclrNEeqbvZIBCT16kA" value="*"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>MongoClient mongoClient = MongoClients.create(&#xD;
+				&quot;mongodb+srv://epc_user:1user01@clusterepc-typif.mongodb.net/test?retryWrites=true&amp;w=majority&quot;);&#xD;
+&#xD;
+ 	CodecRegistry pojoCodecRegistry = fromRegistries(MongoClientSettings.getDefaultCodecRegistry(),&#xD;
+             fromProviders(PojoCodecProvider.builder().automatic(true).build()));&#xD;
+		&#xD;
+		MongoDatabase database = mongoClient.getDatabase(&quot;EPC_DB&quot;);&#xD;
+		database = database.withCodecRegistry(pojoCodecRegistry);&#xD;
+		&#xD;
+		System.out.println(&quot;Before import: &quot; + database.getCollection(&quot;EPC_Collection&quot;).countDocuments());&#xD;
+		&#xD;
+		MongoCollection&lt;EPC> epcCollection = database.getCollection(&quot;EPC_Collection&quot;, EPC.class);&#xD;
+&#xD;
+		addAustrianEPC(epcCollection);&#xD;
+     addRomanianEPC(epcCollection);&#xD;
+     addGermanEPC(epcCollection);&#xD;
+     addDanishEPC(epcCollection);&#xD;
+     &#xD;
+     for (Document doc: database.getCollection(&quot;EPC_Collection&quot;).find()) {&#xD;
+     	System.out.println(doc.toJson());&#xD;
+     }&#xD;
+     &#xD;
+     System.out.println(&quot;Total: &quot; + database.getCollection(&quot;EPC_Collection&quot;).countDocuments());&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_F6XRgFrNEeqbvZIBCT16kA" name="addAustrianEPC" specification="_F6PVsFrNEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_F6XRgVrNEeqbvZIBCT16kA" name="epcCollection" type="_F6JPEVrNEeqbvZIBCT16kA"/>
+                <language>java</language>
+                <body>Calendar creationDate = Calendar.getInstance();&#xD;
+		creationDate.set(2008, 11, 3, 0, 0);&#xD;
+		&#xD;
+		Calendar validUntil = Calendar.getInstance();&#xD;
+		validUntil.set(2018, 11, 3, 0, 0);&#xD;
+		&#xD;
+		Assessor assessor = new Assessor(&quot;Ing.&quot;, &quot;Rutzinger&quot;, &quot;Kajetan&quot;, null, null, null, new Organisation(&quot;Neue Heimat Tirol&quot;, null, null));&#xD;
+		&#xD;
+		ClimateData climateData = new ClimateData();&#xD;
+		climateData.setIdealIndoorTemperature(new Temperature(20.0, TemperatureUnit.CELCIUS));&#xD;
+		climateData.setAverageOutdoorTemperature(new Temperature(-11.4, TemperatureUnit.CELCIUS));&#xD;
+		climateData.setHightAboveSeaLevel(new Measure(573, MeasuringUnit.METER));&#xD;
+		climateData.setHeatingDaysPerYear(220); &#xD;
+		&#xD;
+		SpatialData spatialData = new SpatialData();&#xD;
+		spatialData.setTotalFloorArea(new Measure(800.86, MeasuringUnit.SQUARE_METER));&#xD;
+		spatialData.setTotalVolume(new Measure(2272.87, MeasuringUnit.CUBIC_METER));&#xD;
+		&#xD;
+		ThermalData thermalData = new ThermalData();&#xD;
+		thermalData.setUValue(new Measure(0.90, MeasuringUnit.WATTS_SQUARE_METER_KELVIN));&#xD;
+		thermalData.setEnergyDemand(new Measure(103.91, MeasuringUnit.KWH_SQUARE_METER_YEAR));&#xD;
+		&#xD;
+		Dwelling dwelling = new Dwelling(&#xD;
+				new Address(&quot;Pacherstr.&quot;, &quot;14&quot;, null, null, &quot;6020&quot;, &quot;Innsbruck&quot;, &quot;Austria&quot;), &#xD;
+				1960, &#xD;
+				DwellingType.APARTMENT_BUILDING,&#xD;
+				&quot;1361&quot;,&#xD;
+				(List&lt;String>) Arrays.asList(&quot;1557/9&quot;, &quot;1558/3&quot;), &#xD;
+				spatialData,&#xD;
+				thermalData);&#xD;
+		dwelling.setClimateData(climateData);&#xD;
+		&#xD;
+		Rating rating = new Rating(&quot;D+&quot;, null);&#xD;
+		&#xD;
+		Software software = new Software(&quot;Allplan&quot;, &quot;AX3000&quot;);&#xD;
+		Calendar releaseDate = Calendar.getInstance();&#xD;
+		releaseDate.set(2008, 9, 20, 0, 0);&#xD;
+		software.setReleaseDate(releaseDate.getTime());&#xD;
+		RatingMethodology ratingMethodology = new RatingMethodology(null, null, null, software);&#xD;
+		&#xD;
+		epcCollection.insertOne(new EPC(null, creationDate.getTime(), validUntil.getTime(), dwelling, assessor, rating, ratingMethodology, &quot;ÖNORM H 5055, Rechtlinie 2002/91/EG&quot;));&#xD;
+		&#xD;
+		for (EPC epc : epcCollection.find()) {&#xD;
+			System.out.println(epc.toString());&#xD;
+		}&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_F6XRglrNEeqbvZIBCT16kA" name="addDanishEPC" specification="_F6Qj0FrNEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_F6XRg1rNEeqbvZIBCT16kA" name="epcCollection" type="_F6JPEVrNEeqbvZIBCT16kA"/>
+                <language>java</language>
+                <body>//renovation year: 1994&#xD;
+		//Art der Heizung: fernwärme&#xD;
+		//list of flats and their size and consumption costs per year&#xD;
+		//epc Datum der Genehmigung: 10-09-2010&#xD;
+		//berechnete Wärmeanforderung: 76.091 kr./year (Preis)&#xD;
+		//recommendations&#xD;
+		&#xD;
+		Calendar creationDate = Calendar.getInstance();&#xD;
+		creationDate.set(2010, 8, 29, 0, 0);&#xD;
+		&#xD;
+		Calendar validUntil = Calendar.getInstance();&#xD;
+		validUntil.set(2015, 8, 29, 0, 0);&#xD;
+		&#xD;
+		Organisation organisation = new Organisation(&quot;Ingeniorfirmaet Henrij Mogelgaard ApS&quot;, &#xD;
+				new Address(&quot;Hillerødgade&quot;,&quot;30A&quot;, null, null, &quot;2200&quot;, &quot;København N&quot;, &quot;Denmark&quot;), &#xD;
+				new ContactDetails(null, &quot;35360727&quot;));&#xD;
+		Assessor assessor = new Assessor(null, &quot;Hansen&quot;, &quot;Jan Ole&quot;, &quot;250611&quot;, null, new ContactDetails(&quot;joh@hmenergi.dk&quot;, null), organisation);&#xD;
+		&#xD;
+		Address address = new Address();&#xD;
+		address.setStreet(&quot;Dr. Lassens Gade&quot;);&#xD;
+		address.setStreetNumber(&quot;7&quot;);&#xD;
+		address.setPostalCode(&quot;8900&quot;);&#xD;
+		address.setCity(&quot;Randers C&quot;);&#xD;
+		&#xD;
+		RatingMethodology ratingMethodology = new RatingMethodology();&#xD;
+		ratingMethodology.setSoftwareUsed(new Software(&quot;Energy08&quot;, &quot;Be06 version 4&quot;));&#xD;
+		&#xD;
+		//The energy-labelling scale runs from A to G, where A is divided into A2020, A2015 and A2010. A2020 covers low energy buildings, which only consume a minimum of energy, &#xD;
+		//while G-labelled buildings consume the most energy.&#xD;
+		Rating awordedRating = new Rating(&quot;D&quot;, null);&#xD;
+		&#xD;
+		ThermalData thermalData = new ThermalData();&#xD;
+		thermalData.setEnergyDemand(new Measure(109.509, MeasuringUnit.KWH_YEAR));&#xD;
+		&#xD;
+		SpatialData spatialData = new SpatialData();&#xD;
+		spatialData.setTotalFloorArea(new Measure(880, MeasuringUnit.SQUARE_METER));&#xD;
+		//beheiztes areal TODO: check with others if volume is refffered to beheiztes volumen&#xD;
+		spatialData.setTotalVolume(new Measure(880, MeasuringUnit.SQUARE_METER));&#xD;
+		&#xD;
+		Dwelling ratedDwelling = new Dwelling(address, 1919, DwellingType.APARTMENT_BUILDING, &quot;730-009955-001&quot;, null, spatialData, thermalData);&#xD;
+		&#xD;
+		EPC epc = new EPC(&quot;200038127&quot;, creationDate.getTime(), validUntil.getTime(), ratedDwelling, assessor, awordedRating, null, null);&#xD;
+		epcCollection.insertOne(epc);&#xD;
+		&#xD;
+		for (EPC epcF : epcCollection.find()) {&#xD;
+			System.out.println(epcF.toString());&#xD;
+		}&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_F6X4kFrNEeqbvZIBCT16kA" name="addGermanEPC" specification="_F6Rx8VrNEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_F6X4kVrNEeqbvZIBCT16kA" name="epcCollection" type="_F6JPEVrNEeqbvZIBCT16kA"/>
+                <language>java</language>
+                <body>//missing fields in this epc model&#xD;
+		//Gebäudeteil:Vorderhaus&#xD;
+		//Baujahr Wärmeerzeuger:1982&#xD;
+		//nr. of flats: 9&#xD;
+		//type of main heating source: Erdgas&#xD;
+		//renewable energy sources: yes, no&#xD;
+		//Art der Lüftung: Fensterlüftung&#xD;
+		//here it is a distinction between Energiebedarfausweis(estimated) and Energieverbrauch (measured)&#xD;
+		//distinction between Primärenergiebdarf (248 kWh/(m^2a) and Endenergiebedarf (222 kWh/(m^2a)))&#xD;
+		//Recommendations on renovations&#xD;
+		&#xD;
+		Calendar validUntil = Calendar.getInstance();&#xD;
+		validUntil.set(2024, 5, 23, 0, 0);&#xD;
+		&#xD;
+		Calendar creationDate = Calendar.getInstance();&#xD;
+		creationDate.set(2014, 5, 24, 0, 0);&#xD;
+		&#xD;
+		Assessor assessor = new Assessor(null, &quot;Mustermann&quot;, &quot;Paul&quot;, null, null, null,&#xD;
+				new Organisation(&quot;&quot;, new Address(&quot;Austeller Musterstraße&quot;, &quot;45&quot;, null, null, &quot;12345&quot;, &quot;Musterstadt&quot;, &quot;Deutschland&quot;), null));&#xD;
+		&#xD;
+		SpatialData spatialData = new SpatialData();&#xD;
+		spatialData.setTotalFloorArea(new Measure(546, MeasuringUnit.SQUARE_METER));&#xD;
+		&#xD;
+		ThermalData thermalData = new ThermalData();&#xD;
+		thermalData.setCarbonFootprint(new Measure(56, MeasuringUnit.KG_SQUARE_METER_YEAR));&#xD;
+		thermalData.setEnergyDemand(new Measure(222, MeasuringUnit.KWH_SQUARE_METER_YEAR));&#xD;
+		thermalData.setUValue(new Measure(1.11, MeasuringUnit.WATTS_SQUARE_METER_KELVIN));&#xD;
+		&#xD;
+		Dwelling ratedDwelling = new Dwelling(&#xD;
+				new Address(&quot;Musterstr&quot;, &quot;123&quot;, null, null, &quot;10115&quot;, &quot;Musterstadt&quot;, &quot;Deutschland&quot;), &#xD;
+				1927, &#xD;
+				DwellingType.APARTMENT_BUILDING,&#xD;
+				null,&#xD;
+				null, &#xD;
+				spatialData,&#xD;
+				thermalData);&#xD;
+		&#xD;
+		//estimated rating&#xD;
+		Rating awordedRating = new Rating(&quot;G&quot;, null);   //here should be a distinction between estimated and measured rating&#xD;
+		//maybe add also a scala, to see the possible rating levels.&#xD;
+	&#xD;
+		RatingMethodology ratingMethodology = new RatingMethodology();&#xD;
+		ratingMethodology.setStandardName(&quot;DIN V 4108-6 and DIN 4701-10 and Vereinfachungen nach §9 Absatz 2 EnEV&quot;); //consider creating a list&#xD;
+		&#xD;
+		EPC epc = new EPC(&quot;123456789&quot;, creationDate.getTime(), validUntil.getTime(), ratedDwelling, assessor, awordedRating, ratingMethodology, &quot;§§ 16 ff. Energiesparverordnung (EnEV) 18.11.2013&quot;);&#xD;
+		epc.setPurpose(PurposeType.RENTING_OR_SELLING);&#xD;
+		&#xD;
+		epcCollection.insertOne(epc);&#xD;
+		&#xD;
+		for (EPC epcF : epcCollection.find()) {&#xD;
+			System.out.println(epcF.toString());&#xD;
+		}&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_F6X4klrNEeqbvZIBCT16kA" name="addRomanianEPC" specification="_F6SZAVrNEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_F6X4k1rNEeqbvZIBCT16kA" name="epcCollection" type="_F6JPEVrNEeqbvZIBCT16kA"/>
+                <language>java</language>
+                <body>//missing fields for &#xD;
+		//apa calda de consum&#xD;
+		//climatisare&#xD;
+		//ventilare mecanica&#xD;
+		//iluminat artificial&#xD;
+		//surse regenerabile&#xD;
+		&#xD;
+		Calendar creationDate = Calendar.getInstance();&#xD;
+		creationDate.set(2016, 7, 2, 0, 0);&#xD;
+		&#xD;
+		Calendar validUntil = Calendar.getInstance();&#xD;
+		validUntil.set(2026, 7, 2, 0, 0);&#xD;
+		&#xD;
+		Rating rating = new Rating(&quot;B&quot;, 97.3);&#xD;
+		&#xD;
+		ThermalData thermalData = new ThermalData();&#xD;
+		thermalData.setUValue(new Measure(0.90, MeasuringUnit.WATTS_SQUARE_METER_KELVIN));&#xD;
+		thermalData.setEnergyDemand(new Measure(150.83, MeasuringUnit.KWH_SQUARE_METER_YEAR));&#xD;
+		thermalData.setCarbonFootprint(new Measure(29.55, MeasuringUnit.KG_SQUARE_METER_YEAR));&#xD;
+		&#xD;
+		SpatialData spatialData = new SpatialData();&#xD;
+		spatialData.setTotalFloorArea(new Measure(45.95, MeasuringUnit.SQUARE_METER));&#xD;
+		spatialData.setTotalVolume(new Measure(121.77, MeasuringUnit.CUBIC_METER));&#xD;
+		spatialData.setOrientation(&quot;SE-SV&quot;);&#xD;
+		&#xD;
+		Assessor assessor = new Assessor(&quot;I-CI&quot;, &quot;Rotaru&quot;, &quot;Nicolae Mihai&quot;, &quot;UA-01579&quot;, null, null, null);&#xD;
+		&#xD;
+		Dwelling dwelling = new Dwelling(&#xD;
+				new Address(&quot;Stejarului&quot;, &quot;60&quot;, &quot;1&quot;, &quot;13&quot;, &quot;407280&quot;, &quot;Floresti&quot;, &quot;Romania&quot;), &#xD;
+				2016, &#xD;
+				DwellingType.FLAT,&#xD;
+				null,&#xD;
+				null, &#xD;
+				spatialData,&#xD;
+				thermalData);&#xD;
+		&#xD;
+		RatingMethodology ratingMethodology = new RatingMethodology();&#xD;
+		ratingMethodology.setCalculationName(&quot;Methodology for energy performance of buildings&quot;);&#xD;
+		ratingMethodology.setCalculationMethod(&quot;monthly&quot;);&#xD;
+		ratingMethodology.setSoftwareUsed(new Software(&quot;termoexpert&quot;, &quot;3.1&quot;));&#xD;
+		&#xD;
+		EPC epc = new EPC(&quot;UA-01579 365&quot;, creationDate.getTime(), validUntil.getTime(), dwelling, assessor, rating, ratingMethodology, null);&#xD;
+		epc.setPurpose(PurposeType.RENTING_OR_SELLING);&#xD;
+		&#xD;
+		epcCollection.insertOne(epc);&#xD;
+		&#xD;
+		for (EPC epcF : epcCollection.find()) {&#xD;
+			System.out.println(epcF.toString());&#xD;
+		}&#xD;
+ </body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_F5kAQFrNEeqbvZIBCT16kA" name="main" isStatic="true" method="_F6WqcFrNEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_F5kAQVrNEeqbvZIBCT16kA" name="args">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_F5lOYVrNEeqbvZIBCT16kA" value="*"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_F6PVsFrNEeqbvZIBCT16kA" name="addAustrianEPC" visibility="private" isStatic="true" method="_F6XRgFrNEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_F6PVsVrNEeqbvZIBCT16kA" name="epcCollection" type="_F6JPEVrNEeqbvZIBCT16kA"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_F6Qj0FrNEeqbvZIBCT16kA" name="addDanishEPC" visibility="private" isStatic="true" method="_F6XRglrNEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_F6Qj0VrNEeqbvZIBCT16kA" name="epcCollection" type="_F6JPEVrNEeqbvZIBCT16kA"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_F6Rx8VrNEeqbvZIBCT16kA" name="addGermanEPC" visibility="private" isStatic="true" method="_F6X4kFrNEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_F6Rx8lrNEeqbvZIBCT16kA" name="epcCollection" type="_F6JPEVrNEeqbvZIBCT16kA"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_F6SZAVrNEeqbvZIBCT16kA" name="addRomanianEPC" visibility="private" isStatic="true" method="_F6X4klrNEeqbvZIBCT16kA">
+                <ownedParameter xmi:id="_F6SZAlrNEeqbvZIBCT16kA" name="epcCollection" type="_F6JPEVrNEeqbvZIBCT16kA"/>
+              </ownedOperation>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_HNi4AFrKEeqbvZIBCT16kA" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_HNi4AVrKEeqbvZIBCT16kA" name="util">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_HXrEYFrKEeqbvZIBCT16kA" name="List"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_HX1ccFrKEeqbvZIBCT16kA" name="Date"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_F6DvgFrNEeqbvZIBCT16kA" name="Arrays"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_F6EWkVrNEeqbvZIBCT16kA" name="Calendar"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_HOesIFrKEeqbvZIBCT16kA" name="sql">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_HYOeAFrKEeqbvZIBCT16kA" name="Blob"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_HZAhIFrKEeqbvZIBCT16kA" name="lang">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_HZAhIVrKEeqbvZIBCT16kA" name="Double"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_HNi4AlrKEeqbvZIBCT16kA" name="org">
+      <packagedElement xmi:type="uml:Package" xmi:id="_HNi4A1rKEeqbvZIBCT16kA" name="bson">
+        <packagedElement xmi:type="uml:Package" xmi:id="_HNjfEFrKEeqbvZIBCT16kA" name="types">
+          <packagedElement xmi:type="uml:Class" xmi:id="_HXsSgVrKEeqbvZIBCT16kA" name="ObjectId"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_F4khwFrNEeqbvZIBCT16kA" name="codecs">
+          <packagedElement xmi:type="uml:Package" xmi:id="_F4khwVrNEeqbvZIBCT16kA" name="configuration">
+            <packagedElement xmi:type="uml:Class" xmi:id="_F6ChYFrNEeqbvZIBCT16kA" name="CodecRegistries"/>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_F6FksVrNEeqbvZIBCT16kA" name="CodecRegistry"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_F4lI0FrNEeqbvZIBCT16kA" name="pojo">
+            <packagedElement xmi:type="uml:Class" xmi:id="_F6Gy0FrNEeqbvZIBCT16kA" name="PojoCodecProvider"/>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_F6E9oVrNEeqbvZIBCT16kA" name="Document"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_F4lv4FrNEeqbvZIBCT16kA" name="com">
+      <packagedElement xmi:type="uml:Package" xmi:id="_F4lv4VrNEeqbvZIBCT16kA" name="mongodb">
+        <packagedElement xmi:type="uml:Package" xmi:id="_F4lv4lrNEeqbvZIBCT16kA" name="client">
+          <packagedElement xmi:type="uml:Interface" xmi:id="_F6IA8FrNEeqbvZIBCT16kA" name="MongoClient"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_F6IoAVrNEeqbvZIBCT16kA" name="MongoClients"/>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_F6JPEVrNEeqbvZIBCT16kA" name="MongoCollection"/>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_F6KdMVrNEeqbvZIBCT16kA" name="MongoDatabase"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_F6HZ4FrNEeqbvZIBCT16kA" name="MongoClientSettings"/>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_FBzZMFrKEeqbvZIBCT16kA">
+      <eAnnotations xmi:id="_FBzZMVrKEeqbvZIBCT16kA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_FB0AQFrKEeqbvZIBCT16kA" base_Package="_EfU-QFrKEeqbvZIBCT16kA">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_HQ6VEFrKEeqbvZIBCT16kA" base_Element="_HQ5uAFrKEeqbvZIBCT16kA"/>
+  <UMLLabProfile:Annotations xmi:id="_HQ68IFrKEeqbvZIBCT16kA" base_Element="_HQ5uAFrKEeqbvZIBCT16kA">
+    <annotations xmi:id="_HQ68IVrKEeqbvZIBCT16kA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_HRHwcFrKEeqbvZIBCT16kA" base_Element="_HRGiUFrKEeqbvZIBCT16kA"/>
+  <UMLLabProfile:Annotations xmi:id="_HRHwcVrKEeqbvZIBCT16kA" base_Element="_HRGiUFrKEeqbvZIBCT16kA">
+    <annotations xmi:id="_HRIXgFrKEeqbvZIBCT16kA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_HRXoEFrKEeqbvZIBCT16kA" base_Element="_HRXBAFrKEeqbvZIBCT16kA"/>
+  <UMLLabProfile:Annotations xmi:id="_HRY2MFrKEeqbvZIBCT16kA" base_Element="_HRXBAFrKEeqbvZIBCT16kA">
+    <annotations xmi:id="_HRY2MVrKEeqbvZIBCT16kA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_HRlDcVrKEeqbvZIBCT16kA" base_Element="_HRj1UFrKEeqbvZIBCT16kA"/>
+  <UMLLabProfile:Annotations xmi:id="_HRlqgFrKEeqbvZIBCT16kA" base_Element="_HRj1UFrKEeqbvZIBCT16kA">
+    <annotations xmi:id="_HRmRkFrKEeqbvZIBCT16kA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_HRwCkVrKEeqbvZIBCT16kA" base_Element="_HRu0cFrKEeqbvZIBCT16kA"/>
+  <UMLLabProfile:Annotations xmi:id="_HRwpoFrKEeqbvZIBCT16kA" base_Element="_HRu0cFrKEeqbvZIBCT16kA">
+    <annotations xmi:id="_HRwpoVrKEeqbvZIBCT16kA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_HSFZwVrKEeqbvZIBCT16kA" base_Element="_HSEysFrKEeqbvZIBCT16kA"/>
+  <UMLLabProfile:Annotations xmi:id="_HSGn4FrKEeqbvZIBCT16kA" base_Element="_HSEysFrKEeqbvZIBCT16kA">
+    <annotations xmi:id="_HSHO8FrKEeqbvZIBCT16kA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_HSUDQVrKEeqbvZIBCT16kA" base_Element="_HSTcMFrKEeqbvZIBCT16kA"/>
+  <UMLLabProfile:Annotations xmi:id="_HSUqUFrKEeqbvZIBCT16kA" base_Element="_HSTcMFrKEeqbvZIBCT16kA">
+    <annotations xmi:id="_HSUqUVrKEeqbvZIBCT16kA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_HSlJAFrKEeqbvZIBCT16kA" base_Element="_HSj64FrKEeqbvZIBCT16kA"/>
+  <UMLLabProfile:Annotations xmi:id="_HSlJAVrKEeqbvZIBCT16kA" base_Element="_HSj64FrKEeqbvZIBCT16kA">
+    <annotations xmi:id="_HSlJAlrKEeqbvZIBCT16kA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_HSsdwVrKEeqbvZIBCT16kA" base_Element="_HSr2sFrKEeqbvZIBCT16kA"/>
+  <UMLLabProfile:Annotations xmi:id="_HStE0FrKEeqbvZIBCT16kA" base_Element="_HSr2sFrKEeqbvZIBCT16kA">
+    <annotations xmi:id="_HStE0VrKEeqbvZIBCT16kA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_HS9jgFrKEeqbvZIBCT16kA" base_Element="_HS8VYFrKEeqbvZIBCT16kA"/>
+  <UMLLabProfile:Annotations xmi:id="_HS-KkFrKEeqbvZIBCT16kA" base_Element="_HS8VYFrKEeqbvZIBCT16kA">
+    <annotations xmi:id="_HS-KkVrKEeqbvZIBCT16kA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_HTRFgVrKEeqbvZIBCT16kA" base_Element="_HTQecFrKEeqbvZIBCT16kA"/>
+  <UMLLabProfile:Annotations xmi:id="_HTRskFrKEeqbvZIBCT16kA" base_Element="_HTQecFrKEeqbvZIBCT16kA">
+    <annotations xmi:id="_HTRskVrKEeqbvZIBCT16kA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_HTg9IFrKEeqbvZIBCT16kA" base_Element="_HTgWEFrKEeqbvZIBCT16kA"/>
+  <UMLLabProfile:Annotations xmi:id="_HThkMFrKEeqbvZIBCT16kA" base_Element="_HTgWEFrKEeqbvZIBCT16kA">
+    <annotations xmi:id="_HThkMVrKEeqbvZIBCT16kA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_HTuYgVrKEeqbvZIBCT16kA" base_Element="_HTtxcFrKEeqbvZIBCT16kA"/>
+  <UMLLabProfile:Annotations xmi:id="_HTu_kFrKEeqbvZIBCT16kA" base_Element="_HTtxcFrKEeqbvZIBCT16kA">
+    <annotations xmi:id="_HTu_kVrKEeqbvZIBCT16kA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Reference xmi:id="_HXsSgFrKEeqbvZIBCT16kA" base_Element="_HXrEYFrKEeqbvZIBCT16kA"/>
+  <UMLLabProfile:Reference xmi:id="_HXtgoFrKEeqbvZIBCT16kA" base_Element="_HXsSgVrKEeqbvZIBCT16kA"/>
+  <UMLLabProfile:Reference xmi:id="_HX2qkFrKEeqbvZIBCT16kA" base_Element="_HX1ccFrKEeqbvZIBCT16kA"/>
+  <UMLLabProfile:Reference xmi:id="_HYPFEFrKEeqbvZIBCT16kA" base_Element="_HYOeAFrKEeqbvZIBCT16kA"/>
+  <UMLLabProfile:Generics xmi:id="_HY0T4FrKEeqbvZIBCT16kA" genericsValue="String" base_Element="_HYwpgVrKEeqbvZIBCT16kA"/>
+  <UMLLabProfile:Reference xmi:id="_HZBIMFrKEeqbvZIBCT16kA" base_Element="_HZAhIVrKEeqbvZIBCT16kA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_HZcmAFrKEeqbvZIBCT16kA" base_Element="_HZbX4FrKEeqbvZIBCT16kA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_HZ7HIFrKEeqbvZIBCT16kA" base_Element="_HZ6gEFrKEeqbvZIBCT16kA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_HZ88UFrKEeqbvZIBCT16kA" base_Element="_HZ7uMFrKEeqbvZIBCT16kA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_HZ-KcFrKEeqbvZIBCT16kA" base_Element="_HZ9jYFrKEeqbvZIBCT16kA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_HaGtUFrKEeqbvZIBCT16kA" base_Element="_HaGGQFrKEeqbvZIBCT16kA">
+    <associatedElement xmi:type="uml:Operation" xmi:id="_F5gV4FrNEeqbvZIBCT16kA" name="getUnit" method="_F6emQFrNEeqbvZIBCT16kA">
+      <ownedParameter xmi:id="_F5sjIFrNEeqbvZIBCT16kA" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </associatedElement>
+  </UMLLabProfile:LegacyStyledElement>
+  <uml:OpaqueBehavior xmi:id="_Hag9AFrKEeqbvZIBCT16kA" name="DwellingType" specification="_HR8P0FrKEeqbvZIBCT16kA">
+    <ownedParameter xmi:id="_Hag9AVrKEeqbvZIBCT16kA" name="type">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedParameter>
+    <ownedParameter xmi:id="_Hag9AlrKEeqbvZIBCT16kA" type="_HR4lcFrKEeqbvZIBCT16kA" direction="return">
+      <name xsi:nil="true"/>
+    </ownedParameter>
+    <language>java</language>
+    <body>this.type = type;&#xD;
+ </body>
+  </uml:OpaqueBehavior>
+  <uml:OpaqueBehavior xmi:id="_Hag9A1rKEeqbvZIBCT16kA" name="getDwellingType" specification="_HR9d8FrKEeqbvZIBCT16kA">
+    <ownedParameter xmi:id="_Hag9BFrKEeqbvZIBCT16kA" direction="return">
+      <name xsi:nil="true"/>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedParameter>
+    <language>java</language>
+    <body>return this.type;&#xD;
+ </body>
+  </uml:OpaqueBehavior>
+  <uml:OpaqueBehavior xmi:id="_HaknYFrKEeqbvZIBCT16kA" name="MeasuringUnit" specification="_HSbYAFrKEeqbvZIBCT16kA">
+    <ownedParameter xmi:id="_HaknYVrKEeqbvZIBCT16kA" name="unit">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedParameter>
+    <ownedParameter xmi:id="_HaknYlrKEeqbvZIBCT16kA" name="description">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedParameter>
+    <ownedParameter xmi:id="_HaknY1rKEeqbvZIBCT16kA" type="_HSXtoFrKEeqbvZIBCT16kA" direction="return">
+      <name xsi:nil="true"/>
+    </ownedParameter>
+    <language>java</language>
+    <body>this.unit = unit;&#xD;
+		this.description = description;&#xD;
+	</body>
+  </uml:OpaqueBehavior>
+  <uml:OpaqueBehavior xmi:id="_HalOcFrKEeqbvZIBCT16kA" name="MeasuringUnit" specification="_HScmIFrKEeqbvZIBCT16kA">
+    <ownedParameter xmi:id="_HalOcVrKEeqbvZIBCT16kA" name="unit">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedParameter>
+    <ownedParameter xmi:id="_HalOclrKEeqbvZIBCT16kA" type="_HSXtoFrKEeqbvZIBCT16kA" direction="return">
+      <name xsi:nil="true"/>
+    </ownedParameter>
+    <language>java</language>
+    <body>this.unit = unit;&#xD;
+	</body>
+  </uml:OpaqueBehavior>
+  <uml:OpaqueBehavior xmi:id="_HaqG8FrKEeqbvZIBCT16kA" name="PurposeType" specification="_HS2OwFrKEeqbvZIBCT16kA">
+    <ownedParameter xmi:id="_HaqG8VrKEeqbvZIBCT16kA" name="type">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedParameter>
+    <ownedParameter xmi:id="_HaqG8lrKEeqbvZIBCT16kA" type="_HSx9UFrKEeqbvZIBCT16kA" direction="return">
+      <name xsi:nil="true"/>
+    </ownedParameter>
+    <language>java</language>
+    <body>this.type = type;&#xD;
+	</body>
+  </uml:OpaqueBehavior>
+  <uml:OpaqueBehavior xmi:id="_Hayp1lrKEeqbvZIBCT16kA" name="TemperatureUnit" specification="_HTmcsFrKEeqbvZIBCT16kA">
+    <ownedParameter xmi:id="_HazQ4FrKEeqbvZIBCT16kA" name="unit">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedParameter>
+    <ownedParameter xmi:id="_HazQ4VrKEeqbvZIBCT16kA" type="_HTkAcFrKEeqbvZIBCT16kA" direction="return">
+      <name xsi:nil="true"/>
+    </ownedParameter>
+    <language>java</language>
+    <body>this.unit = unit;&#xD;
+	</body>
+  </uml:OpaqueBehavior>
+  <UMLLabProfile:Reference xmi:id="_HbdYMFrKEeqbvZIBCT16kA" base_Element="_HbcKEFrKEeqbvZIBCT16kA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_F5lOYFrNEeqbvZIBCT16kA" base_Element="_F5kAQFrNEeqbvZIBCT16kA"/>
+  <UMLLabProfile:Array xmi:id="_F5lOYlrNEeqbvZIBCT16kA" base_Element="_F5kAQVrNEeqbvZIBCT16kA"/>
+  <UMLLabProfile:Reference xmi:id="_F6DIcFrNEeqbvZIBCT16kA" base_Element="_F6ChYFrNEeqbvZIBCT16kA"/>
+  <UMLLabProfile:Reference xmi:id="_F6EWkFrNEeqbvZIBCT16kA" base_Element="_F6DvgFrNEeqbvZIBCT16kA"/>
+  <UMLLabProfile:Reference xmi:id="_F6E9oFrNEeqbvZIBCT16kA" base_Element="_F6EWkVrNEeqbvZIBCT16kA"/>
+  <UMLLabProfile:Reference xmi:id="_F6FksFrNEeqbvZIBCT16kA" base_Element="_F6E9oVrNEeqbvZIBCT16kA"/>
+  <UMLLabProfile:Reference xmi:id="_F6GLwFrNEeqbvZIBCT16kA" base_Element="_F6FksVrNEeqbvZIBCT16kA"/>
+  <UMLLabProfile:Reference xmi:id="_F6Gy0VrNEeqbvZIBCT16kA" base_Element="_F6Gy0FrNEeqbvZIBCT16kA"/>
+  <UMLLabProfile:Reference xmi:id="_F6HZ4VrNEeqbvZIBCT16kA" base_Element="_F6HZ4FrNEeqbvZIBCT16kA"/>
+  <UMLLabProfile:Reference xmi:id="_F6IoAFrNEeqbvZIBCT16kA" base_Element="_F6IA8FrNEeqbvZIBCT16kA"/>
+  <UMLLabProfile:Reference xmi:id="_F6JPEFrNEeqbvZIBCT16kA" base_Element="_F6IoAVrNEeqbvZIBCT16kA"/>
+  <UMLLabProfile:Reference xmi:id="_F6KdMFrNEeqbvZIBCT16kA" base_Element="_F6JPEVrNEeqbvZIBCT16kA"/>
+  <UMLLabProfile:Reference xmi:id="_F6LEQFrNEeqbvZIBCT16kA" base_Element="_F6KdMVrNEeqbvZIBCT16kA"/>
+  <UMLLabProfile:Generics xmi:id="_F6P8wFrNEeqbvZIBCT16kA" genericsValue="EPC" base_Element="_F6PVsVrNEeqbvZIBCT16kA"/>
+  <UMLLabProfile:Generics xmi:id="_F6Rx8FrNEeqbvZIBCT16kA" genericsValue="EPC" base_Element="_F6Qj0VrNEeqbvZIBCT16kA"/>
+  <UMLLabProfile:Generics xmi:id="_F6SZAFrNEeqbvZIBCT16kA" genericsValue="EPC" base_Element="_F6Rx8lrNEeqbvZIBCT16kA"/>
+  <UMLLabProfile:Generics xmi:id="_F6TAEFrNEeqbvZIBCT16kA" genericsValue="EPC" base_Element="_F6SZAlrNEeqbvZIBCT16kA"/>
+  <uml:OpaqueBehavior xmi:id="_F6emQFrNEeqbvZIBCT16kA" name="getUnit" specification="_F5gV4FrNEeqbvZIBCT16kA">
+    <ownedParameter xmi:id="_F6emQVrNEeqbvZIBCT16kA" direction="return">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedParameter>
+    <language>java</language>
+    <body>return unit;&#xD;
+	</body>
+  </uml:OpaqueBehavior>
+</xmi:XMI>
