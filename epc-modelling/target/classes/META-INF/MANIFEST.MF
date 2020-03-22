@@ -1,8 +1,0 @@
-Manifest-Version: 1.0
-Built-By: popaa
-Build-Jdk: 10.0.2
-Class-Path: . lib/mongodb-driver-sync-3.12.1.jar lib/bson-3.12.1.jar l
- ib/mongodb-driver-core-3.12.1.jar
-Main-Class: at.uibk.epc.EPCMain
-Created-By: Maven Integration for Eclipse
-
