@@ -12,10 +12,9 @@ public class Assessor extends Person {
 		// needed by MongoDB POJO Converter
 		super();
 	}
-		
-	public Assessor(String title, String surname, String firstname, String authorisationNumber, String identificationNumber,
-			ContactDetails contactDetails, Organisation organisation) {
-		super(title, surname, firstname, contactDetails);
+	
+	public Assessor(Person person,  String authorisationNumber, String identificationNumber, Organisation organisation) {
+		super(person.getTitle(), person.getSurname(), person.getFirstname(), person.getContactDetails());
 		this.authorisationNumber = authorisationNumber;
 		this.identificationNumber = identificationNumber;
 		this.organisation = organisation;

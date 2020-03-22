@@ -8,9 +8,9 @@ public class Dwelling {
 
 	private ObjectId id;
 
-	private Address address;
+	private BuildingAddress buildingAddress;
 
-	private int constructionYear;
+	private Integer constructionYear;
 	
 	private DwellingType type;
 	
@@ -21,9 +21,6 @@ public class Dwelling {
 	private SpatialData spatialData;
 	
 	private ThermalData thermalData;
-	
-	//not building specific
-	private ClimateData climateData;
 
 	private Photo photo;
 	
@@ -31,8 +28,8 @@ public class Dwelling {
 		//needed by MongoDB
 	}
 	
-	public Dwelling(Address address, int constructionYear, DwellingType type, String identificationNumber, List<String> parcelNumbers, SpatialData spatialData, ThermalData thermalData) {
-		this.address = address;
+	public Dwelling(BuildingAddress buildingAddress, Integer constructionYear, DwellingType type, String identificationNumber, List<String> parcelNumbers, SpatialData spatialData, ThermalData thermalData) {
+		this.buildingAddress = buildingAddress;
 		this.type = type;
 		this.constructionYear = constructionYear;
 		this.parcelNumers = parcelNumbers;
@@ -50,19 +47,19 @@ public class Dwelling {
 		this.id = id;
 	}
 	
-	public Address getAddress() {
-		return address;
+	public BuildingAddress getBuildingAddress() {
+		return buildingAddress;
 	}
 	
-	public void setAddress(Address address) {
-		this.address = address;
+	public void setBuildingAddress(BuildingAddress buildingAddress) {
+		this.buildingAddress = buildingAddress;
 	}
 	
-	public int getConstructionYear() {
+	public Integer getConstructionYear() {
 		return constructionYear;
 	}
 	
-	public void setConstructionYear(int constructionYear) {
+	public void setConstructionYear(Integer constructionYear) {
 		this.constructionYear = constructionYear;
 	}
 	
@@ -106,14 +103,6 @@ public class Dwelling {
 		this.spatialData = spatialData;
 	}
 	
-	public ClimateData getClimateData() {
-		return climateData;
-	}
-	
-	public void setClimateData(ClimateData climateData) {
-		this.climateData = climateData;
-	}
-	
 	public ThermalData getThermalData() {
 		return thermalData;
 	}
@@ -124,10 +113,9 @@ public class Dwelling {
 
 	@Override
 	public String toString() {
-		return "Dwelling [id=" + id + ", address=" + address + ", constructionYear=" + constructionYear + ", type="
-				+ type + ", identificationNumber=" + identificationNumber + ", parcelNumers=" + parcelNumers
-				+ ", spatialData=" + spatialData + ", thermalData=" + thermalData + ", climateData=" + climateData
-				+ ", photo=" + photo + "]";
+		return "Dwelling [id=" + id + ", buildingAddress=" + buildingAddress + ", constructionYear=" + constructionYear
+				+ ", type=" + type + ", identificationNumber=" + identificationNumber + ", parcelNumers=" + parcelNumers
+				+ ", spatialData=" + spatialData + ", thermalData=" + thermalData + ", photo=" + photo + "]";
 	}
 	
 }

@@ -1,0 +1,59 @@
+﻿{
+  "_id": "5e5a868b12057f33ad07bd5f",
+  "assessor": {
+    "firstname": "Paul",
+    "organisation": {
+      "address": {
+        "city": "Musterstadt",
+        "country": "Deutschland",
+        "postalCode": "12345",
+        "street": "Austeller Musterstraße",
+        "streetNumber": "45"
+      },
+      "name": ""
+    },
+    "surname": "Mustermann"
+  },
+  "awordedRating": {
+    "ratingLevel": "G"
+  },
+  "creationDate": "2014-06-23T22:00:00.000Z",
+  "identificationNumber": "123456789",
+  "legalReference": "§§ 16 ff. Energiesparverordnung (EnEV) 18.11.2013",
+  "purpose": "RENTING_OR_SELLING",
+  "ratedDwelling": {
+    "address": {
+      "city": "Musterstadt",
+      "country": "Deutschland",
+      "postalCode": "10115",
+      "street": "Musterstr",
+      "streetNumber": "123"
+    },
+    "constructionYear": 1927,
+    "spatialData": {
+      "totalFloorArea": {
+        "unit": "SQUARE_METER",
+        "value": 546
+      }
+    },
+    "thermalData": {
+      "carbonFootprint": {
+        "unit": "KG_SQUARE_METER_YEAR",
+        "value": 56
+      },
+      "energyDemand": {
+        "unit": "KWH_SQUARE_METER_YEAR",
+        "value": 222
+      },
+      "uValue": {
+        "unit": "WATTS_SQUARE_METER_KELVIN",
+        "value": 1.11
+      }
+    },
+    "type": "APARTMENT_BUILDING"
+  },
+  "usedMethodology": {
+    "standardName": "DIN V 4108-6 and DIN 4701-10 and Vereinfachungen nach §9 Absatz 2 EnEV"
+  },
+  "validUntil": "2024-06-22T22:00:00.000Z"
+}

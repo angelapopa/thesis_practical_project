@@ -31,6 +31,10 @@ public class Address {
 		this.country = country;
 	}
 	
+	public Address(Address address) {
+		this(address.getStreet(), address.getStreetNumber(), address.getStair(), address.getDoor(), address.getPostalCode(), address.getCity(), address.getCountry());
+	}
+	
 	public String getStreet() {
 		return street;
 	}
@@ -86,7 +90,7 @@ public class Address {
 	public void setCountry(String country) {
 		this.country = country;
 	}
-
+	
 	@Override
 	public String toString() {
 		return "Address [street=" + street + ", streetNumber=" + streetNumber + ", stair=" + stair + ", door=" + door

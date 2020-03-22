@@ -3,8 +3,10 @@ package at.uibk.epc.model;
 public enum DwellingType {
 	BUSINESS_CENTER("business-center"),
 	APARTMENT_BUILDING("apartment-building"),
-	DETACHED_HOUSE("detached-house"),
-	FLAT("flat");
+	HOUSE("house"),
+	FLAT("flat"),
+	BUNGALOW("bungalow"),
+	MAISONETTE("maisonette");
 	
     private final String type;
 

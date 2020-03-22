@@ -1,0 +1,57 @@
+﻿{
+  "_id": "5e5d793190239f1412e8e487",
+  "assessor": {
+    "authorisationNumber": "250611",
+    "contactDetails": {
+      "email": "joh@hmenergi.dk"
+    },
+    "firstname": "Jan Ole",
+    "organisation": {
+      "address": {
+        "city": "København N",
+        "country": "Denmark",
+        "postalCode": "2200",
+        "street": "Hillerødgade",
+        "streetNumber": "30A"
+      },
+      "contactDetails": {
+        "phone": "35360727"
+      },
+      "name": "Ingeniorfirmaet Henrij Mogelgaard ApS"
+    },
+    "surname": "Hansen"
+  },
+  "awordedRating": {
+    "ratingLevel": "D"
+  },
+  "creationDate": "2010-09-28T22:00:00.000Z",
+  "identificationNumber": "200038127",
+  "ratedDwelling": {
+    "buildingAddress": {
+      "city": "Randers C",
+      "postalCode": "8900",
+      "street": "Dr. Lassens Gade",
+      "streetNumber": "7"
+    },
+    "constructionYear": 1919,
+    "identificationNumber": "730-009955-001",
+    "spatialData": {
+      "totalFloorArea": {
+        "unit": "SQUARE_METER",
+        "value": 880
+      },
+      "totalVolume": {
+        "unit": "SQUARE_METER",
+        "value": 880
+      }
+    },
+    "thermalData": {
+      "energyDemand": {
+        "unit": "KWH_YEAR",
+        "value": 109.509
+      }
+    },
+    "type": "APARTMENT_BUILDING"
+  },
+  "validUntil": "2015-09-28T22:00:00.000Z"
+}

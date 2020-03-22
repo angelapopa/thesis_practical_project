@@ -1,5 +1,6 @@
 package at.uibk.epc.model;
 
+//TODO: maybe add a validation for correct measuring unit in the setters
 public enum MeasuringUnit {
 	FEET("ft","feet"),
 	METER("m","meter"),

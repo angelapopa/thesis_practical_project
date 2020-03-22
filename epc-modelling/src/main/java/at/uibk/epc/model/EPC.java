@@ -33,12 +33,13 @@ public class EPC {
 	}
 	
 	public EPC(String identificationNumber, Date creationDate, Date validUntil, Dwelling ratedDwelling,
-			Assessor assessor, Rating awordedRating, RatingMethodology usedMethodology, String legalReference) {
+			Assessor assessor, Rating awordedRating, Rating potentialRating, RatingMethodology usedMethodology, String legalReference) {
 		this.identificationNumber = identificationNumber;
 		this.creationDate = creationDate;
 		this.validUntil = validUntil;
 		this.ratedDwelling = ratedDwelling;
 		this.awordedRating = awordedRating;
+		this.potentialRating = potentialRating;
 		this.assessor = assessor;
 		this.usedMethodology = usedMethodology;
 		this.legalReference = legalReference;

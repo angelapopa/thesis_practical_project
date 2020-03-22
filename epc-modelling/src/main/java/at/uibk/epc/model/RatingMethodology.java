@@ -23,8 +23,6 @@ public class RatingMethodology {
 		this.softwareUsed = softwareUsed;
 	}
 
-
-
 	public String getCalculationName() {
 		return calculationName;
 	}
@@ -55,5 +53,11 @@ public class RatingMethodology {
 	
 	public void setSoftwareUsed(Software softwareUsed) {
 		this.softwareUsed = softwareUsed;
+	}
+
+	@Override
+	public String toString() {
+		return "RatingMethodology [standardName=" + standardName + ", calculationName=" + calculationName
+				+ ", calculationMethod=" + calculationMethod + ", softwareUsed=" + softwareUsed + "]";
 	}
 }

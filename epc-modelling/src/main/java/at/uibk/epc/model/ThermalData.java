@@ -8,18 +8,53 @@ public class ThermalData {
 		
 	private Measure uValue;
 	
-	private Measure energyDemand;
+	/**
+	 * The estimated amount of energy required at source, before conversion (Units: kWh/m²/year).
+	 */
+	private Measure primaryEnergyDemand;
 	
+	/**
+	 * The estimated amount of energy after conversion. (Units: kWh/m²/year).
+	 */
+	private Measure finalEnergyDemand;
+	
+	/**
+	 * The estimated heat demand for provision of hot water (Units: kWh per year).
+	 */
+	private Measure waterHeatingEnergyDemand;
+	
+	/**
+	 * The estimated heat demand for space heating (Units: kWh per year).
+	 */
+	private Measure spaceHeatingEnergyDemand;
+
+	/**
+	 * The measured amount of energy required at source, before conversion (Units: kWh/m²/year).
+	 */
+	private Measure primaryEnergyConsumption;
+	
+	/**
+	 * The measured amount of energy after conversion. (Units: kWh/m²/year).
+	 */
+	private Measure finalEnergyConsumption;
+	
+	/**
+	 * The measured heat demand for provision of hot water (Units: kWh per year).
+	 */
+	private Measure waterHeatingEnergyConsumption;
+	
+	/**
+	 * The measured heat demand for space heating (Units: kWh per year).
+	 */
+	private Measure spaceHeatingEnergyConsumption;
+	
+	/**
+	 * The total annual emissions (heating, cooling, lighting and ventilating) (Units: kg per year).
+	 */
 	private Measure carbonFootprint;
 	
 	public ThermalData() {
 		// needed by MongoDB POJO Converter
-	}
-	
-	public ThermalData(Measure uValue, Measure energyDemand, Measure carbonFootprint) {
-		this.uValue = uValue;
-		this.energyDemand = energyDemand;
-		this.carbonFootprint = carbonFootprint;
 	}
 
 	public Measure getUValue() {
@@ -30,14 +65,6 @@ public class ThermalData {
 		this.uValue = uValue;
 	}
 	
-	public Measure getEnergyDemand() {
-		return energyDemand;
-	}
-	
-	public void setEnergyDemand(Measure energyDemand) {
-		this.energyDemand = energyDemand;
-	}
-	
 	public Measure getCarbonFootprint() {
 		return carbonFootprint;
 	}
@@ -45,10 +72,79 @@ public class ThermalData {
 	public void setCarbonFootprint(Measure carbonFootprint) {
 		this.carbonFootprint = carbonFootprint;
 	}
+	
+	public Measure getPrimaryEnergyDemand() {
+		return primaryEnergyDemand;
+	}
+	
+	public void setPrimaryEnergyDemand(Measure primaryEnergyDemand) {
+		this.primaryEnergyDemand = primaryEnergyDemand;
+	}
+	
+	public Measure getFinalEnergyDemand() {
+		return finalEnergyDemand;
+	}
+	
+	public void setFinalEnergyDemand(Measure finalEnergyDemand) {
+		this.finalEnergyDemand = finalEnergyDemand;
+	}
+	
+	public Measure getSpaceHeatingEnergyDemand() {
+		return spaceHeatingEnergyDemand;
+	}
+	
+	public void setSpaceHeatingEnergyDemand(Measure spaceHeatingEnergyDemand) {
+		this.spaceHeatingEnergyDemand = spaceHeatingEnergyDemand;
+	}
+	
+	public Measure getWaterHeatingEnergyDemand() {
+		return waterHeatingEnergyDemand;
+	}
+
+	public void setWaterHeatingEnergyDemand(Measure waterHeatingEnergyDemand) {
+		this.waterHeatingEnergyDemand = waterHeatingEnergyDemand;
+	}
+	
+	public Measure getFinalEnergyConsumption() {
+		return finalEnergyConsumption;
+	}
+	
+	public void setFinalEnergyConsumption(Measure finalEnergyConsumption) {
+		this.finalEnergyConsumption = finalEnergyConsumption;
+	}
+	
+	public Measure getPrimaryEnergyConsumption() {
+		return primaryEnergyConsumption;
+	}
+	
+	public void setPrimaryEnergyConsumption(Measure primaryEnergyConsumption) {
+		this.primaryEnergyConsumption = primaryEnergyConsumption;
+	}
+	
+	public Measure getSpaceHeatingEnergyConsumption() {
+		return spaceHeatingEnergyConsumption;
+	}
+	
+	public void setSpaceHeatingEnergyConsumption(Measure spaceHeatingEnergyConsumption) {
+		this.spaceHeatingEnergyConsumption = spaceHeatingEnergyConsumption;
+	}
+	
+	public Measure getWaterHeatingEnergyConsumption() {
+		return waterHeatingEnergyConsumption;
+	}
+	
+	public void setWaterHeatingEnergyConsumption(Measure waterHeatingEnergyConsumption) {
+		this.waterHeatingEnergyConsumption = waterHeatingEnergyConsumption;
+	}
 
 	@Override
 	public String toString() {
-		return "ThermalData [uValue=" + uValue + ", energyDemand=" + energyDemand + ", carbonFootprint="
+		return "ThermalData [uValue=" + uValue + ", primaryEnergyDemand=" + primaryEnergyDemand + ", finalEnergyDemand="
+				+ finalEnergyDemand + ", waterHeatingEnergyDemand=" + waterHeatingEnergyDemand
+				+ ", spaceHeatingEnergyDemand=" + spaceHeatingEnergyDemand + ", primaryEnergyConsumption="
+				+ primaryEnergyConsumption + ", finalEnergyConsumption=" + finalEnergyConsumption
+				+ ", waterHeatingEnergyConsumption=" + waterHeatingEnergyConsumption
+				+ ", spaceHeatingEnergyConsumption=" + spaceHeatingEnergyConsumption + ", carbonFootprint="
 				+ carbonFootprint + "]";
 	}
 

@@ -1,0 +1,76 @@
+﻿{
+  "_id": "5e5a868b12057f33ad07bd5d",
+  "assessor": {
+    "firstname": "Kajetan",
+    "organisation": {
+      "name": "Neue Heimat Tirol"
+    },
+    "surname": "Rutzinger",
+    "title": "Ing."
+  },
+  "awordedRating": {
+    "ratingLevel": "D+"
+  },
+  "creationDate": "2008-12-02T23:00:00.000Z",
+  "legalReference": "ÖNORM H 5055, Rechtlinie 2002/91/EG",
+  "ratedDwelling": {
+    "address": {
+      "city": "Innsbruck",
+      "country": "Austria",
+      "postalCode": "6020",
+      "street": "Pacherstr.",
+      "streetNumber": "14"
+    },
+    "climateData": {
+      "averageOutdoorTemperature": {
+        "unit": "CELCIUS",
+        "value": -11.4
+      },
+      "climateFactor": 0,
+      "heatingDaysPerYear": 220,
+      "hightAboveSeaLevel": {
+        "unit": "METER",
+        "value": 573
+      },
+      "idealIndoorTemperature": {
+        "unit": "CELCIUS",
+        "value": 20
+      }
+    },
+    "constructionYear": 1960,
+    "identificationNumber": "1361",
+    "parcelNumers": [
+      "1557/9",
+      "1558/3"
+    ],
+    "spatialData": {
+      "totalFloorArea": {
+        "unit": "SQUARE_METER",
+        "value": 800.86
+      },
+      "totalVolume": {
+        "unit": "CUBIC_METER",
+        "value": 2272.87
+      }
+    },
+    "thermalData": {
+      "energyDemand": {
+        "unit": "KWH_SQUARE_METER_YEAR",
+        "value": 103.91
+      },
+      "uValue": {
+        "unit": "WATTS_SQUARE_METER_KELVIN",
+        "value": 0.9
+      }
+    },
+    "type": "APARTMENT_BUILDING"
+  },
+  "usedMethodology": {
+    "softwareUsed": {
+      "releaseDate": "2008-10-19T22:00:00.197Z",
+      "softwareName": "Allplan",
+      "softwareVersion": "AX3000"
+    }
+  },
+  "validUntil": "2018-12-02T23:00:00.000Z"
+}
