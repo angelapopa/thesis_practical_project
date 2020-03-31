@@ -5,7 +5,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
 import at.uibk.epc.model.DwellingType;
-import at.uibk.epc.model.MeasuringUnit;
 
 public class ScottlandEPCImporterTests {
 

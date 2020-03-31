@@ -92,10 +92,12 @@ public class AnnexedEPCImporter {
 		software.setReleaseDate(releaseDate.getTime());
 		RatingMethodology ratingMethodology = new RatingMethodology(null, null, null, software);
 		
-		epcCollection.insertOne(new EPC(null, creationDate.getTime(), validUntil.getTime(), dwelling, assessor, rating, null, ratingMethodology, "ÖNORM H 5055, Rechtlinie 2002/91/EG"));
+		EPC epc = new EPC(null, creationDate.getTime(), validUntil.getTime(), dwelling, assessor, rating, null, ratingMethodology, "ÖNORM H 5055, Rechtlinie 2002/91/EG");
+		epc.setPurpose(PurposeType.RENTAL);
 		
-		for (EPC epc : epcCollection.find()) {
-			System.out.println(epc.toString());
+		epcCollection.insertOne(epc);
+		for (EPC epcs : epcCollection.find()) {
+			System.out.println(epcs.toString());
 		}
 	}
     
@@ -135,7 +137,7 @@ public class AnnexedEPCImporter {
 		
 		//The energy-labelling scale runs from A to G, where A is divided into A2020, A2015 and A2010. A2020 covers low energy buildings, which only consume a minimum of energy, 
 		//while G-labelled buildings consume the most energy.
-		Rating awordedRating = new Rating("D", null);
+		Rating awardedRating = new Rating("D", null);
 		
 		ThermalData thermalData = new ThermalData();
 		//109509 kwh/y divided by 880 floor size = 124.44 kwh/m^2/year
@@ -148,7 +150,7 @@ public class AnnexedEPCImporter {
 		
 		Dwelling ratedDwelling = new Dwelling(new BuildingAddress(address, null), 1919, DwellingType.APARTMENT_BUILDING, "730-009955-001", null, spatialData, thermalData);
 		
-		EPC epc = new EPC("200038127", creationDate.getTime(), validUntil.getTime(), ratedDwelling, assessor, awordedRating, null, null, null);
+		EPC epc = new EPC("200038127", creationDate.getTime(), validUntil.getTime(), ratedDwelling, assessor, awardedRating, null, null, null);
 		epcCollection.insertOne(epc);
 		
 		for (EPC epcF : epcCollection.find()) {
@@ -197,14 +199,14 @@ public class AnnexedEPCImporter {
 				thermalData);
 		
 		//estimated rating
-		Rating awordedRating = new Rating("G", null);   //here should be a distinction between estimated and measured rating
+		Rating awardedRating = new Rating("G", null);   //here should be a distinction between estimated and measured rating
 		//maybe add also a scala, to see the possible rating levels.
 	
 		RatingMethodology ratingMethodology = new RatingMethodology();
 		ratingMethodology.setStandardName("DIN V 4108-6 and DIN 4701-10 and Vereinfachungen nach §9 Absatz 2 EnEV"); //consider creating a list
 		
-		EPC epc = new EPC("123456789", creationDate.getTime(), validUntil.getTime(), ratedDwelling, assessor, awordedRating, null, ratingMethodology, "§§ 16 ff. Energiesparverordnung (EnEV) 18.11.2013");
-		epc.setPurpose(PurposeType.RENTING_OR_SELLING);
+		EPC epc = new EPC("123456789", creationDate.getTime(), validUntil.getTime(), ratedDwelling, assessor, awardedRating, null, ratingMethodology, "§§ 16 ff. Energiesparverordnung (EnEV) 18.11.2013");
+		epc.setPurpose(PurposeType.SALE);
 		
 		epcCollection.insertOne(epc);
 		
@@ -261,7 +263,7 @@ public class AnnexedEPCImporter {
 		ratingMethodology.setSoftwareUsed(new Software("termoexpert", "3.1"));
 		
 		EPC epc = new EPC("UA-01579 365", creationDate.getTime(), validUntil.getTime(), dwelling, assessor, rating, null, ratingMethodology, null);
-		epc.setPurpose(PurposeType.RENTING_OR_SELLING);
+		epc.setPurpose(PurposeType.SALE);
 		
 		epcCollection.insertOne(epc);
 		

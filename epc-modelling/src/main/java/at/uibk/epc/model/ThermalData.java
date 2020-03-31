@@ -49,6 +49,31 @@ public class ThermalData {
 	private Measure spaceHeatingEnergyConsumption;
 	
 	/**
+	 * Assuming this is water + space heating
+	 */
+	private Measure thermalEnergyConsumption;
+	
+	/**
+	 * Lighting and appliances, but might also be used for heating.
+	 */
+	private Measure electricalEnergyConsumption;
+	
+	/**
+	 * Assuming this is water + space heating
+	 */
+	private Measure thermalEnergyDemand;
+	
+	/**
+	 * Lighting and appliances, but might also be used for heating.
+	 */
+	private Measure electricalEnergyDemand;
+	
+	/**
+	 * Main heating fuel type
+	 */
+	private FuelType mainHeatingFuelType;
+	
+	/**
 	 * The total annual emissions (heating, cooling, lighting and ventilating) (Units: kg per year).
 	 */
 	private Measure carbonFootprint;
@@ -136,6 +161,46 @@ public class ThermalData {
 	public void setWaterHeatingEnergyConsumption(Measure waterHeatingEnergyConsumption) {
 		this.waterHeatingEnergyConsumption = waterHeatingEnergyConsumption;
 	}
+	
+	public Measure getElectricalEnergyDemand() {
+		return electricalEnergyDemand;
+	}
+	
+	public void setElectricalEnergyDemand(Measure electricalEnergyDemand) {
+		this.electricalEnergyDemand = electricalEnergyDemand;
+	}
+	
+	public Measure getThermalEnergyDemand() {
+		return thermalEnergyDemand;
+	}
+	
+	public void setThermalEnergyDemand(Measure thermalEnergyDemand) {
+		this.thermalEnergyDemand = thermalEnergyDemand;
+	}
+	
+	public Measure getElectricalEnergyConsumption() {
+		return electricalEnergyConsumption;
+	}
+	
+	public void setElectricalEnergyConsumption(Measure electricalEnergyConsumption) {
+		this.electricalEnergyConsumption = electricalEnergyConsumption;
+	}
+	
+	public Measure getThermalEnergyConsumption() {
+		return thermalEnergyConsumption;
+	}
+	
+	public void setThermalEnergyConsumption(Measure thermalEnergyConsumption) {
+		this.thermalEnergyConsumption = thermalEnergyConsumption;
+	}
+	
+	public FuelType getMainHeatingFuelType() {
+		return mainHeatingFuelType;
+	}
+	
+	public void setMainHeatingFuelType(FuelType mainHeatingFuelType) {
+		this.mainHeatingFuelType = mainHeatingFuelType;
+	}
 
 	@Override
 	public String toString() {
@@ -144,8 +209,9 @@ public class ThermalData {
 				+ ", spaceHeatingEnergyDemand=" + spaceHeatingEnergyDemand + ", primaryEnergyConsumption="
 				+ primaryEnergyConsumption + ", finalEnergyConsumption=" + finalEnergyConsumption
 				+ ", waterHeatingEnergyConsumption=" + waterHeatingEnergyConsumption
-				+ ", spaceHeatingEnergyConsumption=" + spaceHeatingEnergyConsumption + ", carbonFootprint="
-				+ carbonFootprint + "]";
+				+ ", spaceHeatingEnergyConsumption=" + spaceHeatingEnergyConsumption + ", thermalEnergyConsumption="
+				+ thermalEnergyConsumption + ", electricalEnergyConsumption=" + electricalEnergyConsumption
+				+ ", thermalEnergyDemand=" + thermalEnergyDemand + ", electricalEnergyDemand=" + electricalEnergyDemand
+				+ ", mainHeatingFuelType=" + mainHeatingFuelType + ", carbonFootprint=" + carbonFootprint + "]";
 	}
-
 }

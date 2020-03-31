@@ -20,7 +20,7 @@ public class EPC {
 	
 	private PurposeType purpose;
 	
-	private Rating awordedRating;
+	private Rating awardedRating;
 	
 	private Rating potentialRating;
 	
@@ -33,12 +33,12 @@ public class EPC {
 	}
 	
 	public EPC(String identificationNumber, Date creationDate, Date validUntil, Dwelling ratedDwelling,
-			Assessor assessor, Rating awordedRating, Rating potentialRating, RatingMethodology usedMethodology, String legalReference) {
+			Assessor assessor, Rating awardedRating, Rating potentialRating, RatingMethodology usedMethodology, String legalReference) {
 		this.identificationNumber = identificationNumber;
 		this.creationDate = creationDate;
 		this.validUntil = validUntil;
 		this.ratedDwelling = ratedDwelling;
-		this.awordedRating = awordedRating;
+		this.awardedRating = awardedRating;
 		this.potentialRating = potentialRating;
 		this.assessor = assessor;
 		this.usedMethodology = usedMethodology;
@@ -85,12 +85,12 @@ public class EPC {
 		this.assessor = assessor;
 	}
 	
-	public Rating getAwordedRating() {
-		return awordedRating;
+	public Rating getAwardedRating() {
+		return awardedRating;
 	}
 	
-	public void setAwordedRating(Rating rating) {
-		this.awordedRating = rating;
+	public void setAwardedRating(Rating rating) {
+		this.awardedRating = rating;
 	}
 	
 	public Dwelling getRatedDwelling() {
@@ -137,7 +137,7 @@ public class EPC {
 	public String toString() {
 		return "EPC [id=" + id + ", identificationNumber=" + identificationNumber + ", creationDate=" + creationDate
 				+ ", validUntil=" + validUntil + ", assessor=" + assessor + ", ratedDwelling=" + ratedDwelling
-				+ ", purpose=" + purpose + ", awordedRating=" + awordedRating + ", potentialRating=" + potentialRating
+				+ ", purpose=" + purpose + ", awardedRating=" + awardedRating + ", potentialRating=" + potentialRating
 				+ ", usedMethodology=" + usedMethodology + ", legalReference=" + legalReference + "]";
 	}
 	
