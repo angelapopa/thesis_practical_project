@@ -5,6 +5,7 @@
 	<groupId>at.uibk.epc</groupId>
 	<artifactId>epc-modelling</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<!-- packaging type has an influence on the package, install, deploy goals -->
 	<packaging>war</packaging>
 
 	<dependencies>
@@ -41,6 +42,16 @@
 			<artifactId>junit-platform-engine</artifactId>
 			<version>1.6.0</version>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.jboss.resteasy</groupId>
+			<artifactId>resteasy-jaxrs</artifactId>
+			<version>3.11.2.Final</version>
+		</dependency>
+		<dependency>
+			<groupId>org.jboss.resteasy</groupId>
+			<artifactId>resteasy-jaxb-provider</artifactId>
+			<version>3.11.2.Final</version>
 		</dependency>
 	</dependencies>
 
@@ -88,17 +99,23 @@
 					</configuration>
 				</plugin>
 				<plugin>
-					<!-- usage "mvn tomcat7:deploy" -->
-					<!-- https://tomcat.apache.org/maven-plugin-2.2/ -->
+					<!-- usage "mvn tomcat7:deploy"; https://tomcat.apache.org/maven-plugin-2.2/ -->
 					<groupId>org.apache.tomcat.maven</groupId>
 					<artifactId>tomcat7-maven-plugin</artifactId>
 					<version>2.2</version>
 					<configuration>
-						<!-- adapt default url if the war file should be deployed on a remote tomcat --> 
-						<!-- <url>http://localhost:8080/manager/text</url>  -->
-						<path>/epc</path>
+						<!-- use the url property for deployment on a remote server -->
+						<path>/epc-app</path>
 						<!-- server settings are defined in settings.xml -->
 						<server>mytomcat</server>
+					</configuration>
+				</plugin>
+				<plugin>
+					<!-- explicitly defined, because we need the configuration part -->
+					<artifactId>maven-war-plugin</artifactId>
+					<version>3.2.3</version>
+					<configuration>
+						<warSourceDirectory>WebContent</warSourceDirectory>
 					</configuration>
 				</plugin>
 			</plugins>

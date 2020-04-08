@@ -15,7 +15,7 @@ import com.mongodb.client.MongoDatabase;
 
 import at.uibk.epc.importer.MongoDatabaseClient;
 
-@Path("/epc")
+@Path("/resource")
 public class EpcResource {
 
 	@GET
@@ -24,7 +24,7 @@ public class EpcResource {
 	public Response getEpc() {
 		return Response.ok("On air!").build();
 	}
-	
+
 	@GET
 	@Path("/{country}")
 	@Produces(MediaType.APPLICATION_JSON)
@@ -34,8 +34,9 @@ public class EpcResource {
 		BasicDBObject searchQuery = new BasicDBObject();
 		searchQuery.put("country", country);
 		FindIterable<Document> iterable = database.getCollection("EPC_Collection").find(searchQuery);
-		 
-		return Response.ok(iterable.cursor().next()).build();
+
+		//TODO: looks like it does not return anything
+		return Response.ok(iterable.cursor().next().toString()).build();
 	}
-	
+
 }
