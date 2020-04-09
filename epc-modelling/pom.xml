@@ -48,11 +48,19 @@
 			<artifactId>resteasy-jaxrs</artifactId>
 			<version>3.11.2.Final</version>
 		</dependency>
+		<!-- for marshalling JAXB annotated POJOs to XML format -->
 		<dependency>
 			<groupId>org.jboss.resteasy</groupId>
 			<artifactId>resteasy-jaxb-provider</artifactId>
 			<version>3.11.2.Final</version>
 		</dependency>
+		<!-- for marshalling JAXB annotated POJOs to JSON format -->
+		<dependency>
+			<groupId>org.jboss.resteasy</groupId>
+			<artifactId>resteasy-jettison-provider</artifactId>
+			<version>3.11.2.Final</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>

@@ -2,10 +2,12 @@ package at.uibk.epc.model;
 
 import java.sql.Blob;
 
+import javax.xml.bind.annotation.XmlTransient;
+
 public class Photo {
 
 	private String name;
-	
+
 	//not sure here how an image would be saved
 	private Blob image;
 	
@@ -13,6 +15,7 @@ public class Photo {
 		// TODO Auto-generated constructor stub
 	}
 	
+	@XmlTransient
 	public Blob getImage() {
 		return image;
 	}

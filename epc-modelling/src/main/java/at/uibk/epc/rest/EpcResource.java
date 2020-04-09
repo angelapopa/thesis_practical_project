@@ -7,17 +7,18 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-import org.bson.Document;
-
 import com.mongodb.BasicDBObject;
 import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoDatabase;
 
 import at.uibk.epc.importer.MongoDatabaseClient;
+import at.uibk.epc.model.EPC;
 
 @Path("/resource")
 public class EpcResource {
 
+	static final byte BATCH_SIZE = 10;
+	
 	@GET
 	@Path("/")
 	@Produces(MediaType.APPLICATION_JSON)
@@ -30,13 +31,18 @@ public class EpcResource {
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response getEpcByCountry(@PathParam("country") String country) {
 		MongoDatabase database = MongoDatabaseClient.getDatabase();
-
 		BasicDBObject searchQuery = new BasicDBObject();
-		searchQuery.put("country", country);
-		FindIterable<Document> iterable = database.getCollection("EPC_Collection").find(searchQuery);
 
-		//TODO: looks like it does not return anything
-		return Response.ok(iterable.cursor().next().toString()).build();
+		searchQuery.put("ratedDwelling.buildingAddress.country", country);
+
+		FindIterable<EPC> iterable = database.getCollection("EPC_Collection", EPC.class).find(searchQuery);
+		
+		FindIterable<EPC> result = iterable.batchSize(BATCH_SIZE);
+		if (!result.cursor().hasNext()) {
+			return Response.ok("No result was found!").build();
+		}
+		//TODO return a list of epcs
+		return Response.ok(iterable.cursor().next()).build();
 	}
 
 }

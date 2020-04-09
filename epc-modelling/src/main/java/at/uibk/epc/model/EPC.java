@@ -2,10 +2,19 @@ package at.uibk.epc.model;
 
 import java.util.Date;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlTransient;
+
 import org.bson.types.ObjectId;
 
+@XmlRootElement
+@XmlAccessorType(XmlAccessType.FIELD)
 public class EPC {
 	
+	@XmlTransient
 	private ObjectId id; 
 
 	private String identificationNumber;
@@ -14,16 +23,21 @@ public class EPC {
 	
 	private Date validUntil;
 	
+	@XmlElement
 	private Assessor assessor;
 	
+	@XmlElement
 	private Dwelling ratedDwelling;
 	
 	private PurposeType purpose;
 	
+	@XmlElement
 	private Rating awardedRating;
 	
+	@XmlElement
 	private Rating potentialRating;
 	
+	@XmlElement
 	private RatingMethodology usedMethodology;
 	
 	private String legalReference;

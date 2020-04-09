@@ -6,13 +6,11 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlType;
 
 import org.bson.types.ObjectId;
 
 @XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(propOrder = {"identificationNumber","type", "buildingAddress", "constructionYear", "parcelNumbers", "spatialData", "thermalData"})
 public class Dwelling {
 
 	private ObjectId id;
