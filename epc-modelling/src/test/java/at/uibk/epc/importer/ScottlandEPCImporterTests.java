@@ -5,6 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
 import at.uibk.epc.model.DwellingType;
+import at.uibk.epc.model.FuelType;
 
 public class ScottlandEPCImporterTests {
 
@@ -40,6 +41,20 @@ public class ScottlandEPCImporterTests {
 		assertEquals(1000.0, ScottlandEPCImporter.getCarbonFootprint("28", 28.0).getValue());
 		assertEquals(575.76, ScottlandEPCImporter.getCarbonFootprint("19", 33.0).getValue());
 	}*/
+	
+	@Test
+	public void testFuelType() {
+		assertEquals(FuelType.BIOMASS, ScottlandEPCImporter.getFuelType("biomass (community)"));
+		assertEquals(FuelType.ELECTRICITY, ScottlandEPCImporter.getFuelType("electricity (not community)"));
+		assertEquals(FuelType.ELECTRICITY, ScottlandEPCImporter.getFuelType("electricity (community)"));
+		assertEquals(FuelType.GAS, ScottlandEPCImporter.getFuelType("mains gas (not community)"));
+		assertEquals(FuelType.GAS, ScottlandEPCImporter.getFuelType("mains gas (community)"));
+		assertEquals(FuelType.OIL, ScottlandEPCImporter.getFuelType("oil (not community)"));
+		assertEquals(FuelType.OIL, ScottlandEPCImporter.getFuelType("oil (community)"));
+		assertEquals(FuelType.WOOD, ScottlandEPCImporter.getFuelType("wood logs"));
+		assertEquals(FuelType.WOOD, ScottlandEPCImporter.getFuelType("wood chips"));
+		assertEquals(FuelType.OTHER, ScottlandEPCImporter.getFuelType("LPG special condition"));
+	}
 }
 
 

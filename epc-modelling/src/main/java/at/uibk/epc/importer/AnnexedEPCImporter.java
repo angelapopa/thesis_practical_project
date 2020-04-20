@@ -131,6 +131,7 @@ public class AnnexedEPCImporter {
 		address.setStreetNumber("7");
 		address.setPostalCode("8900");
 		address.setCity("Randers C");
+		address.setCountry("Denmark");
 		
 		RatingMethodology ratingMethodology = new RatingMethodology();
 		ratingMethodology.setSoftwareUsed(new Software("Energy08", "Be06 version 4"));

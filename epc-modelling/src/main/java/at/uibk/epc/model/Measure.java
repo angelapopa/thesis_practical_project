@@ -27,7 +27,7 @@ public class Measure {
 		return value;
 	}
 	
-	public void setValue(double value) {
+	public void setValue(Double value) {
 		this.value = value;
 	}
 	

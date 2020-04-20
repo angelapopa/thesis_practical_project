@@ -39,6 +39,7 @@ import at.uibk.epc.model.ThermalData;
  */
 public class EuropeanOpenDataFranceImporter {
 
+	//may be overwritten by main args
 	private static Boolean DRY_RUN = true;
 
 	private static String CVS_FILE_PATH = "e:\\docs\\Uni Innsbruck\\Masterthesis\\datasets\\European open data\\France\\";
@@ -81,6 +82,8 @@ public class EuropeanOpenDataFranceImporter {
 	}
 
 	public static void main(String[] args) {
+		
+		DRY_RUN = (args != null && args[0] != null) ? Boolean.parseBoolean(args[0]) : DRY_RUN ;
 
 		MongoDatabase database = MongoDatabaseClient.getDatabase();
 

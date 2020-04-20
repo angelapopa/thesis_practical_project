@@ -10,7 +10,6 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.EnumMap;
 import java.util.Locale;
-import java.util.TimeZone;
 
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
@@ -38,6 +37,7 @@ import at.uibk.epc.model.ThermalData;
  */
 
 public class IrelandImporter {
+	//may be overwritten by main args
 	private static Boolean DRY_RUN = true;
 
 	private static String IRELAND_FOLDER = "e:\\docs\\Uni Innsbruck\\Masterthesis\\datasets\\IRELAND BER\\BERPublicSearch\\";
@@ -261,6 +261,8 @@ public class IrelandImporter {
 	}
 
 	public static void main(String[] args) {
+		DRY_RUN = (args != null && args[0] != null) ? Boolean.parseBoolean(args[0]) : DRY_RUN ;
+				
 		MongoDatabase database = MongoDatabaseClient.getDatabase();
 
 		System.out.println(

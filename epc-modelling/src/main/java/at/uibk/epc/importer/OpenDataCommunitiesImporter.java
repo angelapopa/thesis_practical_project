@@ -36,6 +36,7 @@ import at.uibk.epc.model.ThermalData;
 
 public class OpenDataCommunitiesImporter {
 
+	//may be overwritten by main args
 	private static Boolean DRY_RUN = true;
 
 	private static String OPENDATACOMMUNITIES_CSV_FOLDER = "e:\\docs\\Uni Innsbruck\\Masterthesis\\datasets\\opendatacommunities\\all-domestic-certificates\\";
@@ -139,6 +140,9 @@ public class OpenDataCommunitiesImporter {
 	}
 
 	public static void main(String[] args) {
+		
+		DRY_RUN = (args != null && args[0] != null) ? Boolean.parseBoolean(args[0]) : DRY_RUN ;
+		
 		MongoDatabase database = MongoDatabaseClient.getDatabase();
 
 		System.out.println("Opendatacommunities Import - Before import: "

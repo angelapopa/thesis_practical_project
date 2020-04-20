@@ -5,7 +5,8 @@ public enum  FuelType{
 	BIOMASS("Biomass"),
 	ELECTRICITY("Electricity"),
 	GAS("Gas"),
-	WOOD("wood");
+	WOOD("wood"),
+	OTHER("other");
 	
 	String description;
 	
@@ -19,6 +20,6 @@ public enum  FuelType{
 				return fuelType;
 			}
 		}
-		return null;
+		return FuelType.OTHER;
 	}
 }

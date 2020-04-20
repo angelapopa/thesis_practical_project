@@ -20,6 +20,7 @@ import at.uibk.epc.model.BuildingAddress;
 import at.uibk.epc.model.Dwelling;
 import at.uibk.epc.model.DwellingType;
 import at.uibk.epc.model.EPC;
+import at.uibk.epc.model.FuelType;
 import at.uibk.epc.model.Measure;
 import at.uibk.epc.model.MeasuringUnit;
 import at.uibk.epc.model.Rating;
@@ -44,6 +45,7 @@ import at.uibk.epc.model.ThermalData;
 
 public class ScottlandEPCImporter {
 
+	// may be overwritten by main args
 	private static Boolean DRY_RUN = true;
 
 	private static String SCOTTLAND_CSV_FOLDER = "e:\\docs\\Uni Innsbruck\\Masterthesis\\datasets\\Scottland\\D EPC data extract0517";
@@ -88,7 +90,6 @@ public class ScottlandEPCImporter {
 		IMPACT_LOFT_INSULATION("Impact Of Loft Insulation"),
 		IMPACT_CAVITY_WALL_INSULATION("Impact Of Cavity Wall Insulation"), IMPACT_SOLID("Impact Of Solid"),
 		WALL_INSULATION("Wall Insulation"), ADDENDUM_TEXT("Addendum Text"), MAIN_HEATING("Main Heating"),
-		// TODO: import also this property
 		MAIN_HEATING_FUEL_Type("Main Heating Fuel Type");
 
 		CvsHeader(String fieldname) {
@@ -97,6 +98,9 @@ public class ScottlandEPCImporter {
 	}
 
 	public static void main(String[] args) {
+
+		DRY_RUN = (args != null && args[0] != null) ? Boolean.parseBoolean(args[0]) : DRY_RUN;
+
 		MongoDatabase database = MongoDatabaseClient.getDatabase();
 
 		System.out.println(
@@ -149,17 +153,23 @@ public class ScottlandEPCImporter {
 
 		SpatialData spatialData = new SpatialData(totalFloorArea, null, null);
 
+		ThermalData thermalData = new ThermalData();
+		
+		thermalData.setMainHeatingFuelType(getFuelType(record.get(CvsHeader.MAIN_HEATING_FUEL_Type)));
+
 		Measure spaceHeatingEnergyDemand = new Measure(
 				Double.valueOf(record.get(CvsHeader.SPACE_HEATING_EXISTING_DWELLING)), MeasuringUnit.KWH_YEAR);
-		Measure waterHeatingEnergyDemand = new Measure(Double.valueOf(record.get(CvsHeader.WATER_HEATING)),
-				MeasuringUnit.KWH_YEAR);
+		if (!record.get(CvsHeader.WATER_HEATING).isEmpty()) {
+			Measure waterHeatingEnergyDemand = new Measure(Double.valueOf(record.get(CvsHeader.WATER_HEATING)),
+					MeasuringUnit.KWH_YEAR);
+			thermalData.setWaterHeatingEnergyDemand(waterHeatingEnergyDemand);
+		}
 		Measure primaryEnergyDemand = new Measure(Double.valueOf(record.get(CvsHeader.PRIMARY_ENERGY_INDICATOR)),
 				MeasuringUnit.KWH_SQUARE_METER_YEAR);
 
-		ThermalData thermalData = new ThermalData();
 		thermalData.setPrimaryEnergyDemand(primaryEnergyDemand);
 		thermalData.setSpaceHeatingEnergyDemand(spaceHeatingEnergyDemand);
-		thermalData.setWaterHeatingEnergyDemand(waterHeatingEnergyDemand);
+
 		// TODO: smth is wrong with the cvs read of current_emissions, workaround * 10
 		// TODO: recheck, open file with text editor and check the real data, since it
 		// might be a wrong representation of the excel programm
@@ -188,6 +198,10 @@ public class ScottlandEPCImporter {
 
 		return new EPC(null, new SimpleDateFormat("dd/MM/yyyy").parse(record.get(CvsHeader.DATE_OF_CERTIFICATE)), null,
 				ratedDwelling, null, awardedRating, potentialRating, ratingMethodology, null);
+	}
+
+	static FuelType getFuelType(String cvsFuelType) {
+		return FuelType.approximateValue(cvsFuelType);
 	}
 
 	/**

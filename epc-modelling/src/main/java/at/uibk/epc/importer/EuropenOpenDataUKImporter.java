@@ -35,6 +35,7 @@ import at.uibk.epc.model.ThermalData;
  */
 public class EuropenOpenDataUKImporter {
 
+	//may be overwritten by main args
 	private static Boolean DRY_RUN = true;
 	/**
 	 * Includes only non-domestic data, but this time it will be imported.
@@ -83,7 +84,9 @@ public class EuropenOpenDataUKImporter {
 	}
 
 	public static void main(String[] args) {
-
+		
+		DRY_RUN = (args != null && args[0] != null) ? Boolean.parseBoolean(args[0]) : DRY_RUN ;
+		
 		MongoDatabase database = MongoDatabaseClient.getDatabase();
 
 		System.out.println("UK Import - Before import: " + database.getCollection("EPC_Collection").countDocuments());
