@@ -29,8 +29,11 @@ public class EpcResource {
 
 	static final byte PAGE_SIZE = 5;
 
-	static final String ALLOWED_ACCESS_FROM = "http://localhost:3000";
+	//TODO: use property files
+	//static final String ALLOWED_ACCESS_FROM = "http://localhost:3000";
 
+	static final String ALLOWED_ACCESS_FROM = "https://epc-modelling-app.herokuapp.com/";
+	
 	static final String ALLOWED_REST_METHODS = "GET";
 
 	@GET
