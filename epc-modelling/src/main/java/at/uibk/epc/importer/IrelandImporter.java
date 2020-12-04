@@ -37,8 +37,23 @@ import at.uibk.epc.model.ThermalData;
  */
 
 public class IrelandImporter {
-	//may be overwritten by main args
-	private static Boolean DRY_RUN = true;
+
+	private static Boolean DRY_RUN = false;
+
+	private static final String NEW_DATABASE = "EPC";
+	private static final String NEW_COLLECTION_NAME = "EPC_Ireland";
+
+	// first import with double values
+	// Ireland, //902253 total records, but only 635574 were imported in 1 cluster,
+	// from which afterwards the totalfloorarea=0 were deleted
+	// Ireland, but not full import, due to limitation to 512MB
+	// 565587 total records
+	// private static final String
+	// NEW_CONNECTION_STRING="mongodb+srv://epcuser2:pw12epc559@epcfull-2jvr7.mongodb.net/test?retryWrites=true&w=majority";
+
+	// second import with integer values, every 3 entry
+	// Ireland, //300751 were imported in 1 cluster
+	private static final String NEW_CONNECTION_STRING = "mongodb+srv://ire_1:t9YjjOigsWGmPTJJ@cluster0.fxx98.mongodb.net/EPC?retryWrites=true&w=majority";
 
 	private static String IRELAND_FOLDER = "e:\\docs\\Uni Innsbruck\\Masterthesis\\datasets\\IRELAND BER\\BERPublicSearch\\";
 	private static String IMPORT_FILE = "BERPublicsearch.txt";
@@ -260,15 +275,22 @@ public class IrelandImporter {
 		ratingTypeEnumMap.put(RatingType.FINAL, "New Dwelling – Final BER");
 	}
 
+	private static void dropAndCreateDB(String databaseName, String collectionName) {
+		MongoDatabase database = MongoDatabaseClient.getDatabase(databaseName, NEW_CONNECTION_STRING);
+		MongoCollection<EPC> epcCollection = database.getCollection(collectionName, EPC.class);
+		epcCollection.drop();
+		database.createCollection(collectionName);
+	}
+
 	public static void main(String[] args) {
-		DRY_RUN = (args != null && args[0] != null) ? Boolean.parseBoolean(args[0]) : DRY_RUN ;
-				
-		MongoDatabase database = MongoDatabaseClient.getDatabase();
 
-		System.out.println(
-				"Ireland Import - Before import: " + database.getCollection("EPC_Collection").countDocuments());
+		dropAndCreateDB(NEW_DATABASE, NEW_COLLECTION_NAME);
 
-		MongoCollection<EPC> epcCollection = database.getCollection("EPC_Collection", EPC.class);
+		MongoDatabase database = MongoDatabaseClient.getDatabase(NEW_DATABASE, NEW_CONNECTION_STRING);
+
+		System.out.println("Ireland Import - Before import: " + database.getCollection(NEW_COLLECTION_NAME).countDocuments());
+
+		MongoCollection<EPC> epcCollection = database.getCollection(NEW_COLLECTION_NAME, EPC.class);
 
 		try {
 			InputStreamReader input = new InputStreamReader(
@@ -279,13 +301,26 @@ public class IrelandImporter {
 					.parse(input);
 
 			long counter = 0;
+			int temp_counter = 0;
+			/**
+			 * import every 10th valid csv entry
+			 */
 			for (CSVRecord record : csvParser) {
-				if (DRY_RUN) {
-					System.out.println(parseCVSInputRow(record).toString());
-				} else {
-					epcCollection.insertOne(parseCVSInputRow(record));
+				if (validRecord(record)) {
+					temp_counter = temp_counter + 1;
+					if (temp_counter == 3) {
+						EPC epc = parseCVSInputRow(record);
+						if (epc != null) {
+							if (DRY_RUN) {
+								System.out.println(epc.toString());
+							} else {
+								epcCollection.insertOne(epc);
+							}
+							counter++;
+							temp_counter = 0;
+						}
+					}
 				}
-				counter++;
 			}
 			System.out.println("File " + IMPORT_FILE + ": imported " + counter);
 			input.close();
@@ -300,7 +335,13 @@ public class IrelandImporter {
 	}
 
 	private static EPC parseCVSInputRow(CSVRecord record) throws ParseException {
-		Measure totalFloorArea = new Measure(Double.valueOf(record.get(CvsHeader.FLOOR_AREA)),
+
+		String floorAreaCVS = record.get(CvsHeader.FLOOR_AREA);
+		if (floorAreaCVS == null || floorAreaCVS.isEmpty()) {
+			return null;
+		}
+
+		Measure totalFloorArea = new Measure(Math.round(Double.valueOf(record.get(CvsHeader.FLOOR_AREA))),
 				MeasuringUnit.SQUARE_METER);
 
 		SpatialData spatialData = new SpatialData(totalFloorArea, null, null);
@@ -311,13 +352,13 @@ public class IrelandImporter {
 
 		ThermalData thermalData = new ThermalData();
 		thermalData.setCarbonFootprint(
-				new Measure(Double.valueOf(record.get(CvsHeader.CO2_Rating)), MeasuringUnit.KG_SQUARE_METER_YEAR));
+				new Measure(Math.round(Double.valueOf(record.get(CvsHeader.CO2_Rating))), MeasuringUnit.KG_SQUARE_METER_YEAR));
 		thermalData.setMainHeatingFuelType(FuelType.approximateValue(record.get(CvsHeader.MainSpaceHeatingFuel)));
 		thermalData.setWaterHeatingEnergyDemand(
-				new Measure(Double.valueOf(record.get(CvsHeader.DeliveredEnergyMainWater)), MeasuringUnit.KWH_YEAR));
+				new Measure(Math.round(Double.valueOf(record.get(CvsHeader.DeliveredEnergyMainWater))), MeasuringUnit.KWH_YEAR));
 		thermalData.setSpaceHeatingEnergyDemand(
-				new Measure(Double.valueOf(record.get(CvsHeader.DeliveredEnergyMainSpace)), MeasuringUnit.KWH_YEAR));
-		thermalData.setFinalEnergyDemand(new Measure(Double.valueOf(record.get(CvsHeader.TotalDeliveredEnergy)),
+				new Measure(Math.round(Double.valueOf(record.get(CvsHeader.DeliveredEnergyMainSpace))), MeasuringUnit.KWH_YEAR));
+		thermalData.setFinalEnergyDemand(new Measure(Math.round(Double.valueOf(record.get(CvsHeader.TotalDeliveredEnergy))),
 				MeasuringUnit.KWH_SQUARE_METER_YEAR));
 
 		Dwelling ratedDwelling = new Dwelling(buildingAddress,
@@ -325,7 +366,7 @@ public class IrelandImporter {
 				approximateDwellingType(record.get(CvsHeader.DWELLING_TYPE)), null, null, spatialData, thermalData);
 
 		Rating awardedRating = new Rating(record.get(CvsHeader.ENERGY_RATING).substring(0, 1),
-				Double.parseDouble(record.get(CvsHeader.BER_RATING)));
+				Integer.valueOf(Math.round(Math.round(Double.valueOf(record.get(CvsHeader.BER_RATING))))));
 		Rating potentialRating = new Rating();
 
 		RatingMethodology ratingMethodology = new RatingMethodology();
@@ -339,6 +380,24 @@ public class IrelandImporter {
 				ratingMethodology, null);
 		epc.setPurpose(PurposeType.approximateValue(record.get(CvsHeader.PurposeOfRating)));
 		return epc;
+	}
+
+	private static boolean validRecord(CSVRecord record) {
+		String floorArea = record.get(CvsHeader.FLOOR_AREA);
+		if ("0".equals(floorArea) || "NO DATA!".equalsIgnoreCase(floorArea) || "N/A".equals(floorArea)) {
+			return false;
+		}
+
+		String energyConsumption = record.get(CvsHeader.TotalDeliveredEnergy);
+		if ("0".equals(energyConsumption) || "NO DATA!".equalsIgnoreCase(energyConsumption)
+				|| "N/A".equals(energyConsumption)) {
+			return false;
+		}
+		String energyRating = record.get(CvsHeader.ENERGY_RATING);
+		if ("INVALID!".equals(energyRating) || "N/A".equals(energyRating)) {
+			return false;
+		}
+		return true;
 	}
 
 	static Date getCreationDate(String csvDateString) throws ParseException {

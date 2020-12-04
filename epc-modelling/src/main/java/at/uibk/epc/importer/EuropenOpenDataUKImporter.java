@@ -35,8 +35,12 @@ import at.uibk.epc.model.ThermalData;
  */
 public class EuropenOpenDataUKImporter {
 
-	//may be overwritten by main args
 	private static Boolean DRY_RUN = true;
+	
+	private static final String NEW_DATABASE="EPC"; 
+	private static final String NEW_COLLECTION_NAME="EPC_Collection"; 
+	private static final String NEW_CONNECTION_STRING="unknown";	
+	
 	/**
 	 * Includes only non-domestic data, but this time it will be imported.
 	 * (Non-domestic data is available also in the OpenDataCommunties folder, but
@@ -85,13 +89,12 @@ public class EuropenOpenDataUKImporter {
 
 	public static void main(String[] args) {
 		
-		DRY_RUN = (args != null && args[0] != null) ? Boolean.parseBoolean(args[0]) : DRY_RUN ;
-		
-		MongoDatabase database = MongoDatabaseClient.getDatabase();
 
-		System.out.println("UK Import - Before import: " + database.getCollection("EPC_Collection").countDocuments());
+		MongoDatabase database = MongoDatabaseClient.getDatabase(NEW_DATABASE, NEW_CONNECTION_STRING);
 
-		MongoCollection<EPC> epcCollection = database.getCollection("EPC_Collection", EPC.class);
+		System.out.println("UK Import - Before import: " + database.getCollection(NEW_COLLECTION_NAME).countDocuments());
+
+		MongoCollection<EPC> epcCollection = database.getCollection(NEW_COLLECTION_NAME, EPC.class);
 
 		System.out.println("Importing file " + CVS_FILE_PATH);
 		try {
@@ -123,22 +126,22 @@ public class EuropenOpenDataUKImporter {
 
 		SpatialData spatialData = new SpatialData();
 		spatialData.setTotalFloorArea(
-				new Measure(Double.valueOf(record.get(CvsHeader.FLOOR_AREA).replace(",", "")), MeasuringUnit.SQUARE_METER));
+				new Measure(Long.valueOf(record.get(CvsHeader.FLOOR_AREA).replace(",", "")), MeasuringUnit.SQUARE_METER));
 
 		ThermalData thermalData = new ThermalData();
-		thermalData.setCarbonFootprint(new Measure(Double.valueOf(record.get(CvsHeader.TOTAL_CO2_EMISSIONS).replace(",", "")),
+		thermalData.setCarbonFootprint(new Measure(Long.valueOf(record.get(CvsHeader.TOTAL_CO2_EMISSIONS).replace(",", "")),
 				MeasuringUnit.KG_SQUARE_METER_YEAR));
 		thermalData.setMainHeatingFuelType(getFuelType(record.get(CvsHeader.MAIN_HEATING_FUEL)));
 
 		thermalData.setElectricalEnergyConsumption(
-				new Measure(Double.valueOf(record.get(CvsHeader.ACTUAL_ANNUAL_ELEC_TOTAL).replace(",", "")), MeasuringUnit.KWH_YEAR));
+				new Measure(Long.valueOf(record.get(CvsHeader.ACTUAL_ANNUAL_ELEC_TOTAL).replace(",", "")), MeasuringUnit.KWH_YEAR));
 		thermalData.setThermalEnergyConsumption(
-				new Measure(Double.valueOf(record.get(CvsHeader.ACTUAL_ANNUAL_HEAT_TOTAL).replace(",", "")), MeasuringUnit.KWH_YEAR));
+				new Measure(Long.valueOf(record.get(CvsHeader.ACTUAL_ANNUAL_HEAT_TOTAL).replace(",", "")), MeasuringUnit.KWH_YEAR));
 
 		thermalData.setElectricalEnergyDemand(
-				new Measure(Double.valueOf(record.get(CvsHeader.TYPICAL_ANNUAL_ELEC_TOTAL).replace(",", "")), MeasuringUnit.KWH_YEAR));
+				new Measure(Long.valueOf(record.get(CvsHeader.TYPICAL_ANNUAL_ELEC_TOTAL).replace(",", "")), MeasuringUnit.KWH_YEAR));
 		thermalData.setThermalEnergyDemand(
-				new Measure(Double.valueOf(record.get(CvsHeader.TYPICAL_ANNUAL_HEAT_TOTAL).replace(",", "")), MeasuringUnit.KWH_YEAR));
+				new Measure(Long.valueOf(record.get(CvsHeader.TYPICAL_ANNUAL_HEAT_TOTAL).replace(",", "")), MeasuringUnit.KWH_YEAR));
 
 		thermalData.setFinalEnergyDemand(new Measure(
 				thermalData.getElectricalEnergyDemand().getValue() + thermalData.getThermalEnergyDemand().getValue(),
@@ -157,7 +160,7 @@ public class EuropenOpenDataUKImporter {
 		Date creationDate = getCreationDate(record.get(CvsHeader.ISSUE_DATE));
 
 		Rating awardedRating = new Rating(record.get(CvsHeader.ENERGY_RATING_BAND),
-				Double.valueOf(record.get(CvsHeader.ENERGY_RATING)));
+				Integer.valueOf(record.get(CvsHeader.ENERGY_RATING)));
 
 		EPC epc = new EPC(record.get(CvsHeader.RRN), creationDate, null, ratedDwelling, null, awardedRating, null, null, null);
 		return epc;

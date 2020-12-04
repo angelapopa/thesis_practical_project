@@ -10,13 +10,13 @@ public class Rating {
 	
 	public String ratingLevel;
 	
-	public Double ratingPoints;
+	public Integer ratingPoints;
 	
 	public Rating() {
 		// needed by MongoDB POJO Converter
 	}
 
-	public Rating(String ratingLevel, Double ratingPoints) {
+	public Rating(String ratingLevel, Integer ratingPoints) {
 		super();
 		this.ratingLevel = ratingLevel;
 		this.ratingPoints = ratingPoints;
@@ -26,7 +26,7 @@ public class Rating {
 		return ratingLevel;
 	}
 	
-	public Double getRatingPoints() {
+	public Integer getRatingPoints() {
 		return ratingPoints;
 	}
 

@@ -2,7 +2,7 @@ package at.uibk.epc.model;
 
 public class Measure {
 
-	private Double value;
+	private Long value;
 	
 	private MeasuringUnit unit;
 	
@@ -10,7 +10,7 @@ public class Measure {
 		//needed by MongoDB
 	}
 
-	public Measure(Double value, MeasuringUnit unit) {
+	public Measure(Long value, MeasuringUnit unit) {
 		this.value = value;
 		this.unit = unit;
 	}
@@ -23,11 +23,11 @@ public class Measure {
 		this.unit = unit;
 	}
 	
-	public Double getValue() {
+	public Long getValue() {
 		return value;
 	}
 	
-	public void setValue(Double value) {
+	public void setValue(Long value) {
 		this.value = value;
 	}
 	

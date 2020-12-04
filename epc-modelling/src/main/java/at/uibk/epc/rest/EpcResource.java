@@ -1,7 +1,6 @@
 package at.uibk.epc.rest;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 import javax.ws.rs.GET;
@@ -12,14 +11,11 @@ import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-import org.bson.conversions.Bson;
-
 import com.mongodb.BasicDBList;
 import com.mongodb.BasicDBObject;
 import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoCursor;
 import com.mongodb.client.MongoDatabase;
-import com.mongodb.client.model.Filters;
 
 import at.uibk.epc.importer.MongoDatabaseClient;
 import at.uibk.epc.model.EPC;
@@ -28,6 +24,8 @@ import at.uibk.epc.model.EPC;
 public class EpcResource {
 
 	static final byte PAGE_SIZE = 5;
+	private static final String OLD_CONNECTION_STRING="mongodb+srv://epc_user:1user01@clusterepc-typif.mongodb.net/test?retryWrites=true&w=majority";
+	private static final String DB_NAME= "EPC";
 
 	//TODO: use property files
 	//static final String ALLOWED_ACCESS_FROM = "http://localhost:3000";
@@ -41,7 +39,9 @@ public class EpcResource {
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response getEpc() {
 		// https://crunchify.com/what-is-cross-origin-resource-sharing-cors-how-to-add-it-to-your-java-jersey-web-server/
-		return Response.ok("{\"info\":\"On air!\"}").header("Access-Control-Allow-Origin", ALLOWED_ACCESS_FROM)
+		return Response.ok("{\"info\":\"On air!\"}")
+				.header("Access-Control-Allow-Origin", ALLOWED_ACCESS_FROM)
+				.header("Vary", "Origin")
 				.header("Access-Control-Allow-Methods", ALLOWED_REST_METHODS).build();
 	}
 
@@ -49,7 +49,8 @@ public class EpcResource {
 	@Path("/{country}")
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response getEpcByCountry(@PathParam("country") String country, @QueryParam("page") int pageNumber) {
-		MongoDatabase database = MongoDatabaseClient.getDatabase();
+
+		MongoDatabase database = MongoDatabaseClient.getDatabase(DB_NAME,OLD_CONNECTION_STRING);
 	
 	    int skip_documents = PAGE_SIZE * (pageNumber - 1);
 		FindIterable<EPC> iterable = database.getCollection("EPC_Collection", EPC.class).find(getSearchQuery(country)).skip(skip_documents).limit(PAGE_SIZE);
@@ -62,7 +63,9 @@ public class EpcResource {
 		EpcListWrapper epcListWrapper = new EpcListWrapper();
 		epcListWrapper.setWrappedEpcs(epcList);
 		
-		return Response.ok(epcListWrapper).header("Access-Control-Allow-Origin", ALLOWED_ACCESS_FROM)
+		return Response.ok(epcListWrapper)
+				.header("Access-Control-Allow-Origin", ALLOWED_ACCESS_FROM)
+				.header("Vary", "Origin")
 				.header("Access-Control-Allow-Methods", ALLOWED_REST_METHODS).build();
 	}
 	

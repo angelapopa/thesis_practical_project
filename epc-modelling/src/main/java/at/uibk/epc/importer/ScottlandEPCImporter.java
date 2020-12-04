@@ -40,13 +40,25 @@ import at.uibk.epc.model.ThermalData;
  * top-floor) are imported under the generic flat dwelling type.
  * 
  * Energy demand: the cvs raw data makes a differentiation between energy demand
- * for space heating and for water heating. The importer summs this values.
+ * for space heating and for water heating. The importer sums this values.
  */
 
 public class ScottlandEPCImporter {
 
-	// may be overwritten by main args
-	private static Boolean DRY_RUN = true;
+	private static Boolean DRY_RUN = false;
+
+	private static String SCOTTLAND_COLLECTION_NAME = "EPC_Scottland";
+	private static final String DB_NAME = "EPC";
+
+	// Scottland, not all fit into 1 cluster,
+	
+	// first import with Double type values
+	// imported 701461 records, until D EPC data 2016 Q2 extract0517.csv
+	// private static final String SCOTTLAND_CONNECTION_STRING = "mongodb+srv://epcuser3:pw13epc@cluster0-aivtv.mongodb.net/test?retryWrites=true&w=majority";
+	
+	// second import with integer values, 
+	// imported 300871 records, from all the cvs files, where every 3th cvs entry was imported
+	private static final String SCOTTLAND_CONNECTION_STRING = "mongodb+srv://scott_1:JP3JXGuQQC9fkPiZ@cluster0.licv8.mongodb.net/EPC?retryWrites=true&w=majority";
 
 	private static String SCOTTLAND_CSV_FOLDER = "e:\\docs\\Uni Innsbruck\\Masterthesis\\datasets\\Scottland\\D EPC data extract0517";
 	private static String COUNTRY = "Scottland";
@@ -88,8 +100,8 @@ public class ScottlandEPCImporter {
 		ALTERNATIVE_MEASURES_2("Alternative Measures 2"), LZC_Energy_Source("LZC Energy Source"),
 		SPACE_HEATING_EXISTING_DWELLING("Space Heating Existing Dwelling"), WATER_HEATING("Water Heating"),
 		IMPACT_LOFT_INSULATION("Impact Of Loft Insulation"),
-		IMPACT_CAVITY_WALL_INSULATION("Impact Of Cavity Wall Insulation"), IMPACT_SOLID("Impact Of Solid"),
-		WALL_INSULATION("Wall Insulation"), ADDENDUM_TEXT("Addendum Text"), MAIN_HEATING("Main Heating"),
+		IMPACT_CAVITY_WALL_INSULATION("Impact Of Cavity Wall Insulation"),
+		IMPACT_SOLID("Impact Of Solid Wall Insulation"), ADDENDUM_TEXT("Addendum Text"), MAIN_HEATING("Main Heating"),
 		MAIN_HEATING_FUEL_Type("Main Heating Fuel Type");
 
 		CvsHeader(String fieldname) {
@@ -99,14 +111,13 @@ public class ScottlandEPCImporter {
 
 	public static void main(String[] args) {
 
-		DRY_RUN = (args != null && args[0] != null) ? Boolean.parseBoolean(args[0]) : DRY_RUN;
+		MongoDatabaseClient.dropAndCreateDB(SCOTTLAND_CONNECTION_STRING, DB_NAME, SCOTTLAND_COLLECTION_NAME);
+		MongoDatabase database = MongoDatabaseClient.getDatabase(DB_NAME, SCOTTLAND_CONNECTION_STRING);
 
-		MongoDatabase database = MongoDatabaseClient.getDatabase();
+		System.out.println("Scottland Import - Before import: "
+				+ database.getCollection(SCOTTLAND_COLLECTION_NAME).countDocuments());
 
-		System.out.println(
-				"Scottland Import - Before import: " + database.getCollection("EPC_Collection").countDocuments());
-
-		MongoCollection<EPC> epcCollection = database.getCollection("EPC_Collection", EPC.class);
+		MongoCollection<EPC> epcCollection = database.getCollection(SCOTTLAND_COLLECTION_NAME, EPC.class);
 
 		for (String csvFileName : new File(SCOTTLAND_CSV_FOLDER).list()) {
 			if (DRY_RUN) {
@@ -127,13 +138,23 @@ public class ScottlandEPCImporter {
 			CSVParser csvParser = CSVFormat.DEFAULT.withHeader(CvsHeader.class).withSkipHeaderRecord().parse(input);
 
 			long counter = 0;
+			int temp_counter = 0;
+			/**
+			 * import every 3th valid csv entry
+			 */
 			for (CSVRecord record : csvParser) {
-				if (DRY_RUN) {
-					System.out.println(parseCVSInputRow(record).toString());
-				} else {
-					epcCollection.insertOne(parseCVSInputRow(record));
+				if (validRecord(record)) {
+					temp_counter = temp_counter + 1;
+					if (temp_counter == 3) {
+						if (DRY_RUN) {
+							System.out.println(parseCVSInputRow(record).toString());
+						} else {
+							epcCollection.insertOne(parseCVSInputRow(record));
+						}
+						counter++;
+						temp_counter = 0;
+					}
 				}
-				counter++;
 			}
 			System.out.println("File " + csvFileName + ": imported " + counter);
 			input.close();
@@ -146,41 +167,66 @@ public class ScottlandEPCImporter {
 		}
 	}
 
+	private static boolean validRecord(CSVRecord record) {
+		String floorArea = record.get(CvsHeader.TOTAL_FLOOR_AREA);
+		if ("0".equals(floorArea) || "NO DATA!".equalsIgnoreCase(floorArea) || "N/A".equals(floorArea)) {
+			return false;
+		}
+
+		String energyConsumption = record.get(CvsHeader.PRIMARY_ENERGY_INDICATOR);
+		if ("0".equals(energyConsumption) || "NO DATA!".equalsIgnoreCase(energyConsumption)
+				|| "N/A".equals(energyConsumption)) {
+			return false;
+		}
+		String energyRating = record.get(CvsHeader.CURRENT_ENERGY_EFFICIENCY_RATING_BAND);
+		if ("INVALID!".equals(energyRating) || "N/A".equals(energyRating)) {
+			return false;
+		}
+		return true;
+	}
+
 	private static EPC parseCVSInputRow(CSVRecord record) throws ParseException {
 
-		Measure totalFloorArea = new Measure(Double.valueOf(record.get(CvsHeader.TOTAL_FLOOR_AREA)),
+		Measure totalFloorArea = new Measure(Math.round(Double.valueOf(record.get(CvsHeader.TOTAL_FLOOR_AREA))),
 				MeasuringUnit.SQUARE_METER);
 
 		SpatialData spatialData = new SpatialData(totalFloorArea, null, null);
 
 		ThermalData thermalData = new ThermalData();
-		
+
 		thermalData.setMainHeatingFuelType(getFuelType(record.get(CvsHeader.MAIN_HEATING_FUEL_Type)));
 
-		Measure spaceHeatingEnergyDemand = new Measure(
-				Double.valueOf(record.get(CvsHeader.SPACE_HEATING_EXISTING_DWELLING)), MeasuringUnit.KWH_YEAR);
-		if (!record.get(CvsHeader.WATER_HEATING).isEmpty()) {
-			Measure waterHeatingEnergyDemand = new Measure(Double.valueOf(record.get(CvsHeader.WATER_HEATING)),
+		if (!record.get(CvsHeader.SPACE_HEATING_EXISTING_DWELLING).isEmpty()) {
+			Measure spaceHeatingEnergyDemand = new Measure(
+					Math.round(Double.valueOf(record.get(CvsHeader.SPACE_HEATING_EXISTING_DWELLING))),
 					MeasuringUnit.KWH_YEAR);
+			thermalData.setSpaceHeatingEnergyDemand(spaceHeatingEnergyDemand);
+		}
+		if (!record.get(CvsHeader.WATER_HEATING).isEmpty()) {
+			Measure waterHeatingEnergyDemand = new Measure(
+					Math.round(Double.valueOf(record.get(CvsHeader.WATER_HEATING))), MeasuringUnit.KWH_YEAR);
 			thermalData.setWaterHeatingEnergyDemand(waterHeatingEnergyDemand);
 		}
-		Measure primaryEnergyDemand = new Measure(Double.valueOf(record.get(CvsHeader.PRIMARY_ENERGY_INDICATOR)),
-				MeasuringUnit.KWH_SQUARE_METER_YEAR);
+		if (!record.get(CvsHeader.PRIMARY_ENERGY_INDICATOR).isEmpty()) {
+			Measure primaryEnergyDemand = new Measure(
+					Math.round(Double.valueOf(record.get(CvsHeader.PRIMARY_ENERGY_INDICATOR))),
+					MeasuringUnit.KWH_SQUARE_METER_YEAR);
 
-		thermalData.setPrimaryEnergyDemand(primaryEnergyDemand);
-		thermalData.setSpaceHeatingEnergyDemand(spaceHeatingEnergyDemand);
+			thermalData.setPrimaryEnergyDemand(primaryEnergyDemand);
+		}
 
 		// TODO: smth is wrong with the cvs read of current_emissions, workaround * 10
 		// TODO: recheck, open file with text editor and check the real data, since it
 		// might be a wrong representation of the excel programm
-		thermalData.setCarbonFootprint(new Measure(Double.valueOf(record.get(CvsHeader.CURRENT_EMISSIONS)) * 10,
-				MeasuringUnit.KG_SQUARE_METER_YEAR));
+		thermalData.setCarbonFootprint(
+				new Measure(Math.round(Double.valueOf(record.get(CvsHeader.CURRENT_EMISSIONS))) * 10,
+						MeasuringUnit.KG_SQUARE_METER_YEAR));
 
 		Rating awardedRating = new Rating(record.get(CvsHeader.CURRENT_ENERGY_EFFICIENCY_RATING_BAND),
-				Double.valueOf(record.get(CvsHeader.CURRENT_ENERGY_EFFICIENCY_RATING)));
+				Integer.valueOf(record.get(CvsHeader.CURRENT_ENERGY_EFFICIENCY_RATING)));
 
 		Rating potentialRating = new Rating(record.get(CvsHeader.POTENTIAL_ENERGY_EFFICIENCY_RATING_BAND),
-				Double.valueOf(record.get(CvsHeader.POTENTIAL_ENERGY_EFFICIENCY_RATING)));
+				Integer.valueOf(record.get(CvsHeader.POTENTIAL_ENERGY_EFFICIENCY_RATING)));
 
 		RatingMethodology ratingMethodology = new RatingMethodology(
 				parseStandardName(record.get(CvsHeader.TYPE_OF_ASSESSMENT)), record.get(CvsHeader.TYPE_OF_ASSESSMENT),
@@ -223,8 +269,12 @@ public class ScottlandEPCImporter {
 	}
 
 	static DwellingType parseDwellingType(String rawDwellingType) {
-		return DwellingType.valueOf(rawDwellingType
-				.substring(rawDwellingType.lastIndexOf(" ") + 1, rawDwellingType.length()).toUpperCase());
+		try {
+			return DwellingType.valueOf(rawDwellingType
+					.substring(rawDwellingType.lastIndexOf(" ") + 1, rawDwellingType.length()).toUpperCase());
+		} catch (IllegalArgumentException ex) {
+			return DwellingType.OTHER;
+		}
 	}
 
 }

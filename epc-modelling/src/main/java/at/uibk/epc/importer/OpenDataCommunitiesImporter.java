@@ -36,8 +36,26 @@ import at.uibk.epc.model.ThermalData;
 
 public class OpenDataCommunitiesImporter {
 
-	//may be overwritten by main args
-	private static Boolean DRY_RUN = true;
+	private static Boolean DRY_RUN = false;
+
+	/**
+	 * England & Wales, not all fit into 1 cluster
+	 * 
+	 * Version 1.0 with double values:
+	 * 749500 were imported, until domestic-E06000018-Nottingham (incomplete)
+	 * 
+	 * Version 2.0 with integer values and importing every 10th valid entry:
+	 * 759464 were imported, until domestic-E07000142-West-Lindsey (incomplete)
+	 */	
+	private static final String DB_NAME = "EPC";
+	private static final String ENGLAND_COLLECTION_NAME = "EPC_England";
+	
+	// first import with Double Type values 
+	// private static final String
+	// ENGLAND_CONNECTION_STRING="mongodb+srv://epcuser4:pw14epc@cluster0-1w0r9.mongodb.net/test?retryWrites=true&w=majority";
+	
+	//second import with integer values
+	private static final String ENGLAND_CONNECTION_STRING = "mongodb+srv://admin:admin@cluster0.ojmf2.mongodb.net/EPC?retryWrites=true&w=majority";
 
 	private static String OPENDATACOMMUNITIES_CSV_FOLDER = "e:\\docs\\Uni Innsbruck\\Masterthesis\\datasets\\opendatacommunities\\all-domestic-certificates\\";
 	private static String CVS_FILE = "certificates.csv";
@@ -49,7 +67,8 @@ public class OpenDataCommunitiesImporter {
 	 */
 	private enum CvsHeader {
 		LMK_KEY("LMK_KEY"), ADDRESS1("ADDRESS1"), ADDRESS2("ADDRESS2"), ADDRESS3("ADDRESS3"), POSTCODE("POSTCODE"),
-		BUILDING_REFERENCE_NUMBER("BUILDING_REFERENCE_NUMBER"), CURRENT_ENERGY_RATING("CURRENT_ENERGY_RATING"),
+		BUILDING_REFERENCE_NUMBER("BUILDING_REFERENCE_NUMBER"), 
+		CURRENT_ENERGY_RATING("CURRENT_ENERGY_RATING"),
 		POTENTIAL_ENERGY_RATING("POTENTIAL_ENERGY_RATING"),
 		/*
 		 * Based on cost of energy, i.e. energy required for space heating, water
@@ -57,7 +76,7 @@ public class OpenDataCommunitiesImporter {
 		 * cost is derived from kWh).
 		 */
 		CURRENT_ENERGY_EFFICIENCY_POINTS("CURRENT_ENERGY_EFFICIENCY"),
-		POTENTIAL_ENERGY_EFFICIENCY("POTENTIAL_ENERGY_EFFICIENCY"), PROPERTY_TYPE("PROPERTY_TYPE"),
+		POTENTIAL_ENERGY_EFFICIENCY_POINTS("POTENTIAL_ENERGY_EFFICIENCY"), PROPERTY_TYPE("PROPERTY_TYPE"),
 		BUILD_FORM("BUILD_FORM"), INSPECTION_DATE("INSPECTION_DATE"), LOCAL_AUTHORITY("LOCAL_AUTHORITY"),
 		CONSTITUENCY("CONSTITUENCY"), COUNTY("COUNTY"), LODGEMENT_DATE("LODGEMENT_DATE"),
 		TRANSACTION_TYPE("TRANSACTION_TYPE"),
@@ -79,7 +98,7 @@ public class OpenDataCommunitiesImporter {
 		 */
 		CO2_EMISSIONS_CURRENT("CO2_EMISSIONS_CURRENT"),
 		/*
-		 * CO2 emissions per square metre floor area per year in kg/m².
+		 * CO2 emissions per square meter floor area per year in kg/m².
 		 */
 		CO2_EMISS_CURR_PER_FLOOR_AREA("CO2_EMISS_CURR_PER_FLOOR_AREA"),
 		CO2_EMISSIONS_POTENTIAL("CO2_EMISSIONS_POTENTIAL"), LIGHTING_COST_CURRENT("LIGHTING_COST_CURRENT"),
@@ -140,18 +159,17 @@ public class OpenDataCommunitiesImporter {
 	}
 
 	public static void main(String[] args) {
-		
-		DRY_RUN = (args != null && args[0] != null) ? Boolean.parseBoolean(args[0]) : DRY_RUN ;
-		
-		MongoDatabase database = MongoDatabaseClient.getDatabase();
+
+		MongoDatabaseClient.dropAndCreateDB(ENGLAND_CONNECTION_STRING, DB_NAME, ENGLAND_COLLECTION_NAME);
+		MongoDatabase database = MongoDatabaseClient.getDatabase(DB_NAME, ENGLAND_CONNECTION_STRING);
 
 		System.out.println("Opendatacommunities Import - Before import: "
-				+ database.getCollection("EPC_Collection").countDocuments());
+				+ database.getCollection(ENGLAND_COLLECTION_NAME).countDocuments());
 
-		MongoCollection<EPC> epcCollection = database.getCollection("EPC_Collection", EPC.class);
+		MongoCollection<EPC> epcCollection = database.getCollection(ENGLAND_COLLECTION_NAME, EPC.class);
 
 		for (String folderName : new File(OPENDATACOMMUNITIES_CSV_FOLDER).list()) {
-			if (!folderName.equals("LICENCE.txt")){
+			if (!folderName.equals("LICENCE.txt")) {
 				for (String cvsFileName : new File(OPENDATACOMMUNITIES_CSV_FOLDER + folderName).list()) {
 					if (cvsFileName.equals(CVS_FILE)) {
 						if (DRY_RUN) {
@@ -163,7 +181,7 @@ public class OpenDataCommunitiesImporter {
 				}
 			}
 		}
-		System.out.println("Opendatacommunities Import finished successfully.");
+		System.out.println("Opendatacommunities Englsnd & Wales Import finished successfully.");
 	}
 
 	private static void importCSVFileOpenDataCommunities(MongoCollection<EPC> epcCollection, String folderName) {
@@ -176,13 +194,23 @@ public class OpenDataCommunitiesImporter {
 			CSVParser csvParser = CSVFormat.DEFAULT.withHeader(CvsHeader.class).withSkipHeaderRecord().parse(input);
 
 			long counter = 0;
+			int temp_counter = 0;
+			/**
+			 * import every 10th valid csv entry
+			 */
 			for (CSVRecord record : csvParser) {
-					if (DRY_RUN) {
-						//System.out.println(parseCVSInputRow(record, city).toString());
-					} else {
-						epcCollection.insertOne(parseCVSInputRow(record, city));
+				if (validRecord(record)) {
+					temp_counter = temp_counter + 1;
+					if (temp_counter == 10) {
+						if (DRY_RUN) {
+							System.out.println(parseCVSInputRow(record, city).toString());
+						} else {
+							epcCollection.insertOne(parseCVSInputRow(record, city));
+						}
+						counter++;
+						temp_counter = 0;
 					}
-					counter++;
+				}
 			}
 			System.out.println("File " + csv_file_path + ": imported " + counter);
 			input.close();
@@ -194,35 +222,53 @@ public class OpenDataCommunitiesImporter {
 		}
 	}
 
+	private static boolean validRecord(CSVRecord record) {
+		String floorArea = record.get(CvsHeader.TOTAL_FLOOR_AREA);
+		if ("0".equals(floorArea) || "NO DATA!".equalsIgnoreCase(floorArea) || "N/A".equals(floorArea)){
+			return false;
+		}
+		
+		String energyConsumption = record.get(CvsHeader.ENERGY_CONSUMPTION_CURRENT);
+		if ("0".equals(energyConsumption) || "NO DATA!".equalsIgnoreCase(energyConsumption) || "N/A".equals(energyConsumption)) {
+			return false;
+		}
+		String energyRating = record.get(CvsHeader.CURRENT_ENERGY_RATING);
+		if("INVALID!".equals(energyRating) || "N/A".equals(energyRating)) {
+			return false;
+		}
+		return true;
+	}
+
 	private static EPC parseCVSInputRow(CSVRecord record, String city) {
-		Measure totalFloorArea = new Measure(Double.valueOf(record.get(CvsHeader.TOTAL_FLOOR_AREA)),
+		Measure totalFloorArea = new Measure(Math.round(Double.valueOf(record.get(CvsHeader.TOTAL_FLOOR_AREA))),
 				MeasuringUnit.SQUARE_METER);
 
 		SpatialData spatialData = new SpatialData(totalFloorArea, null, null);
-		Measure energyDemand = new Measure(Double.valueOf(record.get(CvsHeader.ENERGY_CONSUMPTION_CURRENT)),
+		Measure energyDemand = new Measure(Math.round(Double.valueOf(record.get(CvsHeader.ENERGY_CONSUMPTION_CURRENT))),
 				MeasuringUnit.KWH_SQUARE_METER_YEAR);
 
 		ThermalData thermalData = new ThermalData();
 		thermalData.setMainHeatingFuelType(getFuelType(record.get(CvsHeader.MAIN_FUEL)));
 		thermalData.setFinalEnergyDemand(energyDemand);
-		thermalData.setCarbonFootprint(new Measure(Double.valueOf(record.get(CvsHeader.CO2_EMISS_CURR_PER_FLOOR_AREA)),
+		thermalData.setCarbonFootprint(new Measure(Math.round(Double.valueOf(record.get(CvsHeader.CO2_EMISS_CURR_PER_FLOOR_AREA))),
 				MeasuringUnit.KG_SQUARE_METER_YEAR));
 
 		Rating awardedRating = new Rating(record.get(CvsHeader.CURRENT_ENERGY_RATING),
-				Double.valueOf(record.get(CvsHeader.CURRENT_ENERGY_EFFICIENCY_POINTS)));
+				Integer.valueOf(record.get(CvsHeader.CURRENT_ENERGY_EFFICIENCY_POINTS)));
 
 		Rating potentialRating = new Rating(record.get(CvsHeader.POTENTIAL_ENERGY_RATING),
-				Double.valueOf(record.get(CvsHeader.POTENTIAL_ENERGY_EFFICIENCY)));
+				Integer.valueOf(record.get(CvsHeader.POTENTIAL_ENERGY_EFFICIENCY_POINTS)));
 
 		String county = !record.get(CvsHeader.COUNTY).isEmpty() ? record.get(CvsHeader.COUNTY) : city;
 
-		BuildingAddress buildingAddress = parseStreetDetails(new BuildingAddress(), record);
+		BuildingAddress buildingAddress = parseSimpleStreetDetails(new BuildingAddress(), record);
 		buildingAddress.setPostalCode(record.get(CvsHeader.POSTCODE));
 		buildingAddress.setCity(county);
 		buildingAddress.setCountry(COUNTRY);
 
 		Dwelling ratedDwelling = new Dwelling(buildingAddress, null,
-				parseDwellingType(record.get(CvsHeader.PROPERTY_TYPE)), record.get(CvsHeader.BUILDING_REFERENCE_NUMBER), null, spatialData, thermalData);
+				parseDwellingType(record.get(CvsHeader.PROPERTY_TYPE)), record.get(CvsHeader.BUILDING_REFERENCE_NUMBER),
+				null, spatialData, thermalData);
 
 		EPC epc = new EPC(record.get(CvsHeader.LMK_KEY), parseCreationDate(record.get(CvsHeader.INSPECTION_DATE)), null,
 				ratedDwelling, null, awardedRating, potentialRating, null, null);
@@ -244,6 +290,13 @@ public class OpenDataCommunitiesImporter {
 		return null;
 	}
 
+	// simple, no parsing, all address data into one field: street
+	static BuildingAddress parseSimpleStreetDetails(BuildingAddress buildingAddress, CSVRecord record) {
+		buildingAddress.setStreet(record.get(CvsHeader.ADDRESS1) + " " + record.get(CvsHeader.ADDRESS2));
+		return buildingAddress;
+	}
+
+	// to complicated
 	static BuildingAddress parseStreetDetails(BuildingAddress buildingAddress, CSVRecord record) {
 		String streetAndStreetnumber = record.get(CvsHeader.ADDRESS1);
 		if (streetAndStreetnumber.contains(",")) {

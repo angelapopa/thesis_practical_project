@@ -29,24 +29,30 @@ import at.uibk.epc.model.ThermalData;
 
 public class AnnexedEPCImporter {
 
+	private static final String OLD_CONNECTION_STRING="mongodb+srv://epc_user:1user01@clusterepc-typif.mongodb.net/test?retryWrites=true&w=majority";
+	private static final String DB_NAME= "EPC";
+	private static String OLD_DATABASE="EPC_Collection"; //a bit of all countries
+	
 	public static void main(String args[]) {
+		
+		String collectionName = args[0];
 
-		MongoDatabase database = MongoDatabaseClient.getDatabase();
+		MongoDatabase database = MongoDatabaseClient.getDatabase(DB_NAME, OLD_CONNECTION_STRING);
 		
-		System.out.println("Annexed Import - Before import: " + database.getCollection("EPC_Collection").countDocuments());
+		System.out.println("Annexed Import - Before import: " + database.getCollection(collectionName).countDocuments());
 		
-		MongoCollection<EPC> epcCollection = database.getCollection("EPC_Collection", EPC.class);
+		MongoCollection<EPC> epcCollection = database.getCollection(collectionName, EPC.class);
 
 		addAustrianEPC(epcCollection); 	//estimated
         addRomanianEPC(epcCollection); 	//estimated
         addGermanEPC(epcCollection); 	//estimated and measured
         addDanishEPC(epcCollection); 	//measured
         
-        for (Document doc: database.getCollection("EPC_Collection").find()) {
+        for (Document doc: database.getCollection(collectionName).find()) {
         	System.out.println(doc.toJson());
         }
         
-        System.out.println("Total: " + database.getCollection("EPC_Collection").countDocuments());
+        System.out.println("Total: " + database.getCollection(collectionName).countDocuments());
 	}
 	
     private static void addAustrianEPC(MongoCollection<EPC> epcCollection) {
@@ -62,18 +68,18 @@ public class AnnexedEPCImporter {
 		Assessor assessor = new Assessor(new Person("Ing.", "Rutzinger", "Kajetan", null), null, null, new Organisation("Neue Heimat Tirol", null, null));
 		
 		ClimateData climateData = new ClimateData();
-		climateData.setIdealIndoorTemperature(new Measure(20.0, MeasuringUnit.CELCIUS));
-		climateData.setAverageOutdoorTemperature(new Measure(-11.4, MeasuringUnit.CELCIUS));
-		climateData.setHightAboveSeaLevel(new Measure(573.0, MeasuringUnit.METER));
+		climateData.setIdealIndoorTemperature(new Measure(Long.valueOf("20"), MeasuringUnit.CELCIUS));
+		climateData.setAverageOutdoorTemperature(new Measure(Long.valueOf(-11), MeasuringUnit.CELCIUS));
+		climateData.setHightAboveSeaLevel(new Measure(Long.valueOf(573), MeasuringUnit.METER));
 		climateData.setHeatingDaysPerYear(220); 
 		
 		SpatialData spatialData = new SpatialData();
-		spatialData.setTotalFloorArea(new Measure(800.86, MeasuringUnit.SQUARE_METER));
-		spatialData.setTotalVolume(new Measure(2272.87, MeasuringUnit.CUBIC_METER));
+		spatialData.setTotalFloorArea(new Measure(Long.valueOf(800), MeasuringUnit.SQUARE_METER));
+		spatialData.setTotalVolume(new Measure(Long.valueOf(2272), MeasuringUnit.CUBIC_METER));
 		
 		ThermalData thermalData = new ThermalData();
-		thermalData.setUValue(new Measure(0.90, MeasuringUnit.WATTS_SQUARE_METER_KELVIN));
-		thermalData.setPrimaryEnergyDemand(new Measure(103.91, MeasuringUnit.KWH_SQUARE_METER_YEAR));
+		thermalData.setUValue(new Measure(Long.valueOf(0), MeasuringUnit.WATTS_SQUARE_METER_KELVIN));
+		thermalData.setPrimaryEnergyDemand(new Measure(Long.valueOf(103), MeasuringUnit.KWH_SQUARE_METER_YEAR));
 		
 		Dwelling dwelling = new Dwelling(
 				new BuildingAddress(new Address("Pacherstr.", "14", null, null, "6020", "Innsbruck", "Austria"), climateData), 
@@ -142,12 +148,12 @@ public class AnnexedEPCImporter {
 		
 		ThermalData thermalData = new ThermalData();
 		//109509 kwh/y divided by 880 floor size = 124.44 kwh/m^2/year
-		thermalData.setFinalEnergyConsumption(new Measure(124.44, MeasuringUnit.KWH_SQUARE_METER_YEAR));
+		thermalData.setFinalEnergyConsumption(new Measure(Long.valueOf(124), MeasuringUnit.KWH_SQUARE_METER_YEAR));
 		
 		SpatialData spatialData = new SpatialData();
-		spatialData.setTotalFloorArea(new Measure(new Double(880), MeasuringUnit.SQUARE_METER));
+		spatialData.setTotalFloorArea(new Measure(Long.valueOf(880), MeasuringUnit.SQUARE_METER));
 		//beheiztes areal TODO: check with others if volume is referred to beheiztes volumen
-		spatialData.setTotalVolume(new Measure(new Double(880), MeasuringUnit.SQUARE_METER));
+		spatialData.setTotalVolume(new Measure(Long.valueOf(880), MeasuringUnit.SQUARE_METER));
 		
 		Dwelling ratedDwelling = new Dwelling(new BuildingAddress(address, null), 1919, DwellingType.APARTMENT_BUILDING, "730-009955-001", null, spatialData, thermalData);
 		
@@ -182,13 +188,13 @@ public class AnnexedEPCImporter {
 				new Organisation("", new Address("Aussteller Musterstraﬂe", "45", null, null, "12345", "Musterstadt", "Deutschland"), null));
 		
 		SpatialData spatialData = new SpatialData();
-		spatialData.setTotalFloorArea(new Measure(new Double(546), MeasuringUnit.SQUARE_METER));
+		spatialData.setTotalFloorArea(new Measure(Long.valueOf(546), MeasuringUnit.SQUARE_METER));
 		
 		ThermalData thermalData = new ThermalData();
-		thermalData.setCarbonFootprint(new Measure(new Double(56), MeasuringUnit.KG_SQUARE_METER_YEAR));
-		thermalData.setPrimaryEnergyDemand(new Measure(new Double(248), MeasuringUnit.KWH_SQUARE_METER_YEAR));
-		thermalData.setFinalEnergyDemand(new Measure(new Double(222), MeasuringUnit.KWH_SQUARE_METER_YEAR));
-		thermalData.setUValue(new Measure(1.11, MeasuringUnit.WATTS_SQUARE_METER_KELVIN));
+		thermalData.setCarbonFootprint(new Measure(Long.valueOf(56), MeasuringUnit.KG_SQUARE_METER_YEAR));
+		thermalData.setPrimaryEnergyDemand(new Measure(Long.valueOf(248), MeasuringUnit.KWH_SQUARE_METER_YEAR));
+		thermalData.setFinalEnergyDemand(new Measure(Long.valueOf(222), MeasuringUnit.KWH_SQUARE_METER_YEAR));
+		thermalData.setUValue(new Measure(Long.valueOf(1), MeasuringUnit.WATTS_SQUARE_METER_KELVIN));
 		
 		Dwelling ratedDwelling = new Dwelling(
 				new BuildingAddress(new Address("Musterstr", "123", null, null, "10115", "Musterstadt", "Deutschland"), null), 
@@ -232,19 +238,19 @@ public class AnnexedEPCImporter {
 		validUntil.clear();
 		validUntil.set(2026, 7, 2, 0, 0, 0);
 		
-		Rating rating = new Rating("B", 97.3);
+		Rating rating = new Rating("B", 97);
 		
 		ThermalData thermalData = new ThermalData();
-		thermalData.setUValue(new Measure(0.90, MeasuringUnit.WATTS_SQUARE_METER_KELVIN));
+		thermalData.setUValue(new Measure(Long.valueOf(0), MeasuringUnit.WATTS_SQUARE_METER_KELVIN));
 		
-		thermalData.setFinalEnergyDemand(new Measure(150.83, MeasuringUnit.KWH_SQUARE_METER_YEAR));
-		thermalData.setSpaceHeatingEnergyDemand(new Measure(97.92, MeasuringUnit.KWH_SQUARE_METER_YEAR));
-		thermalData.setWaterHeatingEnergyDemand(new Measure(41.04, MeasuringUnit.KWH_SQUARE_METER_YEAR));
-		thermalData.setCarbonFootprint(new Measure(29.55, MeasuringUnit.KG_SQUARE_METER_YEAR));
+		thermalData.setFinalEnergyDemand(new Measure(Long.valueOf(150), MeasuringUnit.KWH_SQUARE_METER_YEAR));
+		thermalData.setSpaceHeatingEnergyDemand(new Measure(Long.valueOf(97), MeasuringUnit.KWH_SQUARE_METER_YEAR));
+		thermalData.setWaterHeatingEnergyDemand(new Measure(Long.valueOf(41), MeasuringUnit.KWH_SQUARE_METER_YEAR));
+		thermalData.setCarbonFootprint(new Measure(Long.valueOf(29), MeasuringUnit.KG_SQUARE_METER_YEAR));
 		
 		SpatialData spatialData = new SpatialData();
-		spatialData.setTotalFloorArea(new Measure(45.95, MeasuringUnit.SQUARE_METER));
-		spatialData.setTotalVolume(new Measure(121.77, MeasuringUnit.CUBIC_METER));
+		spatialData.setTotalFloorArea(new Measure(Long.valueOf(45), MeasuringUnit.SQUARE_METER));
+		spatialData.setTotalVolume(new Measure(Long.valueOf(121), MeasuringUnit.CUBIC_METER));
 		spatialData.setOrientation("SE-SV");
 		
 		Assessor assessor = new Assessor(new Person("I-CI", "Rotaru", "Nicolae Mihai", null), "UA-01579", null, null);
