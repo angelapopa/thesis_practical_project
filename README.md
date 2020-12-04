@@ -6,7 +6,7 @@ Locally
 
 
 Heroku
-* https://epc-modelling-backend.herokuapp.com/resource/\<country\>?page=\<pageNumber\> 
+* https://epc-modelling-backend.herokuapp.com/resource/<country\>?page=\<pageNumber\> 
 
 * e.g. https://epc-modelling-backend.herokuapp.com/resource/Scottland?page=1
 
