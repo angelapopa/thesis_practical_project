@@ -55,7 +55,7 @@ public class OpenDataCommunitiesImporter {
 	// ENGLAND_CONNECTION_STRING="mongodb+srv://epcuser4:pw14epc@cluster0-1w0r9.mongodb.net/test?retryWrites=true&w=majority";
 	
 	//second import with integer values
-	private static final String ENGLAND_CONNECTION_STRING = "mongodb+srv://admin:admin@cluster0.ojmf2.mongodb.net/EPC?retryWrites=true&w=majority";
+	private static final String ENGLAND_CONNECTION_STRING = "mongodb+srv://engl_1:GY9s0BNDrTNjvLFK@cluster0.ojmf2.mongodb.net/EPC?retryWrites=true&w=majority";
 
 	private static String OPENDATACOMMUNITIES_CSV_FOLDER = "e:\\docs\\Uni Innsbruck\\Masterthesis\\datasets\\opendatacommunities\\all-domestic-certificates\\";
 	private static String CVS_FILE = "certificates.csv";
