@@ -11,3 +11,6 @@ Heroku
 * e.g. https://epc-modelling-backend.herokuapp.com/resource/Scottland?page=1
 
 * https://epc-modelling-backend.herokuapp.com/ | https://git.heroku.com/epc-modelling-backend.git
+
+
+Copyright (c) 2020 angelapopa
