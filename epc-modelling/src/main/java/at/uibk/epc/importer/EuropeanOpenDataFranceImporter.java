@@ -160,12 +160,12 @@ public class EuropeanOpenDataFranceImporter {
 	
 	private static boolean validRecord(CSVRecord record) {
 		String floorArea = record.get(CvsHeader.FLOOR_AREA);
-		if ("0".equals(floorArea) || "NO DATA!".equalsIgnoreCase(floorArea) || "N/A".equals(floorArea)){
+		if ("0".equals(floorArea) || "NO DATA!".equalsIgnoreCase(floorArea) || "N/A".equals(floorArea) || "".equals(floorArea.trim())){
 			return false;
 		}
 		
 		String energyConsumption = record.get(CvsHeader.ENERGY_CONSUMPTION);
-		if ("0".equals(energyConsumption) || "NO DATA!".equalsIgnoreCase(energyConsumption) || "N/A".equals(energyConsumption)) {
+		if ("0".equals(energyConsumption) || "NO DATA!".equalsIgnoreCase(energyConsumption) || "N/A".equals(energyConsumption) || "".equals(energyConsumption.trim())) {
 			return false;
 		}
 		String energyRating = record.get(CvsHeader.ENERGY_EFFICIENCY_RATING_BAND);

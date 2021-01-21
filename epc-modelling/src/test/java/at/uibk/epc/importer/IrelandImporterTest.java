@@ -1,6 +1,7 @@
 package at.uibk.epc.importer;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -39,5 +40,18 @@ public class IrelandImporterTest {
 		assertEquals("Existing Dwelling BER", IrelandImporter.parseRatingType("Existing"));
 		assertEquals("New Dwelling – Final BER", IrelandImporter.parseRatingType("Final"));
 		assertEquals("New Dwelling – Provisional BER", IrelandImporter.parseRatingType("Provisional"));
+	}
+	
+	@Test
+	public void checkValidityFloorArea() {
+		assertFalse(isValidFloorArea("0"));
+		assertFalse(isValidFloorArea(""));
+	}
+	
+	private boolean isValidFloorArea(String floorArea) {
+		if ("0".equals(floorArea) || "NO DATA!".equalsIgnoreCase(floorArea) || "N/A".equals(floorArea) || "".equals(floorArea.trim())) {
+			return false;
+		}
+		return true;
 	}
 }
